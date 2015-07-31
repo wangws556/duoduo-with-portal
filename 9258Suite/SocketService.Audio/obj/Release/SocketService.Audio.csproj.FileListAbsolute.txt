@@ -1,0 +1,16 @@
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService.Audio\bin\Release\YoYoStudio.SocketService.Audio.dll
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService.Audio\bin\Release\YoYoStudio.SocketService.Audio.pdb
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService.Audio\bin\Release\log4net.dll
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService.Audio\bin\Release\YoYoStudio.Common.dll
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService.Audio\bin\Release\YoYoStudio.Model.dll
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService.Audio\bin\Release\YoYoStudio.RoomService.Client.dll
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService.Audio\bin\Release\YoYoStudio.SocketService.dll
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService.Audio\bin\Release\YoYoStudio.Resource.dll
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService.Audio\bin\Release\YoYoStudio.Common.pdb
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService.Audio\bin\Release\YoYoStudio.Model.pdb
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService.Audio\bin\Release\YoYoStudio.RoomService.Client.pdb
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService.Audio\bin\Release\YoYoStudio.SocketService.pdb
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService.Audio\bin\Release\YoYoStudio.Resource.pdb
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService.Audio\obj\Release\SocketService.Audio.csprojResolveAssemblyReference.cache
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService.Audio\obj\Release\YoYoStudio.SocketService.Audio.dll
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService.Audio\obj\Release\YoYoStudio.SocketService.Audio.pdb

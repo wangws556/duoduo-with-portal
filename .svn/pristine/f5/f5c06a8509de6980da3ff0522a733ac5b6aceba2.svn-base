@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63AE5A44-CA75-457E-9942-4551444F2233}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YoYoStudio.ManagementPortal</RootNamespace>
+    <AssemblyName>YoYoStudio.ManagementPortal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>..\packages\Microsoft.Expression\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.2.0.20710.0\lib\net40\WebMatrix.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebPages.OAuth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.OAuth.2.0.20710.0\lib\net40\Microsoft.Web.WebPages.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.2.0.20710.0\lib\net40\WebMatrix.WebData.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.0.3.12153\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\HomeController.BlockManagement.cs" />
+    <Compile Include="Controllers\HomeController.BlockTypeManagement.cs" />
+    <Compile Include="Controllers\HomeController.ExchangeRateManagement.cs" />
+    <Compile Include="Controllers\HomeController.GiftGroupManagement.cs" />
+    <Compile Include="Controllers\HomeController.GiftManagement.cs" />
+    <Compile Include="Controllers\HomeController.MusicManagement.cs" />
+    <Compile Include="Controllers\HomeController.PersonalManagement.cs" />
+    <Compile Include="Controllers\HomeController.RoomGroupManagement.cs" />
+    <Compile Include="Controllers\HomeController.RoomManagement.cs" />
+    <Compile Include="Controllers\HomeController.ExchangeManagement.cs" />
+    <Compile Include="Controllers\HomeController.UserIdManagement.cs" />
+    <Compile Include="Controllers\HomeController.RoleCommandManagement.cs" />
+    <Compile Include="Controllers\HomeController.UserManagement.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\HomeController.ApplicationManagement.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HomeController.Private.cs" />
+    <Compile Include="Controllers\ImageController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\HomeController.CommandManagement.cs" />
+    <Compile Include="HtmlHelper.cs" />
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Const.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Logo_128.png" />
+    <Content Include="Images\logo_32.png" />
+    <Content Include="Images\NotFound.png" />
+    <Content Include="lib\ligerUI\js\core\inject.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerCheckBoxList.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerListBox.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerPopupEdit.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerRadioList.js" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\button-disabled.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\button-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\button.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\toggle.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\dateeditor\date.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-select.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-unselect.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\btn.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\button-disabled.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\button.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\icon-select.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\icon-unselect.gif" />
+    <Content Include="lib\ligerUI\skins\icons\down.gif" />
+    <Compile Include="Controllers\HomeController.RoleManagement.cs" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\top.jpg" />
+    <Content Include="Images\topicon.gif" />
+    <Content Include="lib\images\loading.gif" />
+    <Content Include="lib\images\top.jpg" />
+    <Content Include="lib\images\topicon.gif" />
+    <Content Include="Scripts\json2.js" />
+    <Content Include="lib\ligerUI\js\core\base.js" />
+    <Content Include="lib\ligerUI\js\ligerui.all.js" />
+    <Content Include="lib\ligerUI\js\ligerui.min.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerAccordion.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerButton.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerCheckBox.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerComboBox.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerDateEditor.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerDialog.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerDrag.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerEasyTab.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerFilter.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerForm.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerGrid.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerLayout.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerMenu.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerMenuBar.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerMessageBox.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerRadio.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerResizable.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerSpinner.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerTab.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerTextBox.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerTip.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerToolBar.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerTree.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerWindow.js" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-all.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-common.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-dialog.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-form.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-grid.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-layout.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-menu.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-tab.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-tree.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\bigloading.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\drop-icons.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\exclamation.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\invalid-line.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\loading.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\table.png" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-panel-title-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-panel-title-pressed.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-panel-title.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-tab-title-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-tab-title-pressed.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-tab-title.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-text.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-trigger-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-trigger-pressed.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-trigger.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\btn-l.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\btn-r.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\btn.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\button-bg-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\button-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\checkbox.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\dateeditor-bar-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\dateeditor-header-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\radio.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\dateeditor\icon-first.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\dateeditor\icon-last.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\dateeditor\icon-next.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\dateeditor\icon-prev.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\form\verify-corner.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-checkbox-checked.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-checkbox.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-detail-close.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-detail-open.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-tree-close.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-tree-open.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\header-bg-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\header-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\header2-bg.jpg" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\popup-line.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\popup-row-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\bar-button-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\checkbox-checked.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\checkbox.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\cross.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-close-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-close.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-down.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-drop.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-edited.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-first.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-last.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-line.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-load.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-next.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-prev.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-sort-asc.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-sort-desc.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-up.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\accordion-content.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\accordion-header-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\accordion-header.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\layout-header-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\layout-header.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\layout-sidebar-header.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\mini-bottom.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\mini-left.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\mini-right.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\mini-top.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\panel-content.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\panel-header-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\panel-header.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-item-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-item-left-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-item-over-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-item-right-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-tools.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\togglebar.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-item-arrow.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-item-down.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-item-over-l.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-item-over-m.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-item-over-r.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-line-x.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-line-y.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\bar-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\header-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\header-bg.jpg" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\header2-bg.jpg" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-btn-l.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-btn-r.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-btn.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-header.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-menu-item-down.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-menu.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-toolbar.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-tools.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\folder-open.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\folder.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\loading.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-leaf.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-level.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-noline.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-status-close.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-status-open.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-status.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\box-icons.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\box.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\dialog-bc.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\dialog-icons.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\dialog-tc.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\dialog-winbtns.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\dialog.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\taskbar-task.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\taskbar.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\taskbar.png" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\taskicon.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\css\all.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\common.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\dialog.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\form.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\grid.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\layout.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\tab.css" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\accordion-header.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\icon-close-over.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\icon-close.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\layout-header.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-left-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-left-selected.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-right-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-right-selected.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-selected.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\togglebar.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\button-over.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\button1.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\button2.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\dateeditor-bar.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\dateeditor-btn-over.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\dateeditor-btn.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\dateeditor-thead.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\grid-detail-close.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\grid-detail-open.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\gridalt.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\gridbar.jpg" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\grideditor.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\icon-down.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\icon-up.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\input.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\inputdisabled.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\loading.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\loading2.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\trigger.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\win\dialog-winbtns.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\win\dialogbtn.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\win\dialogicon.gif" />
+    <Content Include="lib\ligerUI\skins\icons\add.gif" />
+    <Content Include="lib\ligerUI\skins\icons\archives.gif" />
+    <Content Include="lib\ligerUI\skins\icons\attibutes.gif" />
+    <Content Include="lib\ligerUI\skins\icons\back.gif" />
+    <Content Include="lib\ligerUI\skins\icons\bluebook.gif" />
+    <Content Include="lib\ligerUI\skins\icons\bookpen.gif" />
+    <Content Include="lib\ligerUI\skins\icons\busy.gif" />
+    <Content Include="lib\ligerUI\skins\icons\calendar.gif" />
+    <Content Include="lib\ligerUI\skins\icons\candle.gif" />
+    <Content Include="lib\ligerUI\skins\icons\coffee.gif" />
+    <Content Include="lib\ligerUI\skins\icons\comment.gif" />
+    <Content Include="lib\ligerUI\skins\icons\communication.gif" />
+    <Content Include="lib\ligerUI\skins\icons\config.gif" />
+    <Content Include="lib\ligerUI\skins\icons\customers.gif" />
+    <Content Include="lib\ligerUI\skins\icons\cut.gif" />
+    <Content Include="lib\ligerUI\skins\icons\database.gif" />
+    <Content Include="lib\ligerUI\skins\icons\delete.gif" />
+    <Content Include="lib\ligerUI\skins\icons\discuss.gif" />
+    <Content Include="lib\ligerUI\skins\icons\edit.gif" />
+    <Content Include="lib\ligerUI\skins\icons\graywarn.gif" />
+    <Content Include="lib\ligerUI\skins\icons\greenwarn.gif" />
+    <Content Include="lib\ligerUI\skins\icons\help.gif" />
+    <Content Include="lib\ligerUI\skins\icons\home.gif" />
+    <Content Include="lib\ligerUI\skins\icons\lock.gif" />
+    <Content Include="lib\ligerUI\skins\icons\logout.gif" />
+    <Content Include="lib\ligerUI\skins\icons\mailbox.gif" />
+    <Content Include="lib\ligerUI\skins\icons\memeber.gif" />
+    <Content Include="lib\ligerUI\skins\icons\modify.gif" />
+    <Content Include="lib\ligerUI\skins\icons\msn.gif" />
+    <Content Include="lib\ligerUI\skins\icons\myaccount.gif" />
+    <Content Include="lib\ligerUI\skins\icons\ok.gif" />
+    <Content Include="lib\ligerUI\skins\icons\outbox.gif" />
+    <Content Include="lib\ligerUI\skins\icons\pager.gif" />
+    <Content Include="lib\ligerUI\skins\icons\photograph.gif" />
+    <Content Include="lib\ligerUI\skins\icons\plus.gif" />
+    <Content Include="lib\ligerUI\skins\icons\prev.gif" />
+    <Content Include="lib\ligerUI\skins\icons\print.gif" />
+    <Content Include="lib\ligerUI\skins\icons\process.gif" />
+    <Content Include="lib\ligerUI\skins\icons\qq.gif" />
+    <Content Include="lib\ligerUI\skins\icons\refresh.gif" />
+    <Content Include="lib\ligerUI\skins\icons\right.gif" />
+    <Content Include="lib\ligerUI\skins\icons\role.gif" />
+    <Content Include="lib\ligerUI\skins\icons\save-disabled.gif" />
+    <Content Include="lib\ligerUI\skins\icons\save.gif" />
+    <Content Include="lib\ligerUI\skins\icons\search.gif" />
+    <Content Include="lib\ligerUI\skins\icons\search2.gif" />
+    <Content Include="lib\ligerUI\skins\icons\settings.gif" />
+    <Content Include="lib\ligerUI\skins\icons\true.gif" />
+    <Content Include="lib\ligerUI\skins\icons\up.gif" />
+    <Content Include="lib\ligerUI\skins\ligerui-icons.css" />
+    <Content Include="lib\ligerUI\skins\Silvery\css\form.css" />
+    <Content Include="lib\ligerUI\skins\Silvery\css\grid.css" />
+    <Content Include="lib\ligerUI\skins\Silvery\css\layout.css" />
+    <Content Include="lib\ligerUI\skins\Silvery\css\style.css" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\checkboxradio.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\icon-down-over.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\icon-down.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\icon-up-over.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\icon-up.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\invalid_line.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-date-icon.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-down-icon.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-focus.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-l-focus.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-l-over.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-l.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-over.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-r-focus.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-r-over.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-r.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\grid\gridheaderbg.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\accordion-header-over.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\accordion-header.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\layout-header-over.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\layout-header.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-bg.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-item-bg.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-item-left-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-item-over-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-item-right-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-tools.gif" />
+    <Content Include="Scripts\Application.js" />
+    <Content Include="Scripts\BackendCommand.js" />
+    <Content Include="Scripts\Block.js" />
+    <Content Include="Scripts\BlockType.js" />
+    <Content Include="Scripts\Command.js" />
+    <Content Include="Scripts\ExchangeHistory.js" />
+    <Content Include="Scripts\ExchangeRate.js" />
+    <Content Include="Scripts\Gift.js" />
+    <Content Include="Scripts\GiftGroup.js" />
+    <Content Include="Scripts\GiftInOutInquiry.js" />
+    <Content Include="Scripts\GridFilter.js" />
+    <Content Include="Scripts\Home.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.metadata.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-2.1.0.debug.js" />
+    <Content Include="Scripts\knockout-2.1.0.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\Music.js" />
+    <Content Include="Scripts\Personal.js" />
+    <Content Include="Scripts\Role.js" />
+    <Content Include="Scripts\Room.js" />
+    <Content Include="Scripts\RoomGroup.js" />
+    <Content Include="Scripts\RoomIncomeInquiry.js" />
+    <Content Include="Scripts\User.js" />
+    <Content Include="Scripts\UserCommand.js" />
+    <Content Include="Scripts\UserDepositHistory.js" />
+    <Content Include="Scripts\UserIdList.js" />
+    <Content Include="Scripts\UserExchangeHistory.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\_RemoveExternalLoginsPartial.cshtml" />
+    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Manage.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Home\PartialViews\CommandManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\RoleManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\ApplicationManagement.cshtml" />
+    <Content Include="Views\Image\UploadImage.cshtml" />
+    <Content Include="Views\Image\ImageLayout.cshtml" />
+    <Content Include="Views\Home\PartialViews\UserIdManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\UserManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\RoomManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\RoomGroupManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\GiftGroupManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\GiftManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\UserDepositHistory.cshtml" />
+    <Content Include="Views\Home\PartialViews\UserExchangeHistory.cshtml" />
+    <Content Include="Views\Home\PartialViews\BackendCommandManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\GiftInOutInquiryManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\RoomIncomeInquiryManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\FrontendCommandManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\UserCommandManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\PersonalInfoManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\PasswordManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\BlockManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\BlockTypeManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\ExchangeRateManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\ExchangeManagement.cshtml" />
+    <Content Include="Views\Home\PartialViews\MusicManagement.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Filters\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common.Web\Common.Web.csproj">
+      <Project>{d97d3d85-c069-4d54-b206-98b7709f4e4b}</Project>
+      <Name>Common.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{4f1e6d13-715a-4655-9cf7-3f180915c0e3}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataService.Client\DataService.Client.csproj">
+      <Project>{b7782b04-81db-4af0-949d-b676b16f593a}</Project>
+      <Name>DataService.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exceptions\Exceptions.csproj">
+      <Project>{e56331e4-b6ac-431a-86a3-77906abba33f}</Project>
+      <Name>Exceptions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model.Json\Model.Json.csproj">
+      <Project>{c4dac3f3-3035-407d-96c9-baa6f3934e9a}</Project>
+      <Name>Model.Json</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{5baa4efc-0186-45fe-aec7-144f30f0a993}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Resource\Resource.csproj">
+      <Project>{72cd2aa2-1ee7-47fd-837c-b430a452b7dd}</Project>
+      <Name>Resource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10611</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost/ManagementPortal</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

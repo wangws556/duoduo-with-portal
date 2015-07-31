@@ -1,0 +1,6 @@
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\bin\Debug\ChatService\YoYoStudio.ServiceHost.exe.config
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\bin\Debug\ChatService\YoYoStudio.ServiceHost.exe
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\bin\Debug\ChatService\YoYoStudio.ServiceHost.pdb
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\ServiceHost\obj\Debug\YoYoStudio.ServiceHost.exe
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\ServiceHost\obj\Debug\YoYoStudio.ServiceHost.pdb
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\ServiceHost\obj\Debug\ServiceHost.csprojResolveAssemblyReference.cache

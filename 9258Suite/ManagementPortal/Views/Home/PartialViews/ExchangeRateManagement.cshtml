@@ -1,0 +1,14 @@
+﻿@model YoYoStudio.Model.Json.JsonModel
+
+<script type="text/javascript" src="~/Scripts/ExchangeRate.js">
+</script>
+
+<script type="text/javascript">
+    var exchangeRateId = "#" + "@string.Concat("exchangerate",Model.TagId)";
+    $(document).ready(function(){
+        Init(exchangeRateId);
+    })
+</script>
+
+<div class="l-clear"></div>
+<div id ="@string.Concat("exchangerate",Model.TagId)" class="framecenter"></div>

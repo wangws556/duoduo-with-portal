@@ -1,0 +1,12 @@
+﻿<ResourceDictionary x:Class="converters"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:con="clr-namespace:YoYoStudio.Client.Chat.ValueConverters">
+    <con:TestConverter x:Key="testConverter" />
+    <con:OnMicLabelConverter x:Key="onMicLabelConverter" />
+    <con:PlayMusicLabelConverter x:Key="playMusicLabelConverter"/>
+    <con:PlayMusicStatusConverter x:Key="playMusicStatusConverter"/>
+    <con:OnMicPopupConverter x:Key="onMicPopupConverter" />
+    <con:FlexPathConverter x:Key="flexPathConverter" />
+    <con:VideoControlVisibilityConverter x:Key="videoControlVisibilityConverter" />
+</ResourceDictionary>

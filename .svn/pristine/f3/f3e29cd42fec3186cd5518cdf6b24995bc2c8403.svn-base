@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7782B04-81DB-4AF0-949D-B676B16F593A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YoYoStudio.DataService.Client</RootNamespace>
+    <AssemblyName>YoYoStudio.DataService.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\Temp\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\Temp\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebMatrix.WebData, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="YoYoStudio.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="YoYoStudio.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="Cache.cs" />
+    <Compile Include="DataServiceClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\Generated\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="WebServiceMemberShipProvider.cs" />
+    <Compile Include="WebServiceRoleProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\YoYoStudio.Model.Chat.Gift.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Chat.GiftGroup.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Chat.Room.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Chat.RoomConfig.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Chat.RoomGroup.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Chat.RoomRole.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Core.Application.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Core.BlockHistory.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Core.BlockList.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Core.BlockType.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Core.Command.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Core.DepositHistory.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Core.ExchangeHistory.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Core.ExchangeRate.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Core.Image.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Core.ImageWithoutBody.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Core.ImageWithoutBody1.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Core.Role.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Core.RoleCommand.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Core.RoleCommandView.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Core.User.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Core.UserApplicationInfo.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Core.UserIdList.datasource" />
+    <None Include="Properties\DataSources\YoYoStudio.Model.Media.MusicInfo.datasource" />
+    <None Include="Service References\Generated\DataService.wsdl" />
+    <None Include="Service References\Generated\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Generated\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Generated\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Generated\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Generated\Service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Generated\Service5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Generated\Service6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common.Web\Common.Web.csproj">
+      <Project>{d97d3d85-c069-4d54-b206-98b7709f4e4b}</Project>
+      <Name>Common.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{4f1e6d13-715a-4655-9cf7-3f180915c0e3}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{5baa4efc-0186-45fe-aec7-144f30f0a993}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Resource\Resource.csproj">
+      <Project>{72cd2aa2-1ee7-47fd-837c-b430a452b7dd}</Project>
+      <Name>Resource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Generated\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Generated\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Generated\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Generated\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Generated\Service.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mx:Panel xmlns:mx="http://www.adobe.com/2006/mxml"
+	creationComplete="init()"
+	title="Preview"
+	layout="vertical"
+	horizontalAlign="center" verticalAlign="middle" 
+	borderAlpha=".50"
+	visible="true" 
+	backgroundColor="#003366" 
+	backgroundAlpha=".22" 
+	color="#ffffff" 
+	fontWeight="bold" 
+	width="100%">
+	<mx:Script>
+		<![CDATA[
+			import mx.core.UIComponent;
+			import com.blitzagency.xray.logger.XrayLog;
+			import mx.core.Application;
+			import mx.managers.PopUpManager;
+			import flash.events.ProgressEvent;
+			import flash.events.Event;
+			import mx.events.MetadataEvent; 
+			import com.blitzagency.util.LSOUserPreferences;
+			import flash.media.Video;
+			
+			[Bindable]
+			public var flvPath:String = "";
+			
+			[Bindable]
+			private var metaData:Object = {duration:0};
+			
+			public var scrubbing:Boolean = false;
+			
+			private var videoPlayer:Video;
+			private var nc:NetConnection;
+			private var ns:NetStream;
+			private var log:XrayLog;
+			private var fullScreen:Boolean;
+			private var videoHolder:UIComponent = new UIComponent();
+			private var si:Number;
+			private var percentage:Number;
+			private var ds:DropShadowFilter;
+			private var blur:BlurFilter;
+			
+			public function init():void
+			{
+				// create log instance for Xray logging
+				log = new XrayLog();
+				
+				// create dropshadow filter and blur filter
+				ds = new DropShadowFilter(4,45,null,.75,4,4,1,3,false,false,false);
+				blur = new BlurFilter(1,1,3);
+				
+				// we create a UIComponent called videoHolder since we need to attach the videoPlayer at runtime
+				// to add a child to the Panel, it has to be a UIComponent, hence why we add the video object 
+				// to the videoHolder, then the videoHolder is added to the Panel
+				videoHolder.setActualSize(360, 240);
+				// add the dropshadow filter
+				videoHolder.filters = [ds];
+				
+				// keep it centered
+				videoHolder.setStyle("horizontalCenter", 0);
+				videoHolder.setStyle("verticalCenter", 0);
+				
+				// create the video object and set it's initial size
+				videoPlayer = new Video(360,240);
+				
+				// add the video object to the UIComponent
+				videoHolder.addChild(videoPlayer);
+				
+				// add the UIComponent to the Panel
+				mainStage.addChild(videoHolder);				
+				
+				// listen to resize events to recenter and resize the video
+				addEventListener("resize", handleResize);
+				
+				// start watching time
+				si = setInterval(updateScrubBar, 25);
+			}
+			
+			public function registerConnection(p_conn:NetConnection):void
+			{
+				// called from FLVPlayer, which passes the NetConnection to use
+				nc = p_conn;
+				// create the netStream object
+				ns = new NetStream(nc);
+				// set the client scope to this
+				ns.client = this;
+				// add listener for the netStatus events
+				ns.addEventListener("netStatus", handleNetStatus);
+			}
+			
+			public function onLastSecond(...rest):void
+			{
+				//
+			}
+			
+			private function securityErrorHandler(e:SecurityErrorEvent):void
+			{
+				log.debug("NC error", e.text);
+			}
+			
+			private function handleIOError(e:IOErrorEvent):void
+			{
+				log.debug("NC error", e.text);
+			}
+		
+			private function handleResize(e:Event):void
+			{
+				invalidateDisplayList();
+				if(fullScreen) 
+				{
+					setTimeout(goFullScreen, 25);
+				} else 
+				{
+					setTimeout(goNormalScreen, 25);
+				}
+			}
+			
+			public function toggleFullScreen():void 
+			{
+				if(fullScreen)
+				{
+					goNormalScreen();
+					videoHolder.filters = [ds];
+				}else
+				{
+					goFullScreen();
+					// if they go fullscreen, we add a blur filter to help the pixelation
+					videoHolder.filters = [blur,ds];
+				}
+				
+				invalidateDisplayList();
+			}
+			
+			public function goNormalScreen():void
+			{
+				videoHolder.width = metaData.width;
+				videoHolder.height = metaData.height;
+				videoPlayer.width = metaData.width;
+				videoPlayer.height = metaData.height;
+				setFullScreen(false);
+			}
+			
+			public function goFullScreen():void
+			{				
+				sizeToWidth(mainStage.height-10);
+				setFullScreen(true);
+			}
+			
+			private function sizeToWidth(h:Number):void
+			{
+				// set new width of the stage movie clip
+				videoHolder.height = videoPlayer.height = h //Math.abs(videpPlayer.y - h) * 2;
+				// set yscale based on ratio to keep same
+				videoHolder.width = videoPlayer.width = videoPlayer.height * (percentage);
+			}
+			
+			private function centerUp():void
+			{
+				var center:Number = Math.abs((videoHolder.width/2)-(mainStage.width/2));
+				var middle:Number = Math.abs((videoHolder.height/2)-(mainStage.height/2))
+				videoHolder.x = 0;
+				videoHolder.y = 0;
+				videoHolder.x = center //(mainStage.width/2);
+				videoHolder.y = middle //(mainStage.height/2);
+			}
+			
+			public function playVideo():void
+			{
+				try 
+				{
+					videoPlayer.attachNetStream(ns);
+					ns.close();
+					ns.play(flvPath);
+				}catch(e:Error)
+				{
+					log.debug("NetStream error", e.message);
+				}
+			}
+			
+			public function onPlayStatus(info:Object):void{
+				for( var n:* in info){
+					trace(n+":"+info[n]);
+				}
+				
+			}
+			
+			private function handleNetStatus(e:NetStatusEvent):void
+			{
+				log.debug("NetStatus", e.info);
+				if(e.info.code == "NetStream.Buffer.Full")
+				{
+					
+				}
+			}
+			
+			private function setFullScreen(p_fullScreen:Boolean):void
+			{
+				fullScreen = p_fullScreen;
+			}
+			
+			public function setPath(flv:String):void
+			{
+				// called from FLVPlayer when something is clicked in the datagrid
+				flvPath = flv;
+				playVideo();
+			}
+			
+			public function updateScrubBar():void
+			{
+				try
+				{
+					if(!scrubbing) scrubBar.value = ns.time;
+				}catch(e:Error)
+				{
+					
+				}
+			}
+			
+			public function updateVolume(event:Event):void
+			{
+				var st:SoundTransform = ns.soundTransform;
+				st.volume = (volumeSlider.value) * .01;
+				ns.soundTransform = st;
+				LSOUserPreferences.setPreference("videoHelpVolume", ns.soundTransform.volume, true);
+			}
+			
+			public function scrubVideo(event:Event):void
+			{
+				ns.seek(scrubBar.value);
+				scrubbing=false;
+			}
+			
+			public function onMetaData(info:Object):void
+			{
+				metaData = info;
+				
+				// set percentage for use with keeping ratio
+				percentage = metaData.width / metaData.height;
+				
+				videoPlayer.width = metaData.width;
+				videoPlayer.height = metaData.height;
+				
+				// size
+				if(fullScreen) 
+				{
+					goFullScreen();
+				} else 
+				{
+					goNormalScreen();
+				}
+				
+				
+				// set volume
+				var vol:Number = Number(LSOUserPreferences.getPreference("videoHelpVolume"));
+				ns.soundTransform.volume = vol ? vol : 0.75;
+				volumeSlider.value = (ns.soundTransform.volume) * 100;
+			}
+		]]>
+	</mx:Script>
+	<mx:Canvas x="0" y="0" width="100%" height="100%" id="mainStage">
+		
+	</mx:Canvas>
+	<mx:ApplicationControlBar width="100%" height="42">
+		<mx:Button label="play" x="292.5" y="0" id="playBtn" click="playVideo();"/>
+		<mx:Button label="pause" x="350.5" y="0" id="pauseBtn" click="ns.togglePause();"/>
+		<mx:Button label="stop" x="418.5" y="0" id="stopBtn" click="ns.close();"/>
+		<mx:HSlider thumbPress="scrubbing=true" click="scrubVideo(event)" width="100%" minimum="0" maximum="{metaData.duration}" snapInterval="1" enabled="true" id="scrubBar" liveDragging="true" showDataTip="true" height="20"/>
+		<mx:HSlider thumbPress="scrubbing=true" click="scrubbing=false;" thumbRelease="scrubbing=false" thumbDrag="updateVolume(event);" width="78" height="20" id="volumeSlider" minimum="0" maximum="100" snapInterval="1" enabled="true"  liveDragging="true"/>
+		<mx:Label text="Vol."/>
+		<mx:Button label="^" width="65" height="22" click="toggleFullScreen()" toolTip="Fit to Screen"/>
+		
+	</mx:ApplicationControlBar>
+</mx:Panel>

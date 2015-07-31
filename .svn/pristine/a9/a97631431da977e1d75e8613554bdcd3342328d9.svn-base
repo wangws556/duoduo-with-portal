@@ -1,0 +1,27 @@
+﻿@model YoYoStudio.Model.Json.JsonModel
+
+<script type="text/javascript" src="~/Scripts/Block.js"></script>
+
+<script type="text/javascript">
+    var blockListId = "#" + "@string.Concat("blockList",Model.TagId)";
+    var blockHistoryId = "#" + "@string.Concat("blockHistory",Model.TagId)";
+    var layoutId = "#" + "@string.Concat("blockLayout",Model.TagId)";
+    $(document).ready(function () {
+        $(layoutId).ligerLayout({
+            leftWidth: 400,
+            space:5,
+            allowLeftCollapse: false
+        });
+        Init(blockListId,blockHistoryId);
+    })
+</script>
+
+<div class="l-clear"></div>
+<div id="@string.Concat("blockLayout",Model.TagId)" class="framecenter">
+    <div position="left" title="禁封列表">
+        <div id="@string.Concat("blockList",Model.TagId)"></div>
+    </div>
+    <div position="center" title="禁封历史">
+        <div id="@string.Concat("blockHistory",Model.TagId)"></div>
+    </div>
+</div>

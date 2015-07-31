@@ -1,0 +1,15 @@
+pwd : gut@Welcome1
+
+WCF SSL WebService
+makecert -sr localmachine -ss My -n CN=9258Suite -sky exchange -pe -r
+
+WCF SSL Net.TCP
+sc.exe config NetTcpPortSharing start= demand
+
+ChatService
+makecert -n "CN=_9258ChatService" -sv c:\_9258ChatService.pvk c:\_9258ChatService.cer
+makecert -n "CN=_9258ChatService" -ic c:\_9258ChatService.cer -iv C:\_9258ChatService.pvk -sr LocalMachine -ss My -pe -sky exchange
+
+RoomService
+makecert -n "CN=_9258RoomService" -sv c:\_9258RoomService.pvk c:\_9258RoomService.cer
+makecert -n "CN=_9258RoomService" -ic c:\_9258RoomService.cer -iv C:\_9258RoomService.pvk -sr LocalMachine -ss My -pe -sky exchange

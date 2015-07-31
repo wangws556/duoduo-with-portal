@@ -1,0 +1,11 @@
+--Run below query against the WSS database to check its execution plan
+
+Set statistics profile on
+Set statistics IO on
+Set statistics Time on
+GO
+exec dbo.proc_MSS_GetCrawlHistory @ContentSourceID=4,@MaxRecords=1,@BeginTime='2009-09-07 05:26:35:360',@EndTime='2009-11-06 05:26:35:360',@CrawlStatus=11
+GO
+Set statistics profile off
+Set statistics IO off
+Set statistics Time off

@@ -1,0 +1,4 @@
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\bin\Release\Temp\YoYoStudio.SocketService.dll
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\bin\Release\Temp\YoYoStudio.SocketService.pdb
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService\obj\Release\YoYoStudio.SocketService.dll
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService\obj\Release\YoYoStudio.SocketService.pdb

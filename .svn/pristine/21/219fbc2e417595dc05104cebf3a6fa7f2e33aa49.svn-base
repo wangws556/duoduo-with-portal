@@ -1,0 +1,52 @@
+﻿@model YoYoStudio.Model.Json.ImageModel
+
+@{
+	Layout = "ImageLayout.cshtml";
+}
+
+<div position="top">
+	@using (Html.BeginForm("SaveImage", "Image", new {id="imgForm", ownertype=Model.OwnerType,ownerid = Model.OwnerId, imageid = Model.Id, oldId = Model.OldId }, FormMethod.Post, new { enctype = "multipart/form-data" }))
+ {
+		<table style="width: 100%">
+			<tr>
+				<td>
+					<input type="file" id="uploader" name="请选择文件" />
+				</td>
+				<td style="width: 100px">
+					<input type="submit" value="确定" />
+				</td>
+			</tr>
+            <tr>
+                <td colspan="2"><span style="color:red;font-size:14px">@Model.Message</span></td>
+            </tr>
+		</table>
+ }
+</div>
+<div id="imagePreview" position="center">	
+		@*@YoYoStudio.ManagementPortal.Helper.Image(Html, Model.Id)	*@	
+	<img id="pimage"  />
+</div>
+@section scripts{
+	<script type="text/javascript">
+
+	    $(document).ready(function () {
+	        $('#imageBody').ligerLayout({ bottomHeight: 50 });
+	        $('#pimage').attr('src', '/ManagementPortal/Home/GetImage/@Model.Id' + '?' + new Date().getTime());
+	        document.imageid = '@Model.Id';
+	    });
+
+		function succeed(response) {
+			if (response.success) {
+				alert('上传成功');
+				$('#imagePreview').html('<img src="' + response.fullpath + '" />');
+			}
+			else {
+				alert('上传失败');
+			}
+		}
+		function failed(error) {
+			alert('上传失败');
+		}
+
+	</script>
+}

@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="22738597-59db-4f1d-ab6c-e41f6b6f16a4" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <comments>
+    <comment Id="1b80f7f1-cd50-44b1-949a-481904027f84" name="Comment1">
+      <body>SQL Server Database, Backup regularly</body>
+    </comment>
+    <comment Id="aa6c6b17-49b6-4a3f-aef9-983cd9128ffd" name="Comment2">
+      <body>WCF SSL Web Service 
+Provide Data Access</body>
+    </comment>
+    <comment Id="7a20e597-80d6-4e0b-afc3-3a86551f436a" name="Comment3">
+      <body>Asp.net MVC hosted in IIS
+Main website
+ </body>
+    </comment>
+    <comment Id="c2493f27-e694-4c0e-aef0-8b46698d0f6d" name="Comment4">
+      <body>Asp.net MVC hosted in IIS
+Backend management,
+User, Security, etc.</body>
+    </comment>
+    <comment Id="f07dafd1-9107-4690-a6d6-902cceee6490" name="Comment5">
+      <body>Main WCF WebService</body>
+    </comment>
+    <comment Id="259723a6-d8c0-4d1e-a616-efebe00d50f0" name="Comment6">
+      <body>As of the Video/Audio requires a lot network bandwidth , there are multiple Room Servers, depending on the throughput of the users online</body>
+    </comment>
+    <comment Id="d0b916ff-cb17-4c1a-9d39-88f12af99021" name="Comment7">
+      <body>WCF Web Service
+</body>
+    </comment>
+    <comment Id="81d7c9cd-59bf-4c14-80e2-5ca1e956d310" name="Comment8">
+      <body>WPF client using MVVM and lots wpf features.
+Wrapped webpage inside the WPF window
+Wrapped Flash controls for Video Capture and render </body>
+    </comment>
+  </comments>
+  <layers>
+    <layer Id="dd5997b1-f3e1-4d58-9367-c3fb57b6b3e1" name="Client4&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="2fba947f-74c5-46cd-b455-03d8b981f2ff" direction="Bidirectional">
+          <layerMoniker Id="6277f99f-e0bc-4d80-958e-880ead05675f" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="f144c22e-3206-4011-ad81-c11ec51666d2" direction="Bidirectional">
+          <layerMoniker Id="0cf37059-a94b-4bea-b9ef-52cc3bce0114" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="00d6017c-1f8a-44ba-bee1-b6657fb67c8d" direction="Bidirectional">
+          <layerMoniker Id="e2e1b838-2f5c-4d32-8265-d52f1e384b1d" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="149a77e4-cbea-49b8-9aeb-d33bb1305cee" name="Client1&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="0b3e290c-5425-44d2-afeb-c8a9cfabc926" direction="Bidirectional">
+          <layerMoniker Id="bde94b20-60ca-415f-a9ca-25fb87b5fe03" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="662a2b5b-f3c6-409b-80a8-ee3be5015d0a" direction="Bidirectional">
+          <layerMoniker Id="d0dd2bf9-b0a7-4e93-9460-25f73539f876" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="c1b38446-d482-4ad9-8f47-a0e6b1bf5e5d" direction="Bidirectional">
+          <layerMoniker Id="e2e1b838-2f5c-4d32-8265-d52f1e384b1d" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="640f0c7d-422c-4fdd-93b1-ea1f38b049ff" name="Client2&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="ff79a43e-a06f-45c6-97b5-837f4a6b1a04" direction="Bidirectional">
+          <layerMoniker Id="d0dd2bf9-b0a7-4e93-9460-25f73539f876" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="fa7b1ab8-b4e9-4673-8bbb-8c5e73721fd5" direction="Bidirectional">
+          <layerMoniker Id="bde94b20-60ca-415f-a9ca-25fb87b5fe03" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="c7128d06-5a64-4a37-b2cb-6db616fc2542" direction="Bidirectional">
+          <layerMoniker Id="e2e1b838-2f5c-4d32-8265-d52f1e384b1d" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="6eb45897-6bba-450b-89ad-ef7d2db774ca" name="Client3&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="26ef898b-b105-464b-8f35-8313729a8bb7" direction="Bidirectional">
+          <layerMoniker Id="e2e1b838-2f5c-4d32-8265-d52f1e384b1d" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="94007d71-9f7d-4d41-b86d-65e878a564b9" direction="Bidirectional">
+          <layerMoniker Id="6277f99f-e0bc-4d80-958e-880ead05675f" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="9bafaa44-43f3-4360-9ca7-f2eacad80855" direction="Bidirectional">
+          <layerMoniker Id="0cf37059-a94b-4bea-b9ef-52cc3bce0114" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="8ec6ec34-e213-44b9-8c9a-45d3c8646966" name="Room Server 2&#xD;&#xA;">
+      <childLayers>
+        <layer Id="6277f99f-e0bc-4d80-958e-880ead05675f" name="Red5 Media Server2&#xD;&#xA;" />
+        <layer Id="0cf37059-a94b-4bea-b9ef-52cc3bce0114" name="RoomService2&#xD;&#xA;">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="23fcf9e8-06b1-44bd-9755-ebd96ab940a3" direction="Bidirectional">
+              <layerMoniker Id="e2e1b838-2f5c-4d32-8265-d52f1e384b1d" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="94aad845-b718-4215-ae47-b8d55d8cef33" name="Room Server 1&#xD;&#xA;">
+      <childLayers>
+        <layer Id="bde94b20-60ca-415f-a9ca-25fb87b5fe03" name="Red5 Media Server1&#xD;&#xA;" />
+        <layer Id="d0dd2bf9-b0a7-4e93-9460-25f73539f876" name="RoomService1&#xD;&#xA;">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="a749f117-b774-48c6-be39-fedead0dd6ac" direction="Bidirectional">
+              <layerMoniker Id="e2e1b838-2f5c-4d32-8265-d52f1e384b1d" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="def45819-7d8c-47cf-b43b-168d1daaec15" name="Database Server&#xD;&#xA;">
+      <childLayers>
+        <layer Id="a73c27df-7306-4949-9042-63f10d4a6a50" name="DataService&#xD;&#xA;">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="f7508a33-a57b-4c12-a15e-c2af7f74dab1" direction="Bidirectional">
+              <layerMoniker Id="5d676d49-33fb-4067-bdcf-7c6c3c1e9c7e" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="10b1b6d4-4aa7-466f-836a-b829badef6f6" direction="Bidirectional">
+              <layerMoniker Id="02e08e43-10cd-490a-ad25-0a8b07a97721" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="5d676d49-33fb-4067-bdcf-7c6c3c1e9c7e" name="Database&#xD;&#xA;" />
+      </childLayers>
+    </layer>
+    <layer Id="3604483c-5d46-4790-93e5-efb1e17e2759" name="Main Server&#xD;&#xA;">
+      <childLayers>
+        <layer Id="e2e1b838-2f5c-4d32-8265-d52f1e384b1d" name="ChatService&#xD;&#xA;">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="e17a3397-80e0-4962-8535-0b2241ef7b56" direction="Bidirectional">
+              <layerMoniker Id="a73c27df-7306-4949-9042-63f10d4a6a50" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="7976a6c6-f9e6-46ec-beb5-3a6fa213a866" name="Management Portal&#xD;&#xA;">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="69d8a12e-d28b-4e84-b022-7bb9af19cc30" direction="Bidirectional">
+              <layerMoniker Id="a73c27df-7306-4949-9042-63f10d4a6a50" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="02e08e43-10cd-490a-ad25-0a8b07a97721" name="Portal&#xD;&#xA;" />
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>

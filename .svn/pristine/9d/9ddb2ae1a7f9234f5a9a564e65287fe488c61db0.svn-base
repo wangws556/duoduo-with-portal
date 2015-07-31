@@ -1,0 +1,13 @@
+﻿@model YoYoStudio.Model.Json.JsonModel
+
+<script type="text/javascript" src="~/Scripts/Gift.js">   
+</script>
+<script type="text/javascript">
+   
+    $(document).ready(function () {
+        Init("#" + "@Model.TagId");
+    })
+</script>
+
+<div class="l-clear"></div>
+<div id="@Model.TagId" class="framecenter"></div>

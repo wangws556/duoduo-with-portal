@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size: 9px;
+	color: #FFF;
+}
+.zt14 {
+	color: #F00;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: "华文行楷";
+}
+.zths {
+	color: #00F;
+}
+.zt36 {
+	font-size: 50px;
+	font-family: "草檀斋毛泽东字体";
+	color: #F93;
+	font-weight: bold;
+	font-style: italic;
+}
+.zt30 {
+	font-family: "华文行楷";
+	font-size: 28px;
+}
+.zt14 .zths {
+	font-size: 18px;
+	color: #F60;
+	font-family: "微软繁超黑";
+}
+.bs {
+	color: #FF6;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: "华文行楷";
+}
+.zt12hs {
+	color: #FFF;
+	font-size: 12px;
+}
+.zt14 {
+	font-size: 16px;
+	color: #3752E8;
+	font-family: "宋体";
+}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="400" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#5775EE">
+  <tr>
+    <td width="400" height="260" align="left" valign="top" background="../../dlk.jpg" bgcolor="#9CAEF5"><table width="400" border="0" cellpadding="0" cellspacing="1" background="../../292-1101020J23675.jpg" bgcolor="#FFF">
+      <tr>
+        <td height="20"><table width="400" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="60" bgcolor="#9CAEF5">&nbsp;</td>
+            <td height="25" bgcolor="#9CAEF5" class="bs">9258多功能聊天软件</td>
+            <td width="30" align="center" valign="top" bgcolor="#9CAEF5"><img src="images/an01.gif" width="30" height="20" /></td>
+            <td width="30" height="25" align="left" valign="top" bgcolor="#9CAEF5"><img src="images/an02.gif" width="30" height="20" /></td>
+            <td width="30" height="25" align="left" valign="top" bgcolor="#9CAEF5"><img src="images/an03.gif" width="30" height="20" /></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="55" align="center" bgcolor="#9CAEF5" class="zt36">9258媒体频道</td>
+      </tr>
+      <tr>
+        <td height="81" align="left" valign="top" bgcolor="#9CAEF5"><table width="400" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="right" bgcolor="#9CAEF5" class="zt12hs">选择城市登录：</td>
+            <td width="130" bgcolor="#9CAEF5"><input name="textfield2" type="text" class="zths" id="textfield2" size="17" /></td>
+            <td bgcolor="#9CAEF5" class="zt12hs">选择城市</td>
+          </tr>
+          <tr>
+            <td align="right" bgcolor="#9CAEF5" class="zt12hs">用户名登录：</td>
+            <td bgcolor="#9CAEF5"><input name="textfield3" type="text" class="zths" id="textfield3" size="17" /></td>
+            <td bgcolor="#9CAEF5" class="zt12hs">字母或数字</td>
+          </tr>
+          <tr>
+            <td align="right" bgcolor="#9CAEF5" class="zt12hs">请输入密码：</td>
+            <td bgcolor="#9CAEF5"><input name="textfield" type="text" class="zths" id="textfield" size="17" /></td>
+            <td bgcolor="#9CAEF5" class="zt12hs">忘记密码</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center" bgcolor="#9CAEF5" class="zt12hs"><input type="checkbox" name="checkbox2" id="checkbox2" />
+              记住密码
+              
+                <input type="checkbox" name="checkbox" id="checkbox" />
+                自动登录</td>
+            </tr>
+          <tr>
+            <td height="20" bgcolor="#9CAEF5">&nbsp;</td>
+            <td bgcolor="#9CAEF5">&nbsp;</td>
+            <td bgcolor="#9CAEF5">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="55" bgcolor="#9CAEF5"><table width="400" border="0" cellspacing="5" cellpadding="0">
+          <tr>
+            <td align="center" class="zt14">注册用户名</td>
+            <td align="center" class="zt14">多功能登录</td>
+            <td align="center" class="zt14">me用户登录</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="32" align="center" bgcolor="#9CAEF5" class="zt14"><span class="zths">WWW.9258.TV</span> 就爱我吧</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

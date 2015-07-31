@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size: 12px;
+}
+.zt14 {
+	font-size: 14px;
+}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+  <tr>
+    <td height="30"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr class="zt14">
+        <td height="30" align="center">普通</td>
+        <td height="30" align="center">炮炮兵</td>
+        <td height="30" align="center">洋葱头</td>
+        <td height="30" align="center">猴子</td>
+        <td height="30" align="center">小猪</td>
+        <td height="30" align="center">其他</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+      <tr>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="50" height="50" bgcolor="#FFFFFF">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="25" bgcolor="#DAE0FC"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="20">&nbsp;</td>
+        <td width="50" height="20" align="center"><p>1/3</p></td>
+        <td width="50" height="20" align="center">上一页</td>
+        <td width="50" height="20" align="center">下一页</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

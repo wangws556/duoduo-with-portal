@@ -1,0 +1,46 @@
+﻿<wpf:MessageSinkWindow x:Class="YoYoStudio.ManagementTool.MainWindow"
+                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                       xmlns:local="clr-namespace:YoYoStudio.ManagementTool"
+                       xmlns:wpf="clr-namespace:YoYoStudio.Common.Wpf;assembly=YoYoStudio.Common.Wpf"
+                       Title="{Binding Title}"
+                       Background="{StaticResource WindowBrush}"
+                       WindowStartupLocation="CenterScreen"
+                       WindowState="Maximized"
+                       x:TypeArguments="local:Actions">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="200" />
+			<ColumnDefinition Width="5" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+		<ListView Grid.Column="0"
+		          Background="{StaticResource WindowBrush}"
+		          ItemsSource="{Binding Commands}">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<StackPanel Margin="5,15,5,15" Orientation="Horizontal">
+						<Image x:Name="CmdImage"
+						       Width="24"
+						       Height="24"
+						       Source="/Images/Configuration.png" />
+						<Button Background="Transparent"
+						        Command="{Binding Command}"
+						        Content="{Binding Title}"
+						        FontSize="16"
+						        Foreground="AntiqueWhite" />
+					</StackPanel>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+			<ListView.ItemContainerStyle>
+				<Style TargetType="ListViewItem">
+					<Setter Property="Background" Value="Transparent" />
+					<Setter Property="FontSize" Value="14" />
+					<Setter Property="Foreground" Value="AntiqueWhite" />
+				</Style>
+			</ListView.ItemContainerStyle>
+		</ListView>
+		<Border Grid.Column="1" Background="AliceBlue" />
+		<ContentControl Name="mainContent" Grid.Column="2" />
+	</Grid>
+</wpf:MessageSinkWindow>

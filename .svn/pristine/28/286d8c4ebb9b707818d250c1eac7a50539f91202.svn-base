@@ -1,0 +1,86 @@
+﻿@model YoYoStudio.Model.Json.JsonModel
+
+<script type="text/javascript" src="~/Scripts/UserIdList.js"></script>
+<script type="text/javascript">
+    var appTagId = "#" + "@string.Concat("applications", Model.TagId)";
+    var agentAppTagId = "#" + "@string.Concat("agentapplications", Model.TagId)";
+    var roleTagId = "#" + "@string.Concat("roles", Model.TagId)";
+    var gridTagId = "#" + "@Model.TagId";
+    $(document).ready(function () {
+        Init(appTagId, roleTagId, gridTagId,agentAppTagId);
+        $("input[name='useridradio']").change(function () {
+            var selectedVal = $("input[name='useridradio']:checked").val();
+            adjust(selectedVal == 0);
+        });
+    });
+</script>
+
+<table class="framecenter" style="width: 100%">
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td>应用程序：</td>
+                    <td>
+                        <input id="@string.Concat("applications", Model.TagId)" type="text" style="width: 120px" /></td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <td>用户级别：</td>
+                    <td>
+                        <input id="@string.Concat("roles", Model.TagId)" type="text" style="width: 120px"  /></td>
+                </tr>
+            </table>
+        </td>
+        <td>开始号码：<input id="startid" type="text" style="width: 120px" disabled="disabled" /></td>
+        <td>结束号码：<input id="endid" type="text" style="width: 120px" disabled="disabled" /></td>
+    </tr>
+    <tr>
+        <td>直接开号：<input type="radio" name="useridradio" value="0" disabled="disabled" /></td>
+        <td>分配号码：<input type="radio" name="useridradio" value="1" disabled="disabled" /></td>
+        <td colspan="2" />
+        @*<td>为代理分配号码：<input type="radio" name="useridradio" value="2" disabled="disabled" /></td>
+        <td>代理号码：<input id="ownerid" type="text" style="width: 120px" disabled="disabled" /></td>*@
+    </tr>
+    <tr>
+        <td>用户密码：<input id="password" type="password" style="width: 120px" disabled="disabled" /></td>
+        <td>重复密码：<input id="confirmpassword" type="password" style="width: 120px" disabled="disabled" /></td>
+        <td />
+        <td style="text-align: center"><a class="l-button" aria-disabled="true" style="width: 100px;" onclick="addUserIds()">开号</a></td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <hr style="width: 95%; color: black; filter: alpha(opacity=100,finishopacity=0,style=1);" />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <table style="width:100%">
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>应用程序：</td>
+                                <td>
+                                    <input disabled="disabled" id="@string.Concat("agentapplications", Model.TagId)" type="text" style="width: 120px" /></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>开始号码：<input id="agentstartid" type="text" style="width: 100px" disabled="disabled" /></td>
+                    <td>结束号码：<input id="agentendid" type="text" style="width: 100px" disabled="disabled" /></td>
+                    <td>代理号码：<input id="ownerid" type="text" style="width: 100px" disabled="disabled" /></td>
+                    <td style="text-align: center"><a class="l-button" aria-disabled="true" style="width: 100px;" onclick="addAgentUserIds()">分配号码</a></td>
+                </tr>
+            </table>
+        </td>
+
+    </tr>
+</table>
+
+<div class="l-clear"></div>
+<div id="@Model.TagId" class="framecenter"></div>
+
+

@@ -1,0 +1,77 @@
+﻿@model YoYoStudio.ManagementPortal.Models.LoginModel
+
+@{
+    ViewBag.Title = Model.LoginLabel + YoYoStudio.Resource.Text.Title;
+}
+
+@section logo{
+    <img src="~/Images/Logo_128.png" />
+}
+
+
+<hgroup class="title" style="text-align:center">
+    <h1>@ViewBag.Title.</h1>
+</hgroup>
+<br />
+<br />
+<br />
+<section id="loginForm">
+    <style type="text/css">
+        label {
+            display: inline-block;
+            text-align: right;
+        }
+
+        input {
+            width: 100px;
+        }        
+    </style>
+    <div class="center">
+        @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+
+            <table class="l-table-edit" style="width:100%;">
+                <tr>
+                    <td align="right" style="width:45%" class="l-table-edit-td">@Html.LabelFor(m => m.UserName)</td>
+                    <td style="width:2%" />
+                    <td align="left" style="width:53%" class="l-table-edit-td">
+                        @Html.TextBoxFor(m => m.UserName)
+                        @Html.ValidationMessageFor(m => m.UserName)
+                    </td>
+                </tr>
+                <tr><td colspan="3"><br /></td></tr>
+                <tr>
+                    <td align="right" style="width:45%" class="l-table-edit-td">@Html.LabelFor(m => m.Password)</td>
+                    <td style="width:2%" />
+                    <td align="left" style="width:53%" class="l-table-edit-td">
+                        @Html.PasswordFor(m => m.Password)
+                        @Html.ValidationMessageFor(m => m.Password)
+                    </td>
+                </tr>
+                <tr><td colspan="3"><br /></td></tr>
+                <tr>
+                    <td align="right" style="width:45%" class="l-table-edit-td">@Html.LabelFor(m => m.RememberMe)</td>
+                    <td style="width:2%" />
+                    <td align="left" style="width:53%" class="l-table-edit-td">@Html.CheckBoxFor(m => m.RememberMe,new{style="width:10px"})</td>
+                </tr>
+                <tr><td colspan="3"><br /><br /></td></tr>
+                <tr>
+                    <td class="l-table-edit-td" colspan="3" style="align-content: center;width:100%">
+                        <input type="submit" value="@Model.LoginLabel" style="width:80px" /></td>
+                </tr>
+            </table>
+        }
+    </div>
+</section>
+
+
+@section Scripts {
+    @Scripts.Render(YoYoStudio.ManagementPortal.BundleConfig.JQueryValidationBundle)
+    <script type="text/javascript">
+        $(function () {
+            $("#mainLayout").ligerLayout({ topHeight: 150 });
+        });
+    </script>
+}

@@ -1,0 +1,11 @@
+﻿<Window x:Class="TestMusicPlay.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ctls="clr-namespace:TestMusicPlay"
+        Title="MainWindow" Height="350" Width="525"
+        Loaded="Window_Loaded">
+    <Grid>
+        <ctls:MusicFlexControl x:Name="musicControl" DataContext="{Binding DataContext,RelativeSource={RelativeSource AncestorType=Window}}"/>
+        <!--<ctls:VideoFlexControl x:Name="videoControl" DataContext="{Binding DataContext,RelativeSource={RelativeSource AncestorType=Window}}"/>-->
+    </Grid>
+</Window>

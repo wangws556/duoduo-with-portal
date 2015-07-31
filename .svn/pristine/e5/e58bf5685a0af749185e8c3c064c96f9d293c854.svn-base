@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+body,td,th {
+	font-size: 12px;
+}
+.zt12 {color: #000;
+}
+.zt12 {font-size: 12px;
+}
+.zt12 {	font-size: 12px;
+	color: #00F;
+}
+.zt12 {	color: #333;
+}
+.zt12l {	color: #00F;
+}
+.zt18 {font-size: 18px;
+	color: #FFF;
+	font-weight: bold;
+}
+</style>
+<script type="text/javascript">
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+</head>
+
+<body topmargin="0" marginwidth="0" marginheight="0">
+<table width="500" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+  <tr>
+    <td height="30" align="center" bgcolor="#9CAEF5" class="zt18">个人设置</td>
+  </tr>
+  <tr>
+    <td height="300" align="left" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="5" cellpadding="0">
+      <tr>
+        <td width="120" height="250" align="left" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+          <tr>
+            <td bgcolor="#FFFFFF"><table width="100%" border="1" cellpadding="0" cellspacing="5" bordercolor="#C6D0F9" bordercolorlight="#C6D0F9" bordercolordark="#C6D0F9" bgcolor="#C6D0F9">
+              <tr>
+                <td><img name="" src="" width="108" height="108" alt="" style="background-color: #FF0000" /></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td height="20" align="center" valign="bottom" bgcolor="#FFFFFF"><span class="zt12">个人设置</span></td>
+          </tr>
+          <tr>
+            <td height="20" align="center" valign="bottom" bgcolor="#FFFFFF"><span class="zt12">个人资料</span></td>
+          </tr>
+          <tr>
+            <td height="20" align="center" valign="bottom" bgcolor="#FFFFFF"><span class="zt12">视频认证</span></td>
+          </tr>
+          <tr>
+            <td height="20" align="center" valign="bottom" bgcolor="#FFFFFF"><span class="zt12">基本设置</span></td>
+          </tr>
+          <tr>
+            <td height="20" align="center" valign="bottom" bgcolor="#FFFFFF"><span class="zt12">安全设置</span></td>
+          </tr>
+          <tr>
+            <td height="20" align="center" valign="bottom" bgcolor="#FFFFFF"><span class="zt12">密码保护</span></td>
+          </tr>
+          <tr>
+            <td height="20" align="center" valign="bottom" bgcolor="#FFFFFF"><span class="zt12">手机绑定</span></td>
+          </tr>
+          <tr>
+            <td height="20" align="center" valign="bottom" bgcolor="#FFFFFF" class="zt12">我的保险箱</td>
+          </tr>
+        </table></td>
+        <td height="250" align="left" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+          <tr>
+            <td height="30" align="center" bgcolor="#C6D0F9">音频视频设置</td>
+          </tr>
+          <tr align="center" valign="bottom">
+            <td height="258" align="center" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="1" cellpadding="0">
+              <tr>
+                <td width="180" height="20" align="center" valign="bottom" class="zt12"><span class="zt12l">选择视频设备</span></td>
+                <td width="174" height="20" align="center" valign="bottom" class="zt12">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" align="left" valign="bottom" class="zt12"><form id="form3" name="form3" method="post" action="">
+                  <label for="textarea"></label>
+                  <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+                    <option>1111111111111111111</option>
+                  </select>
+                </form></td>
+                <td height="20" align="left" valign="middle" class="zt12"><form id="form4" name="form4" method="post" action="">
+                  <input type="submit" name="button3" id="button3" value=" 刷 新 " />
+                  <a href="#">视频认证 </a>
+                </form></td>
+              </tr>
+              <tr>
+                <td width="180" height="120" align="center" valign="top" class="zt12"><table width="150" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="150" height="120" align="center" valign="middle"><img name="" src="" width="150" height="120" alt="" style="background-color: #000000" /></td>
+                  </tr>
+                </table></td>
+                <td height="120" align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" align="center" valign="bottom" class="zt12l">你可以通过画质调节优化视频质量</td>
+                <td height="20">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" align="center" valign="bottom"><form id="form5" name="form5" method="post" action="">
+                  <input type="submit" name="button4" id="button4" value="画质调节" />
+                </form></td>
+                <td height="20" align="left" valign="bottom">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" align="center" valign="bottom"><form id="form6" name="form6" method="post" action="">
+                  <input type="checkbox" name="checkbox" id="checkbox" />
+                  <label for="checkbox"></label>
+                排麦自动打开视频
+                </form></td>
+                <td height="20" align="left" valign="bottom">&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="25"><form id="form7" name="form7" method="post" action="">
+          <input type="submit" name="button5" id="button5" value="全部设置默认设置" />
+        </form></td>
+        <td height="25"><table width="100%" border="0" cellspacing="5" cellpadding="0">
+          <tr>
+            <td height="25">&nbsp;</td>
+            <td width="60" height="25"><form id="form2" name="form2" method="post" action="">
+              <input type="submit" name="button2" id="button2" value=" 确 定 " />
+            </form></td>
+            <td width="60"><form id="form1" name="form1" method="post" action="">
+              <input type="submit" name="button" id="button" value=" 取 消 " />
+            </form></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="25" bgcolor="#C9D2FA">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

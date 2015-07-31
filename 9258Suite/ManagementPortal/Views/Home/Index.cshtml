@@ -1,0 +1,27 @@
+﻿@section logo{
+    <img src="~/Images/Logo_32.png" />
+}
+
+<script src="~/Scripts/Home.js" type="text/javascript"></script>
+<script src="~/Scripts/GridFilter.js" type="text/javascript"></script>
+
+<div position="left" title="@YoYoStudio.Resource.Text.ManagementMenu" id="managementAccordion" style="text-align:center">
+	<div title="@YoYoStudio.Resource.Text.FunctionList" class="l-scroll" style="text-align:left">
+		<ul id="functionTree" style="margin-top: 3px;"/>
+	</div>	
+    <div title="@YoYoStudio.Resource.Text.ApplicationList" class="l-scroll" style="text-align:left">
+        <ul id="applicationTree" style="margin-top:3px" />
+    </div>
+    <div title="@YoYoStudio.Resource.Text.PersonalManagement" class="l-scroll" style="text-align:left">
+        <ul id="personalTree" style="margin-top:3px" />
+    </div>
+</div>
+<div position="center" id="framecenter" style="margin-bottom:30px;overflow-x:scroll;overflow-y:scroll" class="right">	
+
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+        Init();
+    </script>
+}

@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D254C36-9B73-4186-8A2B-D136FFAD8C80}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YoYoStudio.Client.ViewModel</RootNamespace>
+    <AssemblyName>YoYoStudio.Client.ViewModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\Temp\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\Temp\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FolderPickerLib">
+      <HintPath>..\Common.Wpf\FolderPickerLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net-1.2.11\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NSpeex, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NSpeex.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.8\lib\net40\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.8\lib\net40\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.8\lib\net40\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="YoYoStudio.SocketService.Music, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Release\Temp\YoYoStudio.SocketService.Music.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions.cs" />
+    <Compile Include="ApplicationViewModel.Callback.cs" />
+    <Compile Include="ApplicationViewModel.Command.cs" />
+    <Compile Include="ApplicationViewModel.cs" />
+    <Compile Include="ApplicationViewModel.generated.cs" />
+    <Compile Include="ApplicationViewModel.Startup.cs" />
+    <Compile Include="BaseViewModel.generated.cs" />
+    <Compile Include="ClientCache.cs" />
+    <Compile Include="Configuration\SecurityConfigurationViewModel.generated.cs" />
+    <Compile Include="Control\CameraWindowViewModel.cs" />
+    <Compile Include="CodeGen\EnvDTE.cs" />
+    <Compile Include="CodeGen\EnvDTE1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EnvDTE.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CodeGen\GenerateObjects.cs" />
+    <Compile Include="CodeGen\GenerateObjects1.cs">
+      <DependentUpon>GenerateObjects.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CodeGen\Includes.cs" />
+    <Compile Include="CodeGen\Includes1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Includes.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CodeGen\Snippets\inpc.cs" />
+    <Compile Include="CodeGen\Snippets\prop_inpc.cs" />
+    <Compile Include="CodeGen\Util.cs" />
+    <Compile Include="CodeGen\Util1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Util.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\LoginEntryViewModel.cs" />
+    <Compile Include="Configuration\LoginEntryViewModel.generated.cs" />
+    <Compile Include="Configuration\PersonalInfoConfigurationViewModel.cs" />
+    <Compile Include="Configuration\PersonalInfoConfigurationViewModel.generated.cs" />
+    <Compile Include="Configuration\PhotoSelectorViewModel.cs" />
+    <Compile Include="Configuration\PhotoSelectorViewModel.generated.cs" />
+    <Compile Include="Configuration\ProfileViewModel.generated.cs" />
+    <Compile Include="Control\CameraWindowViewModel.generated.cs" />
+    <Compile Include="Control\ConfigurationItemViewModel.generated.cs" />
+    <Compile Include="Control\PlayMusicWindowViewModel.generated.cs" />
+    <Compile Include="Control\RegisterWindowViewModel.generated.cs" />
+    <Compile Include="Control\RoomWindowViewModel.Audio.cs" />
+    <Compile Include="Control\RoomWindowViewModel.Command.cs" />
+    <Compile Include="Control\RoomWindowViewModel.Json.cs" />
+    <Compile Include="Control\RoomWindowViewModel.MessageHandler.cs" />
+    <Compile Include="Control\ManageMusicWindowViewModel.cs" />
+    <Compile Include="Control\VideoWindowViewModel.cs" />
+    <Compile Include="Model\ExchangeRateViewModel.cs" />
+    <Compile Include="Model\ExchangeRateViewModel.generated.cs" />
+    <Compile Include="Model\ImageGroupViewModel.cs" />
+    <Compile Include="Model\CommandViewModel.cs" />
+    <Compile Include="Model\CommandViewModel.generated.cs" />
+    <Compile Include="Configuration\AudioConfigurationViewModel.cs" />
+    <Compile Include="Configuration\AudioConfigurationViewModel.generated.cs" />
+    <Compile Include="Control\ConfigurationItemViewModel.cs" />
+    <Compile Include="Configuration\ConfigurationViewModel.cs" />
+    <Compile Include="Control\ConfigurationWindowViewModel.cs" />
+    <Compile Include="Control\ConfigurationWindowViewModel.generated.cs" />
+    <Compile Include="Configuration\VideoConfigurationViewModel.cs" />
+    <Compile Include="Configuration\VideoConfigurationViewModel.generated.cs" />
+    <Compile Include="Model\GiftGroupViewModel.cs" />
+    <Compile Include="Model\GiftGroupViewModel.generated.cs" />
+    <Compile Include="Model\GiftViewModel.cs" />
+    <Compile Include="Model\GiftViewModel.generated.cs" />
+    <Compile Include="Control\HallWindowViewModel.Command.cs" />
+    <Compile Include="Control\HallWindowViewModel.cs" />
+    <Compile Include="Control\HallWindowViewModel.generated.cs" />
+    <Compile Include="BaseViewModel.cs" />
+    <Compile Include="LocalCache.cs" />
+    <Compile Include="Configuration\ProfileViewModel.cs" />
+    <Compile Include="Model\ImageGroupViewModel.generated.cs" />
+    <Compile Include="Model\UserViewModel.Command.cs" />
+    <Compile Include="Control\PlayMusicWindowViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Control\RegisterWindowViewModel.cs" />
+    <Compile Include="Model\RoleCommandViewModel.cs" />
+    <Compile Include="Model\RoleCommandViewModel.generated.cs" />
+    <Compile Include="Model\RoleViewModel.cs" />
+    <Compile Include="Model\RoleViewModel.generated.cs" />
+    <Compile Include="Model\RoomGroupViewModel.cs" />
+    <Compile Include="Model\RoomGroupViewModel.generated.cs" />
+    <Compile Include="Model\RoomRoleViewModel.cs" />
+    <Compile Include="Model\RoomRoleViewModel.generated.cs" />
+    <Compile Include="Model\RoomViewModel.cs" />
+    <Compile Include="Model\RoomViewModel.generated.cs" />
+    <Compile Include="Control\RoomWindowViewModel.cs" />
+    <Compile Include="Control\RoomWindowViewModel.generated.cs" />
+    <Compile Include="Model\UserViewModel.cs" />
+    <Compile Include="Model\UserViewModel.generated.cs" />
+    <Compile Include="Configuration\SecurityConfigurationViewModel.cs" />
+    <Compile Include="Model\RoomViewModel.Command.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChatService.Client\ChatService.Client.csproj">
+      <Project>{db250ed9-7e60-408b-91c4-d840f8ddfb8b}</Project>
+      <Name>ChatService.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Wpf\Common.Wpf.csproj">
+      <Project>{45e2c53a-0a53-47c8-bb33-8fad89d86acc}</Project>
+      <Name>Common.Wpf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{4f1e6d13-715a-4655-9cf7-3f180915c0e3}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Media\Media.csproj">
+      <Project>{d369a7b7-5cdb-446f-b72d-8a5534785d7b}</Project>
+      <Name>Media</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model.Json\Model.Json.csproj">
+      <Project>{c4dac3f3-3035-407d-96c9-baa6f3934e9a}</Project>
+      <Name>Model.Json</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{5baa4efc-0186-45fe-aec7-144f30f0a993}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Resource\Resource.csproj">
+      <Project>{72cd2aa2-1ee7-47fd-837c-b430a452b7dd}</Project>
+      <Name>Resource</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RoomService.Client\RoomService.Client.csproj">
+      <Project>{d32f39eb-f6e2-4887-94c9-1a0d76367b33}</Project>
+      <Name>RoomService.Client</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="CodeGen\EnvDTE.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EnvDTE1.cs</LastGenOutput>
+    </None>
+    <None Include="CodeGen\GenerateObjects.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GenerateObjects1.cs</LastGenOutput>
+    </None>
+    <None Include="CodeGen\Includes.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Includes1.cs</LastGenOutput>
+    </None>
+    <None Include="CodeGen\Snippets\inpc.snippet" />
+    <None Include="CodeGen\Snippets\prop_inpc.snippet" />
+    <None Include="CodeGen\Util.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Util1.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CodeGen\SnippetToAttribute.xslt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

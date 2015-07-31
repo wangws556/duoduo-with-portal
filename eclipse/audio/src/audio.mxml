@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute">
+<mx:Style>
+  .cutStyle {
+   showTrackHighlight: true;
+   
+   
+   
+
+  
+  }
+  .label
+  {
+    color:#FFFFFF;
+    font-size:18px;
+    font-weight:bold;
+    font-family:'Arial';
+    
+  
+    }
+</mx:Style>
+	<mx:Script>
+		<![CDATA[
+		import flash.media.Sound;
+		import flash.media.SoundChannel;
+		import flash.media.ID3Info;
+		import flash.net.FileFilter;
+		import flash.net.FileReference;
+		import org.audiofx.mp3.MP3FileReferenceLoader;
+		import org.audiofx.mp3.MP3SoundEvent;
+		import flash.events.*;
+		import flash.utils.Timer;
+		
+		
+		private var loader:MP3FileReferenceLoader;
+		private var fileReference:FileReference;
+		private var sound:Sound;
+		private var sound_channel:SoundChannel;
+		private var lengh:int;
+		private var time:Timer=new Timer(10, 0);
+		private var mp3Data:ByteArray=new ByteArray();
+		private var id3EndPosition:int;
+		private var CutStartPos:uint;
+		private var CutEndPos:uint;
+		private var frameSize:uint;
+		private var CutMp3Data:ByteArray=new ByteArray();
+		private var frametime:Number;
+		private var soundPre:Sound;
+		private var preTimer:Timer;
+		private var preSoundChannel:SoundChannel;
+		private var preFlag:Boolean=false;
+		
+		
+		
+		//import mx.core.UIComponent;
+		private function handleopen():void{
+			fileReference=new FileReference();
+			fileReference.browse([new FileFilter("mp3 files","*.mp3")]);
+			fileReference.addEventListener(Event.SELECT,handleSelect);
+			sound=new Sound();
+			sound_channel=new SoundChannel();
+		
+			
+		}
+		private function handlePre():void
+		{
+			//soundPre.close();
+		if(!preFlag)	
+		{	soundPre=sound;
+			
+			preFlag=true;
+		}
+		else{
+			preSoundChannel.stop();
+			
+		}
+			preSoundChannel=soundPre.play(cut.values[0]*soundPre.length);
+			var delay:Number=(cut.values[1]-cut.values[0])*soundPre.length;
+			preTimer=new Timer(delay,1);
+			preTimer.addEventListener(TimerEvent.TIMER,stopPre);
+			preTimer.start();
+			
+		}
+		private function stopPre(e:TimerEvent):void
+		{
+			preSoundChannel.stop();
+			preTimer.stop();
+			
+			}
+		private function handleSelect(ev:Event):void{
+			loader=new MP3FileReferenceLoader();
+			loader.getSound(fileReference);
+			loader.addEventListener(MP3SoundEvent.COMPLETE,handleComplete);
+		}
+		private function handleComplete(ev:MP3SoundEvent):void{
+			sound=ev.sound;
+			//length=sound.length/1000;
+			loader.removeEventListener(MP3SoundEvent.COMPLETE,handleComplete);
+			time.addEventListener(TimerEvent.TIMER,progress);
+			trace(ev.mp3Data.length);
+			mp3Data=ev.mp3Data;
+			frameSize=ev.framesize;
+			frametime=ev.frametime;
+			var min:String;
+			var sec:String;
+			var minute:int=sound.length/(1000*60);
+			if(minute<10)
+			{
+				min="0"+minute;
+			}
+			else
+			{
+				min=String(minute);
+			}
+			
+			var second:int=(sound.length-(minute*60*1000))/1000;
+			if(second<10)
+			{
+				sec="0"+second;
+			}
+			else
+			{
+				sec=String(second);
+			}
+			totalTime.label=min+":"+sec;
+			trace(mp3Data.length);
+			trace("frametime "+frametime);
+			
+			//readSoundandDraw();
+			
+		}
+			
+		]]>
+	</mx:Script>
+	
+	<mx:Script>
+		<![CDATA[
+		private var length:int;//实现音乐的播放控制
+		private var playing:Boolean=false;
+		private var position:int=0;
+		private var Pause:Boolean=false;
+		private function progress(ev:TimerEvent):void{
+		progress_hs.value=sound_channel.position/sound.length;
+		var min:int=sound_channel.position/(1000*60);
+		var sec:int=(sound_channel.position-min*1000*60)/1000;
+		var m:String;
+		var s:String;
+		if(min<10)
+		{
+			m="0"+min;
+		}
+		else
+		{
+			m=String(min);
+		}
+		if(sec<10)
+		{
+			s="0"+sec;
+		}
+		else
+		{
+			s=String(sec);
+		}
+		var r:String=m+":"+s;
+		currentTime.label=r;
+		
+		}
+		
+		private function play():void{
+		sound_channel=sound.play();
+		playing=true;
+		time.start();
+		
+		}
+		private function changeProgress():void{
+		sound_channel.stop();
+		sound_channel=sound.play(progress_hs.value*sound.length);
+		trace("sound_channel position"+sound_channel.position);
+		}
+		private function mouseDown():void{
+		sound_channel.stop();
+		time.stop();
+		}
+		private function mouseUp():void{
+		time.start();
+		//sound_channel=sound.play(progress_hs.value*sound.length);
+		}
+		private function pause():void
+		{
+			if(playing&&!Pause)
+			{
+			position=sound_channel.position;
+			sound_channel.stop();
+			Pause=true;
+			trace("pause position"+sound_channel.position);
+			
+			
+			}
+			else if(Pause)
+			{
+				sound_channel=sound.play(position);
+				Pause=false;
+				trace("start position"+sound_channel.position);
+				
+				
+			}
+		}
+		private function stop():void
+		{
+			sound_channel.stop();
+			time.stop();
+			playing=false;
+			progress_hs.value=0;
+			
+			
+		}
+		private function formate(val:Number):String
+		{
+			trace(val);
+			var curTime:Number=(val*sound.length)/1000;
+			var min:int=curTime/60;
+			var sec:int=curTime-min*60;
+			var m:String;
+			var s:String;
+			if(min<10)
+			{
+				m="0"+min;
+			}
+			else
+				m=String(min);
+			if(sec<10)
+			{
+				s="0"+sec;
+			}
+			else 
+				s=String(sec);
+			var current:String=m+":"+s;
+			return current;
+			
+		}
+		private function changePosition():void
+		{
+			var startPosition:String=formate(cut.values[0]);
+			var endPosition:String=formate(cut.values[1]);
+			trace(startPosition);
+			trace(endPosition);
+			startTime.text=startPosition;
+			endTime.text=endPosition;
+			}
+		]]>
+	</mx:Script>
+	<mx:Script>
+		<![CDATA[
+		//import code.CustomSliderThumb;
+		import mx.core.UIComponent;
+		private var sampleArray:Array;
+	/*private function progress(event:TimerEvent):void
+		{
+			var a:Number=sound.length;
+			var b:Number=sound_channel.position;
+			pro.value=b/a*100;
+		}
+		private function readSoundandDraw():void
+		{
+			sampleArray=new Array();
+			var numTotalSamples:Number;
+			var soundBytes:ByteArray = new ByteArray(); 
+            var temp:Number=441000;
+            var each_samples:Number;
+            var start_position:Number=-1;
+            var height:Number=slate.height/2; 
+            var _soundLength:Number;
+            _soundLength = sound.length; 
+            numTotalSamples = Number(_soundLength*44.1);  
+            var e:Number=3*slate.width/numTotalSamples;     
+            
+            var slate_x:Number=0;
+            var slate_y:Number=slate.height/2;
+            
+              
+             //将44.1替换成相应的mp3索引频率
+                  
+              
+               slate.graphics.clear();//清除slate中已有的绘图，及笔画样式.并绘制水平轴
+			   slate.graphics.lineStyle(1,0x000000);
+			   slate.graphics.moveTo(0,slate.height/2);
+			   slate.graphics.lineTo(slate.width, slate.height/2);
+			  
+			   
+			   //slate.graphics.moveTo(0,slate.height/2);            
+             while(true)
+              {  
+              	trace(start_position);
+                each_samples = sound.extract(soundBytes,441000,start_position);
+                start_position+=each_samples;
+                trace("working ");
+                trace("start_position"+start_position);
+                trace(each_samples);
+               if(each_samples==0)
+                {
+                	break;
+                } 
+                soundBytes.length = 8*each_samples; //两个声道并且每个样本值是32位浮点数
+                soundBytes.position = 0; 
+                 
+                while(soundBytes.bytesAvailable > 0) //可从字节数组的当前位置到数组末尾读取的数据的字节数
+                { 
+                 
+                    sampleArray.push(soundBytes.readFloat());
+                    soundBytes.readFloat();
+                   // soundBytes.readFloat();
+                   // soundBytes.readFloat();
+                } 
+                
+                var i:int;
+              	for(i=0;i<sampleArray.length;i++)
+              	{
+              		slate.graphics.lineTo((start_position+i+1)*e,height*(1-sampleArray[i]));
+              		
+              	}
+              	trace(sampleArray.length);
+             	 slate_x=(start_position+i)*e;
+              	slate_y=height*(1-sampleArray[i-1]);
+              	trace("complite planting");
+              	slate.graphics.moveTo(slate_x,slate_y);
+                soundBytes.clear();
+                sampleArray.length=0;
+              }
+			
+		}*/
+		
+		
+			
+		]]>
+	</mx:Script>
+	<mx:Script>
+		<![CDATA[
+			private var fileSave:FileReference;
+			private function handleCut():void
+			{
+				id3EndPosition=getID3();
+				//findCutSegment(0,26000);
+				findCutSegment(cut.values[0]*sound.length,cut.values[1]*sound.length);
+				
+				fileSave=new FileReference();
+				fileSave.save(CutMp3Data,"5.mp3");
+				fileSave.addEventListener(Event.COMPLETE,completeSave);
+				trace("我计算的id3"+id3EndPosition);
+			}
+			private function getID3():int//获得id3标签
+			{
+				mp3Data.position=0;
+				var flag:String=mp3Data.readMultiByte(3,"us-ascii");
+				if(flag=="ID3")
+				{
+					mp3Data.position+=3;
+					var b3:int=(mp3Data.readByte()&0x7F)<<21;
+					var b2:int=(mp3Data.readByte()&0x7F)<<14;
+					var b1:int=(mp3Data.readByte()&0x7F)<<7;
+					var b0:int=mp3Data.readByte()&0x7F;
+					var headerLength:int=b0+b1+b2+b3;
+					var newPosition:int=mp3Data.position+headerLength;
+					
+				}
+				else
+				{
+					return 0;
+				}
+				mp3Data.position=0;
+				return  newPosition;
+				
+				
+			}
+			private function findCutSegment(start:uint,end:uint):void
+			{
+				var StartFrame:uint=start/(frametime*1000);
+				var EndFrame:uint=end/(frametime*1000);
+				trace("start frame"+StartFrame);
+				trace("end frame"+EndFrame);
+				CutMp3Data.position=0;
+				mp3Data.position=0;
+				mp3Data.readBytes(CutMp3Data,0,id3EndPosition);
+				trace("working");
+				frameSize+=20;
+				
+				var StartPosition:uint=StartFrame*frameSize;
+				//evar EndPosition:uint=EndFrame*frameSize;
+				CutMp3Data.position=id3EndPosition;
+				trace(mp3Data.position);
+				mp3Data.position=id3EndPosition+StartPosition;
+				mp3Data.readBytes(CutMp3Data,id3EndPosition,(EndFrame-StartFrame+1)*frameSize);
+				
+				//trace(CutMp3Data.position);
+				var offset:uint=id3EndPosition+(EndFrame-StartFrame+1)*frameSize;
+				//trace(CutMp3Data.position);
+				//trace(CutMp3Data.length);
+				//trace(mp3Data.length-128);
+				mp3Data.position=mp3Data.length-128;
+				mp3Data.readBytes(CutMp3Data,offset,128);
+				//trace(CutMp3Data.length);
+				trace(CutMp3Data.length);
+				
+				
+				
+				
+			}
+			private function completeSave(e:Event):void{
+				trace("success");
+				}
+		
+			]]>
+		
+	</mx:Script>
+		
+		
+		
+		
+		
+		
+		
+	<mx:Canvas x="5" y="0" width="100%" height="600" >	
+		
+		<mx:Button x="866.7" y="347" label="剪切" styleName="label" width="100.3" icon="@Embed('ass/cut.png')" height="65" click="handleCut()"/>
+		<mx:TextInput x="223" y="385" width="129" id="startTime" text="00:00" fontSize="15" height="34" textAlign="center"/>
+		<mx:TextInput x="528" y="385" width="129" height="34" id="endTime" text="00:00" fontSize="15" textAlign="center"/>
+		<mx:Label x="244" y="427" text="开始点" width="70" enabled="true" fontFamily="Arial" fontSize="17" color="#9AE4F7"  fontWeight="bold" height="24"/>
+		<mx:Label x="560" y="428" text="结束点" width="73" color="#9AE4F7" fontFamily="Arial" fontSize="17" fontWeight="bold"/>
+		<mx:Panel x="0" y="58" width="967" height="210.65" layout="absolute">
+			<mx:Button x="10" y="0" label="打开" width="76" icon="@Embed('ass/ok.png')"  click="handleopen()" height="29" fontSize="15" fontFamily="Verdana" fontWeight="bold" textDecoration="none" textAlign="center"/>
+			<mx:Button x="10" y="122.65" label="PLAY" fillAlphas="[1.0, 1.0]" fillColors="[#D2ED1A, #D2ED1A]" click="play()"/>
+			<mx:Button x="120" y="122.65" label="STOP" fillAlphas="[1.0, 1.0]" fillColors="[#D2ED1A, #D2ED1A]" click="stop()"/>
+			<mx:Button x="215" y="122.65" label="PAUSE" fillAlphas="[1.0, 1.0]" fillColors="[#D2ED1A, #D2ED1A]" click="pause()" />
+			<mx:HSlider x="10" y="85" width="937" id="progress_hs" minimum="0" maximum="1" mouseDown="mouseDown()" mouseUp="mouseUp()" change="changeProgress()" showTrackHighlight="true" dataTipFormatFunction="formate" liveDragging="true" 
+				useHandCursor="true" buttonMode="true" />
+			<mx:Button x="851" y="37" id="totalTime" styleName="label" label="00:00" width="86" height="27" fillAlphas="[1.0, 1.0]" fillColors="[#C4D4EA, #C4D4EA]"/>
+			<mx:Button x="10" y="37" id="currentTime" styleName="label" label="00:00" width="86" height="27" fillAlphas="[1.0, 1.0]" fillColors="[#C4D4EA, #C4D4EA]"/>
+		</mx:Panel>
+		<mx:HSlider x="10" y="320" width="957" height="10" id="cut" trackSkin="code.sliderHeight" sliderThumbClass="code.MySliderThumb"  styleName="cutStyle"  thumbUpSkin="@Embed('ass/b1.png')" thumbDownSkin="@Embed('ass/b2.png')" thumbOverSkin="@Embed('ass/b2.png')"
+			 thumbCount="2" minimum="0" maximum="1" liveDragging="true" dataTipFormatFunction="formate"  change="changePosition()"/>
+		<mx:Button x="733" y="379" label="预览" width="78" height="33" styleName="label"  click="handlePre()" />
+	
+	</mx:Canvas>
+	
+</mx:Application>

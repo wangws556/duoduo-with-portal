@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+body,td,th {
+	font-size: 12px;
+}
+.zt12 {color: #000;
+}
+.zt18 {font-size: 18px;
+	color: #FFF;
+	font-weight: bold;
+}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="500" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+  <tr>
+    <td height="30" align="center" bgcolor="#9CAEF5" class="zt18">个人设置</td>
+  </tr>
+  <tr>
+    <td height="300" align="left" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="5" cellpadding="0">
+      <tr>
+        <td width="120" height="250" align="left" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+          <tr>
+            <td bgcolor="#FFFFFF"><table width="100%" border="1" cellpadding="0" cellspacing="5" bordercolor="#C6D0F9" bordercolorlight="#C6D0F9" bordercolordark="#C6D0F9" bgcolor="#C6D0F9">
+              <tr>
+                <td><img name="" src="" width="108" height="108" alt="" style="background-color: #FF0000" /></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td height="20" align="center" valign="bottom" bgcolor="#FFFFFF"><span class="zt12">个人设置</span></td>
+          </tr>
+          <tr>
+            <td height="20" align="center" valign="bottom" bgcolor="#FFFFFF"><span class="zt12">个人资料</span></td>
+          </tr>
+          <tr>
+            <td height="20" align="center" valign="bottom" bgcolor="#FFFFFF"><span class="zt12">身份认证</span></td>
+          </tr>
+          <tr>
+            <td height="20" align="center" valign="bottom" bgcolor="#FFFFFF"><span class="zt12">基本设置</span></td>
+          </tr>
+          <tr>
+            <td height="20" align="center" valign="bottom" bgcolor="#FFFFFF"><span class="zt12">安全设置</span></td>
+          </tr>
+          <tr>
+            <td height="20" align="center" valign="bottom" bgcolor="#FFFFFF"><span class="zt12">密码保护</span></td>
+          </tr>
+          <tr>
+            <td height="20" align="center" valign="bottom" bgcolor="#FFFFFF"><span class="zt12">手机绑定</span></td>
+          </tr>
+          <tr>
+            <td height="20" align="center" valign="bottom" bgcolor="#FFFFFF">我的保险箱</td>
+          </tr>
+        </table></td>
+        <td height="250" align="left" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+          <tr>
+            <td height="30" align="center" bgcolor="#C6D0F9">手机绑定</td>
+          </tr>
+          <tr align="center" valign="bottom">
+            <td height="258" align="center" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="1" cellpadding="0">
+              <tr>
+                <td colspan="2" align="center"><p>绑定手机可以让用户更加安全的了解自己的帐号和管理自己</p>
+                  <p>的相信，有活动消息和帐号变动时能让我们更好的通知您！</p></td>
+              </tr>
+              <tr>
+                <td height="20">&nbsp;</td>
+                <td height="20">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20">&nbsp;</td>
+                <td height="20">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20">&nbsp;</td>
+                <td height="20">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20">&nbsp;</td>
+                <td height="20">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" colspan="2" align="center">如果您没有绑定手机，请立即 <a href="#">绑定手机</a></td>
+                </tr>
+              <tr>
+                <td height="20">&nbsp;</td>
+                <td height="20">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20">&nbsp;</td>
+                <td height="20">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20">&nbsp;</td>
+                <td height="20">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20">&nbsp;</td>
+                <td height="20">&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="25"><input type="submit" name="button5" id="button5" value="全部设置默认设置" /></td>
+        <td height="25"><table width="100%" border="0" cellspacing="5" cellpadding="0">
+          <tr>
+            <td height="25">&nbsp;</td>
+            <td width="60" height="25"><form id="form2" name="form2" method="post" action="">
+              <input type="submit" name="button2" id="button2" value=" 确 定 " />
+            </form></td>
+            <td width="60"><form id="form1" name="form1" method="post" action="">
+              <input type="submit" name="button" id="button" value=" 取 消 " />
+            </form></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="25" bgcolor="#C9D2FA">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

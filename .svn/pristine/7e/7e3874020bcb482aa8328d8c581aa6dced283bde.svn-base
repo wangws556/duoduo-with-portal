@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body,td,th {
+	font-size: 12px;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.zt14 {font-size: 14px;
+}
+.zt16l {font-size: 14px;
+}
+.zt18 {font-size: 18px;
+	font-weight: bold;
+	color: #333;
+}
+.zt18 {font-weight: normal;
+}
+.zt24 {font-size: 24px;
+	font-weight: bold;
+	color: #FFF;
+}
+.zt14 {
+	color: #333;
+	font-size: 16px;
+}
+.zt12 {
+	font-size: 12px;
+}
+.zt14ls {
+	color: #00F;
+}
+.zt12hs {
+	color: #333;
+}
+.zt161 {
+	font-size: 16px;
+}
+.zt161 {
+	font-size: 12px;
+}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="60" colspan="2" bgcolor="#9CAEF5">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="221" height="200" align="left" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="5" bgcolor="#9CAEF5">
+      <tr>
+        <td bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+          <tr>
+            <td height="37" align="center" bgcolor="#B4C1F8" class="zt24">室长后台</td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14ls">房间管理</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14ls">黑名单</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14ls">房间积分</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14ls">房间图片</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14ls">违规记录</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14ls">房间在线人气表</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14ls">会员充值查询</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14ls">意见反馈</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14ls">房间公告</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14ls">房间管理在线查询</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14ls">管理员操作记录</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14ls">代理咨询</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14ls">代理开号收号后台</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14ls">封号解号</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14ls">在线充值</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14ls">代理税点</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14ls">房间奖励</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+    <td width="1041" align="left" valign="top" bgcolor="#D5DCFB"><table width="100%" border="0" cellpadding="0" cellspacing="5" bgcolor="#9CAEF5">
+      <tr>
+        <td height="628" align="left" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#B4C1F8">
+          <tr>
+            <td width="50" height="30" bgcolor="#B4C1F8">用户ID</td>
+            <td width="110" height="30" bgcolor="#B4C1F8"><input name="textfield" type="text" id="textfield" size="15" maxlength="15" /></td>
+            <td width="70" height="30" bgcolor="#B4C1F8">开始时间：</td>
+            <td width="110" height="30" bgcolor="#B4C1F8"><input name="textfield2" type="text" id="textfield2" size="15" maxlength="15" /></td>
+            <td width="70" height="30" bgcolor="#B4C1F8">结束时间</td>
+            <td width="110" height="30" bgcolor="#B4C1F8"><input name="textfield3" type="text" id="textfield3" size="15" maxlength="15" /></td>
+            <td width="60" height="30" bgcolor="#B4C1F8"><form id="form1" name="form1" method="post" action="">
+              <input type="submit" name="button" id="button" value=" 搜 索 " />
+            </form></td>
+            <td height="30" bgcolor="#B4C1F8">&nbsp;</td>
+            <td height="30" bgcolor="#B4C1F8">&nbsp;</td>
+            <td height="30" bgcolor="#B4C1F8">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="25" colspan="10" bgcolor="#FFFFFF" class="zt14">总金额：0元<span class="zt12"> <span class="zt12hs"> (用户通过您房间或代理号充值的金额，您将在下月初得到房间充值返点。)</span></span></td>
+            </tr>
+          <tr>
+            <td height="30" colspan="2" align="center" bgcolor="#D5DCFB" class="zt161"><span class="zt16l"><span class="zt161"><span class="zt16l"><span class="zt16l"><span class="zt161"><span class="zt14">用户ID</span></span></span></span></span></span></td>
+            <td height="30" colspan="2" align="center" bgcolor="#D5DCFB" class="zt161"><span class="zt16l"><span class="zt161"><span class="zt16l"><span class="zt16l"><span class="zt161"><span class="zt14">充值金额</span></span></span></span></span></span></td>
+            <td height="30" colspan="2" align="center" bgcolor="#D5DCFB" class="zt161"><span class="zt16l"><span class="zt161"><span class="zt16l"><span class="zt16l"><span class="zt161"><span class="zt161"><span class="zt14">充值时间</span></span></span></span></span></span></span></td>
+            <td height="30" bgcolor="#D5DCFB">&nbsp;</td>
+            <td height="30" bgcolor="#D5DCFB">&nbsp;</td>
+            <td height="30" bgcolor="#D5DCFB">&nbsp;</td>
+            <td height="30" bgcolor="#D5DCFB">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="22" colspan="6" align="left" bgcolor="#D5DCFB" class="zt161">第一页/共一页 首页 上一页 下一页 尾页</td>
+            <td height="22" bgcolor="#D5DCFB">&nbsp;</td>
+            <td height="22" bgcolor="#D5DCFB">&nbsp;</td>
+            <td height="22" bgcolor="#D5DCFB">&nbsp;</td>
+            <td height="22" bgcolor="#D5DCFB">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="10" bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#D5DCFB">
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+          </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

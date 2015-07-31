@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.zt12 {
+	font-size: 12px;
+	color: #333;
+	font-weight: normal;
+}
+body p {
+	color: #00F;
+}
+.zt14 {
+	color: #00F;
+}
+.zt18 {
+	font-weight: bold;
+	color: #FFF;
+	font-size: 18px;
+}
+body p {
+	font-weight: bold;
+}
+#form23 .zt12 {
+	font-weight: normal;
+}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="450" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+  <tr>
+    <td height="30" align="center" class="zt18">室长功能</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="25" align="center" bgcolor="#BAC7F8" class="zt14">房间设置</td>
+        <td height="25" align="center" bgcolor="#BAC7F8" class="zt14">房间公告</td>
+        <td height="25" align="center" bgcolor="#BAC7F8" class="zt14">迎宾设置</td>
+        <td height="25" bgcolor="#BAC7F8">&nbsp;</td>
+        <td height="25" bgcolor="#BAC7F8">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="5"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="9" bgcolor="#EAEEFD">&nbsp;</td>
+            <td width="105" bgcolor="#EAEEFD"><form id="form1" name="form1" method="post" action="">
+              <label for="textfield2"></label>
+              <input name="textfield" type="text" id="textfield2" size="15" maxlength="20" />
+            </form></td>
+            <td width="94" bgcolor="#EAEEFD"><form id="form6" name="form6" method="post" action="">
+              <input type="submit" name="button" id="button" value="设置代理号" />
+            </form></td>
+            <td width="69" bgcolor="#EAEEFD">&nbsp;</td>
+            <td width="121" bgcolor="#EAEEFD"><span class="zt12">设置0取消管理</span></td>
+          </tr>
+          <tr>
+            <td width="9" bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD"><form id="form2" name="form2" method="post" action="">
+              <label for="textfield3"></label>
+              <input name="textfield2" type="text" id="textfield3" size="15" maxlength="20" />
+            </form></td>
+            <td bgcolor="#EAEEFD"><form id="form7" name="form7" method="post" action="">
+              <input type="submit" name="button2" id="button2" value="设置房主号" />
+            </form></td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD" class="zt12">设置0取消管理</td>
+          </tr>
+          <tr>
+            <td width="9" bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD"><form id="form3" name="form3" method="post" action="">
+              <label for="textfield4"></label>
+              <input name="textfield3" type="text" id="textfield4" size="15" maxlength="20" />
+            </form></td>
+            <td bgcolor="#EAEEFD"><form id="form8" name="form8" method="post" action="">
+              <input type="submit" name="button3" id="button3" value="设置副房主1" />
+            </form></td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="9" bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD"><form id="form4" name="form4" method="post" action="">
+              <label for="textfield5"></label>
+              <input name="textfield4" type="text" id="textfield5" size="15" maxlength="20" />
+            </form></td>
+            <td bgcolor="#EAEEFD"><form id="form9" name="form9" method="post" action="">
+              <input type="submit" name="button4" id="button4" value="设置副房主2" />
+            </form></td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="9" bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD"><form id="form5" name="form5" method="post" action="">
+              <label for="textfield6"></label>
+              <input name="textfield5" type="text" id="textfield6" size="15" maxlength="20" />
+            </form></td>
+            <td bgcolor="#EAEEFD"><form id="form10" name="form10" method="post" action="">
+              <input type="submit" name="button5" id="button5" value="设置副房主3" />
+            </form></td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="9" bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD"><form id="form11" name="form11" method="post" action="">
+              <label for="textfield7"></label>
+              <input name="textfield6" type="text" id="textfield7" size="15" maxlength="20" />
+            </form></td>
+            <td bgcolor="#EAEEFD"><form id="form12" name="form12" method="post" action="">
+              <input type="submit" name="button6" id="button6" value="修改房间名称" />
+            </form></td>
+            <td bgcolor="#EAEEFD"><form id="form13" name="form13" method="post" action="">
+              <input type="submit" name="button7" id="button7" value="房间设置" />
+            </form></td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="9" bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD"><form id="form14" name="form14" method="post" action="">
+              <label for="textfield8"></label>
+              <input name="textfield7" type="text" id="textfield8" size="15" maxlength="20" />
+            </form></td>
+            <td bgcolor="#EAEEFD"><form id="form15" name="form15" method="post" action="">
+              <input type="submit" name="button8" id="button8" value="修改房间密码" />
+            </form></td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="9" bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD"><form id="form16" name="form16" method="post" action="">
+              <input type="checkbox" name="checkbox" id="checkbox" />
+              <span class="zt12">关闭房间 </span>
+            </form></td>
+            <td bgcolor="#EAEEFD"><form id="form17" name="form17" method="post" action="">
+              <input type="checkbox" name="checkbox2" id="checkbox2" />
+              <span class="zt12">自由排麦</span>
+            </form></td>
+            <td bgcolor="#EAEEFD"><form id="form18" name="form18" method="post" action="">
+              <p class="zt12">
+                <input type="checkbox" name="checkbox3" id="checkbox3" />
+                <label for="checkbox3"></label>
+                自由上麦
+              </p>
+            </form></td>
+            <td bgcolor="#EAEEFD"><form id="form19" name="form19" method="post" action="">
+              <p class="zt12">
+                <input type="checkbox" name="checkbox4" id="checkbox4" />
+                <label for="checkbox4"></label>
+                屏蔽游客进出消息</p>
+            </form></td>
+          </tr>
+          <tr>
+            <td width="9" bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD"><form id="form22" name="form22" method="post" action="">
+              <p class="zt12">
+                <input type="checkbox" name="checkbox7" id="checkbox7" />
+                <label for="checkbox7"></label>
+                允许发视频
+              </p>
+            </form></td>
+            <td bgcolor="#EAEEFD"><form id="form20" name="form20" method="post" action="">
+              <input type="checkbox" name="checkbox5" id="checkbox5" />
+              <span class="zt12">自由上私麦 </span>
+            </form></td>
+            <td bgcolor="#EAEEFD"><form id="form21" name="form21" method="post" action="">
+              <span class="zt12">
+                    <input type="checkbox" name="checkbox6" id="checkbox6" />
+                    允许广播
+</span>
+            </form></td>
+            <td bgcolor="#EAEEFD"><form id="form23" name="form23" method="post" action="">
+              <p class="zt12">
+                <input type="checkbox" name="checkbox8" id="checkbox8" />
+                <label for="checkbox8"></label>
+                允许游客私聊
+              </p>
+            </form></td>
+          </tr>
+          <tr>
+            <td width="9" bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD"><form id="form24" name="form24" method="post" action="">
+              <input type="checkbox" name="checkbox9" id="checkbox9" />
+              <label for="checkbox9"></label>
+            </form></td>
+            <td bgcolor="#EAEEFD"><form id="form25" name="form25" method="post" action="">
+              <input type="checkbox" name="checkbox10" id="checkbox10" />
+              <label for="checkbox10"></label>
+            </form></td>
+            <td bgcolor="#EAEEFD"><form id="form26" name="form26" method="post" action="">
+              <input type="checkbox" name="checkbox11" id="checkbox11" />
+              <label for="checkbox11"></label>
+            </form></td>
+            <td bgcolor="#EAEEFD"><form id="form27" name="form27" method="post" action="">
+              <input type="checkbox" name="checkbox12" id="checkbox12" />
+              <label for="checkbox12"></label>
+            </form></td>
+          </tr>
+          <tr>
+            <td width="9" bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="9" bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD" class="zt12"><a href="#">进入房间管理后台</a></td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="9" bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD"><form id="form28" name="form28" method="post" action="">
+              <input type="submit" name="button9" id="button9" value=" 确 定 " />
+              </form></td>
+            <td bgcolor="#EAEEFD"><form id="form29" name="form29" method="post" action="">
+              <input type="submit" name="button10" id="button10" value=" 取 消 " />
+              </form></td>
+          </tr>
+          <tr>
+            <td width="9" bgcolor="#EAEEFD">&nbsp;</td>
+            <td colspan="4" bgcolor="#EAEEFD">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

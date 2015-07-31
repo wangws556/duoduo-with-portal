@@ -1,0 +1,46 @@
+﻿@model YoYoStudio.Model.Json.JsonModel
+
+<script type="text/javascript" src="~/Scripts/Room.js">   
+</script>
+<script type="text/javascript">
+    var agentsTagId = "#" + "@string.Concat("agents",Model.TagId)";
+    var startTagId = "#" + "@string.Concat("startroomid",Model.TagId)";
+    var endTagId = "#" + "@string.Concat("endroomid",Model.TagId)";
+    var roomMgrTagId = '#' + "@string.Concat("managerid",Model.TagId)";
+    var roomViceTagId = '#' + "@string.Concat("viceroomid",Model.TagId)";
+    var gridTagId = "#" + "@Model.TagId";
+    $(document).ready(function () {
+        Init(agentsTagId, startTagId, endTagId, roomMgrTagId,roomViceTagId, gridTagId);
+    })
+</script>
+
+<table class="framecenter" style="width:100%">
+    <tr>
+        <td><input id ="@string.Concat("startroomid",Model.TagId)" type="text" /></td>
+        <td><input id="@string.Concat("endroomid",Model.TagId)" type ="text" /></td>
+        <td>
+            <table>
+                <tr>
+                    <td>代理：</td>
+                    <td><input id="@string.Concat("agents",Model.TagId)"</td>
+                </tr>
+                
+            </table>
+        <td><a class="l-button" style="width:100px" onclick="assignRooms()">分配房间</a></td>
+    </tr>
+
+     
+</table>
+
+<div class="l-clear"></div>
+<div id="@Model.TagId" class="framecenter"></div> 
+
+<table class="framecenter" style="width:100%">
+     <tr>
+         <td><input id="@string.Concat("managerid",Model.TagId)" type="text" /></td>
+         <td><input id="@string.Concat("viceroomid",Model.TagId)" type="text" /></td>
+         <td><a class="l-button" style="width:100px" onclick="setRoomRole()">分配权限</a></td>
+         <td><a class="l-button" style="width:100px" onclick="deleteRoomRole()">取消权限</a></td>
+    </tr>
+</table>
+

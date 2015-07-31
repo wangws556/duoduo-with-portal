@@ -1,0 +1,1129 @@
+﻿body {
+    background-color: #deebff;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.rightPanel {
+    margin-left: 1px;
+    width: 280px;
+}
+
+.messagePanel
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+
+#userlistTab li {
+    display: inline-table;
+    margin: 1px;
+    padding: 0;
+    width: 80px;
+    height: 25px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#userlistTab img {
+    width: 16px;
+    height: 16px;
+    margin: 1px;
+}
+
+#userlistTab div[role="option"]
+{
+    height:25px;
+    margin:0;
+    padding:0;
+}
+
+.userListSpan{
+    font-size:12px;
+    margin-left:10px;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.hScrollbar {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#giftTab li {
+    display: inline-table;
+    height: 25px;
+    width: 40px;
+    font-size: 12px;    
+    padding: 0;
+    text-align: center;
+}
+
+#giftTab img {
+    margin: 5px;
+    padding: 1px;
+    width: 39px;
+    height: 39px;
+    border: 1px,solid,black;
+}
+
+#giftPanel1 li {
+    display: inline;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+#giftPanel1 {
+    overflow: hidden;
+    font-size: 12px;
+}
+
+    #giftPanel1 td {
+        color: #2846fa;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+.even {
+    background-color: #deebff;
+}
+
+.odd {
+    background-color: transparent;
+}
+
+.topPanel {
+    height: 60px;
+    font-size: 40px;
+    background-color: white;
+}
+
+#MotionDiv img:hover{
+    width:50px;
+    height:50px;
+}
+
+#PublicMessage-Div #PrivateMessage-Div {
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+#MessageStyleDiv {
+    height: 25px;
+    display: none;
+}
+
+#PublicMsgDiv-Btns {
+    background-color: white;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    z-index: 100;
+    display: none;
+}
+
+#PrivateMsgDiv-Btns {
+    background-color: white;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    z-index: 100;
+    display: none;
+}
+
+
+.InputMsgTxr {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+    .InputMsgTxr IMG {
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+    }
+
+.SendMsgBtn {
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    top: 30px;
+    left: 20px;
+    background-color: #F6CD26;
+    font-family: "华文新魏";
+    font-size: large;
+}
+
+#Horn-Scroll {
+    background-color: transparent;
+}
+
+#Public-Scroll {
+    background-color: transparent;
+}
+
+#Private-Scroll {
+    background-color: transparent;
+}
+
+#Public-Clear {
+    padding: 2px;
+    width: 50px;
+    background-color: transparent;
+}
+
+#Private-Clear {
+    padding: 2px;
+    width: 50px;
+    background-color: transparent;
+}
+
+#hornMsgPanel {
+    background-color: white;
+    height: 100px;
+    border: 2px solid;
+    border-color: lightblue;
+    overflow-y: auto;
+    top: 2px;
+}
+
+#toolbarHornMsg {
+    z-index: 300;
+    width: 100%;
+    background-color: #a2c4f7;
+    display: none;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    filter: alpha(opacity=80);
+}
+
+#toolbarHornMsg p {
+    margin: 0;
+}
+
+#PreviewGiftDiv {
+    position:absolute;
+    right:-100px;
+    bottom:220px;
+    width:200px;
+    height:60px;
+    padding-left:10px;
+    BORDER-BOTTOM: 1px solid;
+    BORDER-LEFT: 1px solid;
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    border-color: #2846fa;
+    background-color: #deebff;
+    z-index: 2000;    
+    float:left;
+    display: none;
+}
+
+#PreviewImageDiv {
+    position:absolute;
+    bottom:255px;
+    width:80px;
+    height:80px;
+    BORDER-BOTTOM: 1px solid;
+    BORDER-LEFT: 1px solid;
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    border-color: #2846fa;
+    background-color: #deebff;
+    z-index: 2000;
+    display: none;
+  
+}
+
+#PreviewGiftDiv img{
+max-width:80px;
+max-height:80px;
+width:expression(document.body.clientWidth>document.getElementById("PreviewGiftDiv").scrollWidth? "80px": "auto" );
+height:expression(document.body.clientHeight>document.getElementById("PreviewGiftDiv").scrollHeight? "70px": "auto" );
+border:1px dashed #000;
+}
+
+#PreviewImageDiv img{
+max-width:80px;
+max-height:80px;
+width:expression(document.body.clientWidth>document.getElementById("PreviewImageDiv").scrollWidth? "80px": "auto" );
+height:expression(document.body.clientHeight>document.getElementById("PreviewImageDiv").scrollHeight? "80px": "auto" );
+border:1px dashed #000;
+}
+
+.ToolWindow {
+    position: absolute;
+    left: 70px;
+    bottom: 40px;
+    BORDER-BOTTOM: 1px solid;
+    BORDER-LEFT: 1px solid;
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    border-color: #2846fa;
+    background-color: #deebff;
+    z-index: 1000;
+    display: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.ToolWindow li {
+    display: inline-table;
+    height: 40px;
+    margin-top:-20px;
+    margin-left:0;
+    margin-right:1px;
+    padding:0;
+    width: 62px;
+    font-size: 11px;
+    text-align:left;
+}
+
+.ChatMessageLabel{
+    font-weight:bold;
+    font-size:16px;
+    font-family:Arial;
+    color:black;
+    text-decoration:none;
+    font-style:normal;
+}
+
+.PageDiv div {
+    top: 2px;
+    width: 28px;
+    cursor: pointer;
+    height: 28px;
+    text-align: center;
+    position: relative;
+    display: inline;
+    margin: 2px;
+}
+
+    .PageDiv div img {
+        width: 28px;
+        height: 28px;
+    }
+
+.PageDiv .MotionContent .StampContent {
+    position: absolute;
+    top: 5px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: none;
+}
+
+.pages {
+    position: absolute;
+    bottom: 0px;
+    height: 28px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.splitbutton-l {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 78px;
+    height: 58px;
+    background-color: #f6d02a;
+    font-size: 24px;
+}
+
+.splitbutton-r {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 18px;
+    height: 48px;
+    background-color: gold;
+}
+
+/*-- Bottom Toolbar --*/
+
+#toolbar {
+    position: absolute; /* set fixed position for the bar */
+    left: 0px;
+    width: 100%;
+    bottom: 0px;
+    z-index: 9999; /* keep the bar on top  */
+    height: 36px;
+    background-color: #deebff;
+    /* CSS3 */
+    -moz-border-radius-topleft: 8px;
+    -khtml-border-radius-topleft: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -khtml-border-radius-topright: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-box-shadow: 0px 1px 10px #666, inset 1px 1px 0px #a4a4a4; /* inset creates a inner-shadow */
+    -khtml-box-shadow: 0px 1px 10px #666;
+    -webkit-box-shadow: 0px 1px 10px #666;
+    /* CSS3 end */
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 3px solid #7aaaf5;
+}
+
+
+
+span.showbar a { /* show button */
+    padding: 5px;
+    font-size: 10px;
+    color: #989898;
+}
+
+.leftside {
+    float: left;
+}
+
+.rightside {
+    float: right;
+}
+
+/*-- Left Side --*/
+
+.TableImg {
+    width: 22px;
+    height: 22px;
+}
+
+table td {
+    padding: 3px;
+}
+
+table tr {
+    padding-top: 3px;
+}
+
+select {
+    width: 100px;
+}
+
+/*.ImageMouseOn {
+    border-top:#669900 1px solid;
+    border-left:#669900 1px solid;
+    border-bottom:#669900 1px solid;
+    border-right:#669900 1px solid
+}
+
+.ImageMouseLeft {
+    border-top:#669900 0px solid;
+    border-left:#669900 0px solid;
+    border-bottom:#669900 0px solid;
+    border-right:#669900 0px solid
+}*/
+
+#Quiret {
+    background-color: #deebff;
+}
+
+
+a.rss:hover, a.facebook:hover, a.twitter:hover, a.digg:hover, a.delicious:hover, a.stumble:hover {
+    background-position: 1px 1px; /* simple css hover effect */
+}
+
+a.facebook {
+    background: url(images/facebook.png) no-repeat;
+}
+
+a.twitter {
+    background: url(images/twitter.png) no-repeat;
+}
+
+a.delicious {
+    background: url(images/delicious.png) no-repeat;
+}
+
+a.digg {
+    background: url(images/digg.png) no-repeat;
+}
+
+a.stumble {
+    background: url(images/stumble.png) no-repeat;
+}
+
+.tip {
+    position: absolute; /* important */
+    top: -75px;
+    width: 250px;
+    height: 78px;
+    background: url(images/tip.png) no-repeat;
+    float: left;
+    display: none;
+}
+
+
+    .tip ul {
+        padding: 22px 0 0 25px;
+    }
+
+        .tip ul li {
+            display: inline;
+            padding-left: 3px;
+        }
+
+            .tip ul li a {
+                font-size: 18px;
+                color: #989898;
+            }
+
+                .tip ul li a:hover {
+                    color: #666;
+                }
+
+            .tip ul li small {
+                font-size: 10px;
+            }
+
+
+.toolbarWindow {
+    border: 0px;
+    padding: 0px;
+    display: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.toolbarWindowContent {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    margin: 0;
+    padding-top: 0;
+}
+
+.toolbarWindowHeader {
+    visibility: hidden;
+    height: 0px;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+
+#ColorPicker {
+    BORDER-BOTTOM: 1px solid;
+    BORDER-LEFT: 1px solid;
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    border-color: #c5c5c5;
+    width: 242px;
+    height: 191px;
+    z-index: 2000;
+    display: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.colors {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #c5c5c5;
+    cursor: pointer;
+    float: left;
+}
+
+#AliceBlue {
+    background-color: AliceBlue;
+}
+
+#AntiqueWhite {
+    background-color: AntiqueWhite;
+}
+
+#Aqua {
+    background-color: Aqua;
+}
+
+#aquamarine {
+    background-color: aquamarine;
+}
+
+#Azure {
+    background-color: Azure;
+}
+
+#Beige {
+    background-color: Beige;
+}
+
+#Bisque {
+    background-color: Bisque;
+}
+
+#Black {
+    background-color: Black;
+}
+
+#BlanchedAlmond {
+    background-color: BlanchedAlmond;
+}
+
+#Blue {
+    background-color: Blue;
+}
+
+#BlueViolet {
+    background-color: BlueViolet;
+}
+
+#Brown {
+    background-color: Brown;
+}
+
+#BurlyWood {
+    background-color: BurlyWood;
+}
+
+#cadeblue {
+    background-color: cadetblue;
+}
+
+#Chartreuse {
+    background-color: Chartreuse;
+}
+
+#Chocolate {
+    background-color: Chocolate;
+}
+
+#Coral {
+    background-color: Coral;
+}
+
+#CornflowerBlue {
+    background-color: CornflowerBlue;
+}
+
+#Cornsilk {
+    background-color: Cornsilk;
+}
+
+#Crimson {
+    background-color: Crimson;
+}
+
+#Cyan {
+    background-color: Cyan;
+}
+
+#DarkBlue {
+    background-color: DarkBlue;
+}
+
+#DarkCyan {
+    background-color: DarkCyan;
+}
+
+#DarkGoldenRod {
+    background-color: DarkGoldenRod;
+}
+
+#DarkGray {
+    background-color: DarkGray;
+}
+
+#DarkGreen {
+    background-color: DarkGreen;
+}
+
+#DarkKhaki {
+    background-color: DarkKhaki;
+}
+
+#DarkMagenta {
+    background-color: DarkMagenta;
+}
+
+#DarkOliveGreen {
+    background-color: DarkOliveGreen;
+}
+
+#DarkOrange {
+    background-color: DarkOrange;
+}
+
+#DarkOrchid {
+    background-color: DarkOrchid;
+}
+
+#DarkRed {
+    background-color: DarkRed;
+}
+
+#DarkSalmon {
+    background-color: DarkSalmon;
+}
+
+#DarkSeaGreen {
+    background-color: DarkSeaGreen;
+}
+
+#DarkSlateBlue {
+    background-color: DarkSlateBlue;
+}
+
+#DarkSlateGray {
+    background-color: DarkSlateGray;
+}
+
+#DarkTurquoise {
+    background-color: DarkTurquoise;
+}
+
+#DeepPink {
+    background-color: DeepPink;
+}
+
+#DeepSkyBlue {
+    background-color: DeepSkyBlue;
+}
+
+#DimGray {
+    background-color: DimGray;
+}
+
+#DodgerBlue {
+    background-color: DodgerBlue;
+}
+
+#FireBrick {
+    background-color: FireBrick;
+}
+
+#FloralWhite {
+    background-color: FloralWhite;
+}
+
+#Fuchsia {
+    background-color: Fuchsia;
+}
+
+#Gainsboro {
+    background-color: Gainsboro;
+}
+
+#GhostWhite {
+    background-color: GhostWhite;
+}
+
+#Gold {
+    background-color: Gold;
+}
+
+#GoldenRod {
+    background-color: GoldenRod;
+}
+
+#Gray {
+    background-color: Gray;
+}
+
+#Green {
+    background-color: Green;
+}
+
+#GreenYellow {
+    background-color: GreenYellow;
+}
+
+#HoneyDew {
+    background-color: HoneyDew;
+}
+
+#HotPink {
+    background-color: HotPink;
+}
+
+#IndianRed {
+    background-color: IndianRed;
+}
+
+#Indigo {
+    background-color: Indigo;
+}
+
+#Ivory {
+    background-color: Ivory;
+}
+
+#Khaki {
+    background-color: Khaki;
+}
+
+#Lavender {
+    background-color: Lavender;
+}
+
+#LavenderBlush {
+    background-color: LavenderBlush;
+}
+
+#LawnGreen {
+    background-color: LawnGreen;
+}
+
+#LemonChiffon {
+    background-color: LemonChiffon;
+}
+
+#LightBlue {
+    background-color: LightBlue;
+}
+
+#LightCoral {
+    background-color: LightCoral;
+}
+
+#LightCyan {
+    background-color: LightCyan;
+}
+
+#LightGoldenRodYellow {
+    background-color: LightGoldenRodYellow;
+}
+
+#LightGray {
+    background-color: LightGray;
+}
+
+#LightGreen {
+    background-color: LightGreen;
+}
+
+#LightPink {
+    background-color: LightPink;
+}
+
+#LightSalmon {
+    background-color: LightSalmon;
+}
+
+#LightSeaGreen {
+    background-color: LightSeaGreen;
+}
+
+#LightSkyBlue {
+    background-color: LightSkyBlue;
+}
+
+#LightSlateGray {
+    background-color: LightSlateGray;
+}
+
+#LightSteelBlue {
+    background-color: LightSteelBlue;
+}
+
+#LightYellow {
+    background-color: LightYellow;
+}
+
+#Lime {
+    background-color: Lime;
+}
+
+#LimeGreen {
+    background-color: LimeGreen;
+}
+
+#Linen {
+    background-color: Linen;
+}
+
+#Magenta {
+    background-color: Magenta;
+}
+
+#Maroon {
+    background-color: Maroon;
+}
+
+#MediumAquaMarine {
+    background-color: MediumAquaMarine;
+}
+
+#MediumBlue {
+    background-color: MediumBlue;
+}
+
+#MediumOrchid {
+    background-color: MediumOrchid;
+}
+
+#MediumPurple {
+    background-color: MediumPurple;
+}
+
+#MediumSeaGreen {
+    background-color: MediumSeaGreen;
+}
+
+#MediumSlateBlue {
+    background-color: MediumSlateBlue;
+}
+
+#MediumSpringGreen {
+    background-color: MediumSpringGreen;
+}
+
+#MediumTurquoise {
+    background-color: MediumTurquoise;
+}
+
+#MediumVioletRed {
+    background-color: MediumVioletRed;
+}
+
+#MidnightBlue {
+    background-color: MidnightBlue;
+}
+
+#MintCream {
+    background-color: MintCream;
+}
+
+#MistyRose {
+    background-color: MistyRose;
+}
+
+#Moccasin {
+    background-color: Moccasin;
+}
+
+#NavajoWhite {
+    background-color: NavajoWhite;
+}
+
+#Navy {
+    background-color: Navy;
+}
+
+#OldLace {
+    background-color: OldLace;
+}
+
+#Olive {
+    background-color: Olive;
+}
+
+#OliveDrab {
+    background-color: OliveDrab;
+}
+
+#Orange {
+    background-color: Orange;
+}
+
+#OrangeRed {
+    background-color: OrangeRed;
+}
+
+#Orchid {
+    background-color: Orchid;
+}
+
+#PaleGoldenRod {
+    background-color: PaleGoldenRod;
+}
+
+#PaleGreen {
+    background-color: PaleGreen;
+}
+
+#PaleTurquoise {
+    background-color: PaleTurquoise;
+}
+
+#PaleVioletRed {
+    background-color: PaleVioletRed;
+}
+
+#PeachPuff {
+    background-color: PeachPuff;
+}
+
+#PaleVioletRed {
+    background-color: PaleVioletRed;
+}
+
+#Peru {
+    background-color: Peru;
+}
+
+#Pink {
+    background-color: Pink;
+}
+
+#Plum {
+    background-color: Plum;
+}
+
+#PowderBlue {
+    background-color: PowderBlue;
+}
+
+#Purple {
+    background-color: Purple;
+}
+
+#Red {
+    background-color: Red;
+}
+
+#RoyalBlue {
+    background-color: RoyalBlue;
+}
+
+#SaddleBrown {
+    background-color: SaddleBrown;
+}
+
+#Salmon {
+    background-color: Salmon;
+}
+
+#SandyBrown {
+    background-color: SandyBrown;
+}
+
+#SeaGreen {
+    background-color: SeaGreen;
+}
+
+#SeaShell {
+    background-color: SeaShell;
+}
+
+#Sienna {
+    background-color: Sienna;
+}
+
+#Silver {
+    background-color: Silver;
+}
+
+#SkyBlue {
+    background-color: SkyBlue;
+}
+
+#SlateBlue {
+    background-color: SlateBlue;
+}
+
+#SlateGray {
+    background-color: SlateGray;
+}
+
+#Snow {
+    background-color: Snow;
+}
+
+#Tan {
+    background-color: Tan;
+}
+
+#Teal {
+    background-color: Teal;
+}
+
+#Thistle {
+    background-color: Thistle;
+}
+
+#Tomato {
+    background-color: Tomato;
+}
+
+#Turquoise {
+    background-color: Turquoise;
+}
+
+#Violet {
+    background-color: Violet;
+}
+
+#Wheat {
+    background-color: Wheat;
+}
+
+#White {
+    background-color: White;
+}
+
+#WhiteSmoke {
+    background-color: WhiteSmoke;
+}
+
+#Yellow {
+    background-color: Yellow;
+}
+
+#YellowGreen {
+    background-color: YellowGreen;
+}
+
+
+.ArtisticWindow {
+    position: absolute;
+    left: 200px;
+    bottom: 40px;
+
+    BORDER-BOTTOM: 1px solid;
+    BORDER-LEFT: 1px solid;
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    border-color: #2846fa;
+    background-color: #deebff;
+    z-index: 1000;
+    display: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-align:center;
+}
+
+.ArtisticWindow ul {
+  list-style-type:none;
+}
+
+.ArtisticWindow ul li {
+  padding:2px 2px;
+  margin: 0 15px 0px 0px;
+}
+
+.ArtisticWindow ul li a {
+  font-size: 14px;
+  color: black;
+  display: block;
+  text-decoration:none;
+}
+
+.ArtisticWindow ul li a:hover {
+  color: Blue;
+}

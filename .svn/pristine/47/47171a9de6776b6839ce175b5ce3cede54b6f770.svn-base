@@ -1,0 +1,43 @@
+--sp_helpstats KPI_TOL_CIF
+
+statistics_name                                                                                                                  statistics_keys                                                                                                                                                                                                                                                  
+-------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+_WA_Sys_AO_ID_2A363CC5                                                                                                           AO_ID
+_WA_Sys_AUM_01_2A363CC5                                                                                                          AUM_01
+_WA_Sys_AUM_01_MONTH_2A363CC5                                                                                                    AUM_01_MONTH
+_WA_Sys_AUM_02_2A363CC5                                                                                                          AUM_02
+_WA_Sys_AUM_02_MONTH_2A363CC5                                                                                                    AUM_02_MONTH
+_WA_Sys_AUM_03_2A363CC5                                                                                                          AUM_03
+_WA_Sys_AUM_03_MONTH_2A363CC5                                                                                                    AUM_03_MONTH
+_WA_Sys_AUM_04_2A363CC5                                                                                                          AUM_04
+_WA_Sys_AUM_04_MONTH_2A363CC5                                                                                                    AUM_04_MONTH
+_WA_Sys_AUM_05_2A363CC5                                                                                                          AUM_05
+_WA_Sys_AUM_05_MONTH_2A363CC5                                                                                                    AUM_05_MONTH
+_WA_Sys_AUM_06_2A363CC5                                                                                                          AUM_06
+_WA_Sys_AUM_06_MONTH_2A363CC5                                                                                                    AUM_06_MONTH
+_WA_Sys_AUM_07_2A363CC5                                                                                                          AUM_07
+_WA_Sys_AUM_07_MONTH_2A363CC5                                                                                                    AUM_07_MONTH
+_WA_Sys_AUM_08_2A363CC5                                                                                                          AUM_08
+_WA_Sys_AUM_08_MONTH_2A363CC5                                                                                                    AUM_08_MONTH
+_WA_Sys_AUM_09_2A363CC5                                                                                                          AUM_09
+_WA_Sys_AUM_09_MONTH_2A363CC5                                                                                                    AUM_09_MONTH
+_WA_Sys_AUM_10_2A363CC5                                                                                                          AUM_10
+_WA_Sys_AUM_10_MONTH_2A363CC5                                                                                                    AUM_10_MONTH
+_WA_Sys_AUM_11_2A363CC5                                                                                                          AUM_11
+_WA_Sys_AUM_11_MONTH_2A363CC5                                                                                                    AUM_11_MONTH
+_WA_Sys_AUM_12_2A363CC5                                                                                                          AUM_12
+_WA_Sys_AUM_12_MONTH_2A363CC5                                                                                                    AUM_12_MONTH
+_WA_Sys_CIF_CNT_2A363CC5                                                                                                         CIF_CNT
+_WA_Sys_CUST_ID_2A363CC5                                                                                                         CUST_ID
+_WA_Sys_CUST_NAME_2A363CC5                                                                                                       CUST_NAME
+_WA_Sys_DATA_DATE_2A363CC5                                                                                                       DATA_DATE
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+--sp_helpstats KPI_TOL_CIF2
+
+statistics_name                                                                                                                  statistics_keys                                                                                                                                                                                                                                                  
+-------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+_WA_Sys_CUST_NAME_31632898                                                                                                       CUST_NAME
+_WA_Sys_DATA_DATE_31632898                                                                                                       DATA_DATE
+

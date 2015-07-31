@@ -1,0 +1,6 @@
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\AudioServiceHost\obj\Debug\AudioServiceHost.csprojResolveAssemblyReference.cache
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\bin\Debug\AudioServiceHost\YoYoStudio.AudioServiceHost.exe.config
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\bin\Debug\AudioServiceHost\YoYoStudio.AudioServiceHost.exe
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\bin\Debug\AudioServiceHost\YoYoStudio.AudioServiceHost.pdb
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\AudioServiceHost\obj\Debug\YoYoStudio.AudioServiceHost.exe
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\AudioServiceHost\obj\Debug\YoYoStudio.AudioServiceHost.pdb

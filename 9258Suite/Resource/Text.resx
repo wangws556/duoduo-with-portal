@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Administrator" xml:space="preserve">
+    <value>系统管理员</value>
+  </data>
+  <data name="AllApplication" xml:space="preserve">
+    <value>所有应用程序</value>
+  </data>
+  <data name="AllCommand" xml:space="preserve">
+    <value>所有权限</value>
+  </data>
+  <data name="AllRole" xml:space="preserve">
+    <value>所有用户级别</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>9258 后台管理系统</value>
+  </data>
+  <data name="DefineApplication" xml:space="preserve">
+    <value>应用程序管理</value>
+  </data>
+  <data name="DefineCommand" xml:space="preserve">
+    <value>权限管理</value>
+  </data>
+  <data name="DefineRole" xml:space="preserve">
+    <value>用户级别管理</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="LogOff" xml:space="preserve">
+    <value>注销</value>
+  </data>
+  <data name="MinimalLength" xml:space="preserve">
+    <value>{0}至少{2}位</value>
+  </data>
+  <data name="PasswordIsRequired" xml:space="preserve">
+    <value>请输入密码</value>
+  </data>
+  <data name="PasswordMismatch" xml:space="preserve">
+    <value>两次输入密码不一致</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>后台管理系统</value>
+  </data>
+  <data name="UserNameIsRequired" xml:space="preserve">
+    <value>请输入用户名</value>
+  </data>
+  <data name="FunctionList" xml:space="preserve">
+    <value>功能列表</value>
+  </data>
+  <data name="ManagementMenu" xml:space="preserve">
+    <value>管理菜单</value>
+  </data>
+  <data name="ChatService" xml:space="preserve">
+    <value>9258 大厅服务</value>
+  </data>
+  <data name="ApplicationList" xml:space="preserve">
+    <value>应用程序列表</value>
+  </data>
+  <data name="PersonalManagement" xml:space="preserve">
+    <value>个人管理</value>
+  </data>
+  <data name="_9258ChatApplication" xml:space="preserve">
+    <value>9258多人视频聊天室</value>
+  </data>
+  <data name="ApplicationImage" xml:space="preserve">
+    <value>应用程序图标</value>
+  </data>
+  <data name="CommandImage" xml:space="preserve">
+    <value>权限图标</value>
+  </data>
+  <data name="ImageNotAvailable" xml:space="preserve">
+    <value>图片不存在</value>
+  </data>
+  <data name="RoleImage" xml:space="preserve">
+    <value>用户级别图标</value>
+  </data>
+  <data name="UserIdManagement" xml:space="preserve">
+    <value>用户号码管理</value>
+  </data>
+  <data name="DefineRoleCommand" xml:space="preserve">
+    <value>用户级别权限管理</value>
+  </data>
+  <data name="AllImage" xml:space="preserve">
+    <value>所有图片</value>
+  </data>
+  <data name="RegisterUser" xml:space="preserve">
+    <value>注册用户</value>
+  </data>
+  <data name="DefineGift" xml:space="preserve">
+    <value>礼物管理</value>
+  </data>
+  <data name="DefineGiftGroup" xml:space="preserve">
+    <value>礼物组管理</value>
+  </data>
+  <data name="DefineRoom" xml:space="preserve">
+    <value>房间管理</value>
+  </data>
+  <data name="DefineRoomGroup" xml:space="preserve">
+    <value>房间组管理</value>
+  </data>
+  <data name="DefineUser" xml:space="preserve">
+    <value>用户管理</value>
+  </data>
+  <data name="Agent" xml:space="preserve">
+    <value>官方代理</value>
+  </data>
+  <data name="DefineMoney" xml:space="preserve">
+    <value>用户充值</value>
+  </data>
+  <data name="AgentIdRequired" xml:space="preserve">
+    <value>请输入代理号码</value>
+  </data>
+  <data name="UserDepositHistoryInquiry" xml:space="preserve">
+    <value>充值记录查询</value>
+  </data>
+  <data name="UserExchangeHisotryInquiry" xml:space="preserve">
+    <value>兑换记录查询</value>
+  </data>
+  <data name="DefaultCommand" xml:space="preserve">
+    <value>默认权限</value>
+  </data>
+  <data name="DefaultRole" xml:space="preserve">
+    <value>默认用户级别</value>
+  </data>
+  <data name="DefineBackendCommand" xml:space="preserve">
+    <value>后台权限管理</value>
+  </data>
+  <data name="DefaultGiftGroup" xml:space="preserve">
+    <value>默认礼物组</value>
+  </data>
+  <data name="DefaultRoomGroup" xml:space="preserve">
+    <value>默认房间组</value>
+  </data>
+  <data name="GiftInOutHistoryInquiry" xml:space="preserve">
+    <value>礼物接受和赠送查询</value>
+  </data>
+  <data name="RoomIncomeHistoryInquiry" xml:space="preserve">
+    <value>房间收入查询</value>
+  </data>
+  <data name="DefineFrontendCommand" xml:space="preserve">
+    <value>前台权限管理</value>
+  </data>
+  <data name="DefineUserCommand" xml:space="preserve">
+    <value>用户权限管理</value>
+  </data>
+  <data name="AgentDeposit" xml:space="preserve">
+    <value>代理充值</value>
+  </data>
+  <data name="ScoreDeposit" xml:space="preserve">
+    <value>积分充值</value>
+  </data>
+  <data name="RoomAdministrator" xml:space="preserve">
+    <value>房间管理员</value>
+  </data>
+  <data name="RoomDirectory" xml:space="preserve">
+    <value>室长</value>
+  </data>
+  <data name="UserDeposit" xml:space="preserve">
+    <value>用户充值</value>
+  </data>
+  <data name="PasswordCommand" xml:space="preserve">
+    <value>密码管理</value>
+  </data>
+  <data name="PersonalInfoCommand" xml:space="preserve">
+    <value>个人信息管理</value>
+  </data>
+  <data name="UserRoleUpDown" xml:space="preserve">
+    <value>升降级</value>
+  </data>
+  <data name="AllocatAgentUserId" xml:space="preserve">
+    <value>为代理分配用户号码</value>
+  </data>
+  <data name="BlockCommand" xml:space="preserve">
+    <value>禁封管理</value>
+  </data>
+  <data name="BlockIP" xml:space="preserve">
+    <value>禁封IP</value>
+  </data>
+  <data name="BlockMac" xml:space="preserve">
+    <value>禁封Mac</value>
+  </data>
+  <data name="BlockUser" xml:space="preserve">
+    <value>禁封用户</value>
+  </data>
+  <data name="GenerateImagePack" xml:space="preserve">
+    <value>生成图片包</value>
+  </data>
+  <data name="GiftGroupImage" xml:space="preserve">
+    <value>礼物分组图片</value>
+  </data>
+  <data name="GiftImage" xml:space="preserve">
+    <value>礼物图片</value>
+  </data>
+  <data name="HeaderImage" xml:space="preserve">
+    <value>头像图片</value>
+  </data>
+  <data name="ManagementTool" xml:space="preserve">
+    <value>管理工具</value>
+  </data>
+  <data name="RoomGroupImage" xml:space="preserve">
+    <value>房间组图片</value>
+  </data>
+  <data name="RoomImage" xml:space="preserve">
+    <value>房间图片</value>
+  </data>
+  <data name="SmileImage" xml:space="preserve">
+    <value>聊天表情图片</value>
+  </data>
+  <data name="DeleteAll" xml:space="preserve">
+    <value>删除所有</value>
+  </data>
+  <data name="DeleteSelectedImage" xml:space="preserve">
+    <value>删除选中的图片</value>
+  </data>
+  <data name="DeleteSelectedImageGroup" xml:space="preserve">
+    <value>删除选中分组</value>
+  </data>
+  <data name="NewGroup" xml:space="preserve">
+    <value>新建分组</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>请选择</value>
+  </data>
+  <data name="SmileManagement" xml:space="preserve">
+    <value>表情管理</value>
+  </data>
+  <data name="BlockTypeCommand" xml:space="preserve">
+    <value>禁封类型管理</value>
+  </data>
+  <data name="DefineExchangeRate" xml:space="preserve">
+    <value>汇率管理</value>
+  </data>
+  <data name="SettlementManagement" xml:space="preserve">
+    <value>结算管理</value>
+  </data>
+  <data name="BackendApplication" xml:space="preserve">
+    <value>后台程序</value>
+  </data>
+  <data name="Exchange" xml:space="preserve">
+    <value>兑换</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>已确认，关闭</value>
+  </data>
+  <data name="NotSubmitted" xml:space="preserve">
+    <value>未提交</value>
+  </data>
+  <data name="Processed" xml:space="preserve">
+    <value>已处理，请确认</value>
+  </data>
+  <data name="Submitted" xml:space="preserve">
+    <value>已提交，等待处理</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>注册</value>
+  </data>
+  <data name="RoomService" xml:space="preserve">
+    <value>9258房价服务</value>
+  </data>
+  <data name="ReadOnly" xml:space="preserve">
+    <value>只读</value>
+  </data>
+  <data name="ReadOnlyCommand" xml:space="preserve">
+    <value>只读权限</value>
+  </data>
+  <data name="ReadOnlyUser" xml:space="preserve">
+    <value>只读用户</value>
+  </data>
+  <data name="WelcomeMessage" xml:space="preserve">
+    <value>9258媒体频道欢迎您</value>
+  </data>
+  <data name="AccountNameDescription" xml:space="preserve">
+    <value>字母或者数字的组合</value>
+  </data>
+  <data name="AccountNameLabel" xml:space="preserve">
+    <value>用户昵称</value>
+  </data>
+  <data name="CompleteRegister" xml:space="preserve">
+    <value>完成注册</value>
+  </data>
+  <data name="ConfirmPasswordLabel" xml:space="preserve">
+    <value>确认密码</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="PasswordDescription" xml:space="preserve">
+    <value>密码不能为空</value>
+  </data>
+  <data name="PasswordLabel" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="RegisterAgreement" xml:space="preserve">
+    <value>同意注册协议</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>查看</value>
+  </data>
+  <data name="AudioConfiguration" xml:space="preserve">
+    <value>音频设置</value>
+  </data>
+  <data name="Configuration" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="Prompt" xml:space="preserve">
+    <value>提示</value>
+  </data>
+  <data name="VideoConfiguration" xml:space="preserve">
+    <value>视频设置</value>
+  </data>
+  <data name="AccountIdDescription" xml:space="preserve">
+    <value>请记住此号码以便注册成功后登录时使用</value>
+  </data>
+  <data name="AccountIdLabel" xml:space="preserve">
+    <value>账户ID</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="MirrorLabel" xml:space="preserve">
+    <value>镜像</value>
+  </data>
+  <data name="RefreshLabel" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="VideoQualityLabel" xml:space="preserve">
+    <value>视频质量调节</value>
+  </data>
+  <data name="PersonalInfoConfiguration" xml:space="preserve">
+    <value>个人详细信息</value>
+  </data>
+  <data name="PersonalAssets" xml:space="preserve">
+    <value>资产</value>
+  </data>
+  <data name="PersonalCars" xml:space="preserve">
+    <value>座驾</value>
+  </data>
+  <data name="PersonalRooms" xml:space="preserve">
+    <value>房间</value>
+  </data>
+  <data name="PersonalWebo" xml:space="preserve">
+    <value>微博</value>
+  </data>
+  <data name="AgeLabel" xml:space="preserve">
+    <value>年龄</value>
+  </data>
+  <data name="ChangePhotoLabel" xml:space="preserve">
+    <value>更换头像</value>
+  </data>
+  <data name="EmailLabel" xml:space="preserve">
+    <value>邮箱</value>
+  </data>
+  <data name="LastLoginTimeLabel" xml:space="preserve">
+    <value>上次登录</value>
+  </data>
+  <data name="NickNameLabel" xml:space="preserve">
+    <value>昵称</value>
+  </data>
+  <data name="PasswordAnswerLabel" xml:space="preserve">
+    <value>密码答案</value>
+  </data>
+  <data name="PasswordQuestionLabel" xml:space="preserve">
+    <value>密码问题</value>
+  </data>
+  <data name="PersonalInfo" xml:space="preserve">
+    <value>基本信息</value>
+  </data>
+  <data name="OnMicLabel" xml:space="preserve">
+    <value>上麦</value>
+  </data>
+  <data name="CameraPhoto" xml:space="preserve">
+    <value>自拍头像</value>
+  </data>
+  <data name="PrivateMicLabel" xml:space="preserve">
+    <value>私麦</value>
+  </data>
+  <data name="LargeScale" xml:space="preserve">
+    <value>80*80</value>
+  </data>
+  <data name="SecretMicLabel" xml:space="preserve">
+    <value>秘麦</value>
+  </data>
+  <data name="LocalPhoto" xml:space="preserve">
+    <value>本地照片</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="SmallScale" xml:space="preserve">
+    <value>40*40</value>
+  </data>
+  <data name="PhotoRule1" xml:space="preserve">
+    <value>1. 可以使用鼠标左键拖动圈定图片区域</value>
+  </data>
+  <data name="PhotoRule2" xml:space="preserve">
+    <value>2. 禁止使用色情、反动、暴力等非法内容的图片</value>
+  </data>
+  <data name="PhotoType" xml:space="preserve">
+    <value>图像文件 (*.bmp, *.jpg, *.png)|*.bmp;*.jpg;*.png</value>
+  </data>
+  <data name="StartCaptureScreen" xml:space="preserve">
+    <value>屏幕截图</value>
+  </data>
+  <data name="DownMicLabel" xml:space="preserve">
+    <value>下麦</value>
+  </data>
+  <data name="CapturePhoto" xml:space="preserve">
+    <value>拍照</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="NewPasswordLabel" xml:space="preserve">
+    <value>新密码</value>
+  </data>
+  <data name="OldPasswordLabel" xml:space="preserve">
+    <value>旧密码</value>
+  </data>
+  <data name="SecurityConfiguration" xml:space="preserve">
+    <value>安全设置</value>
+  </data>
+  <data name="PasswordLength" xml:space="preserve">
+    <value>密码长度必须是6~10位。</value>
+  </data>
+  <data name="PasswordRequireCapital" xml:space="preserve">
+    <value>至少需要一个大写字母。</value>
+  </data>
+  <data name="PasswordInvalid" xml:space="preserve">
+    <value>密码格式错误，保存失败！</value>
+  </data>
+  <data name="TryNow" xml:space="preserve">
+    <value>立即体验</value>
+  </data>
+  <data name="CustomizedMotion" xml:space="preserve">
+    <value>自定义</value>
+  </data>
+  <data name="BlackList" xml:space="preserve">
+    <value>黑名单</value>
+  </data>
+  <data name="StampImage" xml:space="preserve">
+    <value>印章图片</value>
+  </data>
+  <data name="StampManagement" xml:space="preserve">
+    <value>印章管理</value>
+  </data>
+  <data name="SwitchUserConfirm" xml:space="preserve">
+    <value>确定要切换到其他用户吗？</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>女</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>男</value>
+  </data>
+  <data name="ImportGif" xml:space="preserve">
+    <value>导入gif</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="RecommendRoom" xml:space="preserve">
+    <value>房间管理</value>
+  </data>
+  <data name="ReserveRoom" xml:space="preserve">
+    <value>收藏</value>
+  </data>
+  <data name="AutoLoginLabel" xml:space="preserve">
+    <value>自动登录</value>
+  </data>
+  <data name="ScoreToMoney" xml:space="preserve">
+    <value>积分兑换金币</value>
+  </data>
+  <data name="PlayMusicLabel" xml:space="preserve">
+    <value>播放</value>
+  </data>
+  <data name="StopMusicLabel" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="UploadMusicLabel" xml:space="preserve">
+    <value>上传</value>
+  </data>
+  <data name="MusicLabel" xml:space="preserve">
+    <value>音乐</value>
+  </data>
+  <data name="BrowserLabel" xml:space="preserve">
+    <value>浏览</value>
+  </data>
+  <data name="LoadingMusic" xml:space="preserve">
+    <value>正在加载歌曲，请稍后...</value>
+  </data>
+  <data name="MusicManagement" xml:space="preserve">
+    <value>歌曲管理</value>
+  </data>
+  <data name="DeleteSelectedMusic" xml:space="preserve">
+    <value>删除选中歌曲</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="FileLastModifiedLabel" xml:space="preserve">
+    <value>最近修改时间</value>
+  </data>
+  <data name="FileSizeLabel" xml:space="preserve">
+    <value>文件大小</value>
+  </data>
+  <data name="MusicNameLabel" xml:space="preserve">
+    <value> 歌曲名称</value>
+  </data>
+</root>

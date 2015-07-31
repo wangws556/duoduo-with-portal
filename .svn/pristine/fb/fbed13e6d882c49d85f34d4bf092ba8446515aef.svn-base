@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size: 12px;
+	color: #F00;
+}
+.zt12 {
+	font-size: 12px;
+}
+.zt14 {
+	font-size: 14px;
+}
+.zt14 {
+	color: #00F;
+}
+.zt12 {
+	font-size: 12px;
+	color: #00F;
+}
+.zt12 {
+	color: #00F;
+}
+.zt12 {
+	color: #F00;
+}
+.zt12 {
+	color: #00F;
+}
+.zth {
+	color: #F00;
+}
+.zthh {
+	color: #000;
+}
+.zt24 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFF;
+}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+  <tr>
+    <td height="30" align="center" class="zt24">兑换</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="5" cellpadding="0">
+      <tr>
+        <td colspan="4"><span class="zth">提示：</span><span class="zt12"><span class="zthh">积分兑换币最低1000积分兑换币，金币兑换豆：1个金币兑换100个豆，积分兑换换现金：200000兑换100元现金，</span></span>（注：必须是主持号可以兑换现金）</td>
+        </tr>
+      <tr>
+        <td class="zthh">积分：</td>
+        <td><form id="form1" name="form1" method="post" action="">
+          <label for="textfield"></label>
+          <input name="textfield" type="text" id="textfield" size="10" maxlength="20" />
+        </form></td>
+        <td colspan="2" class="zthh">积分兑换币比例90%</td>
+        </tr>
+      <tr>
+        <td class="zthh">金币：</td>
+        <td><form id="form2" name="form2" method="post" action="">
+          <label for="textfield2"></label>
+          <input name="textfield2" type="text" id="textfield2" size="10" maxlength="20" />
+        </form></td>
+        <td class="zthh">币兑换豆1000%</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="zthh">积分：</td>
+        <td><form id="form3" name="form3" method="post" action="">
+          <label for="textfield3"></label>
+          <input name="textfield3" type="text" id="textfield3" size="10" maxlength="20" />
+        </form></td>
+        <td colspan="2">20万换100元兑换现金</td>
+        </tr>
+      <tr>
+        <td class="zthh">应得：</td>
+        <td>10000</td>
+        <td>币/豆/现金</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="4"><table width="100%" border="0" cellspacing="5" cellpadding="0">
+          <tr>
+            <td>&nbsp;</td>
+            <td width="30"><form id="form5" name="form5" method="post" action="">
+              <input type="submit" name="button2" id="button2" value="确定兑换" />
+            </form></td>
+            <td width="30"><form id="form4" name="form4" method="post" action="">
+              <input type="submit" name="button" id="button" value=" 取 消 " />
+            </form></td>
+          </tr>
+        </table></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

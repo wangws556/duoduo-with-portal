@@ -1,0 +1,166 @@
+﻿div#toolbar, div#toolbarbut {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 9999;
+    height: 36px;
+    background-color: lightblue;
+    -moz-border-radius-topleft: 8px;
+    -khtml-border-radius-topleft: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -khtml-border-radius-topright: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-box-shadow: 0px 1px 10px #666, inset 1px 1px 0px #a4a4a4;
+    -khtml-box-shadow: 0px 1px 10px #666;
+    -webkit-box-shadow: 0px 1px 10px #666;
+    border-left: 1px,solid,#eee;
+    border-right: 1px solid,#eee;
+}
+
+div#toolbar {
+    width: 85%;
+    min-width: 700px;
+    margin: 0px auto;
+    left: 0px;
+}
+
+    div#toolbar a:hover {
+        border: none;
+    }
+
+div#toolbarbut {
+    width: 60px;
+    height: 15px;
+    margin-right: 3%;
+    display: none;
+}
+
+.leftside {
+    float: left;
+}
+
+.rightside {
+    float: right;
+}
+
+span.showbar a {
+    padding: 5px;
+    font-size: 10px;
+    color: #989898;
+}
+
+span.downarr {
+    float: right;
+    border-left: 1px solid #a4a4a4;
+}
+
+    span.downarr a {
+        display: block;
+        width: 36px;
+        height: 26px;
+        padding: 25px 0 0 10px;
+        background-color: red;
+    }
+
+span.menu_title {
+    background-color: #e4e4e4;
+    border-left: 1px solid #a4a4a4;
+    padding: 10px;
+}
+
+    span.menu_title a {
+        font-size: 16px;
+        line-height: 34px;
+        color: #9a9a9a;
+    }
+
+.quickmenu {
+    position: absolute;
+    top: -251px;
+    right: 46px;
+    width: 260px;
+    height: 250px;
+    background-color: #e4e4e4;
+    border-top: 1px solid #a4a4a4;
+    border-left: 1px solid #a4a4a4;
+    border-right: 1px solid #a4a4a4;
+    -moz-box-shadow: 2px -3px 5px #c5c5c5, -3px 0px 5px #cdcdcd;
+    -khtml-shadow: 2px -3px 5px #c5c5c5, -3px 0px 5px #cdcdcd;
+    -webkit-box-shadow: 2px -3px 5px #c5c5c5, -3px 0px 5px #cdcdcd;
+    display: none;
+}
+
+.quickmenu ul{
+    padding-top:20px;
+}
+
+.quickmenu ul li{
+    border-bottom:1px solid #989898;
+    padding: 5px 10px;
+    margin:0 15px 0 15px;
+}
+
+.quickmenu ul li a{
+    font-size:18px;
+    color:#989898;
+    display:block;
+}
+
+.quickmenu ul li a:hover{
+    color:#666;
+}
+
+ul#social li {
+    display: inline;
+}
+
+a.rss {
+    display: inline-block;
+    width: 104px;
+    height: 35px;
+    margin-left: 5px;
+}
+
+a.facebook, a.twitter, a.digg, a.delicious, a.stumble {
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+    margin-top: 1px;
+}
+
+    a.rss:hover, a.facebook:hover, a.twitter:hover, a.digg:hover, a.delicious:hover, a.stumble:hover {
+        background-position: 1px 1px;
+    }
+
+.tip {
+    position: absolute;
+    top: -75px;
+    width: 250px;
+    height: 78px;
+    float: left;
+    display: none;
+    background-color: lightgreen;
+}
+
+    .tip ul {
+        padding: 22px 0 0 25px;
+    }
+
+        .tip ul li {
+            display: inline;
+            padding-left: 3px;
+        }
+
+            .tip ul li a {
+                font-size: 18px;
+                color: #989898;
+            }
+
+                .tip ul li a:hover {
+                    color: #666;
+                }
+
+            .tip ul li small {
+                font-size: 10px;
+            }

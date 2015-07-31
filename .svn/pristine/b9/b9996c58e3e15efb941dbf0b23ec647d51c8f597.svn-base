@@ -1,0 +1,74 @@
+﻿@model YoYoStudio.Model.Json.JsonModel
+
+<script type="text/javascript" src="~/Scripts/ExchangeHistory.js"></script>
+
+<script type="text/javascript">
+    var appId = "#" + "@string.Concat("application",Model.TagId)";
+    var scoreToCacheId = "#" + "@string.Concat("scoretocache",Model.TagId)";
+    var moneyToCacheId = "#" + "@string.Concat("moneytocache",Model.TagId)";
+    var validTimeId = "#" + "@string.Concat("validtime",Model.TagId)";
+    var availableScoreId = "#" + "@string.Concat("availablescore",Model.TagId)";
+    var availableMoneyId = "#" + "@string.Concat("availablemoney",Model.TagId)";
+    var scoreId = "#" + "@string.Concat("score",Model.TagId)";
+    var moneyId = "#" + "@string.Concat("money",Model.TagId)";
+    var settlementGridId = "#" + "@string.Concat("settlement",Model.TagId)";
+    var gridId = "#" + "@Model.TagId";
+    $(document).ready(function(){
+        Init(gridId, appId, settlementGridId, scoreToCacheId, moneyToCacheId, validTimeId, availableScoreId,
+            availableMoneyId, scoreId, moneyId);
+    })
+</script>
+
+<table class ="framecenter" style="width:100%">
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td>应用程序：</td>
+                    <td>
+                        <input id ="@string.Concat("application",Model.TagId)" type="text" style="width:180px" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+     <tr>
+        <td colspan="4">
+            <hr style="width: 95%; color: black; filter: alpha(opacity=100,finishopacity=0,style=1);" />
+        </td>
+    </tr>
+
+    <tr>
+        <td><input id ="@string.Concat("scoretocache",Model.TagId)" type="text" style="width:80px"</td>
+        <td><input id ="@string.Concat("moneytocache",Model.TagId)" type="text" style="width:80px"</td>
+        <td><input id ="@string.Concat("validtime",Model.TagId)" type="text"style="width:120px"</td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <hr style="width: 95%; color: black; filter: alpha(opacity=100,finishopacity=0,style=1);" />
+        </td>
+    </tr>
+    <tr>
+        <td><input id="@string.Concat("availablescore",Model.TagId)" type ="text"style="width:80px"</td>
+        <td><input id="@string.Concat("availablemoney",Model.TagId)" type ="text"style="width:80px"</td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <hr style="width: 95%; color: black; filter: alpha(opacity=100,finishopacity=0,style=1);" />
+        </td>
+    </tr>
+    <tr>
+        <td><input id="@string.Concat("score",Model.TagId)" type ="text"style="width:80px"</td>
+        <td><input id="@string.Concat("money",Model.TagId)" type ="text"style="width:80px"</td>
+        <td><a class="l-button" style="width:80px" onclick="Exchange()">兑换</a></td>
+    </tr>
+</table>
+
+<div class="l-clear"></div>
+<div id ="@Model.TagId" class="framecenter"></div>
+
+<br />
+
+<div class="l-clear"></div>
+<div id ="@string.Concat("settlement",Model.TagId)" class="framecenter"></div>

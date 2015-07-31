@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net"/>
+  </configSections>
+  <appSettings>
+    <add key="ServiceIp" value="61.147.119.252"/>
+    <add key="Port" value="44444"/>
+    <add key="RoomServiceIp" value="61.147.119.252"/>
+    <add key="RoomServicePort" value="33333"/>
+  </appSettings>
+  <log4net>
+    <appender name="LogFileAppender" type="log4net.Appender.FileAppender">
+      <file value="AudioService.log"/>
+      <!-- Example using environment variables in params -->
+      <!-- <file value="${TMP}\log-file.txt" /> -->
+      <appendToFile value="false"/>
+      <!-- An alternate output encoding can be specified -->
+      <!-- <encoding value="unicodeFFFE" /> -->
+      <layout type="log4net.Layout.PatternLayout">
+        <header value="[Header]%n"/>
+        <footer value="[Footer]%n"/>
+        <conversionPattern value="%d{yyyyMMdd-HH:mm:ss} [%t] %-5level %logger [%ndc] &lt;%property{auth}&gt; - %m%n"/>
+      </layout>
+      <!-- Alternate layout using XML			
+			<layout type="log4net.Layout.XMLLayout" /> -->
+    </appender>
+    <root>
+      <level value="ALL"/>
+      <appender-ref ref="LogFileAppender"/>
+    </root>
+  </log4net>
+  <system.serviceModel>
+    <client>
+      <endpoint name="RoomService" address="net.tcp://61.147.119.252:33333/RoomService/" behaviorConfiguration="SslNetTcpClientBehavior" binding="netTcpBinding" bindingConfiguration="SslDuplexTcpBinding" contract="IRoomService">
+      </endpoint>
+    </client>
+    <bindings>
+      <netTcpBinding>
+        <binding name="SslDuplexTcpBinding" openTimeout="00:05:00" sendTimeout="00:05:00" receiveTimeout="00:05:00" transferMode="Buffered" maxBufferSize="1024000000" maxReceivedMessageSize="1024000000" portSharingEnabled="true">
+          <readerQuotas maxArrayLength="2147483647" maxBytesPerRead="2147483647" maxDepth="2147483647" maxNameTableCharCount="2147483647" maxStringContentLength="2147483647"/>
+          <reliableSession enabled="true" ordered="true"/>
+          <security mode="Transport">
+            <transport clientCredentialType="None"/>
+          </security>
+        </binding>
+      </netTcpBinding>
+    </bindings>
+    <behaviors>
+      <endpointBehaviors>
+        <behavior name="SslNetTcpClientBehavior">
+          <dataContractSerializer maxItemsInObjectGraph="2147483647" />
+          <clientCredentials>
+            <serviceCertificate>
+              <authentication certificateValidationMode="None"/>
+            </serviceCertificate>
+          </clientCredentials>
+        </behavior>
+      </endpointBehaviors>
+    </behaviors>
+  </system.serviceModel>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
+  </startup>
+</configuration>

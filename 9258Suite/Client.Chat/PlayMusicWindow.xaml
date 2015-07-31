@@ -1,0 +1,65 @@
+﻿<local:WindowBase x:Class="YoYoStudio.Client.Chat.PlayMusicWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:YoYoStudio.Client.Chat"
+        xmlns:vm="clr-namespace:YoYoStudio.Client.ViewModel;assembly=YoYoStudio.Client.ViewModel"
+        xmlns:ctls="clr-namespace:YoYoStudio.Client.Chat.Controls"
+        Title="{Binding Title}" 
+        Height="450" 
+        Width="650"
+        MinWidth="400"
+                MinHeight="300"
+                MaxWidth ="800"
+                MaxHeight="600"
+         WindowStartupLocation="CenterScreen"
+        x:TypeArguments="vm:PlayMusicWindowAction">
+    <Window.Resources>
+        <Style TargetType="ListBox">
+            <Setter Property="ItemsPanel">
+                <Setter.Value>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <!--<Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                <GradientStop Offset="0" Color="#FFDAE5F3" />
+                <GradientStop Offset="1" Color="#FFE1E7F3" />
+            </LinearGradientBrush>
+        </Grid.Background>-->
+        <!--<Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="Transparent">
+            <ContentControl x:Name="PART_Loading"
+                            Style="{StaticResource BusyStyle}"
+                            Visibility="Visible"
+                            >
+            </ContentControl>
+            <ContentControl x:Name="PART_Content" Visibility="Collapsed">
+                <ListBox Background="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" 
+                 ItemsSource="{Binding MusicItems,IsAsync=True}"
+                 SelectedItem="{Binding SelectedMusic}">
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListBoxItem}">
+                            <Setter Property="Width" Value="Auto"/>
+                            <Setter Property="Margin" Value="5,2"/>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                </ListBox>
+            </ContentControl>-->
+        <!--</Grid>-->
+       
+        <!--<Separator Grid.Row="1"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="2" HorizontalAlignment="Right">
+            <Button Name="playBtn" Click="playBtn_Click" Content="{Binding PlayMusicLabel}" Margin="5,2" Background="Gold" IsEnabled="False"/>
+        </StackPanel>-->
+        <ctls:MusicControl x:Name="musicControl" DataContext="{Binding DataContext,RelativeSource={RelativeSource AncestorType=Window}}"/>
+    </Grid>
+</local:WindowBase>

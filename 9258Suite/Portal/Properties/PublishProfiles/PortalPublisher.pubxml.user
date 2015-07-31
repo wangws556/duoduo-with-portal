@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>ftp://wint2-web-g14.xincache.cn/www</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>11/30/2013 11:51:50</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.AspNet.dll">
+      <publishTime>11/30/2013 11:51:53</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.Core.dll">
+      <publishTime>11/30/2013 11:52:02</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.Consumer.dll">
+      <publishTime>11/30/2013 11:51:39</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.dll">
+      <publishTime>11/30/2013 11:51:38</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.dll">
+      <publishTime>11/30/2013 11:51:58</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.RelyingParty.dll">
+      <publishTime>11/30/2013 11:51:38</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/30/2013 11:51:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Edm.dll">
+      <publishTime>11/30/2013 11:51:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.OData.dll">
+      <publishTime>11/30/2013 11:52:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>11/30/2013 11:51:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>11/30/2013 11:51:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.WebPages.OAuth.dll">
+      <publishTime>11/30/2013 11:52:11</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/30/2013 11:51:51</publishTime>
+    </File>
+    <File Include="bin/Portal.dll">
+      <publishTime>09/02/2014 23:01:00</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>11/30/2013 11:52:11</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>11/30/2013 11:51:59</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>11/30/2013 11:52:11</publishTime>
+    </File>
+    <File Include="bin/System.Spatial.dll">
+      <publishTime>11/30/2013 11:51:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/30/2013 11:51:45</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>11/30/2013 11:52:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.OData.dll">
+      <publishTime>11/30/2013 11:51:59</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/30/2013 11:51:59</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>11/30/2013 11:52:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/30/2013 11:51:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/30/2013 11:51:45</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/30/2013 11:51:45</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>11/30/2013 11:51:50</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>11/30/2013 11:51:24</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/30/2013 11:51:22</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/30/2013 11:51:21</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/02/2014 22:59:36</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

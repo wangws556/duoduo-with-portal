@@ -1,0 +1,13 @@
+﻿@model YoYoStudio.Model.Json.JsonModel
+
+<div class="l-clear"></div>
+<div id="@Model.TagId" class="framecenter"></div> 
+
+<script type="text/javascript" src="~/Scripts/Command.js">
+</script>
+<script type="text/javascript">
+    var gridTagId = "#" + "@Model.TagId";
+    InitGrid(gridTagId);
+</script>
+
+

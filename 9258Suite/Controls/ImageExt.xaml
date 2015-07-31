@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="YoYoStudio.Controls.ImageExt"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="300"
+             d:DesignWidth="300"
+             mc:Ignorable="d">
+    <Grid>
+        <Image x:Name="img"
+               Margin="2"
+               Canvas.ZIndex="1"
+               Cursor="Hand"
+               MouseEnter="img_MouseEnter"
+               MouseLeave="img_MouseLeave"
+               MouseLeftButtonDown="img_MouseLeftButtonDown"
+               RenderTransformOrigin="0.5,0.5"
+               Source="{Binding ImageSource}">
+            <Image.RenderTransform>
+                <ScaleTransform x:Name="LogoScale" />
+            </Image.RenderTransform>
+        </Image>
+    </Grid>
+</UserControl>

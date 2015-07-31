@@ -1,0 +1,22 @@
+﻿<cw:ChildWindow x:Class="YoYoStudio.Client.Chat.Controls.WebWindow"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:ctls="clr-namespace:YoYoStudio.Controls;assembly=YoYoStudio.Controls"
+                xmlns:cw="clr-namespace:YoYoStudio.Controls.CustomWindow;assembly=YoYoStudio.Controls"
+                xmlns:local="clr-namespace:YoYoStudio.Client.Chat"
+                xmlns:vm="clr-namespace:YoYoStudio.Client.ViewModel;assembly=YoYoStudio.Client.ViewModel"
+                Loaded="ChildWindow_Loaded"
+                x:TypeArguments="vm:WebWindowAction">
+    <Grid>
+        <ContentControl x:Name="PART_Loading"
+                        Style="{StaticResource BusyStyle}"
+                        Visibility="Visible" />
+        <ContentControl x:Name="PART_Content" Visibility="Collapsed">
+            <ctls:WebPage Name="webPage"
+                          Body="{Binding WebPageVM.Body}"
+                          Css="{Binding WebPageVM.Css}"
+                          JavaScript="{Binding WebPageVM.JavaScript}"
+                          LocalHtmlFile="{Binding WebPageVM.Source}" />
+        </ContentControl>
+    </Grid>
+</cw:ChildWindow>

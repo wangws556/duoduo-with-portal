@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" 
+			   initialize="appInit(event)"
+			   applicationComplete="app_Complete(event)">
+	<fx:Declarations>
+		
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import com.blitzagency.util.LSOUserPreferences;
+			
+			import flash.utils.setInterval;
+			
+			import mx.collections.ArrayCollection;
+			import mx.events.FlexEvent;
+			
+		]]>
+	</fx:Script>
+	<fx:Script>
+		<![CDATA[		
+			private var rtmpUrl:String = "";
+			private var netConnection:NetConnection = null;
+			private var isConnectSuccess:Boolean=false;
+			private var netStream:NetStream = null;
+			private var flvPath:String = "";
+			private var si:Number;
+			 
+			
+			[Bindable]
+			public var musicList:ArrayCollection;
+			[Bindable]
+			private var metaData:Object = {duration:0};
+			
+			[Embed(source="bullet_green.png")]
+			public var greenIcon:Class;
+			
+			[Embed(source="bullet_red.png")]
+			public var redIcon:Class;
+			
+			public var playing:Boolean = false;
+			public var paused:Boolean = false;
+			
+			protected function app_Complete(event:FlexEvent):void
+			{
+				callCSharp("loadComplete");
+			}
+			
+			protected function appInit(event:FlexEvent):void{
+				publishExternalCallbacks();			
+			}
+			
+			private function callCSharp(methodName:String, ...params):void{
+				ExternalInterface.call(methodName,params);
+			}
+			
+			private function publishExternalCallbacks():void{
+				ExternalInterface.addCallback("connectRtmp",connectRtmp);
+				ExternalInterface.addCallback("disconnectRtmp",disconnectRtmp);
+				ExternalInterface.addCallback("loadMusics",loadMusics);
+				ExternalInterface.addCallback("getPlayStatus",getPlayStatus);
+				ExternalInterface.addCallback("playMusic",playMusic);
+				ExternalInterface.addCallback("setPlayPosition",setPlayPosition);
+				ExternalInterface.addCallback("togglePauseMusic",togglePauseMusic);
+				//ExternalInterface.addCallback("setVolume",setVolume);
+				ExternalInterface.addCallback("stopPlay",stopPlay);
+				ExternalInterface.addCallback("getMusicName",getMusicName);
+				ExternalInterface.addCallback("getPlayPosition",getPlayPosition);
+			}
+			
+			private function getMusicName():String{
+				return flvPath;
+			}
+			
+			private function getPlayPosition():Number{
+				return scrubBar.value;
+			}
+			
+			private function playMusic(file:String):void{
+				flvPath = file;
+				stopPlay("0")
+				play(false);
+			}
+			
+			private function setPlayPosition(pos:Number):void{
+				if(netStream != null){
+					netStream.seek(pos);
+				}
+			}
+			
+			private function togglePauseMusic():void{
+				if(netStream != null){
+					netStream.togglePause();
+				}
+			}
+			
+			private function setVolume(volume:Number):void{
+				var st:SoundTransform = netStream.soundTransform;
+				st.volume = volume;
+				netStream.soundTransform = st;	
+			}
+			
+			private function connectRtmp(rtmp:String):void{
+				rtmpUrl = rtmp;
+				netConnection = new NetConnection();
+				netConnection.addEventListener(AsyncErrorEvent.ASYNC_ERROR,netASYNError);
+				netConnection.addEventListener(NetStatusEvent.NET_STATUS,netStatus);
+				netConnection.addEventListener(SecurityErrorEvent.SECURITY_ERROR,netSecurityError);
+				netConnection.addEventListener(IOErrorEvent.IO_ERROR,netIOError);
+				netConnection.connect(rtmpUrl);
+				if(netConnection != null && netConnection.connected){
+					netStream = new NetStream(netConnection);
+				}
+			}
+			
+			private function disconnectRtmp():void{
+				if(netConnection != null && netConnection.connected){
+					netConnection.close();	
+				}
+				netConnection = null;
+			}
+			
+			public function loadMusics():void{
+				var nc_responder:Responder = new Responder(loadMusicList,null);
+				netConnection.call("demoService.getListOfAvailableFLVs",nc_responder);
+			}
+			
+			public function loadMusicList(list:Object):void{
+				var items:Array = new Array();
+				for(var item:String in list){
+					items.push({label:item,size:list[item].size,dateModified:list[item].lastModified});
+				}
+				musicList = new ArrayCollection(items);
+				if(musicList.length >0){
+					playBtn.enabled=true;
+					playPreBtn.enabled=true;
+					playNextBtn.enabled=true;
+				}
+			}
+			
+			
+			
+			public function onMetaData(info:Object):void
+			{
+				metaData = info;
+				
+				var vol:Number = Number(LSOUserPreferences.getPreference("videoHelpVolume"));
+				netStream.soundTransform.volume = vol ? vol : 0.75;
+				volumeSlider.value = (netStream.soundTransform.volume) * 100;
+			}
+			
+			public function onPlayStatus(info:Object):void{
+				for( var n:* in info){
+					trace(n+":"+info[n]);
+				}
+				
+			}
+			
+			public function onImageData(imageData:Object):void {
+				trace("imageData recieved!");
+			}
+			
+			public function onBWCheck():void
+			{}
+			
+			private function getPlayStatus():String{
+				var result:String = "";
+				
+				result += flvPath +"|";
+				
+				if(playing)
+					result += "Playing" ;
+				else if(paused)
+					result += "Paused" ;
+				else 
+					result += "Stoped" ;
+				
+				//result += scrubBar.value;
+				return result;
+			}
+					
+			public function scrubVideo(event:Event):void
+			{
+				netStream.seek(scrubBar.value);
+				callCSharp("setPlayPosition",scrubBar.value);
+			}
+			
+			public function updateVolume(event:Event):void
+			{
+				var st:SoundTransform = netStream.soundTransform;
+				st.volume = (volumeSlider.value) * .01;
+				netStream.soundTransform = st;
+				//callCSharp("setVolume",st.volume);
+			}
+			
+			private function netStatus(e:NetStatusEvent):void{
+				trace(e.info.code);
+				var statusCode:String = e.info.code;
+				if(statusCode == "NetConnection.Connect.Success"){
+					//isConnectSuccess = true;
+					//netStream.addEventListener(NetStatusEvent.NET_STATUS,netStatus);
+					//netStream.attach(
+					//netStream.client = new StreamClient();
+					//loadMusics();
+					
+					//netStream.attachAudio(Microphone.getMicrophone());
+					//netStream.attachCamera(Camera.getCamera());
+					//netStream.play("mp3:streams/abc");
+					
+					//video.attachNetStream(netStream);
+					//netStream.close();
+					//netStream.play(flvPath);
+				}
+				else if(statusCode == "NetStream.Play.Stop"){
+					playing = false;
+					//paused = false;
+					playBtn.label="播放";
+				}
+				else if(statusCode == "NetStream.Play.Start"){
+					playing = true;
+					playBtn.label="停止";
+				}
+//				else if(statusCode == "NetStream.Pause.Notify"){
+//					paused = true;
+//					playBtn.label="播放";
+//					playing = false;
+//				}
+//				else if(statusCode == "NetStream.Unpause.Notify"){
+//					paused = false;
+//					playBtn.label="停止";
+//					playing = true;
+//				}
+				callCSharp("reportStatus",statusCode);
+			}
+			
+			public function updateScrubBar():void
+			{
+				try
+				{
+					scrubBar.value = netStream.time;
+				}catch(e:Error)
+				{
+					
+				}
+			}
+			
+			public function onBWDone():void
+			{
+				// have to have this for an RTMP connection
+			}
+			
+		
+			
+			protected function netSecurityError( event : SecurityErrorEvent ) : void 
+			{
+				
+			}
+			
+			protected function netIOError( event : IOErrorEvent ) : void 
+			{
+				
+			}
+			
+			protected function netASYNError( event : AsyncErrorEvent ) : void 
+			{
+				
+			}		
+				
+			private function play(isPublish:Boolean):void{
+			
+				try
+				{
+					if(!playing){
+						if(flvPath ==""){
+							flvPath = musicList[0].label;
+						}
+						si = setInterval(updateScrubBar, 25);
+						netStream = new NetStream(netConnection);
+						netStream.addEventListener(NetStatusEvent.NET_STATUS,netStatus);
+						netStream.client = this;
+						stopPlay("0")
+						netStream.play(flvPath);
+						if(isPublish){
+							callCSharp("playMusic",flvPath);
+						}
+						
+					}
+					
+					else{
+						netStream.close();
+						if(isPublish)
+						{
+							callCSharp("stopPlay");
+						}
+					}
+				}
+				catch(e:Error){
+					trace(e.message);
+				}
+				
+			}
+			
+			private function setDataGridSelected(index:int):void{
+				musicContainter.selectedIndex = index;
+				musicContainter.validateNow();
+				musicContainter.scrollToIndex(index);
+			}
+			
+			private function playPrevious(e:MouseEvent):void{
+				if(flvPath == ""){
+					flvPath = musicList[0].label;
+					setDataGridSelected(0);
+					play(true);
+				}
+				else{
+					var index:int = getMusicIndex(flvPath);
+					if(index == 0)
+					{
+						stopPlay("0")
+						play(true);
+						setDataGridSelected(index);
+					}
+					else
+					{
+						flvPath = musicList[index-1].label;
+						stopPlay("0")
+						play(true);
+						setDataGridSelected(index-1);
+					}
+					
+				}
+			}
+			
+			private function stopPlay(isPublish:String):void{
+				playing = false;
+				paused = false;
+				if(netStream != null){
+					netStream.close();
+				}
+				if(isPublish == "1"){
+					callCSharp("stopPlay");
+				}
+			}
+			
+			private function playNext(e:MouseEvent):void{
+				if(flvPath == ""){
+					flvPath = musicList[0].label;
+					setDataGridSelected(0);
+					play(true);
+				}
+				else{
+					var index:int = getMusicIndex(flvPath);
+					if(index == musicList.length-1)
+					{
+						flvPath = musicList[0].label;
+						stopPlay("0")
+						play(true);
+						setDataGridSelected(0);
+					}
+					else
+					{
+						flvPath = musicList[index+1].label;
+						stopPlay("0")
+						play(true);
+						setDataGridSelected(index+1);
+					}
+				}
+			
+			}
+			
+			protected function refreshMusics(event:MouseEvent):void
+			{
+				loadMusics();
+			}
+			
+			private function getMusicIndex(name:String):int{
+				for(var index:int = 0; index < musicList.length;index++){
+					if(musicList.getItemAt(index).label == name)
+						return index;
+				}
+				return -1;
+			}
+			
+			private function selectChange(event:Event):void{
+				flvPath = musicContainter.selectedItem.label;
+				//Alert(flvPath);			
+			}
+			
+//			public function doConnection():void
+//			{
+//				// do the connection - called by the Connect Button's click event
+//				if(connectBtn.label == "Connect")
+//				{
+//					netConnection = new NetConnection();
+//					netConnection.client={ onBWDone: function():void{ trace("onBWDone") } };
+//					netConnection.addEventListener(AsyncErrorEvent.ASYNC_ERROR,netASYNError);
+//					netConnection.addEventListener(NetStatusEvent.NET_STATUS,netStatus);
+//					netConnection.addEventListener(SecurityErrorEvent.SECURITY_ERROR,netSecurityError);
+//					netConnection.addEventListener(IOErrorEvent.IO_ERROR,netIOError);
+//					netConnection.connect(givenPath.text);
+//					connectBtn.label = "Disconnect";
+//				}else
+//				{
+//					netConnection.close();
+//					connectBtn.label = "Connect";
+//				}
+//			}
+			
+			private function myScrubDataTipFunc(val:String):String { 
+				return int(netStream.time*100/metaData.duration)+"%"; 
+			} 
+			
+			private function myVolumnDataTipFunc(val:String):String { 
+				return parseInt(val)+"%";
+			}
+			
+			private function dataGrid_DbClick(e:Event){
+				flvPath = musicContainter.selectedItem.label;
+				stopPlay("0")
+				play(true);
+			}
+					
+		]]>
+	</fx:Script>
+	<s:Group width="100%" height="100%">
+		<s:VGroup width="100%" height="100%">
+			<mx:Panel right="5" top="5" left="5" layout="vertical" title="歌曲列表" width="100%" height="100%">
+				<mx:DataGrid id="musicContainter" height="100%" width="100%" dataProvider="{musicList}" change="selectChange(event)"
+							 doubleClickEnabled="true" itemDoubleClick="dataGrid_DbClick(event)">
+					<mx:columns>
+						<mx:DataGridColumn dataField="label" headerText="文件" width="0.5"/>
+						<mx:DataGridColumn dataField="size" headerText="大小" width="0.25"/>
+						<mx:DataGridColumn dataField="dateModified" headerText="修改时间" width="0.25"/>
+					</mx:columns>
+				</mx:DataGrid> 
+			</mx:Panel>
+			<mx:ApplicationControlBar width="100%" height="42" >
+				<mx:Button label="上一首" x="350.5" y="0" id="playPreBtn" click="playPrevious(event);" enabled="false"/>
+				<mx:Button label="播放" x="292.5" y="0" id="playBtn" click="play(true);" enabled="false"/>
+				<mx:Button label="下一首" x="418.5" y="0" id="playNextBtn" click="playNext(event);" enabled="false"/>
+				<mx:HSlider allowTrackClick="false" width="100%" 
+							minimum="0" maximum="{metaData.duration}" snapInterval="1" enabled="true" id="scrubBar" 
+							liveDragging="true" showDataTip="true" height="20"
+							dataTipFormatFunction="myScrubDataTipFunc"/>
+				<mx:HSlider thumbDrag="updateVolume(event);" allowTrackClick="false"
+							width="78" height="20" id="volumeSlider" minimum="0" maximum="100" snapInterval="1" enabled="true"  liveDragging="true"
+							dataTipFormatFunction="myVolumnDataTipFunc"/>
+				<mx:Button label="刷新" id="refreshBtn" click="refreshMusics(event)"/>
+			</mx:ApplicationControlBar>
+			<!--<s:HGroup width="100%">
+				<mx:TextInput id="givenPath" width="100%">
+				</mx:TextInput>
+				<mx:Button click="doConnection()" id="connectBtn" width="75"  toolTip="Connect to Red5" label="Connect" top="5" right="0" >
+				</mx:Button>
+				<mx:Image id="greenLight" source="{greenIcon}" width="16" scaleX="1" scaleY="1" >
+				</mx:Image>
+				<mx:Image id="redLight" source="{redIcon}" width="16" height="16" scaleX="1" scaleY="1" >
+					</mx:Image>
+			</s:HGroup>-->
+		</s:VGroup>
+	</s:Group>
+	
+	
+</s:Application>

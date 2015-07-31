@@ -1,0 +1,1 @@
+ffmpeg64 -i "%1" -acodec libvo_aacenc -ab 64 -ac 2 -ar 44100 "%2"

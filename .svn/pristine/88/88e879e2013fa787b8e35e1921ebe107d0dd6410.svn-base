@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.zt18 {
+	font-weight: bold;
+	color: #F00;
+}
+.zt12 {
+	font-size: 12px;
+}
+.zt12 {
+	font-size: 12px;
+}
+.zt12 {
+	color: #F00;
+}
+.zt12 table {
+	color: #00F;
+}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="350" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+  <tr>
+    <td height="30" align="center" class="zt18">本站排行榜！</td>
+  </tr>
+  <tr>
+    <td height="300" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="70" height="20" align="center" bgcolor="#FFD0FF" class="zt12">总统</td>
+        <td width="70" height="20" align="center" bgcolor="#FFD0FF" class="zt12">省长</td>
+        <td width="70" height="20" align="center" bgcolor="#FFD0FF" class="zt12">市长</td>
+        <td width="70" align="center" bgcolor="#FFD0FF" class="zt12">查看名次</td>
+        <td width="70" height="20" bgcolor="#FFD0FF">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="70" height="20" align="center" bgcolor="#FFD0FF" class="zt12">总统夫人</td>
+        <td width="70" height="20" align="center" bgcolor="#FFD0FF" class="zt12">省长夫人</td>
+        <td width="70" height="20" align="center" bgcolor="#FFD0FF" class="zt12">市长夫人</td>
+        <td width="70" align="center" bgcolor="#FFD0FF" class="zt12"><span class="zt12">查看名次</span></td>
+        <td height="20" bgcolor="#FFD0FF">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="20" colspan="5" align="center" bgcolor="#E0E6FC" class="zt12"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="30" align="center">排名</td>
+            <td width="60" align="center">等级</td>
+            <td width="100" align="center">用户名</td>
+            <td width="75" align="center" bgcolor="#E0E6FC">ID:</td>
+            <td align="center">数量</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#FFFFFF">1</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="75" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#EAEEFD">2</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td width="75" bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#FFFFFF">3</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="75" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#EAEEFD">4</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td width="75" bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#FFFFFF">5</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="75" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#EAEEFD">6</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td width="75" bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="75" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="75" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="75" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="75" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="75" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="75" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="75" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="75" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="75" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="75" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="75" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="75" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="30" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="75" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+        </table></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

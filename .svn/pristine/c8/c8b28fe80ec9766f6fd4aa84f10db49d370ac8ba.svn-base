@@ -1,0 +1,121 @@
+﻿<ResourceDictionary x:Class="class1"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:RoomWin="clr-namespace:YoYoStudio.Client.Chat"
+                    xmlns:ctls="clr-namespace:YoYoStudio.Client.Chat.Controls"
+                    xmlns:ctls1="clr-namespace:YoYoStudio.Controls;assembly=YoYoStudio.Controls"
+                    xmlns:gif="http://wpfanimatedgif.codeplex.com"
+                    xmlns:vm="clr-namespace:YoYoStudio.Client.ViewModel;assembly=YoYoStudio.Client.ViewModel"
+                    xmlns:res="clr-namespace:YoYoStudio.Resource;assembly=YoYoStudio.Resource">
+    <ControlTemplate x:Key="WindowTemplate" TargetType="Window">
+        <Border x:Name="windowBorder">
+            <Grid x:Name="windowGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <DockPanel x:Name="topPanel"
+                           Grid.Row="0"
+                           LastChildFill="True"
+                           Style="{StaticResource WindowHeaderStyle}">
+                    <StackPanel DockPanel.Dock="Left"
+                                Orientation="Horizontal"
+                                Style="{StaticResource WindowHeaderStyle}">
+                        <Image Margin="5"
+                               HorizontalAlignment="Left"
+                               gif:ImageBehavior.AnimatedSource="/Images/logo.gif" />
+                        <TextBlock Margin="5,0,5,0"
+                                   HorizontalAlignment="Left"
+                                   VerticalAlignment="Center"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                                   Foreground="#00458A"
+                                   Text="{Binding Title}" />
+                        <Border Name="RoomHeaderBorder" BorderBrush="{x:Null}" BorderThickness="0" Margin="0,5" Visibility="Hidden">
+                            <StackPanel Orientation="Horizontal"
+                                    Style="{StaticResource WindowHeaderStyle}">
+                                <Label Content="{Binding RoomVM.RoomHeader}" Margin="0,2,10,2"/>
+                                <TextBlock Margin="2" Background="{x:Null}" >
+                                    <Hyperlink Command="{Binding  RoomVM.ReserveRoomCommand}">
+                                        <TextBlock Text="{Binding RoomVM.ReserveRoom}" FontSize="16" Foreground="Gold" VerticalAlignment="Center"/>
+                                    </Hyperlink>
+                                </TextBlock>
+                                <TextBlock Margin="5,2,20,2" Background="{x:Null}" >
+                                    <Hyperlink Command="{Binding  RoomVM.RecommendRoomCommand}">
+                                        <TextBlock Text="{Binding RoomVM.RecommendRoom}" FontSize="16" Foreground="Gold" VerticalAlignment="Center"/>
+                                    </Hyperlink>
+                                </TextBlock>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                    <Grid DockPanel.Dock="Right" Style="{StaticResource WindowHeaderStyle}">
+                        <Border Name="windowButtons"
+                                Width="120"
+                                Height="40"
+                                VerticalAlignment="Top" />
+                    </Grid>
+                    <Grid Width="50"
+                          DockPanel.Dock="Right"
+                          Style="{StaticResource WindowHeaderStyle}" />
+                    <Grid Width="50"
+                          DockPanel.Dock="Right"
+                          Style="{StaticResource WindowHeaderStyle}" />
+                    <Grid x:Name="stack" Panel.ZIndex="-100">
+                        <Grid>
+                            <TextBlock x:Name="tbMarquee"
+                                       FontSize="26"
+                                       Foreground="Red"
+                                       Text="{Binding WelcomeMessage}">
+                                <TextBlock.RenderTransform>
+                                    <TranslateTransform x:Name="transferCurreny" X="-300" />
+                                </TextBlock.RenderTransform>
+                            </TextBlock>
+                            <Grid.Resources>
+                                <Storyboard x:Key="slide">
+                                    <DoubleAnimation Duration="00:00:10"
+                                                     From="{Binding ActualWidth,
+                                                                    ElementName=tbMarquee}"
+                                                     RepeatBehavior="Forever"
+                                                     Storyboard.TargetName="transferCurreny"
+                                                     Storyboard.TargetProperty="X"
+                                                     To="-300" />
+                                </Storyboard>
+                            </Grid.Resources>
+                            <Grid.Triggers>
+                                <EventTrigger RoutedEvent="Grid.Loaded">
+                                    <BeginStoryboard Storyboard="{StaticResource slide}" />
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="Grid.SizeChanged">
+                                    <BeginStoryboard Storyboard="{StaticResource slide}" />
+                                </EventTrigger>
+                            </Grid.Triggers>
+                        </Grid>
+                        <Thumb x:Name="dragThumb"
+                               Width="{TemplateBinding ActualWidth}"
+                               Height="{TemplateBinding ActualHeight}">
+                            <Thumb.Template>
+                                <ControlTemplate TargetType="{x:Type Thumb}">
+                                    <Rectangle Fill="Transparent" />
+                                </ControlTemplate>
+                            </Thumb.Template>
+                        </Thumb>
+                    </Grid>
+                </DockPanel>
+                <ContentPresenter Grid.Row="1"
+                                  HorizontalAlignment="Stretch"
+                                  VerticalAlignment="Stretch" />
+            </Grid>
+        </Border>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="ValidationTemplate" TargetType="{x:Type Control}">
+        <DockPanel>
+            <TextBlock FontSize="20" Foreground="Red">!</TextBlock>
+            <AdornedElementPlaceholder />
+            <TextBlock Text="{Binding RelativeSource={x:Static RelativeSource.Self}, Path=(Validation.Errors)[0].ErrorContent}" />
+        </DockPanel>
+    </ControlTemplate>
+
+
+
+</ResourceDictionary>

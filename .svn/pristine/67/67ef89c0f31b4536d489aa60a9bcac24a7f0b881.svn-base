@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<system.serviceModel>
+		<client>
+      <endpoint name="RoomService" address="" behaviorConfiguration="SslNetTcpClientBehavior"
+                binding="netTcpBinding" bindingConfiguration="SslDuplexTcpBinding" contract="IRoomService">
+        <identity>
+          <dns value="_9258RoomService"/>
+        </identity>
+      </endpoint>
+		</client>
+		<bindings>
+			<netTcpBinding>
+				<binding name="SslDuplexTcpBinding"  openTimeout="00:00:30" sendTimeout="00:00:30" receiveTimeout="00:00:30" transferMode="Buffered"
+                 maxBufferSize="1024000000" maxReceivedMessageSize="1024000000" portSharingEnabled="true">
+					<reliableSession enabled="true" ordered="true"/>
+					<security mode="Transport">
+						<transport clientCredentialType="None"/>
+					</security>
+				</binding>
+			</netTcpBinding>
+		</bindings>
+		<behaviors>
+			<endpointBehaviors>
+				<behavior name="SslNetTcpClientBehavior">
+					<clientCredentials>
+						<serviceCertificate>
+							<authentication certificateValidationMode="None"/>
+						</serviceCertificate>
+					</clientCredentials>
+				</behavior>
+			</endpointBehaviors>
+		</behaviors>
+	</system.serviceModel>
+	<startup>
+		<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
+	</startup>
+</configuration>

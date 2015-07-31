@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" 
+	creationComplete="init()">
+	<mx:Script>
+		<![CDATA[
+			import org.red5.as3.net.Connection;
+			import org.red5.as3.net.events.ConnectionEvent;
+			
+			[Embed(source="/production/images/bullet_green.png")]
+	        public var greenIcon:Class;
+		
+			[Embed(source="/production/images/bullet_red.png")]
+	        public var redIcon:Class;
+			
+			public static var CONNECTED:String = "connected";
+			public static var DISCONNECTED:String = "disconnected";
+			
+			private var conn:Connection;
+			private var uri:String;
+			
+			public function init():void
+			{
+				// create new Connection object
+				conn = new Connection();
+				
+				// add a listener for a successful connection
+				conn.addEventListener(Connection.SUCCESS, handleSucessfulConnection);
+				conn.addEventListener(Connection.DISCONNECTED, handleDisconnection);
+			
+				
+				redLight.visible = true;
+				greenLight.visible = false;
+			}
+			
+			public function doConnection():void
+			{
+				// do the connection - called by the Connect Button's click event
+				if(connectBtn.label == "Connect")
+				{
+					conn.connect();
+					connectBtn.label = "Disconnect";
+				}else
+				{
+					conn.close();
+					connectBtn.label = "Connect";
+				}
+			}
+			
+			public function setURI(p_URI:String):void
+			{
+				uri = p_URI;
+				// set the URI for it to use
+				conn.setURI(uri);
+				givenPath.text = uri;
+			}
+			
+			public function handleSucessfulConnection(e:ConnectionEvent):void
+			{
+				var e:ConnectionEvent = new ConnectionEvent(SimpleConnector.CONNECTED, false, false, "");
+				dispatchEvent(e);
+				
+				redLight.visible = false;
+				greenLight.visible = true;
+			}
+			
+			public function handleDisconnection(e:ConnectionEvent):void
+			{
+				var e:ConnectionEvent = new ConnectionEvent(SimpleConnector.DISCONNECTED, false, false, "");
+				dispatchEvent(e);
+				redLight.visible = true;
+				greenLight.visible = false;
+			}
+			
+			public function getConnection():NetConnection
+			{
+				return conn.getConnection();
+			}
+		]]>
+	</mx:Script>
+	<mx:TextInput id="givenPath" width="358" height="22" x="5" y="0" text="" right="95" top="5" left="0" >
+	</mx:TextInput>
+	<mx:Button click="doConnection()" id="connectBtn" width="75" height="22" x="368" y="1" toolTip="Connect to Red5" label="Connect" top="5" right="0" >
+	</mx:Button>
+	<mx:Image id="greenLight" source="{greenIcon}" width="16" height="16" top="7" right="78" scaleX="1" scaleY="1" >
+	</mx:Image>
+	<mx:Image id="redLight" source="{redIcon}" width="16" height="16" top="7" right="78" scaleX="1" scaleY="1" >
+	</mx:Image>
+</mx:Canvas>

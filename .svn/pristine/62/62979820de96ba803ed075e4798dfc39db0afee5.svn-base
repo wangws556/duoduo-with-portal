@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body,td,th {
+	font-size: 12px;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.ZT14 {	color: #F60;
+}
+.zt12 {	color: #666;
+	font-size: 12px;
+}
+.zt12 {	color: #666;
+}
+.zt12 {	color: #333;
+}
+.zt12 {	color: #000;
+}
+.zt14 {	font-size: 14px;
+}
+.zt14 {	font-size: 14px;
+}
+.zt14c {	font-size: 14px;
+}
+.zt14c {	color: #C60;
+}
+.zt14c {	font-weight: bold;
+}
+.zt14ch {
+	color: #F60;
+	font-weight: bold;
+	font-size: 18px;
+}
+.zt14j {
+	color: #F60;
+	font-size: 14px;
+	font-weight: bold;
+}
+.zt14k {	font-weight: bold;
+}
+.zt16 {	font-size: 16px;
+}
+.zt16c {	font-weight: bold;
+}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="40" bgcolor="#9CAEF5">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="22" bgcolor="#C8D0FB" class="zt14"><span class="zt16">欢迎您进来9258充值后台管理！<span class="zt12">你的代理用户名：100001上次登录的IP:222.222.222.20:8000（上海市：徐汇区闵行）2012年12月9日 11:56:37</span></span><span class="zt16c">（退出）</span></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellpadding="0" cellspacing="5" bgcolor="#9CAEF5">
+      <tr>
+        <td width="200" height="596" align="left" valign="top" bgcolor="#FFFFFF"><table width="200" border="0" cellspacing="2" cellpadding="0">
+          <tr>
+            <td height="30" align="left" bgcolor="#BAC7F8"><span class="zt14c"> ◆ 我的银行账户</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="left" bgcolor="#BAC7F8"><span class="zt14c"> ◆ 工商银行</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="left" bgcolor="#BAC7F8"><span class="zt14c"> ◆ 代理还款接口</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="left" bgcolor="#BAC7F8"><span class="zt14c"> ◆ 购买点卡</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="left" bgcolor="#BAC7F8"><span class="zt14c"> ◆ 购买会员</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="left" bgcolor="#BAC7F8"><span class="zt14c"> ◆ 购买冠号</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="left" bgcolor="#BAC7F8"><span class="zt14c"> ◆ 代客充值</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="left" bgcolor="#BAC7F8"><span class="zt14c"> ◆ 点卡库存</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="left" bgcolor="#BAC7F8"><span class="zt14c"> ◆ 点卡销售明细</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="left" bgcolor="#BAC7F8"><span class="zt14c"> ◆ 代理压金提成</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="left" bgcolor="#BAC7F8"><span class="zt14c"> ◆ 用户自提查询</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="left" bgcolor="#BAC7F8"><span class="zt14c"> ◆ 修改密码</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="left" bgcolor="#BAC7F8"><span class="zt14c"> ◆ 主持人号管理</span></td>
+          </tr>
+          <tr>
+            <td height="30" align="left" bgcolor="#BAC7F8"><span class="zt14c"> ◆ 注销退出</span></td>
+          </tr>
+          <tr>
+            <td height="30" bgcolor="#BAC7F8">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="30" bgcolor="#BAC7F8">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="30" bgcolor="#BAC7F8">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="30" bgcolor="#BAC7F8">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="30" bgcolor="#BAC7F8">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="30" bgcolor="#BAC7F8">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="30" bgcolor="#BAC7F8">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="30" bgcolor="#BAC7F8">&nbsp;</td>
+          </tr>
+        </table></td>
+        <td align="left" valign="top" bgcolor="#FFFFFF"><table width="100%" height="706" border="0" cellpadding="0" cellspacing="1" bgcolor="#BAC7F8">
+          <tr>
+            <td height="30" align="left" bgcolor="#BAC7F8" class="zt14j">购买靓号查询：
+              <input name="textfield" type="text" id="textfield" size="15" />
+              搜索</td>
+          </tr>
+          <tr>
+            <td height="22" bgcolor="#EBEBEB" class="zt14j">按级别查找：
+              <input type="radio" name="radio" id="radio" value="radio" />
+              全部
+              <input type="radio" name="radio2" id="radio2" value="radio2" />              <label for="radio">至尊皇冠
+                <input type="radio" name="radio3" id="radio3" value="radio3" />
+              钻石皇冠
+              <input type="radio" name="radio4" id="radio4" value="radio4" />
+              超级皇冠
+              <input type="radio" name="radio5" id="radio5" value="radio5" />
+              紫冠大亨
+              <input type="radio" name="radio6" id="radio6" value="radio6" />
+              红冠大亨</label></td>
+          </tr>
+          <tr>
+            <td height="647" align="left" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#BAC7F8">
+              <tr>
+                <td height="28" bgcolor="#BAC7F8">&nbsp;</td>
+                <td height="28" bgcolor="#BAC7F8">&nbsp;</td>
+                <td height="28" bgcolor="#BAC7F8">&nbsp;</td>
+                <td height="28" bgcolor="#BAC7F8">&nbsp;</td>
+                <td height="28" bgcolor="#BAC7F8">&nbsp;</td>
+                <td height="28" bgcolor="#BAC7F8">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD" class="zt14ch">11111111111</td>
+                <td align="center" bgcolor="#E8ECFD"><span class="zt14ch">11111111111</span></td>
+                <td align="center" bgcolor="#E8ECFD"><span class="zt14ch">11111111111</span></td>
+                <td align="center" bgcolor="#E8ECFD"><span class="zt14ch">11111111111</span></td>
+                <td align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD"><span class="zt14ch">11111111111</span></td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" align="center" bgcolor="#E8ECFD"><span class="zt14ch">22222222222</span></td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                <td align="center" bgcolor="#E8ECFD">&nbsp;</td>
+                </tr>
+              <tr>
+                <td height="30" colspan="6" bgcolor="#E8ECFD"><input name="textfield2" type="text" disabled="disabled" id="textfield2" value="  首页" size="2" readonly="readonly" />
+                  <input name="textfield3" type="text" disabled="disabled" id="textfield3" value=" 上一页" size="3" readonly="readonly" />
+                  <input name="textfield4" type="text" disabled="disabled" id="textfield4" value="1" size="1" maxlength="1" readonly="readonly" />
+                  <input name="textfield5" type="text" disabled="disabled" id="textfield5" value="2" size="1" maxlength="1" readonly="readonly" />
+                  <input name="textfield6" type="text" disabled="disabled" id="textfield6" value="3" size="1" maxlength="1" readonly="readonly" />
+                  <input name="textfield7" type="text" disabled="disabled" id="textfield7" value="4" size="1" maxlength="1" readonly="readonly" />
+                  <input name="textfield8" type="text" disabled="disabled" id="textfield8" value="5" size="1" maxlength="1" readonly="readonly" />
+                  <input name="textfield9" type="text" disabled="disabled" id="textfield9" value=" 下一页" size="3" readonly="readonly" />
+                  <input name="textfield10" type="text" disabled="disabled" id="textfield10" value="  尾页" size="2" readonly="readonly" />
+                  <input name="textfield11" type="text" disabled="disabled" id="textfield11" value="总共：00000" size="11" readonly="readonly" /></td>
+                </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

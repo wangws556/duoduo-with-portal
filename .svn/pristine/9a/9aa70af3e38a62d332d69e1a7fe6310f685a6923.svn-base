@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Default";
+}
+
+<div style="width:1070px;">
+    <h1 style="vertical-align:central; margin-top:100px; margin-left:200px; text-align:center;color:red;font-style:italic">谢谢访问，页面建设中。。。</h1>
+</div>
+
+

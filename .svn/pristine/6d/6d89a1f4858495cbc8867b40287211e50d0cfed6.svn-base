@@ -1,0 +1,26 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+
+
+global
+{
+	content-background-color: #8DB6EF;
+	content-background-alpha: 0.8;
+}
+
+mx|ToolTip
+{
+	fontSize :14;
+}
+	
+.videoButtonEnabled
+{
+	upSkin : Emb
+}
+
+.trans
+{
+	backgroundAlpha : 0.2;
+}
+

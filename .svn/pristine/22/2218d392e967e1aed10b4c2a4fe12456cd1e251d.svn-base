@@ -1,0 +1,59 @@
+-- create SP using query hint "recompile"
+
+USE [AdventureWorks]
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[NoSniff_QueryHint_Recompile]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[NoSniff_QueryHint_Recompile]
+GO
+
+create proc NoSniff_QueryHint_Recompile (@i int) as
+select count(b.SalesOrderID),sum(p.Weight)
+from dbo.SalesOrderHeader_test a 
+inner join dbo.SalesOrderDetail_test b
+on a.SalesOrderID = b.SalesOrderID
+inner join Production.Product p
+on b.ProductID = p.ProductID
+where a.SalesOrderID = @i
+option (recompile)
+go
+
+-- test
+
+Dbcc freeproccache
+go
+exec NoSniff_QueryHint_Recompile 50000
+go
+exec NoSniff_QueryHint_Recompile 75124
+go
+
+
+-- create SP using "with recompile"
+
+USE [AdventureWorks]
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[NoSniff_SPCreate_Recompile]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[NoSniff_SPCreate_Recompile]
+GO
+
+create proc NoSniff_SPCreate_Recompile (@i int) 
+with recompile
+as
+select count(b.SalesOrderID),sum(p.Weight)
+from dbo.SalesOrderHeader_test a 
+inner join dbo.SalesOrderDetail_test b
+on a.SalesOrderID = b.SalesOrderID
+inner join Production.Product p
+on b.ProductID = p.ProductID
+where a.SalesOrderID = @i
+go
+
+-- test again
+
+Dbcc freeproccache
+go
+exec NoSniff_SPCreate_Recompile 50000
+go
+exec NoSniff_SPCreate_Recompile 75124
+go

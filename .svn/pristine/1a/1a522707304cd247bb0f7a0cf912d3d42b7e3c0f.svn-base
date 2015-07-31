@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body,td,th {
+	font-size: 12px;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.zt16 {
+	font-size: 16px;
+}
+.zt16 {
+	font-weight: bold;
+	color: #FFF;
+}
+.zt36 {
+	font-size: 36px;
+	color: #F00;
+}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="200" height="60" rowspan="4" bgcolor="#C7D1FA" class="zt36">9258聊天室</td>
+        <td bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" align="center" valign="bottom" bgcolor="#C7D1FA">兑换</td>
+        <td width="80" align="center" valign="bottom" bgcolor="#C7D1FA">注册用户</td>
+        <td width="80" align="center" valign="bottom" bgcolor="#C7D1FA">用户登录</td>
+        <td width="80" align="center" valign="bottom" bgcolor="#C7D1FA">代理登录</td>
+        <td width="80" align="center" valign="bottom" bgcolor="#C7D1FA">忘记密码</td>
+        <td width="80" align="center" valign="bottom" bgcolor="#C7D1FA">收藏本站</td>
+        <td width="80" align="center" valign="bottom" bgcolor="#C7D1FA">设为首页</td>
+      </tr>
+      <tr>
+        <td bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+        <td width="80" bgcolor="#C7D1FA">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td bgcolor="#9CAEF5"><table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="80" height="30" align="center" class="zt16" style="font-size: 16px">网站首页</td>
+        <td width="80" height="30" align="center" class="zt16" style="font-size: 16px">平台公告</td>
+        <td width="80" height="30" align="center" class="zt16" style="font-size: 16px">活动专区</td>
+        <td width="80" height="30" align="center" class="zt16" style="font-size: 16px">热门排行</td>
+        <td width="80" height="30" align="center" class="zt16" style="font-size: 16px">在线充值</td>
+        <td width="80" height="30" align="center" class="zt16" style="font-size: 16px">软件下载</td>
+        <td width="80" height="30" align="center" class="zt16">加盟代理</td>
+        <td height="30">&nbsp;</td>
+        <td height="30">&nbsp;</td>
+        <td height="30">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="343" height="32" bgcolor="#EAEEFD">&nbsp;</td>
+        <td width="240" height="32" align="center" bgcolor="#EAEEFD" class="zt16">代理后台登录</td>
+        <td width="317" height="32" bgcolor="#EAEEFD">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="343" height="25" bgcolor="#EAEEFD">&nbsp;</td>
+        <td height="25" align="right" bgcolor="#EAEEFD"><form id="form1" name="form1" method="post" action="">
+            用户名：
+            <label for="textfield"></label>
+            <input name="textfield" type="text" id="textfield" size="15" />
+          </form></td>
+        <td width="317" height="25" bgcolor="#EAEEFD">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="343" height="25" bgcolor="#EAEEFD">&nbsp;</td>
+        <td height="25" align="right" bgcolor="#EAEEFD"><form id="form2" name="form2" method="post" action="">
+          密 码：   
+          <label for="textfield2"></label>
+          <input name="textfield2" type="text" id="textfield2" size="15" />
+         </form></td>
+        <td width="317" height="25" bgcolor="#EAEEFD">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="343" height="25" bgcolor="#EAEEFD">&nbsp;</td>
+        <td height="25" align="right" bgcolor="#EAEEFD"><form id="form3" name="form3" method="post" action="">
+          <input type="submit" name="button" id="button" value=" 登 录 " />
+        </form></td>
+        <td width="317" height="25" bgcolor="#EAEEFD">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="343" height="25" bgcolor="#EAEEFD">&nbsp;</td>
+        <td height="25" bgcolor="#EAEEFD">申请代理商</td>
+        <td width="317" height="25" bgcolor="#EAEEFD">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="343" height="25" bgcolor="#EAEEFD">&nbsp;</td>
+        <td height="25" bgcolor="#EAEEFD">如果遇到登录问题请联系客服：200567119</td>
+        <td width="317" height="25" bgcolor="#EAEEFD">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="18" colspan="3" bgcolor="#EAEEFD"><table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="250" bgcolor="#EAEEFD">&nbsp;</td>
+            <td height="250" bgcolor="#EAEEFD">&nbsp;</td>
+            <td height="250" bgcolor="#EAEEFD">&nbsp;</td>
+            <td height="250" bgcolor="#EAEEFD">&nbsp;</td>
+            <td height="250" bgcolor="#EAEEFD">&nbsp;</td>
+            <td height="250" bgcolor="#EAEEFD">&nbsp;</td>
+            <td height="250" bgcolor="#EAEEFD">&nbsp;</td>
+            <td height="250" bgcolor="#EAEEFD">&nbsp;</td>
+            <td height="250" bgcolor="#EAEEFD">&nbsp;</td>
+            <td height="250" bgcolor="#EAEEFD">&nbsp;</td>
+          </tr>
+          <tr>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+          </tr>
+          <tr>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+            <td bgcolor="#EAEEFD">&nbsp;</td>
+          </tr>
+        </table></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="25" bgcolor="#9CAEF5"><table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="25">&nbsp;</td>
+        <td height="25">&nbsp;</td>
+        <td height="25">&nbsp;</td>
+        <td height="25">&nbsp;</td>
+        <td height="25">&nbsp;</td>
+        <td height="25">&nbsp;</td>
+        <td height="25">&nbsp;</td>
+        <td height="25">&nbsp;</td>
+        <td height="25">&nbsp;</td>
+        <td height="25">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="90"><table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td bgcolor="#EAEEFD">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="90" bgcolor="#EAEEFD">&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EAEEFD">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

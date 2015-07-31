@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" applicationComplete="init()"
+	xmlns:xray="com.blitzagency.xray.logger.*">
+	<mx:Script>
+		<![CDATA[
+			
+			import com.blitzagency.xray.logger.XrayLog;
+			import com.blitzagency.xray.logger.XrayLogger;
+			import flash.net.ObjectEncoding;
+			import mx.controls.List;
+			private var nc:NetConnection;
+			private var ns:NetStream;
+			private var mediaList:Array;
+			private var log:XrayLog;
+			
+			
+			public function init():void
+			{
+				log = new XrayLog();
+				XrayLogger.getInstance().registerStage(stage);
+				
+				nc = new NetConnection();
+				nc.client = this;
+				nc..addEventListener(NetStatusEvent.NET_STATUS, netStatusHandler);
+				nc.addEventListener(SecurityErrorEvent.SECURITY_ERROR, securityErrorHandler);
+				nc.objectEncoding = ObjectEncoding.AMF0;
+			}
+			
+			public function catchVideos():void
+			{
+				// call server-side method
+				var nc_responder:Responder = new Responder(getMediaList, null);
+				nc.call("demoService.getListOfAvailableFLVs", nc_responder);
+			}
+			
+			public function getMediaList (list:Object):void 
+			{
+				//
+				for(var items:String in list) 
+				{
+					log.debug("items", items);
+					mediaList.push({label:items, data:items});
+					/*
+					if (typeof(list[items]) == "object") {
+						mediaList.push(list[items]);
+						for (var d:String in list[items]) {
+							log.debug(d, list[items][d]);
+						}
+					}*/
+				}
+			}
+			
+			public function onBWDone():void
+			{
+				//
+			}
+			
+			private function netStatusHandler(event:NetStatusEvent):void 
+			{
+				log.debug("netStatus", event.info.code);
+				if(event.info.code == "NetConnection.Connect.Success")
+				{
+					log.debug("connected", nc.connected);
+					ns = new NetStream(nc);
+					catchVideos();
+				}
+	        }
+			
+			private function securityErrorHandler(e:SecurityErrorEvent):void
+			{
+				log.debug("nc error", e.text);
+			}
+			
+			public function doConnection():void
+			{
+				nc.connect("rtmp://localhost/oflaDemo");
+				
+			}
+		]]>
+	</mx:Script>
+	<mx:Button label="connect" click="doConnection()"/>
+</mx:Application>

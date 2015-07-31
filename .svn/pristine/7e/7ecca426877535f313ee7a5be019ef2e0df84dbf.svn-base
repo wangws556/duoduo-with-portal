@@ -1,0 +1,26 @@
+--  create new SP using join hint
+USE [AdventureWorks]
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[NoSniff_QueryHint_JoinHint]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[NoSniff_QueryHint_JoinHint]
+GO
+
+create proc NoSniff_QueryHint_JoinHint (@i int) as
+select count(b.SalesOrderID),sum(p.Weight)
+from dbo.SalesOrderHeader_test a 
+inner join dbo.SalesOrderDetail_test b
+on a.SalesOrderID = b.SalesOrderID
+inner hash join Production.Product p
+on b.ProductID = p.ProductID
+where a.SalesOrderID = @i
+go
+
+-- test 
+
+Dbcc freeproccache
+go
+exec NoSniff_QueryHint_JoinHint 50000
+go
+exec NoSniff_QueryHint_JoinHint 75124
+go

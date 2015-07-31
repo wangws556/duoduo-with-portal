@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+			   xmlns:s="library://ns.adobe.com/flex/spark"
+			   xmlns:mx="library://ns.adobe.com/flex/mx"
+			   applicationComplete="application1_applicationCompleteHandler(event)"
+			   backgroundColor="#DEEBFF" currentState="Default" initialize="appInit(event)">
+	<fx:Style source="FlexMedia.css"/>
+	<fx:Script>
+		<![CDATA[
+			import com.adobe.images.JPGEncoder;
+			
+			import flash.net.FileReference;
+			
+			import mx.controls.Alert;
+			import mx.core.UIComponent;
+			import mx.events.FlexEvent;
+			
+			import spark.primitives.BitmapImage;
+			
+			private var netConnection:NetConnection = null;			
+
+			private var session:Session = null;
+			
+			private var rtmpServerUri:String ="";
+			private var isPublish = false;
+			private var zoom = false;
+			
+			private var video:Video = null;		
+			
+			private var currentDirectory:String = "";
+			
+			[Embed(source="videoEnabled_16.jpg")]
+			private var videoEnabledImage:Class;
+			[Embed(source="videoDisabled_16.jpg")]
+			private var videoDisabledImage:Class;
+			[Embed(source="audioEnabled_16.jpg")]
+			private var audioEnabledImage:Class;
+			[Embed(source="audioDisabled_16.jpg")]
+			private var audioDisabledImage:Class;
+			[Embed(source="photo_16.jpg")]
+			private var takePictureImage:Class;
+			[Embed(source="zoom_16.jpg")]
+			private var zoomVideoImage:Class;
+			[Embed(source="zoomIn.jpg")]
+			private var zoomInImage:Class;
+			[Embed(source="zoomOut.jpg")]
+			private var zoomOutImage:Class;
+			
+			[Bindable]
+			private var vWidth:uint = 320;
+			[Bindable]
+			private var vHeight:uint = 240;
+			
+			private var panelHideDistance = 15;
+			
+		]]>
+	</fx:Script>
+	<fx:Script>
+		<![CDATA[
+			private function callCSharp(methodName:String, ... params):void
+			{
+				ExternalInterface.call(methodName, params);
+			}
+			
+			private function addExternalCallbacks():void
+			{
+				ExternalInterface.addCallback("resize",resize);
+				ExternalInterface.addCallback("connect",connect);
+				ExternalInterface.addCallback("disconnect",disconnect);
+				ExternalInterface.addCallback("publishVideo",publishVideo);
+				ExternalInterface.addCallback("publishAudio",publishAudio);
+				ExternalInterface.addCallback("resumeVideo",resumeVideo);
+				ExternalInterface.addCallback("resumeAudio",resumeAudio);
+				ExternalInterface.addCallback("pauseVideo",pauseVideo);
+				ExternalInterface.addCallback("pauseAudio",pauseAudio);
+				ExternalInterface.addCallback("scaleXDefault",scaleXDefault);
+				ExternalInterface.addCallback("scaleXMirror",scaleXMirror);
+				ExternalInterface.addCallback("getCameras",getCameras);
+				ExternalInterface.addCallback("startCamera",startCamera);
+				ExternalInterface.addCallback("closeCamera",closeCamera);
+				ExternalInterface.addCallback("connectRtmp",connectRtmp);
+			}		
+			var bb:Boolean = true;
+			private function connectRtmp(rtmp:String)
+			{
+				rtmpServerUri = rtmp;
+				netConnection = new NetConnection();
+				netConnection.addEventListener( NetStatusEvent.NET_STATUS, netStatus );
+				netConnection.addEventListener( AsyncErrorEvent.ASYNC_ERROR, netASyncError );
+				netConnection.addEventListener( SecurityErrorEvent.SECURITY_ERROR, netSecurityError );
+				netConnection.addEventListener( IOErrorEvent.IO_ERROR, netIOError );
+				netConnection.connect(rtmpServerUri);
+			}
+			
+			private function startCamera(idx:int,f:uint=15, q:uint=85)
+			{
+				session = new Sender();
+				var cam = session.StartCamera(idx,vWidth,vHeight,f,q);
+				if(cam != null)
+				{
+					video.attachCamera(cam);
+					videoDisplay.addChild(video);
+					ShowBackground(false);
+				}				
+			}
+			
+			private function closeCamera()
+			{
+				video.attachCamera(null);
+				video.attachNetStream(null);
+				try
+				{
+					videoDisplay.removeChild(video);
+				}
+				catch(e:Error){}
+				session.CloseCamera();
+				ShowBackground(true);
+			}
+			
+			private function getCameras():String
+			{
+				var result:String = "";
+				for(var i:int=0; i < Camera.names.length; i++)
+				{			
+					result += Camera.names[i] + "|";
+				}
+				return result;
+			}
+			
+			private function scaleXDefault() : void
+			{
+				videoGroup.scaleX = 1;
+			}
+			
+			private function scaleXMirror() : void
+			{
+				videoGroup.scaleX = -1;
+			}
+			
+			private function resize(w:String,h:String):void
+			{
+				width = uint(w);;
+				height = uint(h);	
+				vWidth = width;
+				vHeight = height;
+				if(video != null)
+				{
+					video.width = width;
+					video.height = height;
+				}
+			}
+			
+			private function disconnect():void
+			{			
+				if(netConnection != null && netConnection.connected)
+				{
+					netConnection.close();
+					netConnection = null;
+					if(session != null)
+					{
+						session.Destroy();
+						session = null;
+					}
+				}
+				video.attachCamera(null);
+				video.attachNetStream(null);
+				try
+				{
+					videoDisplay.removeChild(video);
+				}
+				catch(e:Error){}
+				VideoEnabled(false);
+				AudioEnabled(false);
+				ShowBackground(true);
+				headerPanel.visible = false;
+			}
+			
+			private function connect(streamName:String, isPub:String, idx:int=0, micIdx:int=0,
+										   pV:String="1", pA:String="0", iszoom:String="0",f:int=12, q:int=75):String
+			{				
+				var result:String = "";
+				try
+				{
+					if(checkConnection())
+					{
+						zoom = iszoom == "1";
+						isPublish = isPub == "1";
+						zoomVideoButton.visible = (!zoom) && (!isPublish);
+						zoomInButton.visible = zoom;
+						zoomOutButton.visible = zoom;
+						if(isPublish)
+						{
+							session = new Sender();
+						}
+						else
+						{
+							session = new Receiver();
+						}
+						session.Initialize(netConnection,streamName,idx,micIdx);
+						if(pV == "1")
+						{
+							if(isPublish)
+							{
+								var cam = session.PublishVideo(idx,vWidth, vHeight,f,q);
+								if(cam != null)
+								{
+									video.attachCamera(cam);
+								}
+							}
+							else
+							{
+								var stream = session.PublishVideo(idx,vWidth, vHeight,f,q);
+								if(stream != null)
+								{
+									video.attachNetStream(stream);
+								}
+							}
+							videoDisplay.addChild(video);
+							VideoEnabled(true);
+							ShowBackground(false);
+						}
+						if(pA == "1")
+						{
+							session.PublishAudio(int(micIdx));
+							AudioEnabled(true);
+						}
+					}
+				}
+				catch(e:Error){
+					result += e.message;
+				}
+				return result;
+			}
+			
+			private function publishVideo(idx:uint = 0, fps:uint=12, quality:uint=75,mode:String = "live") : void
+			{
+				if(checkConnection())
+				{
+					if(isPublish)
+					{
+						var cam = session.PublishVideo(idx,vWidth, vHeight,fps,quality);
+						video.attachCamera(cam);
+					}
+					else
+					{
+						var stream = session.PublishVideo(idx,vWidth, vHeight,fps,quality);
+						video.attachNetStream(stream);
+					}
+					VideoEnabled(true);
+					ShowBackground(false);
+				}
+			}
+			
+			private function publishAudio(idx:uint = 0, silence:uint = 0, gain:uint = 50, rate:uint = 8, volume:Number = 0.3,mode:String = "live") : void
+			{
+				if(checkConnection())
+				{
+					session.PublishAudio(idx,silence,gain,rate,volume);
+					AudioEnabled(true);
+				}
+			}
+			
+			private function pauseVideo():void
+			{			
+				if(checkConnection())
+				{
+					session.PauseVideo();
+					try
+					{
+					videoDisplay.removeChild(video);
+					}
+					catch(e:Error){}
+					ShowBackground(true);
+					VideoEnabled(false);
+				}
+			}
+			private function resumeVideo():void
+			{
+				if(checkConnection())
+				{
+					if(isPublish)
+					{
+						var cam = session.ResumeVideo();
+						video.attachCamera(cam);
+					}
+					else
+					{
+						var stream = session.ResumeVideo();
+						video.attachNetStream(stream);
+					}
+					videoDisplay.addChild(video);
+					ShowBackground(false);
+					VideoEnabled(true);
+				}
+			}
+			private function pauseAudio():void
+			{
+				if(checkConnection())
+				{
+					session.PauseAudio();
+					AudioEnabled(false);
+				}
+			}
+			private function resumeAudio():void
+			{
+				if(checkConnection())
+				{
+					session.ResumeAudio();
+					AudioEnabled(true);
+				}
+			}
+			
+			private function checkConnection()
+			{
+				if(netConnection == null || !netConnection.connected)
+				{
+					callCSharp("reportStatus","NotConnected");
+					return false;
+				}
+				return true;				
+			}
+			
+		]]>
+	</fx:Script>
+	<fx:Script>
+		<![CDATA[
+			
+			private function ShowBackground(show:Boolean):void
+			{
+				if(show)
+				{
+					canvas.setChildIndex(bgImage,1);
+					canvas.setChildIndex(videoGroup,0);
+				}
+				else
+				{
+					canvas.setChildIndex(bgImage,0);
+					canvas.setChildIndex(videoGroup,1);
+				}
+			}
+			
+			private function VideoEnabled(enable:Boolean):void
+			{
+				if(enable)
+				{
+					videoButton.setStyle("icon", videoEnabledImage);
+				}
+				else
+				{
+					videoButton.setStyle("icon", videoDisabledImage);
+				}				
+			}
+			
+			private function AudioEnabled(enable:Boolean):void
+			{
+				if(enable)
+				{
+					audioButton.setStyle("icon", audioEnabledImage);
+				}
+				else
+				{
+					audioButton.setStyle("icon", audioDisabledImage);
+				}
+			}
+			
+		]]>
+	</fx:Script>
+	<fx:Script>
+		<![CDATA[
+			private function init():void
+			{
+				takePictureButton.setStyle("icon", takePictureImage);
+				zoomVideoButton.setStyle("icon",zoomVideoImage);
+				zoomInButton.setStyle("icon",zoomInImage);
+				zoomOutButton.setStyle("icon", zoomOutImage);
+			}
+			
+			private function netStatus( event : NetStatusEvent ):void
+			{
+				var info : Object = event.info;
+				var statusCode : String = info.code;			
+				
+				switch ( statusCode ) 
+				{
+					case "NetConnection.Connect.Success" :
+						// find out if it's a secure (HTTPS/TLS) connection
+						//if ( event.target.connectedProxyType == "HTTPS" || event.target.usingTLS ) {
+						init();		
+						//connect("a9e218f1-0f36-4e6c-bde3-24788fe00cfc","0","0","0","1","1");
+						break;
+					
+					//					case "NetConnection.Connect.Failed" :
+					//					case "NetConnection.Connect.Closed" :
+					//					case "NetConnection.Connect.InvalidApp" :
+					//					case "NetConnection.Connect.AppShutDown" :
+					//					case "NetConnection.Connect.Rejected" :
+					default :						
+						break;
+				}				
+				callCSharp("reportStatus",statusCode);
+			}
+			
+			protected function netSecurityError( event : SecurityErrorEvent ) : void 
+			{
+				
+			}
+			
+			protected function netIOError( event : IOErrorEvent ) : void 
+			{
+				
+			}
+			
+			protected function netASyncError( event : AsyncErrorEvent ) : void 
+			{
+				
+			}		
+		]]>
+	</fx:Script>
+	
+	<fx:Script>
+		<![CDATA[
+			import flashx.textLayout.operations.SplitElementOperation;
+			
+			protected function application1_applicationCompleteHandler(event:FlexEvent):void
+			{
+				callCSharp("loadComplete");
+			}
+			
+			protected function appInit(event:FlexEvent):void
+			{
+				
+				UIComponent(headerPanel.titleDisplay).parent.height = 0;
+				
+				canvas.setChildIndex(headerPanel,2);
+				canvas.setChildIndex(bgImage,1);
+				canvas.setChildIndex(videoGroup,0);
+				
+				addExternalCallbacks();
+				
+				video = new Video(vWidth,vHeight);
+				video.smoothing = true;
+				
+				currentDirectory = parent.stage.loaderInfo.url;
+				var tmpArray:Array = currentDirectory.split("/");
+				if(tmpArray[0] == "file:")
+				{
+					if(tmpArray.length <= 3)
+					{
+						currentDirectory = tmpArray[2];
+						currentDirectory = currentDirectory.substring(0,currentDirectory.lastIndexOf(currentDirectory.charAt(2)));
+					}
+					else
+					{
+						currentDirectory = currentDirectory.substring(8,currentDirectory.lastIndexOf("/"));
+					}
+				}
+				else
+				{
+					currentDirectory = currentDirectory.substring(0,currentDirectory.lastIndexOf("/"));
+				}
+				currentDirectory += "/Photo/";
+				
+				AudioEnabled(false);
+				VideoEnabled(false);
+			}		
+			
+			protected function videoDisplayMouseMoveHandler(event:MouseEvent):void
+			{
+				if(checkConnection())
+				{
+					if( event.localX < panelHideDistance || (vWidth - event.localX) < panelHideDistance
+						|| event.localY < 3 || (vHeight - event.localY) < panelHideDistance)
+					{
+						headerPanel.visible = false;
+					}
+					else
+					{
+						headerPanel.visible = true;
+					}
+				}
+			}
+			
+			protected function takePictureHandler(event:MouseEvent):void
+			{				
+				var imageSource:BitmapData= new BitmapData(vWidth,vHeight);  
+				var matrix:Matrix=new Matrix();  
+				matrix.scale(1,1);//方法比例 由video和camera的宽高决定  
+				imageSource.draw(video,matrix);  
+				
+				var file:FileReference= new FileReference();  
+				var jpegEncoder:JPGEncoder= new JPGEncoder(100);  
+				var imageDataArray:ByteArray=jpegEncoder.encode(imageSource);  
+				var now:Date = new Date();
+				var fileName:String = now.fullYear.toString() + now.month.toString()
+					+ now.date.toString() + now.hours.toString() + now.minutes.toString()
+					+ now.seconds.toString() + now.milliseconds.toString() + ".jpg";
+				file.save(imageDataArray,fileName);  				
+				callCSharp("takePicture",fileName);	
+			}
+			
+			
+			protected function zoomVideoHandler(event:MouseEvent):void
+			{
+				callCSharp("extendVideo");				
+			}
+			
+			protected function toggleCameraHandler(event:MouseEvent):void
+			{
+				if(checkConnection())
+				{
+					var cam = session.ToggleVideo();
+					if(session.videoState.State == SessionState.None ||
+						session.videoState.State == SessionState.Paused)
+					{
+						ShowBackground(true);
+						VideoEnabled(false);
+						videoDisplay.removeChild(video);
+					}
+					else
+					{
+						ShowBackground(false);
+						VideoEnabled(true);
+						videoDisplay.addChild(video);
+					}
+					
+					callCSharp("videoStateChanged",session.videoState.State);
+				}
+			}
+			
+			protected function toggleMicHandler(event:MouseEvent):void
+			{
+				if(checkConnection())
+				{
+					session.ToggleAudio();
+					if(session.audioState.State == SessionState.None ||
+						session.audioState.State == SessionState.Paused)
+					{
+						AudioEnabled(false);
+					}
+					else
+					{
+						AudioEnabled(true);
+					}
+					callCSharp("audioStateChanged",session.audioState.State);
+				}
+			}
+			
+			protected function zoomInHandler(event:MouseEvent):void
+			{
+				callCSharp("zoomIn");
+			}
+			
+			protected function zoomOutHandler(event:MouseEvent):void
+			{
+				callCSharp("zoomOut");
+			}
+			
+			protected function playHandler(event:MouseEvent):void
+			{
+				connectRtmp("rtmp://61.147.119.252/oflaDemo");
+			}
+			
+			protected function publishHandler(event:MouseEvent):void
+			{
+				session.PauseAudio();
+				session.netStream.play(session.sessionId);
+			}
+			
+			protected function disconnectHandler(event:MouseEvent):void
+			{
+				session.ResumeAudio();
+				session.netStream.play(session.sessionId);
+			}
+		]]>
+	</fx:Script>
+	<s:states>
+		<s:State name="Default"/>
+	</s:states>
+	
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+		<s:VerticalLayout />
+	</fx:Declarations>	
+	<!--<s:Button left="20" top="280" width="80" height="18" click="publishHandler(event)" content="publish"/>
+	<s:Button left="110" top="280" width="80" height="18" click="playHandler(event)" content="play"/>
+	<s:Button left="210" top="280" width="80" height="18" click="disconnectHandler(event)" content="disconnect"/>-->
+	<mx:Canvas id="canvas" x="0" y="0" width="{vWidth}" height="{vHeight}">		
+		<s:Panel id="headerPanel" x="0" y="-1" width="{vWidth}" height="22" visible="false" styleName="trans">
+			<s:Button id="videoButton" left="10" top="1" width="18" height="18"
+					  click="toggleCameraHandler(event)" enabled="true" toolTip="(开/关)视频"/>
+			<s:Button id="audioButton" left="38" top="1" width="18" height="18"
+					  click="toggleMicHandler(event)" enabled="true" toolTip="(开/关)麦克风"/>
+			<s:Button id="takePictureButton" toolTip="拍照" left="66" top="1" width="18" height="18" click="takePictureHandler(event)" />
+			<s:Button id="zoomVideoButton" toolTip="弹出视频窗口" left="94" top="1" width="18" height="18" click="zoomVideoHandler(event)" />
+			<s:Button id="zoomInButton" toolTip="放大" width="18" height="18" top="1" right="10" click="zoomInHandler(event)" />
+			<s:Button id="zoomOutButton" toolTip="缩小" width="18" height="18" top="1" right="38" click="zoomOutHandler(event)" />
+		</s:Panel>
+		<s:Group id="videoGroup" width="{vWidth/2}" height="{vHeight/2}" x="{vWidth/2}" y="{vHeight/2}">
+			<s:VideoDisplay id="videoDisplay" width="{vWidth}" height="{vHeight}" x="{-vWidth/2 + 1}" y="{-vHeight/2 -1}"
+							mouseMove="videoDisplayMouseMoveHandler(event)"/>
+		</s:Group>		
+		<s:Image id="bgImage" left="0" right="0" top="0" bottom="0" source="VideoBG.png" />
+	</mx:Canvas>
+</s:Application>

@@ -1,0 +1,921 @@
+﻿@section featured {
+    <section class="featured">
+        <table style="width:934px; margin:0px auto">
+            <tr>
+                <td>
+                         <table style="width:940px;padding:0px;border-spacing:0px;padding:0px;border:0px;margin:0px;padding-left:3px">
+                            <tr>
+                                <td>
+                                    <div style="display:inline;clear:both">
+                                        <div style="width:230px;float:left;margin-right:5px;margin-left:5px;height:315px">
+                                              <div style="width:230px;padding:0px;background-color:#CEECFB; height:130px;border:1px solid #CCC">
+                                                    <div style="font-size:16px;vertical-align:middle;height:25px;text-align:center;background-color:#F0F0F0;border:0px"><span class="secondHeaderLinck" style="font-size:16px;vertical-align:middle">9258媒体频道视频聊天室客户端</span></div>
+                                                   <div style="border:0px;border-spacing:0px;margin:0px auto;height:50px">
+                                                        <a href="@Url.Action("DownLoadClient")">
+                                                            <img style="text-align:center;width:230px;border-spacing:0px;padding:0px;border:0px" src="~/Images/Home/ClientDownload2.jpg" />
+                                                        </a> 
+                                                    </div>
+                                                    <div style="text-align:center;height:20px; background-color:#CEECFB;border:0px;padding:0px"><span style="font-size:12px; font-weight:normal;color:#333;margin-top:0px;vertical-align:top;">软件版权说明：</span></div>
+                                                    <div style="text-align:center;height:20px; background-color:#CEECFB;border:0px;padding:0px"><span style="font-size:12px; font-weight:normal;color:#333;margin-top:2px;vertical-align:middle;">软件版权所有者9258网络有限公司研究开发</span></div>
+                                              </div>
+                                             <div style="width:230px;padding:0px;margin-top:5px">
+                                                 <table style="width:231px;border:1px solid #CCC;border-spacing:0px;padding:0px;background-color:#E6E6E6">
+                                                      <tr>
+                                                        <td  style="height:25px;text-align:center;vertical-align:middle;background-color:#F0F0F0" colspan="2"><span class="secondHeaderLinck" style="font-size:16px;vertical-align:central">网站简介说明</span></td>
+                                                       </tr>
+                                                      <tr>
+                                                        <td width="30" align="center" bgcolor="#FFFFFF" class="zt1411">★</td>
+                                                        <td width="230" height="20" align="left" bgcolor="#FFFFFF" class="zt12gn">@Html.ActionLink("9258媒体频道是一款视频聊天语音唱歌","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td width="30" align="center" bgcolor="#FFFFFF" class="zt1411">★</td>
+                                                        <td width="230" height="20" align="left" bgcolor="#FFFFFF" class="zt12gn">@Html.ActionLink("网站功能介绍","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td width="30" align="center" bgcolor="#FFFFFF" class="zt1411">★</td>
+                                                        <td width="230" height="20" align="left" bgcolor="#FFFFFF" class="zt12gn">@Html.ActionLink("主题为","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td width="30" align="center" bgcolor="#FFFFFF" class="zt1411">★</td>
+                                                        <td width="230" height="20" align="left" bgcolor="#FFFFFF" class="zt12gn">@Html.ActionLink("招聘各类","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td width="30" align="center" bgcolor="#FFFFFF" class="zt1411">★</td>
+                                                        <td width="230" height="20" align="left" bgcolor="#FFFFFF" class="zt12gn">@Html.ActionLink("网站主题","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td width="30" align="center" bgcolor="#FFFFFF" class="zt1411">★</td>
+                                                        <td width="230" height="20" align="left" bgcolor="#FFFFFF" class="zt12gn">@Html.ActionLink("平台咨询","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td width="30" align="center" bgcolor="#FFFFFF" class="zt1411">★</td>
+                                                        <td width="230" height="20" align="left" bgcolor="#FFFFFF" class="zt12gn">@Html.ActionLink("网站加盟须知","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td width="30" align="center" bgcolor="#FFFFFF" class="zt1411">★</td>
+                                                        <td width="230" height="20" align="left" bgcolor="#FFFFFF" class="zt12gn">@Html.ActionLink("视频教育平台","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                                      </tr>
+                                                </table>
+                                             </div>
+                                        </div>
+                                         
+                                        @*<div style="float:left;" name="SlideShow" id="flashcontent01"></div>*@
+                                        <div class="Aflash">
+        <ul class="picUL">
+            <li class="picLI" id="j-focusPic">
+                <div class="picbox j-slider" style="left: -22310px;">
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/01.jpg">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/02.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/03.jpg"  class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#" >
+                            <img width="695" src="~/Images/Home/04.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/05.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/06.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#" >
+                            <img width="695" src="~/Images/Home/07.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/08.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#" >
+                            <img width="695" src="~/Images/Home/09.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/10.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/01.jpg">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/02.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/03.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/04.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/05.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/06.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/07.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/08.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#" >
+                            <img width="695" src="~/Images/Home/09.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/10.jpg" class="loading">
+                        </a>
+                    </span>
+                    
+                    <span class="j-item">
+                        <a target="_blank" href="#" >
+                            <img width="695" src="~/Images/Home/01.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/02.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/03.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#" >
+                            <img width="695" src="~/Images/Home/04.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#" >
+                            <img width="695" src="~/Images/Home/05.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#" >
+                            <img width="695" src="~/Images/Home/06.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#" >
+                            <img width="695" src="~/Images/Home/07.jpg"  class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/08.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#">
+                            <img width="695" src="~/Images/Home/09.jpg" class="loading">
+                        </a>
+                    </span>
+
+                    <span class="j-item">
+                        <a target="_blank" href="#" >
+                            <img width="695" src="~/Images/Home/10.jpg" class="loading">
+                        </a>
+                    </span>
+
+                </div>
+
+                <div class="bg j-infobg" style="opacity: 0.5;"></div>
+
+                <div class="info j-info" style="display: block;">
+                   <div class="infotxt w">
+                    <h2><a target="_blank" href="#">个人介绍：</a></h2>
+                    <p><a target="_blank" href="#">姓名：某某某; 生日：10/08; 星座：天秤座; 三围：89/59/88; 身高：173CM; 兴趣：旅游、烹饪; 职业：影视演员、模特; 喜欢的休闲方式：唱歌、看电影、购; 未来的自己：成为出色的演艺明星最想做的事.</a></p>
+                   </div>
+                </div>
+
+           <div class="info j-infocontainer" style="display:none;">
+            <div class="infotxt w">
+            <h2><a target="_blank" href="#">个人介绍：</a></h2>
+            <p><a target="_blank" href="#">姓名：某某某; 生日：10/08; 星座：天秤座; 三围：89/59/88; 身高：173CM; 兴趣：旅游、烹饪; 职业：影视演员、模特; 喜欢的休闲方式：唱歌、看电影、购; 未来的自己：成为出色的演艺明星最想做的事.</a></p>
+            </div>
+
+            <div class="infotxt w">
+            <h2><a target="_blank" href="#">个人介绍：</a></h2>
+            <p><a target="_blank" href="#">姓名：某某某; 生日：10/08; 星座：天秤座; 三围：89/59/88; 身高：173CM; 兴趣：旅游、烹饪; 职业：影视演员、模特; 喜欢的休闲方式：唱歌、看电影、购; 未来的自己：成为出色的演艺明星最想做的事.</a></p>
+            </div>
+
+           <div class="infotxt w">
+            <h2><a target="_blank" href="#">个人介绍：</a></h2>
+            <p><a target="_blank" href="#">姓名：某某某; 生日：10/08; 星座：天秤座; 三围：89/59/88; 身高：173CM; 兴趣：旅游、烹饪; 职业：影视演员、模特; 喜欢的休闲方式：唱歌、看电影、购; 未来的自己：成为出色的演艺明星最想做的事.</a></p>
+            </div>
+
+            <div class="infotxt w">
+            <h2><a target="_blank" href="#">个人介绍：</a></h2>
+            <p><a target="_blank" href="#">姓名：某某某; 生日：10/08; 星座：天秤座; 三围：89/59/88; 身高：173CM; 兴趣：旅游、烹饪; 职业：影视演员、模特; 喜欢的休闲方式：唱歌、看电影、购; 未来的自己：成为出色的演艺明星最想做的事.</a></p>
+            </div>
+
+            <div class="infotxt w">
+            <h2><a target="_blank" href="#">个人介绍：</a></h2>
+            <p><a target="_blank" href="#">姓名：某某某; 生日：10/08; 星座：天秤座; 三围：89/59/88; 身高：173CM; 兴趣：旅游、烹饪; 职业：影视演员、模特; 喜欢的休闲方式：唱歌、看电影、购; 未来的自己：成为出色的演艺明星最想做的事.</a></p>
+            </div>
+
+            <<div class="infotxt w">
+            <h2><a target="_blank" href="#">个人介绍：</a></h2>
+            <p><a target="_blank" href="#">姓名：某某某; 生日：10/08; 星座：天秤座; 三围：89/59/88; 身高：173CM; 兴趣：旅游、烹饪; 职业：影视演员、模特; 喜欢的休闲方式：唱歌、看电影、购; 未来的自己：成为出色的演艺明星最想做的事.</a></p>
+            </div>
+
+           <div class="infotxt w">
+            <h2><a target="_blank" href="#">个人介绍：</a></h2>
+            <p><a target="_blank" href="#">姓名：某某某; 生日：10/08; 星座：天秤座; 三围：89/59/88; 身高：173CM; 兴趣：旅游、烹饪; 职业：影视演员、模特; 喜欢的休闲方式：唱歌、看电影、购; 未来的自己：成为出色的演艺明星最想做的事.</a></p>
+            </div>
+
+           <div class="infotxt w">
+            <h2><a target="_blank" href="#">个人介绍：</a></h2>
+            <p><a target="_blank" href="#">姓名：某某某; 生日：10/08; 星座：天秤座; 三围：89/59/88; 身高：173CM; 兴趣：旅游、烹饪; 职业：影视演员、模特; 喜欢的休闲方式：唱歌、看电影、购; 未来的自己：成为出色的演艺明星最想做的事.</a></p>
+            </div>
+
+           <div class="infotxt w">
+            <h2><a target="_blank" href="#">个人介绍：</a></h2>
+            <p><a target="_blank" href="#">姓名：某某某; 生日：10/08; 星座：天秤座; 三围：89/59/88; 身高：173CM; 兴趣：旅游、烹饪; 职业：影视演员、模特; 喜欢的休闲方式：唱歌、看电影、购; 未来的自己：成为出色的演艺明星最想做的事.</a></p>
+            </div>
+
+           <div class="infotxt w">
+            <h2><a target="_blank" href="#">个人介绍：</a></h2>
+            <p><a target="_blank" href="#">姓名：某某某; 生日：10/08; 星座：天秤座; 三围：89/59/88; 身高：173CM; 兴趣：旅游、烹饪; 职业：影视演员、模特; 喜欢的休闲方式：唱歌、看电影、购; 未来的自己：成为出色的演艺明星最想做的事.</a></p>
+            </div>
+            </div>
+      
+            </li>
+        </ul>
+      
+        <div class="infobtn" id="j-focusBtns">
+            <div class="pre on-1">
+                <a href="javascript:void(0)"></a>
+                <i style="display:none"></i>
+            </div>
+            <div class="smalpic j-container">
+                <div class="smallbox j-slider" style="left: 0px;"> 
+                    <a class="j-item" href="#" target="_blank">
+                        <img src="~/Images/Home/01.jpg" alt="">
+                        <b></b>
+                    </a>
+          
+                    <a class="j-item" href="#" target="_blank">
+                        <img src="~/Images/Home/02.jpg" alt="">
+                        <b></b>
+                    </a>
+          
+                     <a class="j-item" href="#" target="_blank">
+                        <img src="~/Images/Home/03.jpg" alt="">
+                        <b></b>
+                    </a>
+          
+                     <a class="j-item" href="#" target="_blank">
+                        <img src="~/Images/Home/04.jpg" alt="">
+                        <b></b>
+                    </a>
+          
+                     <a class="j-item" href="#" target="_blank">
+                        <img src="~/Images/Home/05.jpg" alt="">
+                        <b></b>
+                    </a>
+          
+                      <a class="j-item" href="#" target="_blank">
+                        <img src="~/Images/Home/06.jpg" alt="">
+                        <b></b>
+                    </a>
+          
+                    <a class="j-item" href="#" target="_blank">
+                        <img src="~/Images/Home/07.jpg" alt="">
+                        <b></b>
+                    </a>
+          
+                     <a class="j-item" href="#" target="_blank">
+                        <img src="~/Images/Home/08.jpg" alt="">
+                        <b></b>
+                    </a>
+          
+                      <a class="j-item" href="#" target="_blank">
+                        <img src="~/Images/Home/09.jpg" alt="">
+                        <b></b>
+                    </a>
+		  
+                      <a class="j-item" href="#" target="_blank">
+                        <img src="~/Images/Home/10.jpg" alt="">
+                        <b></b>
+                    </a>        
+
+                </div>
+            </div>
+            <div class="next"><a href="javascript:void(0)"></a><i style="display:none"></i></div>
+        </div>
+  </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                          
+                         </table>
+
+                        <div class="mntk">
+                            <div>
+                                <table style="width:933px; height:22px; border:0px;border-spacing:0px;padding:0px;margin-left:0px;margin-top:5px;margin-right:0px;margin-bottom:0px;padding-right:1px">
+                                    <tr>
+                                        <td class="secondHeaderLinck" style="font-size:16px; height:22px;">9258媒体频道明星美女帅哥排行榜</td>
+                                        <td style="width:50px;height:22px;text-align:right;background:#F0F0F0;font-weight:normal;color:white;padding-right:5px; font-size:11px">@Html.ActionLink("更多","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333" })</td>
+                                    </tr>
+                                    </table>
+                            </div>
+                           
+                            <div id="marquee_demo">
+                                <table  class="mntable" >
+                                    <tr>
+                                        <td id="zzjs">
+                                            <table class="mnInnerTable">
+                                                <tr>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg" alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg" alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg" alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg" alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg" alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg" alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg" alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                    <td><a href="#" style="text-decoration:none"><img src="~/Images/Home/showgirl.jpg"  alt="" /><p>就爱我吧（580002）</p></a></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td id="zzjs_net"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+              
+                        <table >
+                          <tr>
+                            <td style=" height:22px; border:0px;border-spacing:0px;padding:0px;padding-left:7px;">
+                                <table style="width:933px; height:22px; border:0px;border-spacing:0px;padding:0px;margin:0px ; margin-top:2px">
+                                  <tr>
+                                    <td class="secondHeaderLinck" style="font-size:16px;height:22px;">9258网络有限公司网站</td>
+                                    <td style="width:50px;height:22px;text-align:right;background:#F0F0F0;font-weight:normal;color:white;padding-right:5px; font-size:11px">@Html.ActionLink("更多","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333" })</td>
+                                  </tr>
+                                </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style=" height:25px; border:0px;border-spacing:0px;padding:1px;padding-left:6px;">
+                                <table style="width:100%; border:1px solid #CCC;border-spacing:2px;margin-left:8px; background-color:white; margin:0px auto;">
+                                    <tr style="height:90px;text-align:center;border-spacing:0px;padding:0px;">
+                                        <td style="background-color:white">
+                                            <table class="CompanyAdv">
+                                                <tr>
+                                                    <td style="height:90px;text-align:center;border-spacing:0px;padding:0px;"><a href="#" style="text-decoration:none;color:white;border:0px"><img src="~/Images/Home/CompanyLogo1.jpg" alt="" width="100" height="90"/></a></td>
+                                                    <td style="height:90px;width:128px;vertical-align:top;text-align:left;font-size:11px;padding:2px">公司文字说明</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                         <td style="background-color:white">
+                                            <table class="CompanyAdv">
+                                                <tr>
+                                                    <td style="height:90px;text-align:center;border-spacing:0px;padding:0px;"><a href="#" style="text-decoration:none;color:white;border:0px"><img src="~/Images/Home/CompanyLogo1.jpg" alt="" width="100" height="90"/></a></td>
+                                                    <td style="height:90px;width:128px;vertical-align:top;text-align:left;font-size:11px;padding:2px">公司文字说明</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                         <td style="background-color:white">
+                                            <table class="CompanyAdv">
+                                                <tr>
+                                                    <td style="height:90px;text-align:center;border-spacing:0px;padding:0px;"><a href="#" style="text-decoration:none;color:white;border:0px"><img src="~/Images/Home/CompanyLogo1.jpg" alt="" width="100" height="90"/></a></td>
+                                                    <td style="height:90px;width:128px;vertical-align:top;text-align:left;font-size:11px;padding:2px">公司文字说明</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                         <td style="background-color:white">
+                                            <table class="CompanyAdv">
+                                                <tr>
+                                                    <td style="height:90px;text-align:center;border-spacing:0px;padding:0px;"><a href="#" style="text-decoration:none;color:white;border:0px"><img src="~/Images/Home/CompanyLogo1.jpg" alt="" width="100" height="90"/></a></td>
+                                                    <td style="height:90px;width:128px;vertical-align:top;text-align:left;font-size:11px;padding:2px">公司文字说明</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr style="height:90px;text-align:center;border-spacing:0px;padding:0px;">
+                                         <td style="background-color:white">
+                                            <table class="CompanyAdv">
+                                                <tr>
+                                                    <td style="height:90px;text-align:center;border-spacing:0px;padding:0px;"><a href="#" style="text-decoration:none;color:white;border:0px"><img src="~/Images/Home/CompanyLogo1.jpg" alt="" width="100" height="90"/></a></td>
+                                                    <td style="height:90px;width:128px;vertical-align:top;text-align:left;font-size:11px;padding:2px">公司文字说明</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                         <td style="background-color:white">
+                                            <table class="CompanyAdv">
+                                                <tr>
+                                                    <td style="height:90px;text-align:center;border-spacing:0px;padding:0px;"><a href="#" style="text-decoration:none;color:white;border:0px"><img src="~/Images/Home/CompanyLogo1.jpg" alt="" width="100" height="90"/></a></td>
+                                                    <td style="height:90px;width:128px;vertical-align:top;text-align:left;font-size:11px;padding:2px">公司文字说明</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                         <td style="background-color:white">
+                                            <table class="CompanyAdv">
+                                                <tr>
+                                                    <td style="height:90px;text-align:center;border-spacing:0px;padding:0px;"><a href="#" style="text-decoration:none;color:white;border:0px"><img src="~/Images/Home/CompanyLogo1.jpg" alt="" width="100" height="90"/></a></td>
+                                                    <td style="height:90px;width:128px;vertical-align:top;text-align:left;font-size:11px;padding:2px">公司文字说明</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                         <td style="background-color:white">
+                                            <table class="CompanyAdv">
+                                                <tr>
+                                                    <td style="height:90px;text-align:center;border-spacing:0px;padding:0px;"><a href="#" style="text-decoration:none;color:white;border:0px"><img src="~/Images/Home/CompanyLogo1.jpg" alt="" width="100" height="90"/></a></td>
+                                                    <td style="height:90px;width:128px;vertical-align:top;text-align:left;font-size:11px;padding:2px">公司文字说明</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr style="height:90px;text-align:center;border-spacing:0px;padding:0px;">
+                                         <td style="background-color:white">
+                                            <table class="CompanyAdv">
+                                                <tr>
+                                                    <td style="height:90px;text-align:center;border-spacing:0px;padding:0px;"><a href="#" style="text-decoration:none;color:white;border:0px"><img src="~/Images/Home/CompanyLogo1.jpg" alt="" width="100" height="90"/></a></td>
+                                                    <td style="height:90px;width:128px;vertical-align:top;text-align:left;font-size:11px;padding:2px">公司文字说明</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                         <td style="background-color:white">
+                                            <table class="CompanyAdv">
+                                                <tr>
+                                                    <td style="height:90px;text-align:center;border-spacing:0px;padding:0px;"><a href="#" style="text-decoration:none;color:white;border:0px"><img src="~/Images/Home/CompanyLogo1.jpg" alt="" width="100" height="90"/></a></td>
+                                                    <td style="height:90px;width:128px;vertical-align:top;text-align:left;font-size:11px;padding:2px">公司文字说明</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                         <td style="background-color:white">
+                                            <table class="CompanyAdv">
+                                                <tr>
+                                                    <td style="height:90px;text-align:center;border-spacing:0px;padding:0px;"><a href="#" style="text-decoration:none;color:white;border:0px"><img src="~/Images/Home/CompanyLogo1.jpg" alt="" width="100" height="90"/></a></td>
+                                                    <td style="height:90px;width:128px;vertical-align:top;text-align:left;font-size:11px;padding:2px">公司文字说明</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                         <td style="background-color:white">
+                                            <table class="CompanyAdv">
+                                                <tr>
+                                                    <td style="height:90px;text-align:center;border-spacing:0px;padding:0px;"><a href="#" style="text-decoration:none;color:white;border:0px"><img src="~/Images/Home/CompanyLogo1.jpg" alt="" width="100" height="90"/></a></td>
+                                                    <td style="height:90px;width:128px;vertical-align:top;text-align:left;font-size:11px;padding:2px">公司文字说明</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                          </tr>
+                          <tr>
+                           <td style=" height:22px; border:0px;border-spacing:0px;padding:0px;padding-left:6px;">
+                                <table style="width:934px; height:22px; border:0px;border-spacing:0px;padding:0px">
+                                  <tr>
+                                    <td class="secondHeaderLinck" style="font-size:16px;height:22px;">友情链接</td>
+                                    <td style="width:50px;height:22px;text-align:right;background:#F0F0F0;font-weight:normal;color:white; padding-right:5px; font-size:11px">@Html.ActionLink("更多","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333" })</td>
+                                  </tr>
+                            </table></td>
+                          </tr>
+                          <tr>
+                            <td style=" height:25px; border:0px;border-spacing:0px;padding:0px;padding-left:6px; background-color:white">
+                                <table style="width:100%; border:1px solid #CCC;border-spacing:3px;margin-left:8px; margin-right:5px;background-color:white; margin:0px auto;">
+                              <tr style="border-spacing:0px">
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14"> @Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                              </tr>
+                              <tr style="border-spacing:0px">
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                </tr>
+                              <tr style="border-spacing:0px">
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                <td height="20" align="center" bgcolor="#DBECFB" class="zt14">@Html.ActionLink("友情链接","NavigateTo",new { route = "Default" }, new {style="text-decoration:none;color:#333;font-size:11px" })</td>
+                                </tr>
+                            </table></td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top" bgcolor="#FFFFFF"><p class="zt12"><span class="zt12"><span class="zt120">客户服务热线：18317188853 | 在线咨询QQ：925811110 | VIP销售专线：18317188853 | VIP销售： | 客服服务监督QQ：925811110</span></span></p>
+                              <p class="zt12"><span class="zt120"><span class="zt12">电信增值业务经营许可证：沪B8-20101220 站长统计</span></span></p>
+                            <p class="zt12"><span class="zt120"><span class="zt12">Copyright (C) 9258网络有限公司版权所有</span></span><span class="zt12"></span></p></td>
+                          </tr>
+            </table>
+                </td>
+            </tr>
+        </table>
+
+<div id="LoginDiv" style="display:none" >
+    <table width="600" border="0" align="center" cellpadding="0" cellspacing="3" bgcolor="#1E9AE0">
+    <tr>
+        <td width="600" height="400" align="center" valign="top" bgcolor="#FFFFFF">
+            <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                <td style="width:100px;height:32px;text-align:center;cursor:pointer" class="zt26">用户登录</td>
+    
+                <td height="32" align="center" bgcolor="#1E9AE0"><span class="zt28">9258网络软件开发有限公司</span></td>
+                <td style="width:32px;height:32px;background-color:#1E9AE0;cursor:pointer"><img src="~/Images/Login/Close.png" onclick="javacript:onClose()" width="32" height="32" /></td>
+                </tr>
+                <tr>
+                <td height="30" colspan="4" align="center" class="zt30">9258网络有限公司免费注册平台一号多用一体化网站</td>
+                </tr>
+                <tr>
+                <td colspan="4">
+                    <table width="598" border="0" cellspacing="0" cellpadding="0">
+                            <tr >
+                            <td>
+                                <table >
+                                    <tr>
+                                        <td>
+                                            <p style="padding-left:80px; vertical-align:middle" class="zt12">用户：<input type="text" name="UserName" /> <input type="checkbox" name="RememberUser" id="userCheckbox"/>记住我</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            </tr>
+                            <tr style="padding-left:80px">
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style="padding-left:80px;  vertical-align:middle" class="zt12">密码：<input type="text" name="Password" /> <input type="checkbox" name="RememberPwd" id="pwdCheckbox" />记住密码 </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td style="padding-left:220px;">
+                                <button type="button" style="background-color:#F2A233" class="zt14">登录</button>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <table style="width:300px;padding-left:80px" >
+                                    <tr>
+                                    <td >
+                                        <table align="center"  >
+                                            <tr>
+                                            <td bgcolor="#FFFFFF"><img src="~/Images/Login/QQ.png" width="100" /></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td >
+                                        <table align="center" >
+                                            <tr>
+                                            <td bgcolor="#FFFFFF"><img src="~/Images/Login/Weibo.png" width="100" /></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <table style="width:300px;padding-left:80px;">
+                                        <tr>
+                                        <td >
+                                            <table  align="center" >
+                                                <tr>
+                                                    <td><img src="~/Images/Login/Zhifubao.png" width="100"/></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                            <td style="text-align:center;">
+                                                <table style="text-align:center;">
+                                                    <tr>
+                                                        <td style="text-align:center;background-color:#007DCB;width:100px; height:17px" >@Html.ActionLink("用微信帐号登录","NavigateTo",new { route = "AgentLogin" }, new {style="text-decoration:none;color:#FFF" })</td>
+                                                    </tr>
+                                            </table>
+                                        </td>
+                                        </tr>
+                                </table>
+                            </td>
+                            </tr>
+                    </table>
+                </td>
+                </tr>
+            </table>
+
+    </td>
+    </tr>
+    </table>
+</div>
+
+<div id="RegisterDiv" style="display:none">
+    <table width="600" border="0" align="center" cellpadding="0" cellspacing="3" bgcolor="#1E9AE0">
+         <tr>
+             <td width="600" height="400" align="center" valign="top" bgcolor="#FFFFFF">
+                 <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr>
+                      
+                        <td style="width:100px;height:32px;text-align:center;cursor:pointer"class="zt26">免费注册</td>
+                        <td height="32" align="center" bgcolor="#1E9AE0"><span class="zt28">9258网络软件开发有限公司</span></td>
+                        <td style="width:32px;height:32px;background-color:#1E9AE0;cursor:pointer"><img src="~/Images/Login/Close.png" width="32" height="32" onclick="javacript:onClose()"/></td>
+                      </tr>
+                      <tr>
+                        <td height="30" colspan="4" align="center" class="zt30">9258网络有限公司免费注册平台一号多用一体化网站</td>
+                      </tr>
+                     <tr>
+                        <td colspan="4">
+                            <table style="line-height:1px">
+                                <tr>
+                                    <td width="400" align="center"><img src="~/Images/Login/QQRecommend.png" width="349" height="36"/></td>
+                                    <td width="198" height ="41" >
+                                        <button type="button" style="background-color:#F2A233; height:36px" class="zt18">立即登录</button>
+                                     </td>
+                                </tr>
+                                <tr>
+                                    <td width="400">
+                                        <table width="400" border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                            <td>
+                                                <p style="padding-left:80px; vertical-align:middle" class="zt12">用户：<input type="text" name="RegisterUserName" /></p>
+                                            </td>
+                                      
+                                          </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                               
+                                <tr>
+                                    <td width="400">
+                                        <table width="400" border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                            <td>
+                                                <p style="padding-left:80px;  vertical-align:middle" class="zt12">密码：<input type="text" name="RegisterPassword" /></p>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                    </td>
+                                    <td class="zt12">你也可以通过以下帐号登录</td>
+                                </tr>
+                             
+                                <tr>
+                                    <td width="400">
+                                        <table width="400" border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                              <td>
+                                                  <p style="padding-left:55px;  vertical-align:middle" class="zt12">重复密码：<input type="text" name="RegisterPasswordAgain" /></p>
+                                              </td>
+                                          </tr>
+                                        </table>
+                                    </td>
+                                    <td><img src="~/Images/Login/QQ.png" width="105" height="23" /></td>
+                                </tr>
+                              
+                                <tr>
+                                    <td width="400">
+                                        <table width="400" border="0" cellspacing="4" cellpadding="0">
+                                              <tr>
+                                                  <td>
+                                                      <table>
+                                                          <tr>
+                                                               <td>
+                                                                <p style="padding-left:50px;  vertical-align:middle" class="zt12">所在地区：</p>
+                                                            </td>
+                                                           <td>
+                                                               <select>
+                                                                   <option>上海</option>
+                                                               </select>
+                                                           </td>
+                                                           <td>
+                                                               <select>
+                                                                   <option>徐汇</option>
+                                                               </select>
+                                                           </td>
+                                                          </tr>
+                                                          
+                                                      </table>
+                                                  </td>
+                                                  
+                                              </tr>
+                                        </table>
+                                    </td>
+                                    <td><img src="~/Images/Login/Weibo.png" width="105" height="20" /></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table width="400" border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                              <td>
+                                                  <table>
+                                                      <tr>
+                                                            <td>
+                                                  <p style="padding-left:80px;  vertical-align:middle" class="zt12">性别：</p>
+                                             </td>
+                                            <td>
+                                                <p><input type="radio" checked/>男</p>
+                                                
+                                            </td>
+                                              <td>
+                                                  <p><input type="radio" />女</p>
+                                              </td>
+                                                      </tr>
+                                                  </table>
+                                              </td>
+                                           
+                                          </tr>
+                                        </table>
+
+                                    </td>
+                                    <td><img src="~/Images/Login/Zhifubao.png" width="105" height="21" /></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                      <table width="400" border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                              <td>
+                                                  <table cellpadding="0" border="0">
+                                                      <tr>
+                                                           <td>
+                                                                <p style="padding-left:65px;  vertical-align:middle" class="zt12">验证码：<input type="text" name="RegisterPasswordAgain" /></p>
+                                                            </td>
+                                                            <td style="text-align:center;vertical-align:middle"><p style="width:60px;text-align:center; height:30px;background-color:#99CC00;font-style:italic;vertical-align:middle;font-size:22px">7856</p></td>
+                                                      </tr>
+                                                  </table>
+                                              </td>
+                                           
+                                          </tr>
+                                     </table>
+                                </td>
+                                <td class="zt12">微信帐号登录</td>
+                              </tr>
+                                <tr>
+                                    <td>
+                                        <table width="400" border="0" cellspacing="4" cellpadding="0">
+                                          <tr>
+                                              <td>
+                                                  <p style="padding-left:80px;  vertical-align:middle" class="zt12"><input type="checkbox" name="RememberPwd" id="agreeCheckbox" />我已同意一号多用一体化网站注册条款 </p>
+                                              </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+         
+                                <tr>
+                                    <td width="400">
+                                        <table border="0" align="center">
+                                          <tr>
+                                              <td>
+                                                  <button type="button" style="background-color:#F2A233;height:36px" class="zt18">注册</button>
+                                              </td>
+                                          </tr>
+                                        </table>
+                                            
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                     </tr>
+                </table>
+             </td>
+         </tr>
+    </table>
+</div>
+  
+    </section>
+}
+
+
+@section css{
+    <style type="text/css">
+        #menu1, .l-menu-shadow {
+            top: 30px;
+            left: 50px;
+        }
+
+        #menu1 {
+            width: 200px;
+        }
+    </style>
+}
+
+
+
+@section scripts{
+     <script type="text/javascript" src="~/Scripts/5icool.org.js"></script> 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            InitHome();
+            //RunAdvertise();
+            //ccMarquee("ccMarquee");
+            RunShowGirl();
+        })
+    </script>
+}

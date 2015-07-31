@@ -1,0 +1,134 @@
+﻿body, html
+{
+	height: 100%;
+}
+
+body
+{
+	height: 100%;
+	padding: 10px;
+	margin: 0;
+	overflow: hidden;
+	background:#b5e1f7;
+}
+
+.l-link
+{
+	display: block;
+	height: 26px;
+	line-height: 26px;
+	padding-left: 10px;
+	text-decoration: underline;
+	color: #333;
+	border: 1px solid white;
+	margin: 4px;
+}
+
+.l-link2
+{
+	text-decoration: underline;
+	color: white;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.l-layout-top
+{
+	background: #102A49;
+	color: White;
+}
+
+.l-layout-bottom
+{
+	background: #E5EDEF;
+	text-align: center;
+}
+
+.loading
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url('/lib/ligerUI/skins/Aqua/images/common/bigloading.gif') no-repeat center;	
+	z-index: 1;
+}
+
+
+.l-link-over
+{
+	background: #FFEEAC;
+	border: 1px solid #DB9F00;
+}
+
+.l-winbar
+{
+	background: #2B5A76;
+	height: 30px;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	z-index: 99999;
+}
+
+.space
+{
+	color: #E7E7E7;
+}
+/* 顶部 */
+.l-topmenu
+{
+	margin: 0;
+	padding: 0;
+	height: 31px;
+	line-height: 31px;
+	background: url('~/lib/images/top.jpg') repeat-x bottom;
+	position: relative;
+	border-top: 1px solid #1D438B;
+}
+
+.l-topmenu-logo
+{
+	color: #E7E7E7;
+	padding-left: 35px;
+	line-height: 26px;
+	background: url('lib/images/topicon.gif') no-repeat 10px 5px;
+}
+
+.l-topmenu-welcome
+{
+	position: absolute;
+	height: 24px;
+	line-height: 24px;
+	right: 30px;
+	top: 2px;
+	color: #070A0C;
+}
+	.l-topmenu-welcome li
+	{
+		display:inline;
+	}
+	.l-topmenu-welcome a
+	{
+		color: #1D438B;
+		text-decoration: underline;
+	}
+
+div.center
+{	
+	vertical-align:middle;
+	text-align:center;
+}
+
+.right{
+    background:url('lib/ligerUI/skins/Aqua/images/layout/panel-content.gif') repeat
+}
+
+.scroll{
+    overflow-x:scroll;
+    overflow-y:scroll;
+}
+
+.framecenter{
+    margin:10px;
+}

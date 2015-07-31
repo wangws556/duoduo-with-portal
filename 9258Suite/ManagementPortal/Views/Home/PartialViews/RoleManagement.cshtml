@@ -1,0 +1,12 @@
+﻿@model YoYoStudio.Model.Json.JsonModel
+
+<div class="l-clear"></div>
+<div id="@Model.TagId" class="framecenter"></div>
+
+
+<script type="text/javascript" src="~/Scripts/Role.js">
+</script>
+<script type="text/javascript">
+    var tagId = "#" + "@Model.TagId";
+    $(document).ready(Init(tagId));
+</script>

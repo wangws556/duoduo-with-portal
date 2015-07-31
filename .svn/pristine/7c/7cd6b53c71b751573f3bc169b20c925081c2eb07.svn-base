@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="YoYoStudio.Client.Chat.Controls.VideoControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ctls="clr-namespace:YoYoStudio.Controls;assembly=YoYoStudio.Controls"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             HorizontalAlignment="Stretch"
+             VerticalAlignment="Stretch"
+             DataContextChanged="UserControl_DataContextChanged"
+             mc:Ignorable="d">
+    <DockPanel LastChildFill="True">
+        <ContentControl x:Name="PART_Bottom"
+                        Height="0"
+                        DockPanel.Dock="Bottom" />
+        <Border x:Name="PART_VideoBorder">
+            <ctls:WpfFlexControl x:Name="flex"
+                                 FlashCallback="flex_FlashCallback"
+                                 MoviePath="{Binding FlexPath}" />
+        </Border>
+    </DockPanel>
+</UserControl>

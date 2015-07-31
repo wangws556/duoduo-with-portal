@@ -1,0 +1,57 @@
+--1. install AdventureWorksDB.msi on your SQL Server machine.
+--Attach Adventureworks to SQL Server.
+--2. Run the following script to create sample databases.
+
+use adventureworks
+go
+drop table dbo.SalesOrderHeader_test
+go
+drop table dbo.SalesOrderDetail_test
+go
+select * into dbo.SalesOrderHeader_test
+from Sales.SalesOrderHeader
+go
+select * into dbo.SalesOrderDetail_test
+from Sales.SalesOrderDetail
+go
+create clustered index SalesOrderHeader_test_CL 
+on dbo.SalesOrderHeader_test (SalesOrderID)
+go
+create index SalesOrderDetail_test_NCL
+on dbo.SalesOrderDetail_test (SalesOrderID)
+go
+create clustered index SalesOrderDetail_test_CL
+on dbo.SalesOrderDetail_test (SalesOrderDetailID)
+go
+
+declare @i int
+set @i = 1
+while @i<=9
+begin
+insert into dbo.SalesOrderHeader_test
+(RevisionNumber, OrderDate, DueDate,
+ShipDate,Status, OnlineOrderFlag, SalesOrderNumber,PurchaseOrderNumber,
+AccountNumber, CustomerID,ContactID, SalesPersonID, TerritoryID,
+ BillToAddressID, ShipToAddressID, ShipMethodID, CreditCardID,
+CreditCardApprovalCode, CurrencyRateID, SubTotal,TaxAmt,
+Freight,TotalDue, Comment,rowguid,ModifiedDate)
+select RevisionNumber, OrderDate, DueDate,
+ShipDate,Status, OnlineOrderFlag, SalesOrderNumber,PurchaseOrderNumber,
+AccountNumber, CustomerID,ContactID, SalesPersonID, TerritoryID,
+ BillToAddressID, ShipToAddressID, ShipMethodID, CreditCardID,
+CreditCardApprovalCode, CurrencyRateID, SubTotal,TaxAmt,
+Freight,TotalDue, Comment,rowguid,ModifiedDate
+from dbo.SalesOrderHeader_test
+where SalesOrderID = 75123
+insert into dbo.SalesOrderDetail_test
+(SalesOrderID, CarrierTrackingNumber, OrderQty, ProductID,
+SpecialOfferID,UnitPrice,UnitPriceDiscount,LineTotal,
+rowguid,ModifiedDate)
+select 75123+@i, CarrierTrackingNumber, OrderQty, ProductID,
+SpecialOfferID,UnitPrice,UnitPriceDiscount,LineTotal,
+rowguid, getdate()
+from Sales.SalesOrderDetail
+set @i = @i +1
+end
+go
+

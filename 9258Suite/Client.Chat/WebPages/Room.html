@@ -1,0 +1,587 @@
+﻿<div id="mainDiv" style="left: 0; top: 0; position: absolute; height: 100%; width: 100%;">
+    <div id="rightPanel" dock="right" class="rightPanel">
+        <div id="rightDockPanel">
+            <div id="hornMsgPanel" dock="bottom" onmouseover="javascript:ShowToolbar()" onmouseout="javascript:HideToolbar()">
+                <table id="toolbarHornMsg">
+                    <tr>
+                        <td>
+                            <span style="font-weight: bold;">喇叭</span>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>
+                            <a href="javascript:EditHornMsg()">编辑</a>
+                        </td>
+                        <td>
+                            <td>
+                                <input type="checkbox" checked id="Horn-Scroll" onclick="javascript: HornScroll_Click()" /><label for="Horn-Scroll">滚屏</label>
+
+                            </td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="giftPanel1" dock="bottom" style="height: 70px;">
+                <table style="width: 100%; height: 70px;" cellpadding="1" cellspacing="1">
+                    <tr style="height: 20px;">
+                        <td>赠送</td>
+                        <td>
+                            <div id="giftReceiver" />
+                        </td>
+                        <td>数量</td>
+                        <td>
+                            <div id="giftCount"></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 20px;">
+                        <td>金币</td>
+                        <td>
+                            <label id="moneyLabel" style="width: 60px;" />
+                        </td>
+                        <td>积分</td>
+                        <td>
+                            <label id="scoreLabel" style="width: 60px;" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px;">
+                        <td colspan="4">
+                            <ul style="margin-left: 0; padding-top: 0px; vertical-align: top;">
+                                <li><a href="javascript:scoreExchange()">积分兑换</a></li>
+                                <li><a href="#" onclick="javascript:donothing()">充值</a></li>
+                                <li><a href="#" onclick="javascript:donothing()">消费明细</a></li>
+                                <li><a href="#" onclick="javascript:donothing()">增收详情</a></li>
+                                <li>
+                                    <img style="height: 20px; width: 20px; margin-right: 5px" src="Images/horn.png" onclick="javascript:EditHornMsg()" /></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="giftPanel2" dock="bottom" style="height: 180px;">
+                <div id="giftTab" style="position: absolute; top: 0; left: 0;">
+                    <ul id="giftTabHeader" style="margin-left: 0;">
+                    </ul>
+                </div>
+            </div>
+            <div id="userListPanel">
+                <div id="userlistTab">
+                    <ul style="margin-left: 0;">
+                        <li>用户</li>
+                        <li>管理</li>
+                        <li>麦序</li>
+                    </ul>
+                    <div id="userList" class="hScrollbar" />
+                    <div id="managerList" class="hScrollbar"></div>
+                    <div id="micList" class="hScrollbar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="topPanel" dock="top" class="topPanel">
+        <marquee direction="left" behavior="scroll" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();"><p id="roomScroll" class="scroll" style="white-space:nowrap"></p></marquee>
+    </div>
+    <div id="OutChatPanel" dock="bottom" style="height: 100px; bottom: 0;">
+        <div id="chatPanel">
+            <div dock="right" style="width: 100px; height: 100%;">
+                <input class="SendMsgBtn" type="button" name="SendMsgBtn" value="发送" onclick="javascript: SendMessage()" />
+            </div>
+            <div>
+                <textarea id="InputMsgTxr" class="InputMsgTxr" name="InputMsgTxr"></textarea>
+            </div>
+        </div>
+    </div>
+    <div id="toolbar" dock="bottom" style="height: 35px;">
+        <div class="leftside">
+            <!-- all things in floating left side -->
+            <table id="social">
+                <tr>
+                    <td>
+                        <div id="toolBarUsers" />
+                    </td>
+                    <td>
+                        <div id="Quiret">
+                            <input type="checkbox" id="checks" checked>悄悄话
+                        </div>
+                    </td>
+                    <td>
+                        <input id="Font" type="image" onclick="javascript: ToggleFont()" src="Images/Font.jpg" onmouseover="this.className='ImageMouseOn'" onmouseout="this.className='ImageMouseLeft'" />
+                    </td>
+                    <td>
+                        <input id="Motion" type="image" onclick="javascript: ShowFace(event)" src="Images/Emotion.gif" onmouseover="this.className='ImageMouseOn'" onmouseout="this.className='ImageMouseLeft'" />
+                    </td>
+
+                    <td>
+                        <input id="ShortCut" type="image" src="Images/ShortCut.gif" onmouseover="this.className='ImageMouseOn'" onmouseout="this.className='ImageMouseLeft'" />
+                    </td>
+                    <td>
+                        <input id="Stamp" type="image" onclick="javascript: ShowStamp(event)" src="Images/Stamp.gif" onmouseover="this.className='ImageMouseOn'" onmouseout="this.className='ImageMouseLeft'" />
+                    </td>
+                    <td>
+                        <input id="ArtisticFont" type="image" onclick="javascript: ShowArtistic(event)" src="Images/ArtisticFont.bmp" onmouseover="this.className='ImageMouseOn'" onmouseout="this.className='ImageMouseLeft'" />
+                    </td>
+                    <td>
+                        <input id="Temporary" type="image" onclick="javascript: ShowTemporary(event)" src="Images/Temporary.jpg" onmouseover="this.className='ImageMouseOn'" onmouseout="this.className='ImageMouseLeft'" />
+                    </td>
+                     <!--<td>
+                         <div class="rightside">
+                             
+                            <input id="ArtisticFont" type="image" src="Images/ArtisticFont.bmp" onmouseover="this.className='ImageMouseOn'" onmouseout="this.className='ImageMouseLeft'" />
+                           
+                             <div id="ArtisticDiv">
+                                 <ul>
+                                     <li><a href="javascript:void(0)" onclick="javascript: VeryGood()">超赞</a> </li>
+                                     <li><a href="javascript:void(0)" onclick="javascript: GoGo()">加油</a> </li>
+                                     <li><a href="javascript:void(0)" onclick="javascript: Cool()">强悍</a> </li>
+                                     <li><a href="javascript:void(0)" onclick="javascript: Fans()">求关注</a> </li>
+                                     <li><a href="javascript:void(0)" onclick="javascript: GoodSinger()">真好听</a> </li>
+                                 </ul>
+                             </div>
+                         </div>
+                    </td>-->
+                </tr>
+            </table>
+        </div>
+
+        <!--<div class="rightside">
+            <span class="menu_title">
+                <a class="menutit" href="#">quick menu</a>
+            </span>
+            <div class="quickmenu">
+                <ul>
+                    <li><a href="#">Premium Member</a></li>
+                    <li><a href="#">Become Author</a></li>
+                    <li><a href="#">Submit News</a></li>
+                    <li><a href="#">Send Feedback</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>-->
+    </div>
+    <div id="messagePanel">
+        <div id="splitter">
+            <div id="PublicMessage-Div" onmouseover="javascript:ShowPublicBtns()" onmouseout="javascript:HidePublicBtns()">
+                <div id="publicMessagePanel" class="messagePanel" />
+                <table id="PublicMsgDiv-Btns">
+                    <tr>
+                        <td>
+                            <input type="checkbox" checked id="Public-Scroll" onclick="javascript: PublicScroll_Click()" /><label for="Public-Scroll">滚屏</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" id="Public-Clear" value="清屏" onclick='javascript: PublicClear_Click()' /></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="PrivateMessage-Div" onmouseover="javascript:ShowPrivateBtns()" onmouseout="javascript:HidePrivateBtns()">
+                <div id="privateMessagePanel" class="messagePanel" />
+                <table id="PrivateMsgDiv-Btns">
+                    <tr>
+                        <td>
+                            <input type="checkbox" checked id="Private-Scroll" onclick="javascript: PrivateScroll_Click()" /><label for="Private-Scroll">滚屏</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" id="Private-Clear" value="清屏" onclick='javascript: PrivateClear_Click()' /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="ColorPicker" class="ToolWindow">
+            <div class="colors" id="AliceBlue"></div>
+            <div class="colors" id="AntiqueWhite"></div>
+            <div class="colors" id="Aqua"></div>
+            <div class="colors" id="aquamarine"></div>
+            <div class="colors" id="Azure"></div>
+            <div class="colors" id="Beige"></div>
+            <div class="colors" id="Bisque"></div>
+            <div class="colors" id="Black"></div>
+            <div class="colors" id="BlanchedAlmond"></div>
+            <div class="colors" id="Blue"></div>
+            <div class="colors" id="BlueViolet"></div>
+            <div class="colors" id="Brown"></div>
+            <div class="colors" id="BurlyWood"></div>
+            <div class="colors" id="cadeblue"></div>
+            <div class="colors" id="Chartreuse"></div>
+            <div class="colors" id="Chocolate"></div>
+            <div class="colors" id="Coral"></div>
+            <div class="colors" id="CornflowerBlue"></div>
+            <div class="colors" id="Cornsilk"></div>
+            <div class="colors" id="Crimson"></div>
+            <div class="colors" id="Cyan"></div>
+            <div class="colors" id="DarkBlue"></div>
+            <div class="colors" id="DarkCyan"></div>
+            <div class="colors" id="DarkGoldenRod"></div>
+            <div class="colors" id="DarkGray"></div>
+            <div class="colors" id="DarkGreen"></div>
+            <div class="colors" id="DarkKhaki"></div>
+            <div class="colors" id="DarkMagenta"></div>
+            <div class="colors" id="DarkOliveGreen"></div>
+            <div class="colors" id="DarkOrange"></div>
+            <div class="colors" id="DarkOrchid"></div>
+            <div class="colors" id="DarkRed"></div>
+            <div class="colors" id="DarkSalmon"></div>
+            <div class="colors" id="DarkSeaGreen"></div>
+            <div class="colors" id="DarkSlateBlue"></div>
+            <div class="colors" id="DarkSlateGray"></div>
+            <div class="colors" id="DarkTurquoise"></div>
+            <div class="colors" id="DarkViolet"></div>
+            <div class="colors" id="DeepPink"></div>
+            <div class="colors" id="DeepSkyBlue"></div>
+            <div class="colors" id="DimGray"></div>
+            <div class="colors" id="DodgerBlue"></div>
+            <div class="colors" id="FireBrick"></div>
+
+            <div class="colors" id="FloralWhite"></div>
+            <div class="colors" id="Fuchsia"></div>
+            <div class="colors" id="Gainsboro"></div>
+            <div class="colors" id="GhostWhite"></div>
+            <div class="colors" id="Gold"></div>
+            <div class="colors" id="GoldenRod"></div>
+            <div class="colors" id="Gray"></div>
+            <div class="colors" id="Green"></div>
+            <div class="colors" id="GreenYellow"></div>
+            <div class="colors" id="HoneyDew"></div>
+            <div class="colors" id="HotPink"></div>
+            <div class="colors" id="IndianRed"></div>
+            <div class="colors" id="Indigo"></div>
+            <div class="colors" id="Ivory"></div>
+            <div class="colors" id="Khaki"></div>
+            <div class="colors" id="Lavender"></div>
+            <div class="colors" id="LavenderBlush"></div>
+            <div class="colors" id="LawnGreen"></div>
+            <div class="colors" id="LemonChiffon"></div>
+            <div class="colors" id="LightBlue"></div>
+            <div class="colors" id="LightCoral"></div>
+            <div class="colors" id="LightCyan"></div>
+            <div class="colors" id="LightGoldenRodYellow"></div>
+            <div class="colors" id="LightGray"></div>
+            <div class="colors" id="LightGreen"></div>
+            <div class="colors" id="LightPink"></div>
+            <div class="colors" id="LightSalmon"></div>
+            <div class="colors" id="LightSeaGreen"></div>
+            <div class="colors" id="LightSkyBlue"></div>
+            <div class="colors" id="LightSlateGray"></div>
+            <div class="colors" id="LightSteelBlue"></div>
+            <div class="colors" id="LightYellow"></div>
+            <div class="colors" id="Lime"></div>
+            <div class="colors" id="LimeGreen"></div>
+            <div class="colors" id="Linen"></div>
+            <div class="colors" id="Magenta"></div>
+            <div class="colors" id="Maroon"></div>
+            <div class="colors" id="MediumAquaMarine"></div>
+            <div class="colors" id="MediumBlue"></div>
+            <div class="colors" id="MediumOrchid"></div>
+            <div class="colors" id="MediumPurple"></div>
+            <div class="colors" id="MediumSeaGreen"></div>
+            <div class="colors" id="MediumSlateBlue"></div>
+            <div class="colors" id="MediumSpringGreen"></div>
+            <div class="colors" id="MediumTurquoise"></div>
+            <div class="colors" id="MediumVioletRed"></div>
+            <div class="colors" id="MidnightBlue"></div>
+            <div class="colors" id="MintCream"></div>
+            <div class="colors" id="MistyRose"></div>
+            <div class="colors" id="Moccasin"></div>
+            <div class="colors" id="NavajoWhite"></div>
+            <div class="colors" id="Navy"></div>
+            <div class="colors" id="OldLace"></div>
+            <div class="colors" id="Olive"></div>
+            <div class="colors" id="OliveDrab"></div>
+            <div class="colors" id="Orange"></div>
+            <div class="colors" id="OrangeRed"></div>
+            <div class="colors" id="Orchid"></div>
+            <div class="colors" id="PaleGoldenRod"></div>
+            <div class="colors" id="PaleGreen"></div>
+            <div class="colors" id="PaleTurquoise"></div>
+            <div class="colors" id="PaleVioletRed"></div>
+            <div class="colors" id="PapayaWhip"></div>
+            <div class="colors" id="PeachPuff"></div>
+            <div class="colors" id="Peru"></div>
+            <div class="colors" id="Pink"></div>
+            <div class="colors" id="Plum"></div>
+            <div class="colors" id="PowderBlue"></div>
+            <div class="colors" id="Purple"></div>
+            <div class="colors" id="Red"></div>
+            <div class="colors" id="RosyBrown"></div>
+            <div class="colors" id="RoyalBlue"></div>
+            <div class="colors" id="SaddleBrown"></div>
+            <div class="colors" id="Salmon"></div>
+            <div class="colors" id="SandyBrown"></div>
+            <div class="colors" id="SeaGreen"></div>
+
+            <div class="colors" id="SeaShell"></div>
+
+            <div class="colors" id="Sienna"></div>
+            <div class="colors" id="Silver"></div>
+            <div class="colors" id="SkyBlue"></div>
+            <div class="colors" id="SlateBlue"></div>
+            <div class="colors" id="SlateGray"></div>
+            <div class="colors" id="Snow"></div>
+            <div class="colors" id="SpringGreen"></div>
+            <div class="colors" id="SteelBlue"></div>
+            <div class="colors" id="Tan"></div>
+            <div class="colors" id="Teal"></div>
+            <div class="colors" id="Thistle"></div>
+            <div class="colors" id="Tomato"></div>
+            <div class="colors" id="Turquoise"></div>
+            <div class="colors" id="Violet"></div>
+            <div class="colors" id="Wheat"></div>
+            <div class="colors" id="White"></div>
+            <div class="colors" id="WhiteSmoke"></div>
+            <div class="colors" id="Yellow"></div>
+            <div class="colors" id="YellowGreen"></div>
+        </div>
+        <div id="MotionDiv" class="ToolWindow">
+            <ul id="imageTabHeader" style="margin-left: 5px;">
+            </ul>
+        </div>
+        <div id="StampDiv" class="ToolWindow">
+            <ul id="stampTabHeader" style="margin-left: 5px">
+            </ul>
+        </div>
+        <div id="ArtisticDiv" class="ArtisticWindow">
+            <ul>
+                <li><a href="javascript:void(0)" onclick="javascript: Good()">好</a> </li>
+                <li><a href="javascript:void(0)" onclick="javascript: Stick()">棒</a> </li>
+                <li><a href="javascript:void(0)" onclick="javascript: Perfect()">赞</a> </li>
+                <li><a href="javascript:void(0)" onclick="javascript: VeryPerfect()">超赞</a> </li>
+                <li><a href="javascript:void(0)" onclick="javascript: Cool()">牛B</a> </li>
+                <li><a href="javascript:void(0)" onclick="javascript: GoGo()">加油</a> </li>
+                <li><a href="javascript:void(0)" onclick="javascript: Power()">强悍</a> </li>
+                <li><a href="javascript:void(0)" onclick="javascript: Fans()">求关注</a> </li>
+                <li><a href="javascript:void(0)" onclick="javascript: GoodSinger()">真好听</a> </li>
+                <li><a href="javascript:void(0)" onclick="javascript: Welcome()">欢迎</a> </li>
+                <li><a href="javascript:void(0)" onclick="javascript: Love()">爱</a> </li>
+                <li><a href="javascript:void(0)" onclick="javascript: High()">high起来</a> </li>
+                <li><a href="javascript:void(0)" onclick="javascript: Kiss()">吻</a> </li>
+            </ul>
+        </div>
+            <div id="PreviewImageDiv" />
+            <div id="PreviewGiftDiv" />
+        </div>
+</div>
+
+<div id="toolbarWindow" class="toolbarWindow">
+    <div id="toolbarWindowHeader" class="toolbarWindowHeader" />
+    <div id="toolbarWindowContent" class="toolbarWindowContent">
+        <table id="FontsBar">
+            <tr>
+                <td>
+                    <input class="TableImg" id="Bold" type="image" src="Images/Bold.jpg" onclick="javascript: ToggleBoldMsg()" />
+                </td>
+                <td>
+                    <input class="TableImg" id="Italic" type="image" src="Images/Italic.jpg" onclick="javascript: ToggleItalicMsg()" />
+                </td>
+                <td>
+                    <input class="TableImg" id="Underline" type="image" src="Images/Underline.jpg" onclick="javascript: ToggleUnderlineMsg()" />
+                </td>
+                <td>
+                    <div class="TableImg" id="Color" onclick="javascript: ShowColor(this)" style="background-color: black; width: 15px; height: 15px; cursor: pointer" />
+                </td>
+
+                <td>
+                    <div id="FontSize" class="FontSizeDiv" />
+                </td>
+                <td>
+                    <div id="FontFamily" class="FontFamilyDiv" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="ScoreExchangeWindow" class="toolbarWindow">
+    <div id ="ScoreExchangeWindowHeader" style="margin:0px;padding:0">
+        <img src="Images/logo.gif" width="30" height="30" />
+        <span style="font-size:22px; color:red; vertical-align:central; margin-left:10px">9258积分兑换</span>
+    </div>
+    <div id="ScoreExchangeWindowContent" style="margin:0px;background-color:#a2c4f7; padding: 0">
+        <table style="width:300px;height:205px">
+            <tr>
+                <td>
+                    <table border="1">
+                        <tr style="height:25px;border:solid 1px black">
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td align="left" style="width:200px">
+                                            汇率（100积分）：
+                                        </td>
+                                        <td align="right" style="width:60px">
+                                            <label id="exchangeRate" style="font-weight:bold" />
+                                        </td>
+                                        <td align="right" style="width:40px">
+                                            <label>金币</label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+
+                        </tr>
+                        <tr style="height:25px;border:solid 1px black">
+                            <td>
+                                <table>
+                                    <tr>
+                                         <td align="left" style="width:150px">
+                                            可用积分：
+                                        </td>
+                                        <td align="right" style="width:150px">
+                                            <label id="availableScore" style="font-weight:bold" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                           
+                        </tr>
+                        <tr style="height:30px; border:solid 1px black">
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td style="width:150px">
+                                            兑换积分：
+                                        </td>
+                                        <td>
+                                            <input id="toExchangeScore" style="font-weight:bold;width:80px;text-align:right" onblur="javascript:scoreReady()" />
+                                        </td>
+                                          <td >
+                                            <label style="width:70px">*1000</label>
+                                        </td>
+
+                                    </tr>
+                                </table>
+                            </td>
+                           
+                        </tr>
+                        <tr style="height:25px; border:solid 1px black">
+                            <td>
+                                <table>
+                                    <tr>
+                                            <td align="left" style="width:150px">
+                                                可得金币：
+                                            </td>
+                                            <td align="right" style="width:150px">
+                                                <label id="getMoney" style="font-weight:bold;text-align:right"/>
+                                            </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        
+                        </tr>
+                         <tr style="height:22px">
+                             <td>
+                                  <table width="100%" border="0" cellpadding="0" cellspacing="5">
+                                    <tr>
+                                        <td height="22">&nbsp;</td>
+                                        <td width="70" height="22">
+                                            <input type="button" id="Button1" value=" 兑 换 " onclick="exchangeOk()" />
+                                        </td>
+                                        <td width="70" height="22">
+                                            <input type="button" id="Button2" onclick="exchangeCancel()" value=" 取 消 " />
+                                        </td>
+                                    </tr>
+                            </table>
+                             </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="HornMsgWindow" class="toolbarWindow">
+    <div id="HornMsgWindowHeader" style="margin: 0px; padding: 0">
+        <img src="Images/logo.gif" width="30" height="30" />
+        <span style="font-size: 22px; color: red; vertical-align: central; margin-left: 10px">9258小喇叭</span>
+    </div>
+    <div id="HornMsgWindowContent" style="margin: 0px; background-color: #a2c4f7; padding: 0">
+        <table>
+            <tr>
+                <td>
+                    <table border="1">
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr style="left: 5px">
+                                        <td height="25" align="center">
+                                            <input type="radio" name="radio" id="HornMsg" value="HornMsg" onclick="HornMsgClick()" />
+                                            <label for="HornMsg">小喇叭</label>
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="radio" id="HallHornMsg" value="HallHornMsg" onclick="HallHornMsgClick()" />
+                                            <label for="HallHornMsg">大喇叭</label>
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="radio" id="GlobalHornMsg" value="GlobalHornMsg" onclick="GlobalMsgClick()" />
+                                            <label for="GlobalHornMsg">世界喇叭</label>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+                        <tr style="border: solid 1px black">
+                            <td height="25">
+                                <table id="HornMsgTable">
+                                    <tr>
+                                        <td height="25" align="center">需<label id="hornMsgMoney" style="width: 40px; font-weight: bold"></label>金币</td>
+                                        <td align="center">需<label id="hallHornMsgMoney" style="width: 40px; font-weight: bold"></label>金币</td>
+                                        <td align="center">需<label id="globalHornMsgMoney" style="width: 40px; font-weight: bold"></label>金币</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table id="HornToolBar" border="1">
+                                    <tr>
+                                        <td>
+                                            <input class="TableImg" id="HornBold" type="image" src="Images/Bold.jpg" onclick="javascript: ToggleBoldHorn()" />
+                                        </td>
+                                        <td>
+                                            <input class="TableImg" id="HornItalic" type="image" src="Images/Italic.jpg" onclick="javascript: ToggleItalicHorn()" />
+                                        </td>
+                                        <td>
+                                            <input class="TableImg" id="HornUnderline" type="image" src="Images/Underline.jpg" onclick="javascript: ToggleUnderlineHorn()" />
+                                        </td>
+                                        <td>
+                                            <div id="HornFontSize" class="FontSizeDiv" />
+                                        </td>
+                                        <td>
+                                            <div id="HornFontFamily" class="FontFamilyDiv" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                <textarea name="textarea" id="HornTextarea" style="width: 380px; height: 100px"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30">
+                                <table width="100%" border="0" cellpadding="0" cellspacing="5">
+                                    <tr>
+                                        <td height="22">&nbsp;</td>
+                                        <td width="70" height="22">
+                                            <input type="button" id="okButton" value=" 发 送 " onclick="hornMsgOk()" />
+                                        </td>
+                                        <td width="70" height="22">
+                                            <input type="button" id="cancelButton" onclick="hornMsgCancel()" value=" 取 消 " />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="ErrorWindow" class="toolbarWindow">
+    <div id="ErrorHeader">
+        <img src="Images/logo.gif" width="30" height="30" />
+        <span style="font-size: 22px; color: red; vertical-align: central; margin-left: 10px">错误</span>
+    </div>
+    <div id="ErrorContent">
+    </div>
+</div>

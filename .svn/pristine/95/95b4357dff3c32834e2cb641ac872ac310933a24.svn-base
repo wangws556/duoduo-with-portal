@@ -1,0 +1,29 @@
+-- create a new SP: Nosniff
+
+USE [AdventureWorks]
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[NoSniff]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[NoSniff]
+GO
+
+create proc NoSniff (@i int) as
+declare @cmd varchar(1000)
+set @cmd = 'select count(b.SalesOrderID),sum(p.Weight)
+from dbo.SalesOrderHeader_test a 
+inner join dbo.SalesOrderDetail_test b
+on a.SalesOrderID = b.SalesOrderID
+inner join Production.Product p
+on b.ProductID = p.ProductID
+where a.SalesOrderID =' 
+exec (@cmd + @i)
+go
+
+-- test again
+
+Dbcc freeproccache
+go
+exec NoSniff 50000
+go
+exec NoSniff 75124
+go

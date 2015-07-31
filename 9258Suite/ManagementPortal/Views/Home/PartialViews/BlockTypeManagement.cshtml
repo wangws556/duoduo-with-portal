@@ -1,0 +1,13 @@
+﻿@model YoYoStudio.Model.Json.JsonModel
+
+<script type="text/javascript" src="~/Scripts/BlockType.js"></script>
+
+<script type="text/javascript">
+    var blockTypeId = "#" + "@string.Concat("blocktype",Model.TagId)";
+    $(document).ready(function () {
+        Init(blockTypeId);
+    })
+</script>
+
+<div class="l-clear"></div>
+<div id ="@string.Concat("blocktype",Model.TagId)" class="framecenter"></div>

@@ -1,0 +1,29 @@
+﻿@model YoYoStudio.Model.Json.CommandModel
+
+<script type="text/javascript" src="~/Scripts/BackendCommand.js">
+</script>
+<script type="text/javascript">
+    var gridTagId = "#" + "@string.Concat("cmdList", Model.TagId)";
+    var roleTagId = "#" + "@string.Concat("roleList", Model.TagId)";
+    var appTagId = "#" + "@string.Concat("appList", Model.TagId)";
+    var backLayoutId = "#" + "@string.Concat("backendCmdLayout", Model.TagId)";
+    $(document).ready(function () {
+        $(backLayoutId).ligerLayout({
+            leftWidth: 300,
+            allowLeftCollapse: false
+        });
+        Init(appTagId, roleTagId, gridTagId,"@Model.CommandType","GetBackendCommandApplications");
+    })
+</script>
+
+<div class="l-clear"></div>
+<div id="@string.Concat("backendCmdLayout", Model.TagId)" class="framecenter">
+    <div position="left">
+        <table><tr><td style="color:black">应用程序：</td><td><input type="text" id="@string.Concat("appList", Model.TagId)" /></td></tr></table>
+        <br />
+        <div id="@string.Concat("roleList", Model.TagId)"></div>
+    </div>
+    <div position="center" title="后台权限">
+        <div id="@string.Concat("cmdList", Model.TagId)"></div>
+    </div>
+</div>

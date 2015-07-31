@@ -1,0 +1,70 @@
+﻿@model YoYoStudio.Model.Json.UserModel
+
+<style type="text/css">
+    body {
+        font-size: 12px;
+    }
+
+    .l-table-edit {
+    }
+
+    .l-table-edit-td {
+        padding: 4px;
+    }
+
+    .l-button-submit, .l-button-test {
+        width: 80px;
+        float: left;
+        margin-left: 10px;
+        padding-bottom: 2px;
+    }
+
+    .l-verify-tip {
+        left: 230px;
+        top: 120px;
+    }
+
+    #errorLabelContainer {
+        padding: 10px;
+        width: 300px;
+        border: 1px solid #FF4466;
+        display: none;
+        background: #FFEEEE;
+        color: Red;
+    }
+</style>
+<script type="text/javascript" src="~/Scripts/Personal.js">   
+</script>
+<script type="text/javascript">
+    var passwordFormTagId = "@string.Concat("personalForm",Model.TagId)";
+    InitFormValidation(passwordFormTagId);
+    $(passwordFormTagId).ligerForm();
+</script>
+
+<form name="passwordForm" method="post" id="@string.Concat("passwordForm",Model.TagId)" class="framecenter">
+    <div id="errorLabelContainer" class="l-text-invalid">
+    </div>
+    <table cellpadding="0" cellspacing="0" class="l-table-edit">
+        <tr>
+            <td align="right" class="l-table-edit-td">旧密码:</td>
+            <td align="left" class="l-table-edit-td" style="width: 160px">
+                <input name="OldPwd" type="password" id="OldPwd" ltype="text" class="required" validate="{required:true}" /></td>
+            <td align="left"></td>
+        </tr>
+        <tr>
+            <td align="right" class="l-table-edit-td">新密码:</td>
+            <td align="left" class="l-table-edit-td" style="width: 160px">
+                <input name="NewPwd" type="password" id="NewPwd" ltype="text" class="required" validate="{required:true}" /></td>
+            <td align="left"></td>
+        </tr>
+        <tr>
+            <td align="right" class="l-table-edit-td">确认新密吗:</td>
+            <td align="left" class="l-table-edit-td" style="width: 160px">
+                <input name="ConfirmNewPwd" type="password" id="ConfirmNewPwd" ltype="text" class="required" validate="{required:true}" />
+            </td>
+            <td align="left"></td>
+        </tr>        
+    </table>
+    <br />
+    <button id="submitButton" class="l-button l-button-submit" onclick="changePassword()">提交</button>
+</form>

@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body,td,th {
+	font-size: 18px;
+	color: #FFF;
+	font-weight: bold;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.zt14 {
+	color: #00F;
+	font-size: 14px;
+	font-weight: normal;
+}
+.zt12 {
+	color: #F00;
+	font-size: 14px;
+	font-weight: normal;
+}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="450" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+  <tr>
+    <td height="30" align="center">室长功能</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+      <tr>
+        <td align="center" bgcolor="#C7D1FA"><span class="zt14">房间设置</span></td>
+        <td align="center" bgcolor="#C7D1FA"><span class="zt14">房间公告</span></td>
+        <td align="center" bgcolor="#C7D1FA"><span class="zt14">迎宾设置</span></td>
+        <td bgcolor="#C7D1FA">&nbsp;</td>
+        <td height="25" bgcolor="#C7D1FA">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="5" bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+          <tr>
+            <td bgcolor="#FFFFFF" class="zt12">公告内容：</td>
+          </tr>
+          <tr>
+            <td height="90" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="90" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="90" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+      </table></td>
+      </tr>
+      <tr>
+        <td height="30" colspan="5" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center" bgcolor="#E0E6FC"><input type="submit" name="button" id="button" value=" 删 除 " /></td>
+            <td align="center" bgcolor="#E0E6FC"><input type="submit" name="button2" id="button2" value=" 编 辑 " /></td>
+            <td align="center" bgcolor="#E0E6FC"><input type="submit" name="button3" id="button3" value=" 添 加 " /></td>
+          </tr>
+          <tr>
+            <td align="center" bgcolor="#E0E6FC"><form id="form1" name="form1" method="post" action="">
+            </form></td>
+            <td align="center" bgcolor="#E0E6FC"><form id="form2" name="form2" method="post" action="">
+              <input type="submit" name="button5" id="button5" value=" 确 定 " />
+            </form></td>
+            <td align="center" bgcolor="#E0E6FC"><form id="form3" name="form3" method="post" action="">
+              <input type="submit" name="button4" id="button4" value=" 取 消 " />
+            </form></td>
+          </tr>
+        </table></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

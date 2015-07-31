@@ -1,0 +1,83 @@
+﻿<?xml version="1.0"?>
+<configuration>
+  <configSections>
+    <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net"/>
+  </configSections>
+  <log4net>
+    <appender name="LogFileAppender" type="log4net.Appender.FileAppender">
+      <file value="DataService.log"/>
+      <!-- Example using environment variables in params -->
+      <!-- <file value="${TMP}\log-file.txt" /> -->
+      <appendToFile value="false"/>
+      <!-- An alternate output encoding can be specified -->
+      <!-- <encoding value="unicodeFFFE" /> -->
+      <layout type="log4net.Layout.PatternLayout">
+        <header value="[Header]%n"/>
+        <footer value="[Footer]%n"/>
+        <conversionPattern value="%d{yyyyMMdd-HH:mm:ss} [%t] %-5level %logger [%ndc] &lt;%property{auth}&gt; - %m%n"/>
+      </layout>
+      <!-- Alternate layout using XML			
+			<layout type="log4net.Layout.XMLLayout" /> -->
+    </appender>
+    <root>
+      <level value="ALL"/>
+      <appender-ref ref="LogFileAppender"/>
+    </root>
+  </log4net>
+	<connectionStrings>
+		<add name="CentralData" connectionString="Data Source=.;Initial Catalog=CentralData;Integrated Security=True;MultipleActiveResultSets=True;" providerName="System.Data.SqlClient"/>
+	</connectionStrings>
+  <system.web>
+    <compilation debug="true" targetFramework="4.0" />
+  </system.web>
+  <system.serviceModel>
+		<services>
+			<service name="DataService" behaviorConfiguration="serviceMetadataBehavior">
+        <host>
+          <baseAddresses>
+             <add baseAddress="https://61.147.119.252/DataService/"/>
+            <!--<add baseAddress="https://61.147.119.252/DataService/"/>-->
+          </baseAddresses>
+        </host>
+				<endpoint address="" binding="basicHttpBinding" bindingConfiguration="sslBasicHttpBinding" contract="YoYoStudio.DataService.Library.IDataService">
+					<identity>
+						<dns value="9258Suite"/>
+					</identity>
+				</endpoint>
+				<endpoint address="mex" binding="mexHttpsBinding" contract="IMetadataExchange" />
+			</service>
+		</services>
+		<bindings>
+			<basicHttpBinding>
+				<binding name="sslBasicHttpBinding" maxBufferSize="1024000000" maxReceivedMessageSize="1024000000">
+          <readerQuotas maxArrayLength="2147483647" maxBytesPerRead="2147483647" maxDepth="2147483647" maxNameTableCharCount="2147483647" maxStringContentLength="2147483647"/>
+          <security mode="Transport">
+						<transport clientCredentialType="None"/>
+					</security>
+				</binding>
+			</basicHttpBinding>
+		</bindings>
+    <behaviors>
+      <serviceBehaviors>
+        <behavior name="serviceMetadataBehavior">
+          <dataContractSerializer maxItemsInObjectGraph="2147483647" />
+          <!-- To avoid disclosing metadata information, set the value below to false before deployment -->
+          <serviceMetadata httpGetEnabled="false" httpsGetEnabled="true"/>
+          <!-- To receive exception details in faults for debugging purposes, set the value below to true.  Set to false before deployment to avoid disclosing exception information -->
+          <serviceDebug includeExceptionDetailInFaults="false"/>
+        </behavior>
+      </serviceBehaviors>
+    </behaviors>
+    <serviceHostingEnvironment multipleSiteBindingsEnabled="true" />
+  </system.serviceModel>
+ <system.webServer>
+	 <validation validateIntegratedModeConfiguration="false"/>
+    <modules runAllManagedModulesForAllRequests="true"/>
+    <!--
+        To browse web app root directory during debugging, set the value below to true.
+        Set to false before deployment to avoid disclosing web app folder information.
+      -->
+    <directoryBrowse enabled="true"/>
+  </system.webServer>
+
+</configuration>

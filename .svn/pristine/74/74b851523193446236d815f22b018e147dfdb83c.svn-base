@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
+	horizontalAlign="center" 
+	verticalAlign="middle" 
+	width="100%" 
+	height="100%" 
+	frameRate="30"
+	applicationComplete="initApp()"
+	xmlns:xray="com.blitzagency.xray.logger.*"
+	xmlns:simpleConnector="org.red5.as3.net.*"
+	layout="absolute" 
+	xmlns:ns1="*" viewSourceURL="srcview/index.html">
+	<mx:Style source="styles.css" />
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import com.blitzagency.util.LSOUserPreferences;
+			import com.blitzagency.xray.logger.XrayLog;
+			import com.blitzagency.xray.logger.XrayLogger;
+			import mx.core.ScrollPolicy; 
+			import mx.collections.ArrayCollection;
+
+			import com.blitzagency.xray.ui.OutputTools;
+			import mx.controls.List;
+			
+			import org.red5.as3.net.events.ConnectionEvent;
+
+			private var nc:NetConnection;
+			private var ns:NetStream;
+			
+			private var log:XrayLog;
+
+			[Bindable]
+            public var videoList:ArrayCollection;
+			
+			public function initApp():void
+			{				
+				Security.allowDomain("*");
+				// setup Xray's logger and create the log instance
+				log = new XrayLog();
+				XrayLogger.getInstance().registerStage(stage);
+				
+				// add listener for stage resize
+				addEventListener("resize", handleResize);
+				
+				// Local SharedObject
+				LSOUserPreferences.load("FLVPlayerPrefs");
+				
+				// set the path in the text field to oflaDemo by default
+				connector.setURI("rtmp://129.223.253.33/oflaDemo");
+				// add a listener for when successfully connected
+				connector.addEventListener(SimpleConnector.CONNECTED, handleConnected);
+			}
+			
+			public function handleConnected(e:ConnectionEvent):void
+			{				
+				// get the actuall connection from the connector object
+				nc = connector.getConnection();
+				// pass the netconnection along for use with the preview window
+				previewWindow.registerConnection(nc);
+				// get the list of videos
+				catchVideos();
+			}
+	        
+	        public function catchVideos():void
+			{
+				// call server-side method
+				// create a responder and set it to getMediaList
+				var nc_responder:Responder = new Responder(getMediaList, null);
+				// call the server side method to get list of FLV's
+				nc.call("demoService.getListOfAvailableFLVs", nc_responder);
+			}
+	        
+	        public function getMediaList (list:Object):void 
+			{
+				// this is the result of the server side getListOfAvailableFLVs
+				var mediaList:Array = new Array();
+				for(var items:String in list) 
+				{
+					log.debug("items", list[items]);
+					mediaList.push({label:items, size:list[items].size, dateModified:list[items].lastModified});
+				}
+				
+				// videoList is bindable and the datagrid is set to use this for it's dataprovider
+				// wrap it in an ArrayCollection first
+				videoList = new ArrayCollection(mediaList);
+			}
+			
+			private function handleResize(e:Event):void
+			{
+				// this helps with the redraw of the datagrid
+				videoListContainer.invalidateDisplayList();
+			}
+			
+			public function changePreview(event:Event):void
+			{
+				// when the datagrid is clicked, pass the selected item on to the previewWindow
+				previewWindow.setPath(videoListContainer.selectedItem.label);
+			}
+		]]>
+	</mx:Script>
+	<simpleConnector:SimpleConnector id="connector" right="5" top="0" left="5" />
+		<ns1:PreviewWindow id="previewWindow" right="5" bottom="110" top="30" left="5">	
+		</ns1:PreviewWindow>
+		<mx:Panel right="5" bottom="5" layout="absolute" title="Current Videos" horizontalScrollPolicy="off" verticalScrollPolicy="off" left="5" height="100">
+			<mx:DataGrid id="videoListContainer" height="100%" width="100%" dataProvider="{videoList}" change="changePreview(event)">
+				<mx:columns>
+	                <mx:DataGridColumn dataField="label" headerText="File"/>
+	                <mx:DataGridColumn dataField="size" headerText="Size"/>
+	                <mx:DataGridColumn dataField="dateModified" headerText="Modified Date"/>
+	            </mx:columns>
+			</mx:DataGrid>
+		</mx:Panel>
+</mx:Application>

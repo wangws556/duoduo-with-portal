@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size: 12px;
+}
+.zt {
+	color: #F00;
+}
+.zt {
+	font-weight: bold;
+	font-size: 16px;
+}
+.zths {
+	color: #FF0;
+	font-weight: bold;
+	font-size: 14px;
+}
+#form1 #radio {
+	font-size: 12px;
+}
+.zt12h {
+	color: #F00;
+}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+  <tr>
+    <td height="25"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="30" height="30"><img src="../../12345/images/QQ截图20121207140645_02.jpg" width="30" height="30" /></td>
+        <td width="181" height="30" class="zths"><span class="zt">9258小喇叭</span></td>
+        <td width="49">&nbsp;</td>
+        <td width="40"><img src="../../12345/images/QQ截图20121207140645_04.jpg" width="40" height="32" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF"><table width="300" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="25" align="center" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="25" align="center"><form id="form1" name="form1" method="post" action="">
+              <input type="radio" name="radio" id="radio" value="radio" />
+              <label for="radio"></label>
+            小喇叭
+            </form></td>
+            <td><form id="form3" name="form3" method="post" action="">
+              <input type="radio" name="radio2" id="radio2" value="radio2" />
+              大喇叭
+              <label for="radio2"></label>
+            </form></td>
+            <td><form id="form4" name="form4" method="post" action="">
+              <input type="radio" name="radio3" id="radio3" value="radio3" />
+              世界喇叭
+              <label for="radio3"></label>
+            </form></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="25"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="25" align="center" class="zt12h">需20000个金币</td>
+            <td align="center" class="zt12h">需30000个金币</td>
+            <td align="center" class="zt12h">需50000个金币</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="30"><table width="300" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="30"><img src="../../12345/images/QQ截图20121207140645_15.jpg" width="70" height="31" /></td>
+            <td height="30"><img src="../../12345/images/QQ截图20121207140645_16.jpg" width="70" height="31" /></td>
+            <td height="30"><img src="../../12345/images/QQ截图20121207140645_17.jpg" width="70" height="31" /></td>
+            <td height="30"><img src="../../12345/images/QQ截图20121207140645_18.jpg" width="90" height="31" /></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="94" align="left" valign="top"><form id="form2" name="form2" method="post" action="">
+          <label for="textarea"></label>
+          <textarea name="textarea" id="textarea" cols="39" rows="7"></textarea>
+        </form></td>
+      </tr>
+      <tr>
+        <td height="25">你还可以输入120个字符</td>
+      </tr>
+      <tr>
+        <td height="30"><table width="100%" border="0" cellpadding="0" cellspacing="5" bgcolor="#B4C1F8">
+          <tr>
+            <td height="22">&nbsp;</td>
+            <td width="70" height="22"><form id="form5" name="form5" method="post" action="">
+              <input type="submit" name="button" id="button" value=" 发 送 " />
+            </form></td>
+            <td width="70" height="22"><form id="form6" name="form6" method="post" action="">
+              <input type="submit" name="button2" id="button2" value=" 取 消 " />
+            </form></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

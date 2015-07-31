@@ -1,0 +1,238 @@
+﻿html, body
+{
+    background-color: #deebff;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+li
+{
+    width: 200px;
+}
+
+#roomGroupTab div
+{
+    background-color: #deebff;
+}
+
+
+#roomGroupTabHeader li
+{
+    display: inline-table;
+    height: 30px;
+    width: 120px;
+    margin: 1px 2px;
+    padding: 0 5px;
+    text-align: center;
+    border: 2px solid blue;
+}
+    
+
+.roomGroupTree 
+{
+    background-color: #deebff;
+}
+
+    .roomGroupTree div
+    {
+        font-size: 14px;
+        background-color: #deebff;
+    }
+
+.rankTab li
+{
+    display: inline-table;
+    height: 30px;
+    width: 75px;
+    margin: 1px 2px;
+    padding: 0 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.searchBox
+{
+    border: 2px solid #6ea3f2;
+    width: 170px;
+}
+
+.rb1
+{
+    margin-left: 5px;
+    border-right: #6a6a6a 1px solid;
+    border-top: #fff 1px solid;
+    font-size: 12px;
+    background: #d32c47;
+    border-left: #fff 1px solid;
+    color: #fff;
+    border-bottom: #6a6a6a 1px solid;
+    height: 24px;
+    width: 35px;
+}
+
+.rb2
+{
+    margin-left: 2px;
+    border-right: #6a6a6a 1px solid;
+    border-top: #fff 1px solid;
+    font-size: 12px;
+    background: #C71E3A;
+    border-left: #fff 1px solid;
+    border-bottom: #6a6a6a 1px solid;
+    height: 24px;
+    width: 35px;
+}
+
+div.roomBlock
+{
+    width: 160px;
+    cursor: pointer;
+    height: 60px;
+    z-index: 101;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    margin: 5px;
+    padding: 2px;
+    display: inline;
+    border: 1px solid #494545;
+    background-color: #deebff;
+}
+
+.roomImage
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+}
+
+.roomText
+{
+    position: absolute;
+    left: 60px;
+    top: 0;
+    width: 100px;
+    height: 60px;
+    z-index: 1;
+    background-color: transparent;
+}
+
+    .roomText span
+    {
+        border-radius: 3px 3px 3px 3px;
+        display: block;
+        font-size: 12px;
+        margin-top: 5px;
+        padding: 0;
+        color: black;
+        width: 100px;
+        overflow: visible;
+        text-align: left;
+        z-index: 1;
+    }
+
+div.roomText span:focus
+{
+    background-color: lightgreen;
+}
+
+.location
+{
+    font-size: 14px;
+    color: blue;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.toolbarWindow
+{
+    border: 0px;
+    padding: 0px;
+    display: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border:solid;
+    background:#9CAEF5;
+}
+
+
+.toolbarWindowContent
+{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: #9CAEF5;
+    margin: 0;
+    padding-top: 0;
+}
+
+.toolbarWindowHeader
+{
+    visibility: hidden;
+    height: 1px;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.zt14
+{
+    color: #F00;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "华文行楷";
+}
+
+.zths
+{
+    color: #00F;
+}
+
+.zt36
+{
+    font-size: 50px;
+    font-family: "草檀斋毛泽东字体";
+    color: #F93;
+    font-weight: bold;
+    font-style: italic;
+    text-align:center;
+    vertical-align:central;
+}
+
+.zt30
+{
+    font-family: "华文行楷";
+    font-size: 28px;
+}
+
+.zt14 .zths
+{
+    font-size: 18px;
+    color: #F60;
+    font-family: "微软繁超黑";
+}
+
+.bs
+{
+    color: #FF6;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "华文行楷";
+}
+
+.zt12hs
+{
+    color: #FFF;
+    font-size: 16px;
+}
+
+.zt12
+{
+    color: black;
+    font-size: 16px;
+}

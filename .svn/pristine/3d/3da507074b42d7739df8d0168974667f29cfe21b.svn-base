@@ -1,0 +1,19 @@
+﻿<local:WindowBase x:Class="YoYoStudio.Client.Chat.CameraWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:YoYoStudio.Client.Chat"
+        xmlns:vm="clr-namespace:YoYoStudio.Client.ViewModel;assembly=YoYoStudio.Client.ViewModel"
+        Title="{Binding Title}" 
+        Height="350" 
+        Width="300"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+                  Loaded="Windows_Loaded"
+        x:TypeArguments="vm:CameraWindowAction">
+    <Grid>
+        <ContentControl x:Name="CameraContentControl"
+            HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                        Template="{StaticResource CaptureCameraTemplate}"/>
+    </Grid>
+</local:WindowBase>

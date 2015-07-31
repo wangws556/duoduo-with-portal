@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+			   xmlns:s="library://ns.adobe.com/flex/spark"
+			   xmlns:mx="library://ns.adobe.com/flex/mx"
+			   applicationComplete="onCreationComplete(event)"
+			   backgroundColor="#DEEBFF" currentState="Default" >
+	
+	<fx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import mx.events.FlexEvent;
+			
+			private var connection:NetConnection;
+			private var responder:Responder;
+			
+			public function onCreationComplete(event:FlexEvent) : void {
+				// setup connection code
+				connection = new NetConnection();
+				connection.connect("rtmp://192.168.0.103/FirstRed5Prj");
+				connection.addEventListener(NetStatusEvent.NET_STATUS, onConnectionNetStatus);
+				connection.client = this;	
+				responder = new Responder(loginHandler);
+			}
+			
+			public function onConnectionNetStatus(event:NetStatusEvent) : void {
+				// did we successfully connect
+				if(event.info.code == "NetConnection.Connect.Success") {
+					Alert.show("Successful Connection", "Information");
+					connection.call("login",responder,"Charlie");
+				} else {
+					Alert.show("Unsuccessful Connection", "Information");
+				}
+			}
+			
+			private function loginHandler(msg:String):void
+			{
+				Alert.show(msg);
+			}
+			
+		]]>
+	</fx:Script>
+	<s:states>
+		<s:State name="Default"/>
+	</s:states>
+</s:Application>

@@ -1,0 +1,5 @@
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\bin\Debug\Temp\YoYoStudio.SocketService.dll
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\bin\Debug\Temp\YoYoStudio.SocketService.pdb
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService\obj\Debug\YoYoStudio.SocketService.dll
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService\obj\Debug\YoYoStudio.SocketService.pdb
+E:\Study\Chat-Project\GoogleCodeYoYo\9258Suite\SocketService\obj\Debug\SocketService.csprojResolveAssemblyReference.cache

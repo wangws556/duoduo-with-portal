@@ -1,0 +1,20 @@
+-- create plan guide
+
+EXEC sp_create_plan_guide 
+    @name =  N'Guide1',
+    @stmt = N'select count(b.SalesOrderID),sum(p.Weight)
+from dbo.SalesOrderHeader_test a 
+inner join dbo.SalesOrderDetail_test b
+on a.SalesOrderID = b.SalesOrderID
+inner join Production.Product p
+on b.ProductID = p.ProductID
+where a.SalesOrderID =@i',
+    @type = N'OBJECT',
+    @module_or_batch = N'Sniff',
+    @params = NULL,
+    @hints = N'OPTION (optimize for (@i = 75124))';
+go
+
+-- test
+
+exec Sniff 50000

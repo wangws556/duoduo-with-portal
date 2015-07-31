@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="TcpServiceIp" value="61.147.119.252"/>
+    <add key="TcpPort" value="29250"/>
+    <add key="MusicServerPath" value="C:\Program Files (x86)\Red5\webapps\oflaDemo\streams"/>
+  </appSettings>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0" />
+    </startup>
+</configuration>

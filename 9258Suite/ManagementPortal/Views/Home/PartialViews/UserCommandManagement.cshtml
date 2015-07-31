@@ -1,0 +1,57 @@
+﻿@model YoYoStudio.Model.Json.CommandModel
+
+<script type="text/javascript" src="~/Scripts/UserCommand.js">
+</script>
+<script type="text/javascript">
+    var gridTagId = "#" + "@string.Concat("cmdList", Model.TagId)";
+    var sroleTagId = "#" + "@string.Concat("sroleList", Model.TagId)";
+    var troleTagId = "#" + "@string.Concat("troleList", Model.TagId)";
+    var appTagId = "#" + "@string.Concat("appList", Model.TagId)";
+    var layoutId = "#" + "@string.Concat("userCmdLayout", Model.TagId)";
+    var leftLayoutId = "#" + "@string.Concat("userCmdLeftLayout", Model.TagId)";
+    var topAccId = "#" + "@string.Concat("topAcc", Model.TagId)";
+    var leftAccId = "#" + "@string.Concat("leftAcc", Model.TagId)";
+    var centerAccId = "#" + "@string.Concat("centerAcc", Model.TagId)";
+    $(document).ready(function () {
+        $(layoutId).ligerLayout({
+            
+        });
+        $(leftLayoutId).ligerLayout({
+            topHeight:40,
+            leftWidth: 200,
+            centerWidth:140,
+            allowLeftCollapse: false
+        });
+        $(topAccId).ligerAccordion();
+        $(leftAccId).ligerAccordion();
+        $(centerAccId).ligerAccordion();
+        Init(appTagId, sroleTagId, troleTagId, gridTagId, "@Model.CommandType");
+    })
+</script>
+
+<div class="l-clear"></div>
+<table style="width: 100%;height:90%" class="framecenter">
+    <tr>
+        <td style="width: 60%; vertical-align: top">
+            <div id="@string.Concat("userCmdLeftLayout", Model.TagId)">
+                <div position="top" id="@string.Concat("topAcc", Model.TagId)" title="应用程序">
+                    <table><tr><td style="color:black">应用程序：</td><td><input type="text" id="@string.Concat("appList", Model.TagId)" /></td></tr></table>
+                </div>
+                <div position="left" id="@string.Concat("leftAcc", Model.TagId)" title="用户级别">
+                    <div id="@string.Concat("sroleList", Model.TagId)"></div>
+                </div>
+                <div position="center" id="@string.Concat("centerAcc", Model.TagId)" title="目标用户级别">
+                    <div id="@string.Concat("troleList", Model.TagId)"></div>
+                </div>
+            </div>
+        </td>
+        <td style="width: 40%;vertical-align:top">
+            <div id="@string.Concat("userCmdLayout", Model.TagId)" class="framecenter">
+                <div position="center" title="用户权限">
+                    <div id="@string.Concat("cmdList", Model.TagId)"></div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+

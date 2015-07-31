@@ -1,0 +1,122 @@
+﻿<div id="roomGroupTab" style="position: absolute; top: 0; left: 0;">
+	<ul id="roomGroupTabHeader" style="margin-left: 30px;" />
+</div>
+
+<div id="rankPanel" style="display: none">
+	<div class="rankDockPanel">
+		<div dock="top" style="height: 50%;">
+			<div class="rankTab">
+				<ul id="rankTabHeader" style="margin-left: 10px;">
+					<li>日排行榜</li>
+					<li>周排行榜</li>
+					<li>月排行榜</li>
+				</ul>
+				<div />
+				<div />
+				<div />
+			</div>
+		</div>
+		<div dock="top" style="height: 30%;">
+			<div>
+				充值板块
+			</div>
+		</div>
+		<div>
+			<div>
+				客服信息
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--<div id="loginingWindow" class="toolbarWindow">
+    <div id="loginingWindowHeader" class="toolbarWindowHeader"></div>
+    <div id="loginingWindowContent" class="toolbarWindowContent">
+        <p class="zt36">9258媒体频道</p>
+
+        <hr />
+
+        <table style="width:400px; height:90px; border:0px" cellspacing="0" cellpadding="0">
+            <tr>
+                <img id="loginUserImage" style="height:40px;width:40px"/>
+            </tr>
+            <tr>
+                <td align="center" class="bs"><a href="#" onclick="javascript:cancelLogin()">取消登陆</a></td>
+            </tr>
+        </table>
+    </div>
+</div>-->
+
+<div id="loginWindow" class="toolbarWindow" >
+    <div id="loginWindowHeader" class="toolbarWindowHeader"></div>
+    <div id="loginWindowContent" class="toolbarWindowContent">
+        <P class="zt36">9258媒体频道</P>
+
+        <hr />
+
+        <table style="width:400px; height:90px; border:0px" cellspacing="0" cellpadding="0">
+            <tr>
+                <td align="right"  class="zt12hs">用户名登录：&nbsp;&nbsp;</td>
+                <td >
+                    <input name="userid" style="width: 150px" type="text" class="zt12" id="userid" size="17" />
+                </td>
+                <td class="zt12hs">字母或数字</td>
+            </tr>
+            <tr>
+                <td align="right"  class="zt12hs">请输入密码：&nbsp;&nbsp;</td>
+                <td >
+                    <input name="pwd" type="password" style="width: 150px" class="zt12" id="password" size="17" />
+                </td>
+                <td class="zt12hs"><a href="#" onclick='javascript:forgetPassword()'>忘记密码</a></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center"  class="zt12hs">
+                    <input type="checkbox" name="remember" id="remember" onclick="javascript:rememberclick()" />
+                    记住密码
+                    <input type="checkbox" name="autologin" id="autologin" onclick="javascript:autologinclick()" />
+                    自动登录
+                </td>
+            </tr>
+        </table>
+
+        <hr />        
+
+        <table>
+            <tr>
+                <td height="50" >
+                    <table width="400" border="0" cellspacing="5" cellpadding="0">
+                        <tr>
+                            <td align="center" class="bs"><a id="loginBtn" href="#" onclick="javascript:login()">登录</a></td>
+                            <td align="center" class="bs" id="registerBtn"><a href="#" onclick="javascript:register()">注册</a></td>
+                            <td align="center" class="bs"><a href="#" onclick="javascript:cancel()">取消</a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="height: 10px" />
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="text-align: center" height="20" class="zt12hs" bgcolor="#9CAEF5">
+                                <span style="color: blue">友情连接 : </span>
+                                <a href="#">钱币网</a>&nbsp;&nbsp;<a href="#">9258QQ</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td height="30" align="center" class="zt14"><a href="www.9258.tv" class="zths">WWW.9258.TV</a> 就爱我吧</td>
+            </tr>
+            <tr>
+                <td style="width: 100%; height: 20px; background: #9CAEF5; color: red; font-size: 16px;"><span id="errorMsg"></span></td>
+            </tr>
+         </table>
+    </div>
+</div>
+
+<div id="ErrorWindow" class="toolbarWindow">
+	<div id="ErrorHeader">
+		<img src="Images/logo.gif" width="30" height="30" />
+		<span style="font-size: 22px; color: red; vertical-align: central; margin-left: 10px">错误</span>
+	</div>
+	<div id="ErrorContent">
+	</div>
+</div>

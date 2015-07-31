@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+body,td,th {
+	font-size: 12px;
+}
+.zt14 {	font-size: 14px;
+}
+.zt16 {	font-size: 12px;
+}
+.zt16l {	font-size: 14px;
+}
+.zt18 {	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+}
+.zt18 {	font-weight: normal;
+}
+.zt24 {	font-size: 24px;
+	font-weight: bold;
+	color: #FFF;
+}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="60" colspan="2" bgcolor="#9CAEF5">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="226" height="200" align="left" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="5" bgcolor="#9CAEF5">
+      <tr>
+        <td bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+          <tr>
+            <td height="37" align="center" bgcolor="#B4C1F8" class="zt24">室长后台</td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14"><span class="zt16l">房间管理</span></span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14"><span class="zt16l">黑名单</span></span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14"><span class="zt16l">房间积分</span></span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14"><span class="zt16l">房间图片</span></span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14"><span class="zt16l">违规记录</span></span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14"><span class="zt16l">房间在线人气表</span></span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14"><span class="zt16l">会员充值查询</span></span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14"><span class="zt16l">意见反馈</span></span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14"><span class="zt16l">房间公告</span></span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14"><span class="zt16l">房间管理在线查询</span></span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14"><span class="zt16l">管理员操作记录</span></span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14"><span class="zt16l">代理咨询</span></span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14"><span class="zt16l">代理开号收号后台</span></span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14"><span class="zt16l">封号解号</span></span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14"><span class="zt16l">在线充值</span></span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14"><span class="zt16l">代理税点</span></span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB" class="zt18" style="font-size: 14px"><span class="zt14"><span class="zt16l">房间奖励</span></span></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="30" align="center" bgcolor="#D5DCFB">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+    <td width="1036" align="left" valign="top" bgcolor="#D5DCFB"><table width="100%" border="0" cellpadding="0" cellspacing="5" bgcolor="#9CAEF5">
+      <tr>
+        <td align="left" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#B4C1F8">
+          <tr>
+            <td height="30" colspan="2" align="center" bgcolor="#B4C1F8">选择</td>
+            <td height="30" align="center" bgcolor="#B4C1F8">等级</td>
+            <td height="30" align="center" bgcolor="#B4C1F8">用户名ID</td>
+            <td height="30" align="center" bgcolor="#B4C1F8">用户昵称</td>
+            <td height="30" align="center" bgcolor="#B4C1F8">登录时间</td>
+            <td height="30" align="center" bgcolor="#B4C1F8">在线时间</td>
+            <td height="30" align="center" bgcolor="#B4C1F8">IP地址</td>
+            <td height="30" align="center" bgcolor="#B4C1F8">登录省市</td>
+            <td height="30" align="center" bgcolor="#B4C1F8">登录区县</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox2" id="checkbox2" /></td>
+            <td width="20" height="20" align="center" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" align="center" bgcolor="#FFFFFF">主持人</td>
+            <td width="70" height="20" align="center" bgcolor="#FFFFFF">665518</td>
+            <td width="150" height="20" align="center" bgcolor="#FFFFFF">马甲</td>
+            <td width="180" height="20" align="center" bgcolor="#FFFFFF">2013-01-01-22：18：00</td>
+            <td width="110" height="20" align="center" bgcolor="#FFFFFF">1000000</td>
+            <td width="150" height="20" align="center" bgcolor="#FFFFFF">61.111.122.61：8000</td>
+            <td width="50" height="20" align="center" bgcolor="#FFFFFF">上海市</td>
+            <td width="125" height="20" align="center" bgcolor="#FFFFFF">上海市徐汇区</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox3" id="checkbox3" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox4" id="checkbox4" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox5" id="checkbox5" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox6" id="checkbox6" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox7" id="checkbox7" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox8" id="checkbox8" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox9" id="checkbox9" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox10" id="checkbox10" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox11" id="checkbox11" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox12" id="checkbox12" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox13" id="checkbox13" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox14" id="checkbox14" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox15" id="checkbox15" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox16" id="checkbox16" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox17" id="checkbox17" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox18" id="checkbox18" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox19" id="checkbox19" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="20" height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox20" id="checkbox20" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox22" id="checkbox22" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox23" id="checkbox23" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="80" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="70" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="180" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="110" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="150" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="50" height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox21" id="checkbox21" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox24" id="checkbox24" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox25" id="checkbox25" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox26" id="checkbox26" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="20" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox27" id="checkbox27" /></td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="20" colspan="10" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox" id="checkbox" />
+              全选              
+              <input type="submit" name="button" id="button" value=" 删 除 " />              <select name="select2" id="select2">
+                <option>用户名</option>
+              </select>              <input name="textfield3" type="text" id="textfield3" size="22" maxlength="22" />              <input type="submit" name="button3" id="button3" value="搜索" /></td>
+            </tr>
+          <tr>
+            <td height="20" colspan="10" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="100" height="20" align="center"><table width="100" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+                  <tr>
+                    <td height="20" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                </table></td>
+                <td width="8" align="center">&nbsp;</td>
+                <td width="30" align="center"><table width="30" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+                  <tr>
+                    <td width="30" height="20" align="center" valign="middle" bgcolor="#FFFFFF">首页</td>
+                  </tr>
+                </table></td>
+                <td width="8" align="center">&nbsp;</td>
+                <td width="40" align="center"><table width="40" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+                  <tr>
+                    <td height="20" align="center" bgcolor="#FFFFFF">上一页</td>
+                  </tr>
+                </table></td>
+                <td width="8" align="center">&nbsp;</td>
+                <td width="20" align="center"><table width="20" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+                  <tr>
+                    <td width="20" height="20" align="center" bgcolor="#FFFFFF">1</td>
+                  </tr>
+                </table></td>
+                <td width="8" align="center">&nbsp;</td>
+                <td width="20" align="center"><table width="20" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+                  <tr>
+                    <td width="20" height="20" align="center" bgcolor="#FFFFFF">2</td>
+                  </tr>
+                </table></td>
+                <td width="8" align="center">&nbsp;</td>
+                <td width="20" align="center"><table width="20" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+                  <tr>
+                    <td width="20" height="20" align="center" bgcolor="#FFFFFF">3</td>
+                  </tr>
+                </table></td>
+                <td width="8" align="center">&nbsp;</td>
+                <td width="20" align="center"><table width="20" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+                  <tr>
+                    <td width="20" height="20" align="center" bgcolor="#FFFFFF">4</td>
+                  </tr>
+                </table></td>
+                <td width="8" align="center">&nbsp;</td>
+                <td width="20" align="center"><table width="20" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+                  <tr>
+                    <td width="20" height="20" align="center" bgcolor="#FFFFFF">5</td>
+                  </tr>
+                </table></td>
+                <td width="8" align="center">&nbsp;</td>
+                <td width="40" align="center"><table width="40" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+                  <tr>
+                    <td height="20" align="center" bgcolor="#FFFFFF">上一页</td>
+                  </tr>
+                </table></td>
+                <td width="8" align="center">&nbsp;</td>
+                <td width="30" align="center"><table width="30" border="0" cellpadding="0" cellspacing="1" bgcolor="#9CAEF5">
+                  <tr>
+                    <td height="20" align="center" bgcolor="#FFFFFF">末页</td>
+                  </tr>
+                </table></td>
+                <td width="608" height="20">&nbsp;</td>
+              </tr>
+            </table></td>
+            </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

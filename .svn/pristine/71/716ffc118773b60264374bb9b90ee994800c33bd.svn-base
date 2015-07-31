@@ -1,0 +1,102 @@
+﻿<local:WindowBase x:Class="YoYoStudio.Client.Chat.HallWindow"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:ctls="clr-namespace:YoYoStudio.Controls;assembly=YoYoStudio.Controls"
+                  xmlns:cw="clr-namespace:YoYoStudio.Controls.CustomWindow;assembly=YoYoStudio.Controls"
+                  xmlns:gif="http://wpfanimatedgif.codeplex.com"
+                  xmlns:local="clr-namespace:YoYoStudio.Client.Chat"
+                  xmlns:vm="clr-namespace:YoYoStudio.Client.ViewModel;assembly=YoYoStudio.Client.ViewModel"
+                  MinWidth="1000"
+                  IsEnabled="{Binding IsAuthenticated}"
+                  ResizeMode="NoResize"
+                  WindowStartupLocation="CenterScreen"
+                  gif:ImageBehavior.AnimateInDesignMode="True"
+                  x:TypeArguments="vm:HallWindowAction">
+    <Window.Title>
+        <MultiBinding StringFormat="{}{0} - {1}">
+            <Binding Path="Title" />
+            <Binding Path="Me.Id" />
+        </MultiBinding>
+    </Window.Title>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                <GradientStop Offset="0" Color="#FF6582F3" />
+                <GradientStop Offset="1" Color="#FFADBDF5" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0" LastChildFill="True">
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0"
+                      Margin="2"
+                      DataContext="{Binding Me}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60" />
+                        <ColumnDefinition Width="16" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0"
+                           Width="60"
+                           HorizontalAlignment="Left"
+                           Source="{Binding ImageVM.AbsolutePath}" />
+                    <Button Grid.Column="1"
+                            Width="16"
+                            Margin="0,22,0,22"
+                            HorizontalAlignment="Left"
+                            Command="{Binding OpenConfigurationCommand}"
+                            RenderTransformOrigin="0.5,0.5">
+                        <Polygon Fill="Blue"
+                                 Points="0,1 10,1 5,10"
+                                 StrokeThickness="0" />
+                    </Button>
+                    <Grid Grid.Column="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Orientation="Horizontal">
+                            <TextBlock FontSize="12" Text="{Binding Path=Id}" />
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Orientation="Horizontal">
+                            <TextBlock FontSize="12" Text="{Binding Path=NickName}" />
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+                <Image Grid.Column="1"
+                       Source="/Images/advertise.jpg"
+                       Stretch="Fill" />
+                <StackPanel Grid.Column="2"
+                            FlowDirection="RightToLeft"
+                            Orientation="Horizontal">
+                    <ctls:ImageExt Name="SwitchUserImage"
+                                   Margin="2"
+                                   ClickCommand="{Binding SwitchUserCommand}"
+                                   ImageSource="Images\switchuser.png" />
+                    <ctls:ImageExt Name="RankImage"
+                                   Margin="2"
+                                   ImageSource="Images\ranklist.gif"
+                                   IsEnabled="False" />
+                    <ctls:ImageExt Name="DepositImage"
+                                   Margin="2"
+                                   ImageSource="Images\deposit.gif"
+                                   IsEnabled="False" />
+                    <ctls:ImageExt Name="MainpageImage"
+                                   Margin="2"
+                                   ImageSource="Images\mainpage.gif"
+                                   IsEnabled="False" />
+                </StackPanel>
+            </Grid>
+        </DockPanel>
+        <ContentControl x:Name="PART_Web" Grid.Row="1" />
+    </Grid>
+</local:WindowBase>

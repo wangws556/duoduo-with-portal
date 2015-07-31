@@ -1,0 +1,43 @@
+﻿<cw:ChildWindow x:Class="YoYoStudio.Client.Chat.VideoWindow"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:ctls="clr-namespace:YoYoStudio.Controls;assembly=YoYoStudio.Controls"
+                xmlns:ctls1="clr-namespace:YoYoStudio.Client.Chat.Controls"
+                xmlns:cw="clr-namespace:YoYoStudio.Controls.CustomWindow;assembly=YoYoStudio.Controls"
+                xmlns:local="clr-namespace:YoYoStudio.Client.Chat"
+                xmlns:vm="clr-namespace:YoYoStudio.Client.ViewModel;assembly=YoYoStudio.Client.ViewModel"
+                Width="320"
+                Height="240"
+                x:TypeArguments="vm:VideoWindowAction">
+    <Grid>
+        <ctls1:VideoControl x:Name="vc"
+                            Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
+                                                                           AncestorType=Grid},
+                                            Path=ActualWidth}"
+                            Height="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
+                                                                            AncestorType=Grid},
+                                             Path=ActualHeight}"
+                            BottomVisibility="{Binding Converter={StaticResource videoControlVisibilityConverter},
+                                                       Path=MicStatus}"
+                            DataContext="{Binding UserVM}"
+                            MicStatus="{Binding MicStatus}">
+            <ctls1:VideoControl.VideoBorderStyle>
+                <Style TargetType="Border">
+                    <Setter Property="Margin" Value="5,5,10,5" />
+                    <Setter Property="Background" Value="#deebff" />
+                </Style>
+            </ctls1:VideoControl.VideoBorderStyle>
+            <ctls1:VideoControl.BottomTemplate>
+                <ControlTemplate>
+                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                        <Button Width="100"
+                                HorizontalContentAlignment="Center"
+                                Command="{Binding SelectUserCommand}"
+                                Content="{Binding NickName}"
+                                Style="{StaticResource LinkButtonStyle}" />
+                    </StackPanel>
+                </ControlTemplate>
+            </ctls1:VideoControl.BottomTemplate>
+        </ctls1:VideoControl>
+    </Grid>
+</cw:ChildWindow>

@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="10.0" version="10.6" Modules="enterprise" RootPath="." Language="en" Id="{59B664BF-C4FB-4552-A54F-CFDB214572B2}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="AI_MINDOTNETVERSION" MultiBuildValue="DefaultBuild:4.0" ValueLocId="-"/>
+    <ROW Property="AI_MINIISVERSION" MultiBuildValue="DefaultBuild:7.0" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPNOMODIFY" Value="1"/>
+    <ROW Property="IISLogin" Value="IISLogin"/>
+    <ROW Property="IISWindowsLogin" Value="IISWindowsLogin"/>
+    <ROW Property="LIMITUI" Value="1"/>
+    <ROW Property="MSIFASTINSTALL" MultiBuildValue="DefaultBuild:2"/>
+    <ROW Property="Manufacturer" Value="9258"/>
+    <ROW Property="ProductCode" Value="1033:{BBED2DBB-B438-496C-A970-FB784FE71A0B} 2052:{95251B8C-09C6-47BC-BB65-C6AE69BB625A} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="2052"/>
+    <ROW Property="ProductName" Value="9258 Data Service"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{EEFB3B44-50AC-4C40-90FB-B978F672E55A}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Account_Dir" Directory_Parent="Views_Dir" DefaultDir="Account"/>
+    <ROW Directory="App_Start_Dir" Directory_Parent="ManagementPortal_Dir" DefaultDir="App_St~1|App_Start"/>
+    <ROW Directory="Aqua_Dir" Directory_Parent="skins_Dir" DefaultDir="Aqua"/>
+    <ROW Directory="Content_Dir" Directory_Parent="ManagementPortal_Dir" DefaultDir="Content"/>
+    <ROW Directory="Controllers_Dir" Directory_Parent="ManagementPortal_Dir" DefaultDir="Contro~1|Controllers"/>
+    <ROW Directory="DataService_Dir" Directory_Parent="APPDIR" DefaultDir="DataSe~1|DataService"/>
+    <ROW Directory="Debug_1_Dir" Directory_Parent="obj_1_Dir" DefaultDir="Debug"/>
+    <ROW Directory="Debug_Dir" Directory_Parent="obj_Dir" DefaultDir="Debug"/>
+    <ROW Directory="Gray_Dir" Directory_Parent="skins_Dir" DefaultDir="Gray"/>
+    <ROW Directory="Home_Dir" Directory_Parent="Views_Dir" DefaultDir="Home"/>
+    <ROW Directory="Image_Dir" Directory_Parent="Views_Dir" DefaultDir="Image"/>
+    <ROW Directory="Images_Dir" Directory_Parent="ManagementPortal_Dir" DefaultDir="Images"/>
+    <ROW Directory="ManagementPortal_Dir" Directory_Parent="APPDIR" DefaultDir="Manage~1|ManagementPortal"/>
+    <ROW Directory="Models_Dir" Directory_Parent="ManagementPortal_Dir" DefaultDir="Models"/>
+    <ROW Directory="PartialViews_Dir" Directory_Parent="Home_Dir" DefaultDir="Partia~1|PartialViews"/>
+    <ROW Directory="Properties_1_Dir" Directory_Parent="ManagementPortal_Dir" DefaultDir="Proper~1|Properties"/>
+    <ROW Directory="Properties_Dir" Directory_Parent="DataService_Dir" DefaultDir="Proper~1|Properties"/>
+    <ROW Directory="Release_1_Dir" Directory_Parent="obj_1_Dir" DefaultDir="Release"/>
+    <ROW Directory="Release_Dir" Directory_Parent="obj_Dir" DefaultDir="Release"/>
+    <ROW Directory="Scripts_Dir" Directory_Parent="ManagementPortal_Dir" DefaultDir="Scripts"/>
+    <ROW Directory="Shared_Dir" Directory_Parent="Views_Dir" DefaultDir="Shared"/>
+    <ROW Directory="Silvery_Dir" Directory_Parent="skins_Dir" DefaultDir="Silvery"/>
+    <ROW Directory="Suite_Dir" Directory_Parent="APPDIR" DefaultDir="9258Su~1|9258Suite"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="Views_Dir" Directory_Parent="ManagementPortal_Dir" DefaultDir="Views"/>
+    <ROW Directory="bin_1_Dir" Directory_Parent="ManagementPortal_Dir" DefaultDir="bin"/>
+    <ROW Directory="bin_Dir" Directory_Parent="DataService_Dir" DefaultDir="bin"/>
+    <ROW Directory="common_Dir" Directory_Parent="images_1_Dir" DefaultDir="common"/>
+    <ROW Directory="controls_Dir" Directory_Parent="images_1_Dir" DefaultDir="controls"/>
+    <ROW Directory="core_Dir" Directory_Parent="js_Dir" DefaultDir="core"/>
+    <ROW Directory="css_1_Dir" Directory_Parent="Gray_Dir" DefaultDir="css"/>
+    <ROW Directory="css_2_Dir" Directory_Parent="Silvery_Dir" DefaultDir="css"/>
+    <ROW Directory="css_Dir" Directory_Parent="Aqua_Dir" DefaultDir="css"/>
+    <ROW Directory="dateeditor_Dir" Directory_Parent="images_1_Dir" DefaultDir="dateed~1|dateeditor"/>
+    <ROW Directory="de_Dir" Directory_Parent="bin_1_Dir" DefaultDir="de"/>
+    <ROW Directory="en_Dir" Directory_Parent="bin_1_Dir" DefaultDir="en"/>
+    <ROW Directory="es_Dir" Directory_Parent="bin_1_Dir" DefaultDir="es"/>
+    <ROW Directory="form_1_Dir" Directory_Parent="images_3_Dir" DefaultDir="form"/>
+    <ROW Directory="form_Dir" Directory_Parent="images_1_Dir" DefaultDir="form"/>
+    <ROW Directory="fr_Dir" Directory_Parent="bin_1_Dir" DefaultDir="fr"/>
+    <ROW Directory="grid_1_Dir" Directory_Parent="images_3_Dir" DefaultDir="grid"/>
+    <ROW Directory="grid_Dir" Directory_Parent="images_1_Dir" DefaultDir="grid"/>
+    <ROW Directory="icon_Dir" Directory_Parent="images_1_Dir" DefaultDir="icon"/>
+    <ROW Directory="icons_Dir" Directory_Parent="skins_Dir" DefaultDir="icons"/>
+    <ROW Directory="images_1_Dir" Directory_Parent="Aqua_Dir" DefaultDir="images"/>
+    <ROW Directory="images_2_Dir" Directory_Parent="Gray_Dir" DefaultDir="images"/>
+    <ROW Directory="images_3_Dir" Directory_Parent="Silvery_Dir" DefaultDir="images"/>
+    <ROW Directory="images_Dir" Directory_Parent="lib_Dir" DefaultDir="images"/>
+    <ROW Directory="it_Dir" Directory_Parent="bin_1_Dir" DefaultDir="it"/>
+    <ROW Directory="ja_Dir" Directory_Parent="bin_1_Dir" DefaultDir="ja"/>
+    <ROW Directory="js_Dir" Directory_Parent="ligerUI_Dir" DefaultDir="js"/>
+    <ROW Directory="ko_Dir" Directory_Parent="bin_1_Dir" DefaultDir="ko"/>
+    <ROW Directory="layout_1_Dir" Directory_Parent="images_2_Dir" DefaultDir="layout"/>
+    <ROW Directory="layout_2_Dir" Directory_Parent="images_3_Dir" DefaultDir="layout"/>
+    <ROW Directory="layout_Dir" Directory_Parent="images_1_Dir" DefaultDir="layout"/>
+    <ROW Directory="lib_Dir" Directory_Parent="ManagementPortal_Dir" DefaultDir="lib"/>
+    <ROW Directory="ligerUI_Dir" Directory_Parent="lib_Dir" DefaultDir="ligerUI"/>
+    <ROW Directory="menu_Dir" Directory_Parent="images_1_Dir" DefaultDir="menu"/>
+    <ROW Directory="obj_1_Dir" Directory_Parent="ManagementPortal_Dir" DefaultDir="obj"/>
+    <ROW Directory="obj_Dir" Directory_Parent="DataService_Dir" DefaultDir="obj"/>
+    <ROW Directory="panel_Dir" Directory_Parent="images_1_Dir" DefaultDir="panel"/>
+    <ROW Directory="plugins_Dir" Directory_Parent="js_Dir" DefaultDir="plugins"/>
+    <ROW Directory="skins_Dir" Directory_Parent="ligerUI_Dir" DefaultDir="skins"/>
+    <ROW Directory="tree_Dir" Directory_Parent="images_1_Dir" DefaultDir="tree"/>
+    <ROW Directory="ui_Dir" Directory_Parent="images_2_Dir" DefaultDir="ui"/>
+    <ROW Directory="win_1_Dir" Directory_Parent="images_2_Dir" DefaultDir="win"/>
+    <ROW Directory="win_Dir" Directory_Parent="images_1_Dir" DefaultDir="win"/>
+    <ROW Directory="zhHans_Dir" Directory_Parent="bin_1_Dir" DefaultDir="zh-Hans"/>
+    <ROW Directory="zhHant_Dir" Directory_Parent="bin_1_Dir" DefaultDir="zh-Hant"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_ExePath" ComponentId="{E04AC450-4D2F-4E63-9FA6-811E330E04EE}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="About.cshtml" ComponentId="{D47E9707-36DA-4099-B28E-C5CC8A93A167}" Directory_="Home_Dir" Attributes="0" KeyPath="About.cshtml" Type="0"/>
+    <ROW Component="AccountController.cs" ComponentId="{5125DF26-0FEA-4CFA-84D9-A05B85BBCFC7}" Directory_="Controllers_Dir" Attributes="0" KeyPath="AccountController.cs" Type="0"/>
+    <ROW Component="AccountModels.cs" ComponentId="{ED8BD397-5C87-4B0C-BFB0-97C5854E3BB0}" Directory_="Models_Dir" Attributes="0" KeyPath="AccountModels.cs" Type="0"/>
+    <ROW Component="AgentManagement.cshtml" ComponentId="{CDCD09A0-9491-4E92-B53D-C063708C4F25}" Directory_="PartialViews_Dir" Attributes="0" KeyPath="AgentManagement.cshtml" Type="0"/>
+    <ROW Component="Antlr3.Runtime.dll" ComponentId="{B216F6C8-24A8-41B2-A912-8C60406598A1}" Directory_="bin_1_Dir" Attributes="0" KeyPath="Antlr3.Runtime.dll"/>
+    <ROW Component="Application.js" ComponentId="{13BCB7C5-4F93-4383-8967-D66F6C3A048D}" Directory_="Scripts_Dir" Attributes="0" KeyPath="Application.js" Type="0"/>
+    <ROW Component="AssemblyInfo.cs" ComponentId="{DE1C8749-BB1F-45BA-A40B-76B39B7DF916}" Directory_="Properties_Dir" Attributes="0" KeyPath="AssemblyInfo.cs" Type="0"/>
+    <ROW Component="AssemblyInfo.cs_1" ComponentId="{301FBA1C-86C0-47FD-B50A-6CBA975DDFB0}" Directory_="Properties_1_Dir" Attributes="0" KeyPath="AssemblyInfo.cs_1" Type="0"/>
+    <ROW Component="AuthConfig.cs" ComponentId="{02A18ED5-68CE-4C2A-ADBA-529CF35A9AB2}" Directory_="App_Start_Dir" Attributes="0" KeyPath="AuthConfig.cs" Type="0"/>
+    <ROW Component="DataService.csproj" ComponentId="{C6C21E58-A0FC-4E65-B9DB-DDD85165B99D}" Directory_="DataService_Dir" Attributes="0" KeyPath="DataService.csproj" Type="0"/>
+    <ROW Component="DataService.csproj.FileListAbsolute.tx_1" ComponentId="{FF726663-24A8-4833-946F-7003B4D4DF1A}" Directory_="Release_Dir" Attributes="0" KeyPath="DataService.csproj.FileListAbsolute.txt_1" Type="0"/>
+    <ROW Component="DataService.csproj.FileListAbsolute.txt" ComponentId="{2D33073A-01DF-4395-BFA9-09D1DCAE83A8}" Directory_="Debug_Dir" Attributes="0" KeyPath="DataService.csproj.FileListAbsolute.txt" Type="0"/>
+    <ROW Component="DataService.dll" ComponentId="{8342EE3F-32DA-4006-80BE-EFACFFD1BFA2}" Directory_="bin_Dir" Attributes="0" KeyPath="DataService.dll"/>
+    <ROW Component="DataService.dll_1" ComponentId="{6A2196EE-D280-4FD8-9EE7-1BF5A67401FF}" Directory_="Debug_Dir" Attributes="0" KeyPath="DataService.dll_1"/>
+    <ROW Component="DataService.dll_2" ComponentId="{3E2FA9F0-FF47-4C18-8926-7025743361EB}" Directory_="Release_Dir" Attributes="0" KeyPath="DataService.dll_2"/>
+    <ROW Component="DesignTimeResolveAssemblyReferencesInp_1" ComponentId="{BA11E91B-1B73-4F4C-895B-2A83E21363E3}" Directory_="Release_1_Dir" Attributes="0" KeyPath="DesignTimeResolveAssemblyReferencesInput.cache_3" Type="0"/>
+    <ROW Component="DesignTimeResolveAssemblyReferencesInput" ComponentId="{DFE40422-C088-4405-8FD1-164827EE36DA}" Directory_="Debug_1_Dir" Attributes="0" KeyPath="DesignTimeResolveAssemblyReferencesInput.cache_2" Type="0"/>
+    <ROW Component="DotNetOpenAuth.AspNet.dll" ComponentId="{A032FD19-5D08-4A98-9563-710BAF8664F2}" Directory_="bin_1_Dir" Attributes="0" KeyPath="DotNetOpenAuth.AspNet.dll"/>
+    <ROW Component="DotNetOpenAuth.AspNet.xml" ComponentId="{31BA2F43-F6BF-46B8-B247-907CE9BF476C}" Directory_="bin_1_Dir" Attributes="0" KeyPath="DotNetOpenAuth.AspNet.xml" Type="0"/>
+    <ROW Component="DotNetOpenAuth.Core.dll" ComponentId="{6FFBF111-5253-4BA9-A6CA-697C15E83E89}" Directory_="bin_1_Dir" Attributes="0" KeyPath="DotNetOpenAuth.Core.dll"/>
+    <ROW Component="DotNetOpenAuth.OAuth.Consumer.dll" ComponentId="{12D4619D-8C93-4174-98DB-90D58FB28F55}" Directory_="bin_1_Dir" Attributes="0" KeyPath="DotNetOpenAuth.OAuth.Consumer.dll"/>
+    <ROW Component="DotNetOpenAuth.OAuth.dll" ComponentId="{F608DF46-FEFD-435F-97E5-DAF861EC89D3}" Directory_="bin_1_Dir" Attributes="0" KeyPath="DotNetOpenAuth.OAuth.dll"/>
+    <ROW Component="DotNetOpenAuth.OpenId.RelyingParty.dll" ComponentId="{4F82760D-50E5-442C-BCC7-6A84765A3056}" Directory_="bin_1_Dir" Attributes="0" KeyPath="DotNetOpenAuth.OpenId.RelyingParty.dll"/>
+    <ROW Component="DotNetOpenAuth.OpenId.dll" ComponentId="{113FECA1-ACF7-40F0-9D26-D1CF7E188371}" Directory_="bin_1_Dir" Attributes="0" KeyPath="DotNetOpenAuth.OpenId.dll"/>
+    <ROW Component="Error.cshtml" ComponentId="{59B51CF9-8C73-44EF-93E6-12A03B6D5B03}" Directory_="Shared_Dir" Attributes="0" KeyPath="Error.cshtml" Type="0"/>
+    <ROW Component="ExternalLoginConfirmation.cshtml" ComponentId="{0CFC21BD-82BA-4A37-BF21-41850AB79581}" Directory_="Account_Dir" Attributes="0" KeyPath="ExternalLoginConfirmation.cshtml" Type="0"/>
+    <ROW Component="IISWindowsLogin" ComponentId="{0D8CBDAB-0B03-4AF4-850C-6D1155ABD1EA}" Directory_="APPDIR" Attributes="4" KeyPath="IISWindowsLogin" Options="1"/>
+    <ROW Component="ImageLayout.cshtml" ComponentId="{E4E9E34D-CF15-43B6-B88F-6A773CD6B292}" Directory_="Image_Dir" Attributes="0" KeyPath="ImageLayout.cshtml" Type="0"/>
+    <ROW Component="Microsoft.Web.Infrastructure.dll" ComponentId="{8625BD8A-5F84-4542-9A60-921D38BDB6CF}" Directory_="bin_1_Dir" Attributes="0" KeyPath="Microsoft.Web.Infrastructure.dll"/>
+    <ROW Component="Microsoft.Web.WebPages.OAuth.dll" ComponentId="{EA230EB7-8C4F-4413-AE58-45BCC9E61EB2}" Directory_="bin_1_Dir" Attributes="0" KeyPath="Microsoft.Web.WebPages.OAuth.dll"/>
+    <ROW Component="Newtonsoft.Json.dll" ComponentId="{6BF3F137-554B-450F-8313-85F7C18C1FB9}" Directory_="bin_1_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{02E46CA5-1D89-40A3-AC82-D416C956B31A}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="Site.css" ComponentId="{7BE9B91E-ECB5-44FD-AB53-C4A45C9170D1}" Directory_="Content_Dir" Attributes="0" KeyPath="Site.css" Type="0"/>
+    <ROW Component="Suite" ComponentId="{3B27DB4B-55D8-46D8-97C8-8C151B87D080}" Directory_="Suite_Dir" Attributes="0"/>
+    <ROW Component="System.Net.Http.Formatting.dll" ComponentId="{86694616-CA2B-4784-912D-E01BD770646C}" Directory_="bin_1_Dir" Attributes="0" KeyPath="System.Net.Http.Formatting.dll"/>
+    <ROW Component="System.Net.Http.WebRequest.dll" ComponentId="{200EFAEC-C8E8-4B43-95C6-C445E207EAAC}" Directory_="bin_1_Dir" Attributes="0" KeyPath="System.Net.Http.WebRequest.dll"/>
+    <ROW Component="System.Net.Http.dll" ComponentId="{D2D98D59-CC9D-47B1-A349-36172E57D0E0}" Directory_="bin_1_Dir" Attributes="0" KeyPath="System.Net.Http.dll"/>
+    <ROW Component="System.Web.Helpers.dll" ComponentId="{59F14AE8-50BF-4241-8F2A-7DA6020EE15F}" Directory_="bin_1_Dir" Attributes="0" KeyPath="System.Web.Helpers.dll"/>
+    <ROW Component="System.Web.Http.WebHost.dll" ComponentId="{D69D51B3-1D45-4A48-8238-31AADE0A03CA}" Directory_="bin_1_Dir" Attributes="0" KeyPath="System.Web.Http.WebHost.dll"/>
+    <ROW Component="System.Web.Http.dll" ComponentId="{024193BB-DFC6-4FCC-B265-2D52BBE563BF}" Directory_="bin_1_Dir" Attributes="0" KeyPath="System.Web.Http.dll"/>
+    <ROW Component="System.Web.Mvc.dll" ComponentId="{178E7553-3B9E-4732-833F-791551A082A0}" Directory_="bin_1_Dir" Attributes="0" KeyPath="System.Web.Mvc.dll"/>
+    <ROW Component="System.Web.Optimization.dll" ComponentId="{AC504FFE-8FB2-4B13-A137-8DA4143273F7}" Directory_="bin_1_Dir" Attributes="0" KeyPath="System.Web.Optimization.dll"/>
+    <ROW Component="System.Web.Razor.dll" ComponentId="{4BEFB087-E66B-46CC-8987-0CFB97577ACC}" Directory_="bin_1_Dir" Attributes="0" KeyPath="System.Web.Razor.dll"/>
+    <ROW Component="System.Web.WebPages.Deployment.dll" ComponentId="{DEA43C5C-A37F-4975-A3C0-92167983A275}" Directory_="bin_1_Dir" Attributes="0" KeyPath="System.Web.WebPages.Deployment.dll"/>
+    <ROW Component="System.Web.WebPages.Razor.dll" ComponentId="{27BFEAB8-78E4-4B65-B077-789753808288}" Directory_="bin_1_Dir" Attributes="0" KeyPath="System.Web.WebPages.Razor.dll"/>
+    <ROW Component="System.Web.WebPages.dll" ComponentId="{E0941B8D-0E13-44F6-B8C7-9EC05E996E51}" Directory_="bin_1_Dir" Attributes="0" KeyPath="System.Web.WebPages.dll"/>
+    <ROW Component="System.Windows.Interactivity.dll" ComponentId="{BB7EF71B-E165-4129-AAFB-A3478D6E87B3}" Directory_="bin_1_Dir" Attributes="0" KeyPath="System.Windows.Interactivity.dll"/>
+    <ROW Component="System.Windows.Interactivity.resources.d" ComponentId="{4FE917FE-BF24-4CCA-A01A-266B64CE7CAA}" Directory_="de_Dir" Attributes="0" KeyPath="System.Windows.Interactivity.resources.dll"/>
+    <ROW Component="System.Windows.Interactivity.resources_1" ComponentId="{559C4DCE-889A-4BFE-8432-5840CCC06ED2}" Directory_="en_Dir" Attributes="0" KeyPath="System.Windows.Interactivity.resources.dll_1"/>
+    <ROW Component="System.Windows.Interactivity.resources_2" ComponentId="{0B16EFBF-4210-4C2F-8BB5-03F66513F406}" Directory_="es_Dir" Attributes="0" KeyPath="System.Windows.Interactivity.resources.dll_2"/>
+    <ROW Component="System.Windows.Interactivity.resources_3" ComponentId="{3926FE82-03FF-4435-9F65-2ED9F4623F24}" Directory_="fr_Dir" Attributes="0" KeyPath="System.Windows.Interactivity.resources.dll_3"/>
+    <ROW Component="System.Windows.Interactivity.resources_4" ComponentId="{0BD90AB8-8497-4D2E-A3CE-44D83953B590}" Directory_="it_Dir" Attributes="0" KeyPath="System.Windows.Interactivity.resources.dll_4"/>
+    <ROW Component="System.Windows.Interactivity.resources_5" ComponentId="{4DA9F20C-AFCA-48FA-805E-5061217116C0}" Directory_="ja_Dir" Attributes="0" KeyPath="System.Windows.Interactivity.resources.dll_5"/>
+    <ROW Component="System.Windows.Interactivity.resources_6" ComponentId="{9F9AFEC9-96A1-44E6-A475-9B07345900A2}" Directory_="ko_Dir" Attributes="0" KeyPath="System.Windows.Interactivity.resources.dll_6"/>
+    <ROW Component="System.Windows.Interactivity.resources_7" ComponentId="{A6B12329-D91A-483B-9C40-F03AD3A3B497}" Directory_="zhHans_Dir" Attributes="0" KeyPath="System.Windows.Interactivity.resources.dll_7"/>
+    <ROW Component="System.Windows.Interactivity.resources_8" ComponentId="{DB8795AD-4D6F-41C6-A6D2-580C57AD13C1}" Directory_="zhHant_Dir" Attributes="0" KeyPath="System.Windows.Interactivity.resources.dll_8"/>
+    <ROW Component="Web.config" ComponentId="{B040F852-4D02-4DC1-BA54-1D166EF1DE1E}" Directory_="Views_Dir" Attributes="0" KeyPath="Web.config_1" Type="0"/>
+    <ROW Component="WebGrease.dll" ComponentId="{2B584C4C-33B9-45E8-A494-CAB0AF7659B4}" Directory_="bin_1_Dir" Attributes="0" KeyPath="WebGrease.dll"/>
+    <ROW Component="WebMatrix.Data.dll" ComponentId="{3D1C472D-B901-4B73-B2E8-C4E524EDE213}" Directory_="bin_1_Dir" Attributes="0" KeyPath="WebMatrix.Data.dll"/>
+    <ROW Component="WebMatrix.WebData.dll" ComponentId="{326CC909-FDCF-46C8-8968-B3690FC57BA7}" Directory_="bin_1_Dir" Attributes="0" KeyPath="WebMatrix.WebData.dll"/>
+    <ROW Component="YoYoStudio.Common.Wcf.dll" ComponentId="{04E0A903-FAB3-491B-BE06-0C350AAE322A}" Directory_="bin_Dir" Attributes="0" KeyPath="YoYoStudio.Common.Wcf.dll"/>
+    <ROW Component="YoYoStudio.Common.Web.dll" ComponentId="{3ABE7F74-06E4-4035-9725-AA88D48C7F09}" Directory_="bin_1_Dir" Attributes="0" KeyPath="YoYoStudio.Common.Web.dll"/>
+    <ROW Component="YoYoStudio.Common.dll" ComponentId="{6448F10E-B509-486E-9410-B55D250BEE7F}" Directory_="bin_Dir" Attributes="0" KeyPath="YoYoStudio.Common.dll"/>
+    <ROW Component="YoYoStudio.Common.dll_1" ComponentId="{827AC132-B55C-41EB-985D-2B7085230B36}" Directory_="bin_1_Dir" Attributes="0" KeyPath="YoYoStudio.Common.dll_1"/>
+    <ROW Component="YoYoStudio.DataService.Client.dll" ComponentId="{B57E62A3-D9C3-437F-87CB-B912848ECC23}" Directory_="bin_1_Dir" Attributes="0" KeyPath="YoYoStudio.DataService.Client.dll"/>
+    <ROW Component="YoYoStudio.DataService.Library.dll" ComponentId="{8506F460-300F-4179-9132-36D107BAB36D}" Directory_="bin_Dir" Attributes="0" KeyPath="YoYoStudio.DataService.Library.dll"/>
+    <ROW Component="YoYoStudio.Exceptions.dll" ComponentId="{F6E7D797-38A2-4CAC-9686-08DBE5DB1B6E}" Directory_="bin_Dir" Attributes="0" KeyPath="YoYoStudio.Exceptions.dll"/>
+    <ROW Component="YoYoStudio.Exceptions.dll_1" ComponentId="{8380EA0F-ED25-45BF-8013-2B954F7F7A1E}" Directory_="bin_1_Dir" Attributes="0" KeyPath="YoYoStudio.Exceptions.dll_1"/>
+    <ROW Component="YoYoStudio.ManagementPortal.dll" ComponentId="{C0E338AD-198F-43ED-8240-F87F9FC70F51}" Directory_="bin_1_Dir" Attributes="0" KeyPath="YoYoStudio.ManagementPortal.dll"/>
+    <ROW Component="YoYoStudio.ManagementPortal.dll_1" ComponentId="{5D3A2CA1-54C8-453D-9869-921B270B9E06}" Directory_="Debug_1_Dir" Attributes="0" KeyPath="YoYoStudio.ManagementPortal.dll_1"/>
+    <ROW Component="YoYoStudio.ManagementPortal.dll_2" ComponentId="{4DEE08BC-6335-4F9C-8F2D-FEB387A09191}" Directory_="Release_1_Dir" Attributes="0" KeyPath="YoYoStudio.ManagementPortal.dll_2"/>
+    <ROW Component="YoYoStudio.Model.Json.dll" ComponentId="{2538BCDD-E2EC-4527-91A9-5EDED21CF11C}" Directory_="bin_1_Dir" Attributes="0" KeyPath="YoYoStudio.Model.Json.dll"/>
+    <ROW Component="YoYoStudio.Model.dll" ComponentId="{6F7FD031-B3AF-4FF2-95B2-EB6228F68B34}" Directory_="bin_Dir" Attributes="0" KeyPath="YoYoStudio.Model.dll"/>
+    <ROW Component="YoYoStudio.Model.dll_1" ComponentId="{B9073104-FC01-4CD7-91FC-4C425010FFF5}" Directory_="bin_1_Dir" Attributes="0" KeyPath="YoYoStudio.Model.dll_1"/>
+    <ROW Component="YoYoStudio.Persistent.dll" ComponentId="{04B91541-8D85-4D0C-B78D-C12FCBCA3119}" Directory_="bin_Dir" Attributes="0" KeyPath="YoYoStudio.Persistent.dll"/>
+    <ROW Component="YoYoStudio.Persistent.dll_1" ComponentId="{30DA353C-EC55-4844-A8FC-9A763B6EC608}" Directory_="bin_1_Dir" Attributes="0" KeyPath="YoYoStudio.Persistent.dll_1"/>
+    <ROW Component="YoYoStudio.Resource.dll" ComponentId="{ECFDDB23-8D47-4CEF-8401-986B329EBBAE}" Directory_="bin_Dir" Attributes="0" KeyPath="YoYoStudio.Resource.dll"/>
+    <ROW Component="YoYoStudio.Resource.dll_1" ComponentId="{EC26BB10-7EC5-4549-8D3A-CB1DC01A9138}" Directory_="bin_1_Dir" Attributes="0" KeyPath="YoYoStudio.Resource.dll_1"/>
+    <ROW Component="accent.png" ComponentId="{5729DA7D-853B-4E2B-8319-39B251CD38C8}" Directory_="Images_Dir" Attributes="0" KeyPath="accent.png" Type="0"/>
+    <ROW Component="accordioncontent.gif" ComponentId="{2CC935A6-D2F5-4FE6-9F29-47EB1E9BE990}" Directory_="layout_Dir" Attributes="0" KeyPath="accordioncontent.gif" Type="0"/>
+    <ROW Component="accordionheader.gif" ComponentId="{62FD8750-ABC6-4822-9B22-B9841D62E959}" Directory_="layout_1_Dir" Attributes="0" KeyPath="accordionheader.gif_1" Type="0"/>
+    <ROW Component="accordionheaderover.jpg" ComponentId="{085517C9-BE7B-4DA9-969D-B7823B402F64}" Directory_="layout_2_Dir" Attributes="0" KeyPath="accordionheaderover.jpg" Type="0"/>
+    <ROW Component="add.gif" ComponentId="{F444FA26-78F5-498D-A7F2-461D91D762F4}" Directory_="icons_Dir" Attributes="0" KeyPath="add.gif" Type="0"/>
+    <ROW Component="all.css" ComponentId="{FC0EAEB4-A8AE-424F-BCEB-821B501CBC61}" Directory_="css_1_Dir" Attributes="0" KeyPath="all.css" Type="0"/>
+    <ROW Component="barbg.gif" ComponentId="{86E7C6EB-45F7-40F5-8800-8C30B8741898}" Directory_="panel_Dir" Attributes="0" KeyPath="barbg.gif" Type="0"/>
+    <ROW Component="barbuttonover.gif" ComponentId="{4BC78EC0-425A-40BD-90A4-C0E2D0789D24}" Directory_="icon_Dir" Attributes="0" KeyPath="barbuttonover.gif" Type="0"/>
+    <ROW Component="base.js" ComponentId="{B05E65C8-FA50-4CA0-8A84-E95682C86F0B}" Directory_="core_Dir" Attributes="0" KeyPath="base.js" Type="0"/>
+    <ROW Component="bgpaneltitleover.gif" ComponentId="{7EEAD083-8219-43E6-9A54-12EE695592B7}" Directory_="controls_Dir" Attributes="0" KeyPath="bgpaneltitleover.gif" Type="0"/>
+    <ROW Component="bigloading.gif" ComponentId="{D86304AC-735C-4CF3-8AEE-1208F0301D33}" Directory_="common_Dir" Attributes="0" KeyPath="bigloading.gif" Type="0"/>
+    <ROW Component="boxicons.gif" ComponentId="{DD21A7CD-A54B-41D9-97E1-E7D7677AF33A}" Directory_="win_Dir" Attributes="0" KeyPath="boxicons.gif" Type="0"/>
+    <ROW Component="btn.gif" ComponentId="{72A6EDA5-6FB4-4240-B12D-D6ECC1DA3B05}" Directory_="ui_Dir" Attributes="0" KeyPath="btn.gif_1" Type="0"/>
+    <ROW Component="checkboxradio.gif" ComponentId="{6F1DA265-57D1-40CF-A6FB-4BBE8EE17AA5}" Directory_="form_1_Dir" Attributes="0" KeyPath="checkboxradio.gif" Type="0"/>
+    <ROW Component="date.gif" ComponentId="{4917F09E-C3AF-42B2-8F96-84C87CD96C40}" Directory_="dateeditor_Dir" Attributes="0" KeyPath="date.gif" Type="0"/>
+    <ROW Component="dialogwinbtns.gif" ComponentId="{FBD74ACC-C824-406F-8BAB-D4C6A2E43FA4}" Directory_="win_1_Dir" Attributes="0" KeyPath="dialogwinbtns.gif_1" Type="0"/>
+    <ROW Component="favicon.ico" ComponentId="{A04CCB42-C2E2-4A1F-A3F8-E37F10BFAC61}" Directory_="ManagementPortal_Dir" Attributes="0" KeyPath="favicon.ico" Type="0"/>
+    <ROW Component="folderopen.gif" ComponentId="{11EB6292-9ABD-420C-AAB6-03C9A19BDD00}" Directory_="tree_Dir" Attributes="0" KeyPath="folderopen.gif" Type="0"/>
+    <ROW Component="form.css" ComponentId="{98332ECF-3838-44FD-866C-8353D5DAAEE8}" Directory_="css_2_Dir" Attributes="0" KeyPath="form.css_1" Type="0"/>
+    <ROW Component="gridcheckboxchecked.gif" ComponentId="{D52C322D-D446-4070-997D-AC564021D084}" Directory_="grid_Dir" Attributes="0" KeyPath="gridcheckboxchecked.gif" Type="0"/>
+    <ROW Component="gridheaderbg.jpg" ComponentId="{9EFA5660-A98B-4E76-8058-B045687AB4CD}" Directory_="grid_1_Dir" Attributes="0" KeyPath="gridheaderbg.jpg" Type="0"/>
+    <ROW Component="ligerAccordion.js" ComponentId="{E6D8AD2A-7056-47E2-927C-C74DBADFBA6C}" Directory_="plugins_Dir" Attributes="0" KeyPath="ligerAccordion.js" Type="0"/>
+    <ROW Component="ligerui.all.js" ComponentId="{AA15740D-225F-4546-BBF6-7FED96C6628E}" Directory_="js_Dir" Attributes="0" KeyPath="ligerui.all.js" Type="0"/>
+    <ROW Component="ligeruiall.css" ComponentId="{9ADBEC45-981C-4BCD-A28C-B60C18451577}" Directory_="css_Dir" Attributes="0" KeyPath="ligeruiall.css" Type="0"/>
+    <ROW Component="ligeruiicons.css" ComponentId="{4E321D7B-FAD2-44AE-A572-7A941C1B2B6F}" Directory_="skins_Dir" Attributes="0" KeyPath="ligeruiicons.css" Type="0"/>
+    <ROW Component="loading.gif" ComponentId="{330E36E5-A37F-4528-9CCF-30283FB72E07}" Directory_="images_Dir" Attributes="0" KeyPath="loading.gif_1" Type="0"/>
+    <ROW Component="log4net.dll" ComponentId="{8E9C94D4-B4FD-4151-A9B8-ADFD6AE0C6DF}" Directory_="bin_Dir" Attributes="0" KeyPath="log4net.dll"/>
+    <ROW Component="menuitemarrow.gif" ComponentId="{FC2C6F6C-A1CA-4BD3-8905-D95CCE56A3DD}" Directory_="menu_Dir" Attributes="0" KeyPath="menuitemarrow.gif" Type="0"/>
+    <ROW Component="verifycorner.gif" ComponentId="{DF7728CB-F306-4CC8-8094-78A6C032408C}" Directory_="form_Dir" Attributes="0" KeyPath="verifycorner.gif" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="AI_ExePath About.cshtml AccountController.cs AccountModels.cs AgentManagement.cshtml Antlr3.Runtime.dll Application.js AssemblyInfo.cs AssemblyInfo.cs_1 AuthConfig.cs DataService.csproj DataService.csproj.FileListAbsolute.tx_1 DataService.csproj.FileListAbsolute.txt DataService.dll DataService.dll_1 DataService.dll_2 DesignTimeResolveAssemblyReferencesInp_1 DesignTimeResolveAssemblyReferencesInput DotNetOpenAuth.AspNet.dll DotNetOpenAuth.AspNet.xml DotNetOpenAuth.Core.dll DotNetOpenAuth.OAuth.Consumer.dll DotNetOpenAuth.OAuth.dll DotNetOpenAuth.OpenId.RelyingParty.dll DotNetOpenAuth.OpenId.dll Error.cshtml ExternalLoginConfirmation.cshtml IISWindowsLogin ImageLayout.cshtml Microsoft.Web.Infrastructure.dll Microsoft.Web.WebPages.OAuth.dll Newtonsoft.Json.dll ProductInformation Site.css Suite System.Net.Http.Formatting.dll System.Net.Http.WebRequest.dll System.Net.Http.dll System.Web.Helpers.dll System.Web.Http.WebHost.dll System.Web.Http.dll System.Web.Mvc.dll System.Web.Optimization.dll System.Web.Razor.dll System.Web.WebPages.Deployment.dll System.Web.WebPages.Razor.dll System.Web.WebPages.dll System.Windows.Interactivity.dll System.Windows.Interactivity.resources.d System.Windows.Interactivity.resources_1 System.Windows.Interactivity.resources_2 System.Windows.Interactivity.resources_3 System.Windows.Interactivity.resources_4 System.Windows.Interactivity.resources_5 System.Windows.Interactivity.resources_6 System.Windows.Interactivity.resources_7 System.Windows.Interactivity.resources_8 Web.config WebGrease.dll WebMatrix.Data.dll WebMatrix.WebData.dll YoYoStudio.Common.Wcf.dll YoYoStudio.Common.Web.dll YoYoStudio.Common.dll YoYoStudio.Common.dll_1 YoYoStudio.DataService.Client.dll YoYoStudio.DataService.Library.dll YoYoStudio.Exceptions.dll YoYoStudio.Exceptions.dll_1 YoYoStudio.ManagementPortal.dll YoYoStudio.ManagementPortal.dll_1 YoYoStudio.ManagementPortal.dll_2 YoYoStudio.Model.Json.dll YoYoStudio.Model.dll YoYoStudio.Model.dll_1 YoYoStudio.Persistent.dll YoYoStudio.Persistent.dll_1 YoYoStudio.Resource.dll YoYoStudio.Resource.dll_1 accent.png accordioncontent.gif accordionheader.gif accordionheaderover.jpg add.gif all.css barbg.gif barbuttonover.gif base.js bgpaneltitleover.gif bigloading.gif boxicons.gif btn.gif checkboxradio.gif date.gif dialogwinbtns.gif favicon.ico folderopen.gif form.css gridcheckboxchecked.gif gridheaderbg.jpg ligerAccordion.js ligerui.all.js ligeruiall.css ligeruiicons.css loading.gif log4net.dll menuitemarrow.gif verifycorner.gif"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="About.cshtml" Component_="About.cshtml" FileName="About~1.csh|About.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\About.cshtml" SelfReg="false" NextFile="Contact.cshtml"/>
+    <ROW File="AccountController.cs" Component_="AccountController.cs" FileName="Accoun~1.cs|AccountController.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\AccountController.cs" SelfReg="false" NextFile="BaseController.cs"/>
+    <ROW File="AccountModels.cs" Component_="AccountModels.cs" FileName="Accoun~1.cs|AccountModels.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Models\AccountModels.cs" SelfReg="false" NextFile="Const.cs"/>
+    <ROW File="AgentManagement.cshtml" Component_="AgentManagement.cshtml" FileName="AgentM~1.csh|AgentManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\AgentManagement.cshtml" SelfReg="false" NextFile="ApplicationManagement.cshtml"/>
+    <ROW File="Antlr3.Runtime.dll" Component_="Antlr3.Runtime.dll" FileName="Antlr3~1.dll|Antlr3.Runtime.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\Antlr3.Runtime.dll" SelfReg="false" NextFile="System.Windows.Interactivity.resources.dll"/>
+    <ROW File="Application.js" Component_="Application.js" FileName="Applic~1.js|Application.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\Application.js" SelfReg="false" NextFile="BackendCommand.js"/>
+    <ROW File="ApplicationManagement.cshtml" Component_="AgentManagement.cshtml" FileName="Applic~1.csh|ApplicationManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\ApplicationManagement.cshtml" SelfReg="false" NextFile="BackendCommandManagement.cshtml"/>
+    <ROW File="AssemblyInfo.cs" Component_="AssemblyInfo.cs" FileName="Assemb~1.cs|AssemblyInfo.cs" Attributes="0" SourcePath="..\..\DataService\Properties\AssemblyInfo.cs" SelfReg="false" NextFile="Service.svc"/>
+    <ROW File="AssemblyInfo.cs_1" Component_="AssemblyInfo.cs_1" FileName="Assemb~1.cs|AssemblyInfo.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Properties\AssemblyInfo.cs" SelfReg="false" NextFile="Application.js"/>
+    <ROW File="AuthConfig.cs" Component_="AuthConfig.cs" FileName="AuthCo~1.cs|AuthConfig.cs" Attributes="0" SourcePath="..\..\ManagementPortal\App_Start\AuthConfig.cs" SelfReg="false" NextFile="BundleConfig.cs"/>
+    <ROW File="BackendCommand.js" Component_="Application.js" FileName="Backen~1.js|BackendCommand.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\BackendCommand.js" SelfReg="false" NextFile="Block.js"/>
+    <ROW File="BackendCommandManagement.cshtml" Component_="AgentManagement.cshtml" FileName="Backen~1.csh|BackendCommandManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\BackendCommandManagement.cshtml" SelfReg="false" NextFile="BlockManagement.cshtml"/>
+    <ROW File="BaseController.cs" Component_="AccountController.cs" FileName="BaseCo~1.cs|BaseController.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\BaseController.cs" SelfReg="false" NextFile="HomeController.ApplicationManagement.cs"/>
+    <ROW File="Block.js" Component_="Application.js" FileName="Block.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\Block.js" SelfReg="false" NextFile="BlockType.js"/>
+    <ROW File="BlockManagement.cshtml" Component_="AgentManagement.cshtml" FileName="BlockM~1.csh|BlockManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\BlockManagement.cshtml" SelfReg="false" NextFile="BlockTypeManagement.cshtml"/>
+    <ROW File="BlockType.js" Component_="Application.js" FileName="BlockT~1.js|BlockType.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\BlockType.js" SelfReg="false" NextFile="Command.js"/>
+    <ROW File="BlockTypeManagement.cshtml" Component_="AgentManagement.cshtml" FileName="BlockT~1.csh|BlockTypeManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\BlockTypeManagement.cshtml" SelfReg="false" NextFile="CommandManagement.cshtml"/>
+    <ROW File="BundleConfig.cs" Component_="AuthConfig.cs" FileName="Bundle~1.cs|BundleConfig.cs" Attributes="0" SourcePath="..\..\ManagementPortal\App_Start\BundleConfig.cs" SelfReg="false" NextFile="FilterConfig.cs"/>
+    <ROW File="Command.js" Component_="Application.js" FileName="Command.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\Command.js" SelfReg="false" NextFile="ExchangeHistory.js"/>
+    <ROW File="CommandManagement.cshtml" Component_="AgentManagement.cshtml" FileName="Comman~1.csh|CommandManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\CommandManagement.cshtml" SelfReg="false" NextFile="ExchangeManagement.cshtml"/>
+    <ROW File="Const.cs" Component_="AccountModels.cs" FileName="Const.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Models\Const.cs" SelfReg="false" NextFile="DesignTimeResolveAssemblyReferencesInput.cache_2"/>
+    <ROW File="Contact.cshtml" Component_="About.cshtml" FileName="Contac~1.csh|Contact.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\Contact.cshtml" SelfReg="false" NextFile="Index.cshtml"/>
+    <ROW File="DataService.csproj" Component_="DataService.csproj" FileName="DataSe~1.csp|DataService.csproj" Attributes="0" SourcePath="..\..\DataService\DataService.csproj" SelfReg="false" NextFile="DataService.csproj.FileListAbsolute.txt"/>
+    <ROW File="DataService.csproj.FileListAbsolute.txt" Component_="DataService.csproj.FileListAbsolute.txt" FileName="DataSe~1.txt|DataService.csproj.FileListAbsolute.txt" Attributes="0" SourcePath="..\..\DataService\obj\Debug\DataService.csproj.FileListAbsolute.txt" SelfReg="false" NextFile="DataService.csprojResolveAssemblyReference.cache"/>
+    <ROW File="DataService.csproj.FileListAbsolute.txt_1" Component_="DataService.csproj.FileListAbsolute.tx_1" FileName="DataSe~1.txt|DataService.csproj.FileListAbsolute.txt" Attributes="0" SourcePath="..\..\DataService\obj\Release\DataService.csproj.FileListAbsolute.txt" SelfReg="false" NextFile="DataService.csprojResolveAssemblyReference.cache_1"/>
+    <ROW File="DataService.csprojResolveAssemblyReference.cache" Component_="DataService.csproj.FileListAbsolute.txt" FileName="DataSe~1.cac|DataService.csprojResolveAssemblyReference.cache" Attributes="0" SourcePath="..\..\DataService\obj\Debug\DataService.csprojResolveAssemblyReference.cache" SelfReg="false" NextFile="DataService.dll_1"/>
+    <ROW File="DataService.csprojResolveAssemblyReference.cache_1" Component_="DataService.csproj.FileListAbsolute.tx_1" FileName="DataSe~1.cac|DataService.csprojResolveAssemblyReference.cache" Attributes="0" SourcePath="..\..\DataService\obj\Release\DataService.csprojResolveAssemblyReference.cache" SelfReg="false" NextFile="DataService.dll_2"/>
+    <ROW File="DataService.dll" Component_="DataService.dll" FileName="DataSe~1.dll|DataService.dll" Attributes="0" SourcePath="..\..\DataService\bin\DataService.dll" SelfReg="false" NextFile="DataService.pdb"/>
+    <ROW File="DataService.dll_1" Component_="DataService.dll_1" FileName="DataSe~1.dll|DataService.dll" Attributes="0" SourcePath="..\..\DataService\obj\Debug\DataService.dll" SelfReg="false" NextFile="DataService.pdb_1"/>
+    <ROW File="DataService.dll_2" Component_="DataService.dll_2" FileName="DataSe~1.dll|DataService.dll" Attributes="0" SourcePath="..\..\DataService\obj\Release\DataService.dll" SelfReg="false" NextFile="DataService.pdb_2"/>
+    <ROW File="DataService.pdb" Component_="DataService.dll" FileName="DataSe~1.pdb|DataService.pdb" Attributes="0" SourcePath="..\..\DataService\bin\DataService.pdb" SelfReg="false" NextFile="log4net.dll"/>
+    <ROW File="DataService.pdb_1" Component_="DataService.dll_1" FileName="DataSe~1.pdb|DataService.pdb" Attributes="0" SourcePath="..\..\DataService\obj\Debug\DataService.pdb" SelfReg="false" NextFile="DesignTimeResolveAssemblyReferences.cache"/>
+    <ROW File="DataService.pdb_2" Component_="DataService.dll_2" FileName="DataSe~1.pdb|DataService.pdb" Attributes="0" SourcePath="..\..\DataService\obj\Release\DataService.pdb" SelfReg="false" NextFile="DesignTimeResolveAssemblyReferencesInput.cache_1"/>
+    <ROW File="DesignTimeResolveAssemblyReferences.cache" Component_="DataService.csproj.FileListAbsolute.txt" FileName="Design~1.cac|DesignTimeResolveAssemblyReferences.cache" Attributes="0" SourcePath="..\..\DataService\obj\Debug\DesignTimeResolveAssemblyReferences.cache" SelfReg="false" NextFile="DesignTimeResolveAssemblyReferencesInput.cache"/>
+    <ROW File="DesignTimeResolveAssemblyReferencesInput.cache" Component_="DataService.csproj.FileListAbsolute.txt" FileName="Design~2.cac|DesignTimeResolveAssemblyReferencesInput.cache" Attributes="0" SourcePath="..\..\DataService\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" SelfReg="false" NextFile="DataService.csproj.FileListAbsolute.txt_1"/>
+    <ROW File="DesignTimeResolveAssemblyReferencesInput.cache_1" Component_="DataService.csproj.FileListAbsolute.tx_1" FileName="Design~1.cac|DesignTimeResolveAssemblyReferencesInput.cache" Attributes="0" SourcePath="..\..\DataService\obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" SelfReg="false" NextFile="AssemblyInfo.cs"/>
+    <ROW File="DesignTimeResolveAssemblyReferencesInput.cache_2" Component_="DesignTimeResolveAssemblyReferencesInput" FileName="Design~1.cac|DesignTimeResolveAssemblyReferencesInput.cache" Attributes="0" SourcePath="..\..\ManagementPortal\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" SelfReg="false" NextFile="ManagementPortal.csproj.FileListAbsolute.txt"/>
+    <ROW File="DesignTimeResolveAssemblyReferencesInput.cache_3" Component_="DesignTimeResolveAssemblyReferencesInp_1" FileName="Design~1.cac|DesignTimeResolveAssemblyReferencesInput.cache" Attributes="0" SourcePath="..\..\ManagementPortal\obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" SelfReg="false" NextFile="ManagementPortal.csproj.FileListAbsolute.txt_1"/>
+    <ROW File="DotNetOpenAuth.AspNet.dll" Component_="DotNetOpenAuth.AspNet.dll" FileName="DotNet~1.dll|DotNetOpenAuth.AspNet.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\DotNetOpenAuth.AspNet.dll" SelfReg="false" NextFile="DotNetOpenAuth.Core.dll"/>
+    <ROW File="DotNetOpenAuth.AspNet.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="DotNet~1.xml|DotNetOpenAuth.AspNet.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\DotNetOpenAuth.AspNet.xml" SelfReg="false" NextFile="DotNetOpenAuth.Core.xml"/>
+    <ROW File="DotNetOpenAuth.Core.dll" Component_="DotNetOpenAuth.Core.dll" FileName="DotNet~2.dll|DotNetOpenAuth.Core.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\DotNetOpenAuth.Core.dll" SelfReg="false" NextFile="DotNetOpenAuth.OAuth.Consumer.dll"/>
+    <ROW File="DotNetOpenAuth.Core.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="DotNet~2.xml|DotNetOpenAuth.Core.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\DotNetOpenAuth.Core.xml" SelfReg="false" NextFile="DotNetOpenAuth.OAuth.Consumer.xml"/>
+    <ROW File="DotNetOpenAuth.OAuth.Consumer.dll" Component_="DotNetOpenAuth.OAuth.Consumer.dll" FileName="DotNet~3.dll|DotNetOpenAuth.OAuth.Consumer.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\DotNetOpenAuth.OAuth.Consumer.dll" SelfReg="false" NextFile="DotNetOpenAuth.OAuth.dll"/>
+    <ROW File="DotNetOpenAuth.OAuth.Consumer.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="DotNet~3.xml|DotNetOpenAuth.OAuth.Consumer.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\DotNetOpenAuth.OAuth.Consumer.xml" SelfReg="false" NextFile="DotNetOpenAuth.OAuth.xml"/>
+    <ROW File="DotNetOpenAuth.OAuth.dll" Component_="DotNetOpenAuth.OAuth.dll" FileName="DotNet~4.dll|DotNetOpenAuth.OAuth.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\DotNetOpenAuth.OAuth.dll" SelfReg="false" NextFile="DotNetOpenAuth.OpenId.dll"/>
+    <ROW File="DotNetOpenAuth.OAuth.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="DotNet~4.xml|DotNetOpenAuth.OAuth.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\DotNetOpenAuth.OAuth.xml" SelfReg="false" NextFile="DotNetOpenAuth.OpenId.RelyingParty.xml"/>
+    <ROW File="DotNetOpenAuth.OpenId.RelyingParty.dll" Component_="DotNetOpenAuth.OpenId.RelyingParty.dll" FileName="DotNet~6.dll|DotNetOpenAuth.OpenId.RelyingParty.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\DotNetOpenAuth.OpenId.RelyingParty.dll" SelfReg="false" NextFile="System.Windows.Interactivity.resources.dll_1"/>
+    <ROW File="DotNetOpenAuth.OpenId.RelyingParty.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="DotNet~5.xml|DotNetOpenAuth.OpenId.RelyingParty.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\DotNetOpenAuth.OpenId.RelyingParty.xml" SelfReg="false" NextFile="DotNetOpenAuth.OpenId.xml"/>
+    <ROW File="DotNetOpenAuth.OpenId.dll" Component_="DotNetOpenAuth.OpenId.dll" FileName="DotNet~5.dll|DotNetOpenAuth.OpenId.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\DotNetOpenAuth.OpenId.dll" SelfReg="false" NextFile="DotNetOpenAuth.OpenId.RelyingParty.dll"/>
+    <ROW File="DotNetOpenAuth.OpenId.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="DotNet~6.xml|DotNetOpenAuth.OpenId.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\DotNetOpenAuth.OpenId.xml" SelfReg="false" NextFile="Microsoft.Web.WebPages.OAuth.xml"/>
+    <ROW File="Error.cshtml" Component_="Error.cshtml" FileName="Error~1.csh|Error.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Shared\Error.cshtml" SelfReg="false" NextFile="_Layout.cshtml"/>
+    <ROW File="ExchangeHistory.js" Component_="Application.js" FileName="Exchan~1.js|ExchangeHistory.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\ExchangeHistory.js" SelfReg="false" NextFile="ExchangeRate.js"/>
+    <ROW File="ExchangeManagement.cshtml" Component_="AgentManagement.cshtml" FileName="Exchan~1.csh|ExchangeManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\ExchangeManagement.cshtml" SelfReg="false" NextFile="ExchangeRateManagement.cshtml"/>
+    <ROW File="ExchangeRate.js" Component_="Application.js" FileName="Exchan~2.js|ExchangeRate.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\ExchangeRate.js" SelfReg="false" NextFile="Gift.js"/>
+    <ROW File="ExchangeRateManagement.cshtml" Component_="AgentManagement.cshtml" FileName="Exchan~2.csh|ExchangeRateManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\ExchangeRateManagement.cshtml" SelfReg="false" NextFile="FrontendCommandManagement.cshtml"/>
+    <ROW File="ExternalLoginConfirmation.cshtml" Component_="ExternalLoginConfirmation.cshtml" FileName="Extern~1.csh|ExternalLoginConfirmation.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Account\ExternalLoginConfirmation.cshtml" SelfReg="false" NextFile="ExternalLoginFailure.cshtml"/>
+    <ROW File="ExternalLoginFailure.cshtml" Component_="ExternalLoginConfirmation.cshtml" FileName="Extern~2.csh|ExternalLoginFailure.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Account\ExternalLoginFailure.cshtml" SelfReg="false" NextFile="Login.cshtml"/>
+    <ROW File="FilterConfig.cs" Component_="AuthConfig.cs" FileName="Filter~1.cs|FilterConfig.cs" Attributes="0" SourcePath="..\..\ManagementPortal\App_Start\FilterConfig.cs" SelfReg="false" NextFile="RouteConfig.cs"/>
+    <ROW File="FrontendCommandManagement.cshtml" Component_="AgentManagement.cshtml" FileName="Fronte~1.csh|FrontendCommandManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\FrontendCommandManagement.cshtml" SelfReg="false" NextFile="GiftGroupManagement.cshtml"/>
+    <ROW File="Gift.js" Component_="Application.js" FileName="Gift.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\Gift.js" SelfReg="false" NextFile="GiftGroup.js"/>
+    <ROW File="GiftGroup.js" Component_="Application.js" FileName="GiftGr~1.js|GiftGroup.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\GiftGroup.js" SelfReg="false" NextFile="GiftInOutInquiry.js"/>
+    <ROW File="GiftGroupManagement.cshtml" Component_="AgentManagement.cshtml" FileName="GiftGr~1.csh|GiftGroupManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\GiftGroupManagement.cshtml" SelfReg="false" NextFile="GiftInOutInquiryManagement.cshtml"/>
+    <ROW File="GiftInOutInquiry.js" Component_="Application.js" FileName="GiftIn~1.js|GiftInOutInquiry.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\GiftInOutInquiry.js" SelfReg="false" NextFile="GridFilter.js"/>
+    <ROW File="GiftInOutInquiryManagement.cshtml" Component_="AgentManagement.cshtml" FileName="GiftIn~1.csh|GiftInOutInquiryManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\GiftInOutInquiryManagement.cshtml" SelfReg="false" NextFile="GiftManagement.cshtml"/>
+    <ROW File="GiftManagement.cshtml" Component_="AgentManagement.cshtml" FileName="GiftMa~1.csh|GiftManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\GiftManagement.cshtml" SelfReg="false" NextFile="PasswordManagement.cshtml"/>
+    <ROW File="Global.asax" Component_="favicon.ico" FileName="Global~1.asa|Global.asax" Attributes="0" SourcePath="..\..\ManagementPortal\Global.asax" SelfReg="false" NextFile="Global.asax.cs"/>
+    <ROW File="Global.asax.cs" Component_="favicon.ico" FileName="Global~1.cs|Global.asax.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Global.asax.cs" SelfReg="false" NextFile="HtmlHelper.cs"/>
+    <ROW File="GridFilter.js" Component_="Application.js" FileName="GridFi~1.js|GridFilter.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\GridFilter.js" SelfReg="false" NextFile="Home.js"/>
+    <ROW File="Home.js" Component_="Application.js" FileName="Home.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\Home.js" SelfReg="false" NextFile="indexdata.js"/>
+    <ROW File="HomeController.ApplicationManagement.cs" Component_="AccountController.cs" FileName="HomeCo~1.cs|HomeController.ApplicationManagement.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.ApplicationManagement.cs" SelfReg="false" NextFile="HomeController.BlockManagement.cs"/>
+    <ROW File="HomeController.BlockManagement.cs" Component_="AccountController.cs" FileName="HomeCo~2.cs|HomeController.BlockManagement.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.BlockManagement.cs" SelfReg="false" NextFile="HomeController.BlockTypeManagement.cs"/>
+    <ROW File="HomeController.BlockTypeManagement.cs" Component_="AccountController.cs" FileName="HomeCo~3.cs|HomeController.BlockTypeManagement.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.BlockTypeManagement.cs" SelfReg="false" NextFile="HomeController.CommandManagement.cs"/>
+    <ROW File="HomeController.CommandManagement.cs" Component_="AccountController.cs" FileName="HomeCo~4.cs|HomeController.CommandManagement.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.CommandManagement.cs" SelfReg="false" NextFile="HomeController.cs"/>
+    <ROW File="HomeController.ExchangeManagement.cs" Component_="AccountController.cs" FileName="HomeCo~6.cs|HomeController.ExchangeManagement.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.ExchangeManagement.cs" SelfReg="false" NextFile="HomeController.ExchangeRateManagement.cs"/>
+    <ROW File="HomeController.ExchangeRateManagement.cs" Component_="AccountController.cs" FileName="HomeCo~7.cs|HomeController.ExchangeRateManagement.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.ExchangeRateManagement.cs" SelfReg="false" NextFile="HomeController.GiftGroupManagement.cs"/>
+    <ROW File="HomeController.GiftGroupManagement.cs" Component_="AccountController.cs" FileName="HomeCo~8.cs|HomeController.GiftGroupManagement.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.GiftGroupManagement.cs" SelfReg="false" NextFile="HomeController.GiftManagement.cs"/>
+    <ROW File="HomeController.GiftManagement.cs" Component_="AccountController.cs" FileName="HomeCo~9.cs|HomeController.GiftManagement.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.GiftManagement.cs" SelfReg="false" NextFile="HomeController.PersonalManagement.cs"/>
+    <ROW File="HomeController.PersonalManagement.cs" Component_="AccountController.cs" FileName="HomeC~10.cs|HomeController.PersonalManagement.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.PersonalManagement.cs" SelfReg="false" NextFile="HomeController.Private.cs"/>
+    <ROW File="HomeController.Private.cs" Component_="AccountController.cs" FileName="HomeC~11.cs|HomeController.Private.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.Private.cs" SelfReg="false" NextFile="HomeController.RoleCommandManagement.cs"/>
+    <ROW File="HomeController.RoleCommandManagement.cs" Component_="AccountController.cs" FileName="HomeC~12.cs|HomeController.RoleCommandManagement.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.RoleCommandManagement.cs" SelfReg="false" NextFile="HomeController.RoleManagement.cs"/>
+    <ROW File="HomeController.RoleManagement.cs" Component_="AccountController.cs" FileName="HomeC~13.cs|HomeController.RoleManagement.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.RoleManagement.cs" SelfReg="false" NextFile="HomeController.RoomGroupManagement.cs"/>
+    <ROW File="HomeController.RoomGroupManagement.cs" Component_="AccountController.cs" FileName="HomeC~14.cs|HomeController.RoomGroupManagement.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.RoomGroupManagement.cs" SelfReg="false" NextFile="HomeController.RoomManagement.cs"/>
+    <ROW File="HomeController.RoomManagement.cs" Component_="AccountController.cs" FileName="HomeC~15.cs|HomeController.RoomManagement.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.RoomManagement.cs" SelfReg="false" NextFile="HomeController.SettlementManagement.cs"/>
+    <ROW File="HomeController.SettlementManagement.cs" Component_="AccountController.cs" FileName="HomeC~16.cs|HomeController.SettlementManagement.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.SettlementManagement.cs" SelfReg="false" NextFile="HomeController.UserIdManagement.cs"/>
+    <ROW File="HomeController.UserIdManagement.cs" Component_="AccountController.cs" FileName="HomeC~17.cs|HomeController.UserIdManagement.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.UserIdManagement.cs" SelfReg="false" NextFile="HomeController.UserManagement.cs"/>
+    <ROW File="HomeController.UserManagement.cs" Component_="AccountController.cs" FileName="HomeC~18.cs|HomeController.UserManagement.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.UserManagement.cs" SelfReg="false" NextFile="ImageController.cs"/>
+    <ROW File="HomeController.cs" Component_="AccountController.cs" FileName="HomeCo~5.cs|HomeController.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\HomeController.cs" SelfReg="false" NextFile="HomeController.ExchangeManagement.cs"/>
+    <ROW File="HtmlHelper.cs" Component_="favicon.ico" FileName="HtmlHe~1.cs|HtmlHelper.cs" Attributes="0" SourcePath="..\..\ManagementPortal\HtmlHelper.cs" SelfReg="false" NextFile="accent.png"/>
+    <ROW File="ImageController.cs" Component_="AccountController.cs" FileName="ImageC~1.cs|ImageController.cs" Attributes="0" SourcePath="..\..\ManagementPortal\Controllers\ImageController.cs" SelfReg="false" NextFile="favicon.ico"/>
+    <ROW File="ImageLayout.cshtml" Component_="ImageLayout.cshtml" FileName="ImageL~1.csh|ImageLayout.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Image\ImageLayout.cshtml" SelfReg="false" NextFile="UploadImage.cshtml"/>
+    <ROW File="Index.cshtml" Component_="About.cshtml" FileName="Index~1.csh|Index.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\Index.cshtml" SelfReg="false" NextFile="AgentManagement.cshtml"/>
+    <ROW File="Login.cshtml" Component_="ExternalLoginConfirmation.cshtml" FileName="Login~1.csh|Login.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Account\Login.cshtml" SelfReg="false" NextFile="Manage.cshtml"/>
+    <ROW File="Logo_128.png" Component_="accent.png" FileName="Logo_128.png" Attributes="0" SourcePath="..\..\ManagementPortal\Images\Logo_128.png" SelfReg="false" NextFile="logo_32.png"/>
+    <ROW File="Manage.cshtml" Component_="ExternalLoginConfirmation.cshtml" FileName="Manage~1.csh|Manage.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Account\Manage.cshtml" SelfReg="false" NextFile="Register.cshtml"/>
+    <ROW File="ManagementPortal.csproj" Component_="favicon.ico" FileName="Manage~1.csp|ManagementPortal.csproj" Attributes="0" SourcePath="..\..\ManagementPortal\ManagementPortal.csproj" SelfReg="false" NextFile="AccountModels.cs"/>
+    <ROW File="ManagementPortal.csproj.FileListAbsolute.txt" Component_="DesignTimeResolveAssemblyReferencesInput" FileName="Manage~1.txt|ManagementPortal.csproj.FileListAbsolute.txt" Attributes="0" SourcePath="..\..\ManagementPortal\obj\Debug\ManagementPortal.csproj.FileListAbsolute.txt" SelfReg="false" NextFile="ManagementPortal.csprojResolveAssemblyReference.cache"/>
+    <ROW File="ManagementPortal.csproj.FileListAbsolute.txt_1" Component_="DesignTimeResolveAssemblyReferencesInp_1" FileName="Manage~1.txt|ManagementPortal.csproj.FileListAbsolute.txt" Attributes="0" SourcePath="..\..\ManagementPortal\obj\Release\ManagementPortal.csproj.FileListAbsolute.txt" SelfReg="false" NextFile="ManagementPortal.csprojResolveAssemblyReference.cache_1"/>
+    <ROW File="ManagementPortal.csprojResolveAssemblyReference.cache" Component_="DesignTimeResolveAssemblyReferencesInput" FileName="Manage~1.cac|ManagementPortal.csprojResolveAssemblyReference.cache" Attributes="0" SourcePath="..\..\ManagementPortal\obj\Debug\ManagementPortal.csprojResolveAssemblyReference.cache" SelfReg="false" NextFile="YoYoStudio.ManagementPortal.dll_1"/>
+    <ROW File="ManagementPortal.csprojResolveAssemblyReference.cache_1" Component_="DesignTimeResolveAssemblyReferencesInp_1" FileName="Manage~1.cac|ManagementPortal.csprojResolveAssemblyReference.cache" Attributes="0" SourcePath="..\..\ManagementPortal\obj\Release\ManagementPortal.csprojResolveAssemblyReference.cache" SelfReg="false" NextFile="YoYoStudio.ManagementPortal.dll_2"/>
+    <ROW File="Microsoft.Web.Infrastructure.dll" Component_="Microsoft.Web.Infrastructure.dll" FileName="Micros~1.dll|Microsoft.Web.Infrastructure.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\Microsoft.Web.Infrastructure.dll" SelfReg="false" NextFile="Microsoft.Web.WebPages.OAuth.dll"/>
+    <ROW File="Microsoft.Web.WebPages.OAuth.dll" Component_="Microsoft.Web.WebPages.OAuth.dll" FileName="Micros~2.dll|Microsoft.Web.WebPages.OAuth.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\Microsoft.Web.WebPages.OAuth.dll" SelfReg="false" NextFile="Newtonsoft.Json.dll"/>
+    <ROW File="Microsoft.Web.WebPages.OAuth.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="Micros~1.xml|Microsoft.Web.WebPages.OAuth.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\Microsoft.Web.WebPages.OAuth.xml" SelfReg="false" NextFile="Newtonsoft.Json.xml"/>
+    <ROW File="MicrosoftOfficeExcel.xlsx" Component_="add.gif" FileName="新建Micr~1.xls|新建 Microsoft Office Excel 工作表.xlsx" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\新建 Microsoft Office Excel 工作表.xlsx" SelfReg="false" NextFile="ligeruiicons.css"/>
+    <ROW File="Newtonsoft.Json.dll" Component_="Newtonsoft.Json.dll" FileName="Newton~1.dll|Newtonsoft.Json.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\Newtonsoft.Json.dll" SelfReg="false" NextFile="System.Net.Http.dll"/>
+    <ROW File="Newtonsoft.Json.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="Newton~1.xml|Newtonsoft.Json.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\Newtonsoft.Json.xml" SelfReg="false" NextFile="System.Net.Http.Formatting.xml"/>
+    <ROW File="NotFound.png" Component_="accent.png" FileName="NotFound.png" Attributes="0" SourcePath="..\..\ManagementPortal\Images\NotFound.png" SelfReg="false" NextFile="orderedList0.png"/>
+    <ROW File="PasswordManagement.cshtml" Component_="AgentManagement.cshtml" FileName="Passwo~1.csh|PasswordManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\PasswordManagement.cshtml" SelfReg="false" NextFile="PersonalInfoManagement.cshtml"/>
+    <ROW File="Personal.js" Component_="Application.js" FileName="Personal.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\Personal.js" SelfReg="false" NextFile="Role.js"/>
+    <ROW File="PersonalInfoManagement.cshtml" Component_="AgentManagement.cshtml" FileName="Person~1.csh|PersonalInfoManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\PersonalInfoManagement.cshtml" SelfReg="false" NextFile="RoleManagement.cshtml"/>
+    <ROW File="Register.cshtml" Component_="ExternalLoginConfirmation.cshtml" FileName="Regist~1.csh|Register.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Account\Register.cshtml" SelfReg="false" NextFile="_ChangePasswordPartial.cshtml"/>
+    <ROW File="Role.js" Component_="Application.js" FileName="Role.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\Role.js" SelfReg="false" NextFile="Room.js"/>
+    <ROW File="RoleManagement.cshtml" Component_="AgentManagement.cshtml" FileName="RoleMa~1.csh|RoleManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\RoleManagement.cshtml" SelfReg="false" NextFile="RoomGroupManagement.cshtml"/>
+    <ROW File="Room.js" Component_="Application.js" FileName="Room.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\Room.js" SelfReg="false" NextFile="RoomGroup.js"/>
+    <ROW File="RoomGroup.js" Component_="Application.js" FileName="RoomGr~1.js|RoomGroup.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\RoomGroup.js" SelfReg="false" NextFile="RoomIncomeInquiry.js"/>
+    <ROW File="RoomGroupManagement.cshtml" Component_="AgentManagement.cshtml" FileName="RoomGr~1.csh|RoomGroupManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\RoomGroupManagement.cshtml" SelfReg="false" NextFile="RoomIncomeInquiryManagement.cshtml"/>
+    <ROW File="RoomIncomeInquiry.js" Component_="Application.js" FileName="RoomIn~1.js|RoomIncomeInquiry.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\RoomIncomeInquiry.js" SelfReg="false" NextFile="User.js"/>
+    <ROW File="RoomIncomeInquiryManagement.cshtml" Component_="AgentManagement.cshtml" FileName="RoomIn~1.csh|RoomIncomeInquiryManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\RoomIncomeInquiryManagement.cshtml" SelfReg="false" NextFile="RoomManagement.cshtml"/>
+    <ROW File="RoomManagement.cshtml" Component_="AgentManagement.cshtml" FileName="RoomMa~1.csh|RoomManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\RoomManagement.cshtml" SelfReg="false" NextFile="UserCommandManagement.cshtml"/>
+    <ROW File="RouteConfig.cs" Component_="AuthConfig.cs" FileName="RouteC~1.cs|RouteConfig.cs" Attributes="0" SourcePath="..\..\ManagementPortal\App_Start\RouteConfig.cs" SelfReg="false" NextFile="WebApiConfig.cs"/>
+    <ROW File="Service.svc" Component_="DataService.csproj" FileName="Service.svc" Attributes="0" SourcePath="..\..\DataService\Service.svc" SelfReg="false" NextFile="web.config.orig"/>
+    <ROW File="Site.css" Component_="Site.css" FileName="Site.css" Attributes="0" SourcePath="..\..\ManagementPortal\Content\Site.css" SelfReg="false" NextFile="AccountController.cs"/>
+    <ROW File="System.Net.Http.Formatting.dll" Component_="System.Net.Http.Formatting.dll" FileName="System~2.dll|System.Net.Http.Formatting.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Net.Http.Formatting.dll" SelfReg="false" NextFile="System.Net.Http.WebRequest.dll"/>
+    <ROW File="System.Net.Http.Formatting.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="System~1.xml|System.Net.Http.Formatting.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Net.Http.Formatting.xml" SelfReg="false" NextFile="System.Net.Http.WebRequest.xml"/>
+    <ROW File="System.Net.Http.WebRequest.dll" Component_="System.Net.Http.WebRequest.dll" FileName="System~3.dll|System.Net.Http.WebRequest.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Net.Http.WebRequest.dll" SelfReg="false" NextFile="System.Web.Helpers.dll"/>
+    <ROW File="System.Net.Http.WebRequest.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="System~2.xml|System.Net.Http.WebRequest.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Net.Http.WebRequest.xml" SelfReg="false" NextFile="System.Net.Http.xml"/>
+    <ROW File="System.Net.Http.dll" Component_="System.Net.Http.dll" FileName="System~1.dll|System.Net.Http.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Net.Http.dll" SelfReg="false" NextFile="System.Net.Http.Formatting.dll"/>
+    <ROW File="System.Net.Http.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="System~3.xml|System.Net.Http.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Net.Http.xml" SelfReg="false" NextFile="System.Web.Helpers.xml"/>
+    <ROW File="System.Web.Helpers.dll" Component_="System.Web.Helpers.dll" FileName="System~4.dll|System.Web.Helpers.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Web.Helpers.dll" SelfReg="false" NextFile="System.Web.Http.dll"/>
+    <ROW File="System.Web.Helpers.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="System~4.xml|System.Web.Helpers.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Web.Helpers.xml" SelfReg="false" NextFile="System.Web.Http.WebHost.xml"/>
+    <ROW File="System.Web.Http.WebHost.dll" Component_="System.Web.Http.WebHost.dll" FileName="System~6.dll|System.Web.Http.WebHost.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Web.Http.WebHost.dll" SelfReg="false" NextFile="System.Web.Mvc.dll"/>
+    <ROW File="System.Web.Http.WebHost.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="System~5.xml|System.Web.Http.WebHost.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Web.Http.WebHost.xml" SelfReg="false" NextFile="System.Web.Http.xml"/>
+    <ROW File="System.Web.Http.dll" Component_="System.Web.Http.dll" FileName="System~5.dll|System.Web.Http.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Web.Http.dll" SelfReg="false" NextFile="System.Web.Http.WebHost.dll"/>
+    <ROW File="System.Web.Http.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="System~6.xml|System.Web.Http.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Web.Http.xml" SelfReg="false" NextFile="System.Web.Mvc.xml"/>
+    <ROW File="System.Web.Mvc.dll" Component_="System.Web.Mvc.dll" FileName="System~7.dll|System.Web.Mvc.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Web.Mvc.dll" SelfReg="false" NextFile="System.Web.Optimization.dll"/>
+    <ROW File="System.Web.Mvc.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="System~7.xml|System.Web.Mvc.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Web.Mvc.xml" SelfReg="false" NextFile="System.Web.Razor.xml"/>
+    <ROW File="System.Web.Optimization.dll" Component_="System.Web.Optimization.dll" FileName="System~8.dll|System.Web.Optimization.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Web.Optimization.dll" SelfReg="false" NextFile="System.Web.Razor.dll"/>
+    <ROW File="System.Web.Razor.dll" Component_="System.Web.Razor.dll" FileName="System~9.dll|System.Web.Razor.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Web.Razor.dll" SelfReg="false" NextFile="System.Web.WebPages.Deployment.dll"/>
+    <ROW File="System.Web.Razor.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="System~8.xml|System.Web.Razor.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Web.Razor.xml" SelfReg="false" NextFile="System.Web.WebPages.Deployment.xml"/>
+    <ROW File="System.Web.WebPages.Deployment.dll" Component_="System.Web.WebPages.Deployment.dll" FileName="Syste~10.dll|System.Web.WebPages.Deployment.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Web.WebPages.Deployment.dll" SelfReg="false" NextFile="System.Web.WebPages.dll"/>
+    <ROW File="System.Web.WebPages.Deployment.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="System~9.xml|System.Web.WebPages.Deployment.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Web.WebPages.Deployment.xml" SelfReg="false" NextFile="System.Web.WebPages.Razor.xml"/>
+    <ROW File="System.Web.WebPages.Razor.dll" Component_="System.Web.WebPages.Razor.dll" FileName="Syste~12.dll|System.Web.WebPages.Razor.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Web.WebPages.Razor.dll" SelfReg="false" NextFile="System.Windows.Interactivity.dll"/>
+    <ROW File="System.Web.WebPages.Razor.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="Syste~10.xml|System.Web.WebPages.Razor.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Web.WebPages.Razor.xml" SelfReg="false" NextFile="System.Web.WebPages.xml"/>
+    <ROW File="System.Web.WebPages.dll" Component_="System.Web.WebPages.dll" FileName="Syste~11.dll|System.Web.WebPages.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Web.WebPages.dll" SelfReg="false" NextFile="System.Web.WebPages.Razor.dll"/>
+    <ROW File="System.Web.WebPages.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="Syste~11.xml|System.Web.WebPages.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Web.WebPages.xml" SelfReg="false" NextFile="System.Windows.Interactivity.xml"/>
+    <ROW File="System.Windows.Interactivity.dll" Component_="System.Windows.Interactivity.dll" FileName="Syste~13.dll|System.Windows.Interactivity.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Windows.Interactivity.dll" SelfReg="false" NextFile="WebGrease.dll"/>
+    <ROW File="System.Windows.Interactivity.resources.dll" Component_="System.Windows.Interactivity.resources.d" FileName="System~1.dll|System.Windows.Interactivity.resources.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\de\System.Windows.Interactivity.resources.dll" SelfReg="false" NextFile="DotNetOpenAuth.AspNet.dll"/>
+    <ROW File="System.Windows.Interactivity.resources.dll_1" Component_="System.Windows.Interactivity.resources_1" FileName="System~1.dll|System.Windows.Interactivity.resources.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\en\System.Windows.Interactivity.resources.dll" SelfReg="false" NextFile="System.Windows.Interactivity.resources.dll_2"/>
+    <ROW File="System.Windows.Interactivity.resources.dll_2" Component_="System.Windows.Interactivity.resources_2" FileName="System~1.dll|System.Windows.Interactivity.resources.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\es\System.Windows.Interactivity.resources.dll" SelfReg="false" NextFile="System.Windows.Interactivity.resources.dll_3"/>
+    <ROW File="System.Windows.Interactivity.resources.dll_3" Component_="System.Windows.Interactivity.resources_3" FileName="System~1.dll|System.Windows.Interactivity.resources.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\fr\System.Windows.Interactivity.resources.dll" SelfReg="false" NextFile="System.Windows.Interactivity.resources.dll_4"/>
+    <ROW File="System.Windows.Interactivity.resources.dll_4" Component_="System.Windows.Interactivity.resources_4" FileName="System~1.dll|System.Windows.Interactivity.resources.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\it\System.Windows.Interactivity.resources.dll" SelfReg="false" NextFile="System.Windows.Interactivity.resources.dll_5"/>
+    <ROW File="System.Windows.Interactivity.resources.dll_5" Component_="System.Windows.Interactivity.resources_5" FileName="System~1.dll|System.Windows.Interactivity.resources.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\ja\System.Windows.Interactivity.resources.dll" SelfReg="false" NextFile="System.Windows.Interactivity.resources.dll_6"/>
+    <ROW File="System.Windows.Interactivity.resources.dll_6" Component_="System.Windows.Interactivity.resources_6" FileName="System~1.dll|System.Windows.Interactivity.resources.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\ko\System.Windows.Interactivity.resources.dll" SelfReg="false" NextFile="Microsoft.Web.Infrastructure.dll"/>
+    <ROW File="System.Windows.Interactivity.resources.dll_7" Component_="System.Windows.Interactivity.resources_7" FileName="System~1.dll|System.Windows.Interactivity.resources.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\zh-Hans\System.Windows.Interactivity.resources.dll" SelfReg="false" NextFile="System.Windows.Interactivity.resources.dll_8"/>
+    <ROW File="System.Windows.Interactivity.resources.dll_8" Component_="System.Windows.Interactivity.resources_8" FileName="System~1.dll|System.Windows.Interactivity.resources.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\zh-Hant\System.Windows.Interactivity.resources.dll" SelfReg="false" NextFile="Site.css"/>
+    <ROW File="System.Windows.Interactivity.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="Syste~12.xml|System.Windows.Interactivity.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\System.Windows.Interactivity.xml" SelfReg="false" NextFile="WebMatrix.Data.xml"/>
+    <ROW File="UploadImage.cshtml" Component_="ImageLayout.cshtml" FileName="Upload~1.csh|UploadImage.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Image\UploadImage.cshtml" SelfReg="false" NextFile="Error.cshtml"/>
+    <ROW File="User.js" Component_="Application.js" FileName="User.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\User.js" SelfReg="false" NextFile="UserCommand.js"/>
+    <ROW File="UserCommand.js" Component_="Application.js" FileName="UserCo~1.js|UserCommand.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\UserCommand.js" SelfReg="false" NextFile="UserDepositHistory.js"/>
+    <ROW File="UserCommandManagement.cshtml" Component_="AgentManagement.cshtml" FileName="UserCo~1.csh|UserCommandManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\UserCommandManagement.cshtml" SelfReg="false" NextFile="UserDepositHistory.cshtml"/>
+    <ROW File="UserDepositHistory.cshtml" Component_="AgentManagement.cshtml" FileName="UserDe~1.csh|UserDepositHistory.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\UserDepositHistory.cshtml" SelfReg="false" NextFile="UserExchangeHistory.cshtml"/>
+    <ROW File="UserDepositHistory.js" Component_="Application.js" FileName="UserDe~1.js|UserDepositHistory.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\UserDepositHistory.js" SelfReg="false" NextFile="UserExchangeHistory.js"/>
+    <ROW File="UserExchangeHistory.cshtml" Component_="AgentManagement.cshtml" FileName="UserEx~1.csh|UserExchangeHistory.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\UserExchangeHistory.cshtml" SelfReg="false" NextFile="UserIdManagement.cshtml"/>
+    <ROW File="UserExchangeHistory.js" Component_="Application.js" FileName="UserEx~1.js|UserExchangeHistory.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\UserExchangeHistory.js" SelfReg="false" NextFile="UserIdList.js"/>
+    <ROW File="UserIdList.js" Component_="Application.js" FileName="UserId~1.js|UserIdList.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\UserIdList.js" SelfReg="false" NextFile="_references.js"/>
+    <ROW File="UserIdManagement.cshtml" Component_="AgentManagement.cshtml" FileName="UserId~1.csh|UserIdManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\UserIdManagement.cshtml" SelfReg="false" NextFile="UserLevelManagement.cshtml"/>
+    <ROW File="UserLevelManagement.cshtml" Component_="AgentManagement.cshtml" FileName="UserLe~1.csh|UserLevelManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\UserLevelManagement.cshtml" SelfReg="false" NextFile="UserManagement.cshtml"/>
+    <ROW File="UserManagement.cshtml" Component_="AgentManagement.cshtml" FileName="UserMa~1.csh|UserManagement.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Home\PartialViews\UserManagement.cshtml" SelfReg="false" NextFile="ImageLayout.cshtml"/>
+    <ROW File="Web.Debug.config" Component_="DataService.csproj" FileName="WebDeb~1.con|Web.Debug.config" Attributes="0" SourcePath="..\..\DataService\Web.Debug.config" SelfReg="false" NextFile="Web.Release.config"/>
+    <ROW File="Web.Debug.config_1" Component_="favicon.ico" FileName="WebDeb~1.con|Web.Debug.config" Attributes="0" SourcePath="..\..\ManagementPortal\Web.Debug.config" SelfReg="false" NextFile="Web.Release.config_1"/>
+    <ROW File="Web.Release.config" Component_="DataService.csproj" FileName="WebRel~1.con|Web.Release.config" Attributes="0" SourcePath="..\..\DataService\Web.Release.config" SelfReg="false" NextFile="web.config"/>
+    <ROW File="Web.Release.config_1" Component_="favicon.ico" FileName="WebRel~1.con|Web.Release.config" Attributes="0" SourcePath="..\..\ManagementPortal\Web.Release.config" SelfReg="false" NextFile="DotNetOpenAuth.AspNet.xml"/>
+    <ROW File="Web.config_1" Component_="Web.config" FileName="Web~1.con|Web.config" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Web.config" SelfReg="false" NextFile="_ViewStart.cshtml"/>
+    <ROW File="Web.config_2" Component_="favicon.ico" FileName="Web~1.con|Web.config" Attributes="0" SourcePath="..\..\ManagementPortal\Web.config" SelfReg="false" NextFile="Web.Debug.config_1"/>
+    <ROW File="WebApiConfig.cs" Component_="AuthConfig.cs" FileName="WebApi~1.cs|WebApiConfig.cs" Attributes="0" SourcePath="..\..\ManagementPortal\App_Start\WebApiConfig.cs" SelfReg="false" NextFile="Antlr3.Runtime.dll"/>
+    <ROW File="WebGrease.dll" Component_="WebGrease.dll" FileName="WebGre~1.dll|WebGrease.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\WebGrease.dll" SelfReg="false" NextFile="WebMatrix.Data.dll"/>
+    <ROW File="WebMatrix.Data.dll" Component_="WebMatrix.Data.dll" FileName="WebMat~1.dll|WebMatrix.Data.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\WebMatrix.Data.dll" SelfReg="false" NextFile="WebMatrix.WebData.dll"/>
+    <ROW File="WebMatrix.Data.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="WebMat~1.xml|WebMatrix.Data.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\WebMatrix.Data.xml" SelfReg="false" NextFile="WebMatrix.WebData.xml"/>
+    <ROW File="WebMatrix.WebData.dll" Component_="WebMatrix.WebData.dll" FileName="WebMat~2.dll|WebMatrix.WebData.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\WebMatrix.WebData.dll" SelfReg="false" NextFile="YoYoStudio.Common.dll_1"/>
+    <ROW File="WebMatrix.WebData.xml" Component_="DotNetOpenAuth.AspNet.xml" FileName="WebMat~2.xml|WebMatrix.WebData.xml" Attributes="0" SourcePath="..\..\ManagementPortal\bin\WebMatrix.WebData.xml" SelfReg="false"/>
+    <ROW File="YoYoStudio.Common.Wcf.dll" Component_="YoYoStudio.Common.Wcf.dll" FileName="YoYoSt~2.dll|YoYoStudio.Common.Wcf.dll" Attributes="0" SourcePath="..\..\DataService\bin\YoYoStudio.Common.Wcf.dll" SelfReg="false" NextFile="YoYoStudio.Common.Wcf.pdb"/>
+    <ROW File="YoYoStudio.Common.Wcf.pdb" Component_="YoYoStudio.Common.Wcf.dll" FileName="YoYoSt~2.pdb|YoYoStudio.Common.Wcf.pdb" Attributes="0" SourcePath="..\..\DataService\bin\YoYoStudio.Common.Wcf.pdb" SelfReg="false" NextFile="YoYoStudio.DataService.Library.dll"/>
+    <ROW File="YoYoStudio.Common.Web.dll" Component_="YoYoStudio.Common.Web.dll" FileName="YoYoSt~2.dll|YoYoStudio.Common.Web.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\YoYoStudio.Common.Web.dll" SelfReg="false" NextFile="YoYoStudio.Common.Web.pdb"/>
+    <ROW File="YoYoStudio.Common.Web.pdb" Component_="YoYoStudio.Common.Web.dll" FileName="YoYoSt~2.pdb|YoYoStudio.Common.Web.pdb" Attributes="0" SourcePath="..\..\ManagementPortal\bin\YoYoStudio.Common.Web.pdb" SelfReg="false" NextFile="YoYoStudio.DataService.Client.dll"/>
+    <ROW File="YoYoStudio.Common.dll" Component_="YoYoStudio.Common.dll" FileName="YoYoSt~1.dll|YoYoStudio.Common.dll" Attributes="0" SourcePath="..\..\DataService\bin\YoYoStudio.Common.dll" SelfReg="false" NextFile="YoYoStudio.Common.pdb"/>
+    <ROW File="YoYoStudio.Common.dll_1" Component_="YoYoStudio.Common.dll_1" FileName="YoYoSt~1.dll|YoYoStudio.Common.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\YoYoStudio.Common.dll" SelfReg="false" NextFile="YoYoStudio.Common.pdb_1"/>
+    <ROW File="YoYoStudio.Common.pdb" Component_="YoYoStudio.Common.dll" FileName="YoYoSt~1.pdb|YoYoStudio.Common.pdb" Attributes="0" SourcePath="..\..\DataService\bin\YoYoStudio.Common.pdb" SelfReg="false" NextFile="YoYoStudio.Common.Wcf.dll"/>
+    <ROW File="YoYoStudio.Common.pdb_1" Component_="YoYoStudio.Common.dll_1" FileName="YoYoSt~1.pdb|YoYoStudio.Common.pdb" Attributes="0" SourcePath="..\..\ManagementPortal\bin\YoYoStudio.Common.pdb" SelfReg="false" NextFile="YoYoStudio.Common.Web.dll"/>
+    <ROW File="YoYoStudio.DataService.Client.dll" Component_="YoYoStudio.DataService.Client.dll" FileName="YoYoSt~3.dll|YoYoStudio.DataService.Client.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\YoYoStudio.DataService.Client.dll" SelfReg="false" NextFile="YoYoStudio.DataService.Client.pdb"/>
+    <ROW File="YoYoStudio.DataService.Client.pdb" Component_="YoYoStudio.DataService.Client.dll" FileName="YoYoSt~3.pdb|YoYoStudio.DataService.Client.pdb" Attributes="0" SourcePath="..\..\ManagementPortal\bin\YoYoStudio.DataService.Client.pdb" SelfReg="false" NextFile="YoYoStudio.Exceptions.dll_1"/>
+    <ROW File="YoYoStudio.DataService.Library.dll" Component_="YoYoStudio.DataService.Library.dll" FileName="YoYoSt~3.dll|YoYoStudio.DataService.Library.dll" Attributes="0" SourcePath="..\..\DataService\bin\YoYoStudio.DataService.Library.dll" SelfReg="false" NextFile="YoYoStudio.DataService.Library.pdb"/>
+    <ROW File="YoYoStudio.DataService.Library.pdb" Component_="YoYoStudio.DataService.Library.dll" FileName="YoYoSt~3.pdb|YoYoStudio.DataService.Library.pdb" Attributes="0" SourcePath="..\..\DataService\bin\YoYoStudio.DataService.Library.pdb" SelfReg="false" NextFile="YoYoStudio.Exceptions.dll"/>
+    <ROW File="YoYoStudio.Exceptions.dll" Component_="YoYoStudio.Exceptions.dll" FileName="YoYoSt~4.dll|YoYoStudio.Exceptions.dll" Attributes="0" SourcePath="..\..\DataService\bin\YoYoStudio.Exceptions.dll" SelfReg="false" NextFile="YoYoStudio.Exceptions.pdb"/>
+    <ROW File="YoYoStudio.Exceptions.dll_1" Component_="YoYoStudio.Exceptions.dll_1" FileName="YoYoSt~4.dll|YoYoStudio.Exceptions.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\YoYoStudio.Exceptions.dll" SelfReg="false" NextFile="YoYoStudio.Exceptions.pdb_1"/>
+    <ROW File="YoYoStudio.Exceptions.pdb" Component_="YoYoStudio.Exceptions.dll" FileName="YoYoSt~4.pdb|YoYoStudio.Exceptions.pdb" Attributes="0" SourcePath="..\..\DataService\bin\YoYoStudio.Exceptions.pdb" SelfReg="false" NextFile="YoYoStudio.Model.dll"/>
+    <ROW File="YoYoStudio.Exceptions.pdb_1" Component_="YoYoStudio.Exceptions.dll_1" FileName="YoYoSt~4.pdb|YoYoStudio.Exceptions.pdb" Attributes="0" SourcePath="..\..\ManagementPortal\bin\YoYoStudio.Exceptions.pdb" SelfReg="false" NextFile="YoYoStudio.ManagementPortal.dll"/>
+    <ROW File="YoYoStudio.ManagementPortal.dll" Component_="YoYoStudio.ManagementPortal.dll" FileName="YoYoSt~5.dll|YoYoStudio.ManagementPortal.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\YoYoStudio.ManagementPortal.dll" SelfReg="false" NextFile="YoYoStudio.ManagementPortal.pdb"/>
+    <ROW File="YoYoStudio.ManagementPortal.dll_1" Component_="YoYoStudio.ManagementPortal.dll_1" FileName="YoYoSt~1.dll|YoYoStudio.ManagementPortal.dll" Attributes="0" SourcePath="..\..\ManagementPortal\obj\Debug\YoYoStudio.ManagementPortal.dll" SelfReg="false" NextFile="YoYoStudio.ManagementPortal.pdb_1"/>
+    <ROW File="YoYoStudio.ManagementPortal.dll_2" Component_="YoYoStudio.ManagementPortal.dll_2" FileName="YoYoSt~1.dll|YoYoStudio.ManagementPortal.dll" Attributes="0" SourcePath="..\..\ManagementPortal\obj\Release\YoYoStudio.ManagementPortal.dll" SelfReg="false" NextFile="YoYoStudio.ManagementPortal.pdb_2"/>
+    <ROW File="YoYoStudio.ManagementPortal.pdb" Component_="YoYoStudio.ManagementPortal.dll" FileName="YoYoSt~5.pdb|YoYoStudio.ManagementPortal.pdb" Attributes="0" SourcePath="..\..\ManagementPortal\bin\YoYoStudio.ManagementPortal.pdb" SelfReg="false" NextFile="YoYoStudio.Model.dll_1"/>
+    <ROW File="YoYoStudio.ManagementPortal.pdb_1" Component_="YoYoStudio.ManagementPortal.dll_1" FileName="YoYoSt~1.pdb|YoYoStudio.ManagementPortal.pdb" Attributes="0" SourcePath="..\..\ManagementPortal\obj\Debug\YoYoStudio.ManagementPortal.pdb" SelfReg="false" NextFile="DesignTimeResolveAssemblyReferencesInput.cache_3"/>
+    <ROW File="YoYoStudio.ManagementPortal.pdb_2" Component_="YoYoStudio.ManagementPortal.dll_2" FileName="YoYoSt~1.pdb|YoYoStudio.ManagementPortal.pdb" Attributes="0" SourcePath="..\..\ManagementPortal\obj\Release\YoYoStudio.ManagementPortal.pdb" SelfReg="false" NextFile="packages.config"/>
+    <ROW File="YoYoStudio.Model.Json.dll" Component_="YoYoStudio.Model.Json.dll" FileName="YoYoSt~7.dll|YoYoStudio.Model.Json.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\YoYoStudio.Model.Json.dll" SelfReg="false" NextFile="YoYoStudio.Model.Json.pdb"/>
+    <ROW File="YoYoStudio.Model.Json.pdb" Component_="YoYoStudio.Model.Json.dll" FileName="YoYoSt~6.pdb|YoYoStudio.Model.Json.pdb" Attributes="0" SourcePath="..\..\ManagementPortal\bin\YoYoStudio.Model.Json.pdb" SelfReg="false" NextFile="YoYoStudio.Model.pdb_1"/>
+    <ROW File="YoYoStudio.Model.dll" Component_="YoYoStudio.Model.dll" FileName="YoYoSt~5.dll|YoYoStudio.Model.dll" Attributes="0" SourcePath="..\..\DataService\bin\YoYoStudio.Model.dll" SelfReg="false" NextFile="YoYoStudio.Model.pdb"/>
+    <ROW File="YoYoStudio.Model.dll_1" Component_="YoYoStudio.Model.dll_1" FileName="YoYoSt~6.dll|YoYoStudio.Model.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\YoYoStudio.Model.dll" SelfReg="false" NextFile="YoYoStudio.Model.Json.dll"/>
+    <ROW File="YoYoStudio.Model.pdb" Component_="YoYoStudio.Model.dll" FileName="YoYoSt~5.pdb|YoYoStudio.Model.pdb" Attributes="0" SourcePath="..\..\DataService\bin\YoYoStudio.Model.pdb" SelfReg="false" NextFile="YoYoStudio.Persistent.dll"/>
+    <ROW File="YoYoStudio.Model.pdb_1" Component_="YoYoStudio.Model.dll_1" FileName="YoYoSt~7.pdb|YoYoStudio.Model.pdb" Attributes="0" SourcePath="..\..\ManagementPortal\bin\YoYoStudio.Model.pdb" SelfReg="false" NextFile="YoYoStudio.Persistent.dll_1"/>
+    <ROW File="YoYoStudio.Persistent.dll" Component_="YoYoStudio.Persistent.dll" FileName="YoYoSt~6.dll|YoYoStudio.Persistent.dll" Attributes="0" SourcePath="..\..\DataService\bin\YoYoStudio.Persistent.dll" SelfReg="false" NextFile="YoYoStudio.Persistent.pdb"/>
+    <ROW File="YoYoStudio.Persistent.dll_1" Component_="YoYoStudio.Persistent.dll_1" FileName="YoYoSt~8.dll|YoYoStudio.Persistent.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\YoYoStudio.Persistent.dll" SelfReg="false" NextFile="YoYoStudio.Resource.dll_1"/>
+    <ROW File="YoYoStudio.Persistent.pdb" Component_="YoYoStudio.Persistent.dll" FileName="YoYoSt~6.pdb|YoYoStudio.Persistent.pdb" Attributes="0" SourcePath="..\..\DataService\bin\YoYoStudio.Persistent.pdb" SelfReg="false" NextFile="YoYoStudio.Resource.dll"/>
+    <ROW File="YoYoStudio.Resource.dll" Component_="YoYoStudio.Resource.dll" FileName="YoYoSt~7.dll|YoYoStudio.Resource.dll" Attributes="0" SourcePath="..\..\DataService\bin\YoYoStudio.Resource.dll" SelfReg="false" NextFile="YoYoStudio.Resource.pdb"/>
+    <ROW File="YoYoStudio.Resource.dll_1" Component_="YoYoStudio.Resource.dll_1" FileName="YoYoSt~9.dll|YoYoStudio.Resource.dll" Attributes="0" SourcePath="..\..\ManagementPortal\bin\YoYoStudio.Resource.dll" SelfReg="false" NextFile="YoYoStudio.Resource.pdb_1"/>
+    <ROW File="YoYoStudio.Resource.pdb" Component_="YoYoStudio.Resource.dll" FileName="YoYoSt~7.pdb|YoYoStudio.Resource.pdb" Attributes="0" SourcePath="..\..\DataService\bin\YoYoStudio.Resource.pdb" SelfReg="false" NextFile="DataService.csproj"/>
+    <ROW File="YoYoStudio.Resource.pdb_1" Component_="YoYoStudio.Resource.dll_1" FileName="YoYoSt~8.pdb|YoYoStudio.Resource.pdb" Attributes="0" SourcePath="..\..\ManagementPortal\bin\YoYoStudio.Resource.pdb" SelfReg="false" NextFile="System.Windows.Interactivity.resources.dll_7"/>
+    <ROW File="_ChangePasswordPartial.cshtml" Component_="ExternalLoginConfirmation.cshtml" FileName="_Chang~1.csh|_ChangePasswordPartial.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Account\_ChangePasswordPartial.cshtml" SelfReg="false" NextFile="_ExternalLoginsListPartial.cshtml"/>
+    <ROW File="_ExternalLoginsListPartial.cshtml" Component_="ExternalLoginConfirmation.cshtml" FileName="_Exter~1.csh|_ExternalLoginsListPartial.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Account\_ExternalLoginsListPartial.cshtml" SelfReg="false" NextFile="_RemoveExternalLoginsPartial.cshtml"/>
+    <ROW File="_Layout.cshtml" Component_="Error.cshtml" FileName="_Layou~1.csh|_Layout.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Shared\_Layout.cshtml" SelfReg="false" NextFile="_LoginPartial.cshtml"/>
+    <ROW File="_LoginPartial.cshtml" Component_="Error.cshtml" FileName="_Login~1.csh|_LoginPartial.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Shared\_LoginPartial.cshtml" SelfReg="false" NextFile="Web.config_1"/>
+    <ROW File="_RemoveExternalLoginsPartial.cshtml" Component_="ExternalLoginConfirmation.cshtml" FileName="_Remov~1.csh|_RemoveExternalLoginsPartial.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Account\_RemoveExternalLoginsPartial.cshtml" SelfReg="false" NextFile="_SetPasswordPartial.cshtml"/>
+    <ROW File="_SetPasswordPartial.cshtml" Component_="ExternalLoginConfirmation.cshtml" FileName="_SetPa~1.csh|_SetPasswordPartial.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\Account\_SetPasswordPartial.cshtml" SelfReg="false" NextFile="About.cshtml"/>
+    <ROW File="_ViewStart.cshtml" Component_="Web.config" FileName="_ViewS~1.csh|_ViewStart.cshtml" Attributes="0" SourcePath="..\..\ManagementPortal\Views\_ViewStart.cshtml" SelfReg="false" NextFile="Web.config_2"/>
+    <ROW File="_references.js" Component_="Application.js" FileName="_refer~1.js|_references.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\_references.js" SelfReg="false" NextFile="ExternalLoginConfirmation.cshtml"/>
+    <ROW File="accent.png" Component_="accent.png" FileName="accent.png" Attributes="0" SourcePath="..\..\ManagementPortal\Images\accent.png" SelfReg="false" NextFile="bullet.png"/>
+    <ROW File="accordioncontent.gif" Component_="accordioncontent.gif" FileName="accord~1.gif|accordion-content.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\accordion-content.gif" SelfReg="false" NextFile="accordionheaderover.gif"/>
+    <ROW File="accordionheader.gif" Component_="accordioncontent.gif" FileName="accord~3.gif|accordion-header.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\accordion-header.gif" SelfReg="false" NextFile="layoutheaderover.gif"/>
+    <ROW File="accordionheader.gif_1" Component_="accordionheader.gif" FileName="accord~1.gif|accordion-header.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\layout\accordion-header.gif" SelfReg="false" NextFile="iconcloseover.gif_1"/>
+    <ROW File="accordionheader.jpg" Component_="accordionheaderover.jpg" FileName="accord~2.jpg|accordion-header.jpg" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\layout\accordion-header.jpg" SelfReg="false" NextFile="layoutheaderover.jpg"/>
+    <ROW File="accordionheaderover.gif" Component_="accordioncontent.gif" FileName="accord~2.gif|accordion-header-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\accordion-header-over.gif" SelfReg="false" NextFile="accordionheader.gif"/>
+    <ROW File="accordionheaderover.jpg" Component_="accordionheaderover.jpg" FileName="accord~1.jpg|accordion-header-over.jpg" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\layout\accordion-header-over.jpg" SelfReg="false" NextFile="accordionheader.jpg"/>
+    <ROW File="add.gif" Component_="add.gif" FileName="add.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\add.gif" SelfReg="false" NextFile="archives.gif"/>
+    <ROW File="all.css" Component_="all.css" FileName="all.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\css\all.css" SelfReg="false" NextFile="common.css"/>
+    <ROW File="archives.gif" Component_="add.gif" FileName="archives.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\archives.gif" SelfReg="false" NextFile="attibutes.gif"/>
+    <ROW File="attibutes.gif" Component_="add.gif" FileName="attibu~1.gif|attibutes.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\attibutes.gif" SelfReg="false" NextFile="back.gif"/>
+    <ROW File="back.gif" Component_="add.gif" FileName="back.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\back.gif" SelfReg="false" NextFile="bluebook.gif"/>
+    <ROW File="barbg.gif" Component_="barbg.gif" FileName="bar-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\panel\bar-bg.gif" SelfReg="false" NextFile="headerbg.gif_1"/>
+    <ROW File="barbuttonover.gif" Component_="barbuttonover.gif" FileName="bar-bu~1.gif|bar-button-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\bar-button-over.gif" SelfReg="false" NextFile="checkboxchecked.gif"/>
+    <ROW File="base.js" Component_="base.js" FileName="base.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\core\base.js" SelfReg="false" NextFile="inject.js"/>
+    <ROW File="bgpaneltitle.gif" Component_="bgpaneltitleover.gif" FileName="bg-pan~3.gif|bg-panel-title.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\bg-panel-title.gif" SelfReg="false" NextFile="bgtabtitleover.gif"/>
+    <ROW File="bgpaneltitleover.gif" Component_="bgpaneltitleover.gif" FileName="bg-pan~1.gif|bg-panel-title-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\bg-panel-title-over.gif" SelfReg="false" NextFile="bgpaneltitlepressed.gif"/>
+    <ROW File="bgpaneltitlepressed.gif" Component_="bgpaneltitleover.gif" FileName="bg-pan~2.gif|bg-panel-title-pressed.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\bg-panel-title-pressed.gif" SelfReg="false" NextFile="bgpaneltitle.gif"/>
+    <ROW File="bgtabtitle.gif" Component_="bgpaneltitleover.gif" FileName="bg-tab~3.gif|bg-tab-title.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\bg-tab-title.gif" SelfReg="false" NextFile="bgtext.gif"/>
+    <ROW File="bgtabtitleover.gif" Component_="bgpaneltitleover.gif" FileName="bg-tab~1.gif|bg-tab-title-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\bg-tab-title-over.gif" SelfReg="false" NextFile="bgtabtitlepressed.gif"/>
+    <ROW File="bgtabtitlepressed.gif" Component_="bgpaneltitleover.gif" FileName="bg-tab~2.gif|bg-tab-title-pressed.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\bg-tab-title-pressed.gif" SelfReg="false" NextFile="bgtabtitle.gif"/>
+    <ROW File="bgtext.gif" Component_="bgpaneltitleover.gif" FileName="bg-text.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\bg-text.gif" SelfReg="false" NextFile="bgtriggerover.gif"/>
+    <ROW File="bgtrigger.gif" Component_="bgpaneltitleover.gif" FileName="bg-tri~3.gif|bg-trigger.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\bg-trigger.gif" SelfReg="false" NextFile="btnl.gif"/>
+    <ROW File="bgtriggerover.gif" Component_="bgpaneltitleover.gif" FileName="bg-tri~1.gif|bg-trigger-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\bg-trigger-over.gif" SelfReg="false" NextFile="bgtriggerpressed.gif"/>
+    <ROW File="bgtriggerpressed.gif" Component_="bgpaneltitleover.gif" FileName="bg-tri~2.gif|bg-trigger-pressed.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\bg-trigger-pressed.gif" SelfReg="false" NextFile="bgtrigger.gif"/>
+    <ROW File="bigloading.gif" Component_="bigloading.gif" FileName="bigloa~1.gif|bigloading.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\common\bigloading.gif" SelfReg="false" NextFile="buttondisabled.gif"/>
+    <ROW File="bluebook.gif" Component_="add.gif" FileName="bluebook.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\bluebook.gif" SelfReg="false" NextFile="bookpen.gif"/>
+    <ROW File="bookpen.gif" Component_="add.gif" FileName="bookpen.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\bookpen.gif" SelfReg="false" NextFile="busy.gif"/>
+    <ROW File="box.gif" Component_="boxicons.gif" FileName="box.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\win\box.gif" SelfReg="false" NextFile="dialogbc.gif"/>
+    <ROW File="boxicons.gif" Component_="boxicons.gif" FileName="box-ic~1.gif|box-icons.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\win\box-icons.gif" SelfReg="false" NextFile="box.gif"/>
+    <ROW File="btn.gif" Component_="bgpaneltitleover.gif" FileName="btn.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\btn.gif" SelfReg="false" NextFile="buttonbgover.gif"/>
+    <ROW File="btn.gif_1" Component_="btn.gif" FileName="btn.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\btn.gif" SelfReg="false" NextFile="buttondisabled.gif_1"/>
+    <ROW File="btnl.gif" Component_="bgpaneltitleover.gif" FileName="btn-l.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\btn-l.gif" SelfReg="false" NextFile="btnr.gif"/>
+    <ROW File="btnr.gif" Component_="bgpaneltitleover.gif" FileName="btn-r.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\btn-r.gif" SelfReg="false" NextFile="btn.gif"/>
+    <ROW File="bullet.png" Component_="accent.png" FileName="bullet.png" Attributes="0" SourcePath="..\..\ManagementPortal\Images\bullet.png" SelfReg="false" NextFile="heroAccent.png"/>
+    <ROW File="busy.gif" Component_="add.gif" FileName="busy.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\busy.gif" SelfReg="false" NextFile="calendar.gif"/>
+    <ROW File="button.gif" Component_="bigloading.gif" FileName="button.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\common\button.gif" SelfReg="false" NextFile="dropicons.gif"/>
+    <ROW File="button.gif_1" Component_="btn.gif" FileName="button.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\button.gif" SelfReg="false" NextFile="button1.gif"/>
+    <ROW File="button1.gif" Component_="btn.gif" FileName="button1.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\button1.gif" SelfReg="false" NextFile="button2.gif"/>
+    <ROW File="button2.gif" Component_="btn.gif" FileName="button2.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\button2.gif" SelfReg="false" NextFile="dateeditorbar.gif"/>
+    <ROW File="buttonbg.gif" Component_="bgpaneltitleover.gif" FileName="button~2.gif|button-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\button-bg.gif" SelfReg="false" NextFile="checkbox.gif"/>
+    <ROW File="buttonbgover.gif" Component_="bgpaneltitleover.gif" FileName="button~1.gif|button-bg-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\button-bg-over.gif" SelfReg="false" NextFile="buttonbg.gif"/>
+    <ROW File="buttondisabled.gif" Component_="bigloading.gif" FileName="button~1.gif|button-disabled.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\common\button-disabled.gif" SelfReg="false" NextFile="buttonover.gif"/>
+    <ROW File="buttondisabled.gif_1" Component_="btn.gif" FileName="button~1.gif|button-disabled.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\button-disabled.gif" SelfReg="false" NextFile="buttonover.gif_1"/>
+    <ROW File="buttonover.gif" Component_="bigloading.gif" FileName="button~2.gif|button-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\common\button-over.gif" SelfReg="false" NextFile="button.gif"/>
+    <ROW File="buttonover.gif_1" Component_="btn.gif" FileName="button~2.gif|button-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\button-over.gif" SelfReg="false" NextFile="button.gif_1"/>
+    <ROW File="calendar.gif" Component_="add.gif" FileName="calendar.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\calendar.gif" SelfReg="false" NextFile="candle.gif"/>
+    <ROW File="candle.gif" Component_="add.gif" FileName="candle.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\candle.gif" SelfReg="false" NextFile="coffee.gif"/>
+    <ROW File="checkbox.gif" Component_="bgpaneltitleover.gif" FileName="checkbox.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\checkbox.gif" SelfReg="false" NextFile="dateeditorbarbg.gif"/>
+    <ROW File="checkbox.gif_1" Component_="barbuttonover.gif" FileName="checkbox.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\checkbox.gif" SelfReg="false" NextFile="cross.gif"/>
+    <ROW File="checkboxchecked.gif" Component_="barbuttonover.gif" FileName="checkb~1.gif|checkbox-checked.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\checkbox-checked.gif" SelfReg="false" NextFile="checkbox.gif_1"/>
+    <ROW File="checkboxradio.gif" Component_="checkboxradio.gif" FileName="checkb~1.gif|checkboxradio.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\form\checkboxradio.gif" SelfReg="false" NextFile="icondownover.gif"/>
+    <ROW File="coffee.gif" Component_="add.gif" FileName="coffee.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\coffee.gif" SelfReg="false" NextFile="comment.gif"/>
+    <ROW File="comment.gif" Component_="add.gif" FileName="comment.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\comment.gif" SelfReg="false" NextFile="communication.gif"/>
+    <ROW File="common.css" Component_="all.css" FileName="common.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\css\common.css" SelfReg="false" NextFile="dialog.css"/>
+    <ROW File="communication.gif" Component_="add.gif" FileName="commun~1.gif|communication.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\communication.gif" SelfReg="false" NextFile="config.gif"/>
+    <ROW File="config.gif" Component_="add.gif" FileName="config.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\config.gif" SelfReg="false" NextFile="customers.gif"/>
+    <ROW File="cross.gif" Component_="barbuttonover.gif" FileName="cross.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\cross.gif" SelfReg="false" NextFile="iconcloseover.gif"/>
+    <ROW File="customers.gif" Component_="add.gif" FileName="custom~1.gif|customers.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\customers.gif" SelfReg="false" NextFile="cut.gif"/>
+    <ROW File="cut.gif" Component_="add.gif" FileName="cut.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\cut.gif" SelfReg="false" NextFile="database.gif"/>
+    <ROW File="database.gif" Component_="add.gif" FileName="database.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\database.gif" SelfReg="false" NextFile="delete.gif"/>
+    <ROW File="date.gif" Component_="date.gif" FileName="date.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\dateeditor\date.gif" SelfReg="false" NextFile="iconfirst.gif"/>
+    <ROW File="dateeditorbar.gif" Component_="btn.gif" FileName="dateed~1.gif|dateeditor-bar.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\dateeditor-bar.gif" SelfReg="false" NextFile="dateeditorbtnover.gif"/>
+    <ROW File="dateeditorbarbg.gif" Component_="bgpaneltitleover.gif" FileName="dateed~1.gif|dateeditor-bar-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\dateeditor-bar-bg.gif" SelfReg="false" NextFile="dateeditorheaderbg.gif"/>
+    <ROW File="dateeditorbtn.gif" Component_="btn.gif" FileName="dateed~3.gif|dateeditor-btn.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\dateeditor-btn.gif" SelfReg="false" NextFile="dateeditorthead.gif"/>
+    <ROW File="dateeditorbtnover.gif" Component_="btn.gif" FileName="dateed~2.gif|dateeditor-btn-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\dateeditor-btn-over.gif" SelfReg="false" NextFile="dateeditorbtn.gif"/>
+    <ROW File="dateeditorheaderbg.gif" Component_="bgpaneltitleover.gif" FileName="dateed~2.gif|dateeditor-header-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\dateeditor-header-bg.gif" SelfReg="false" NextFile="radio.gif"/>
+    <ROW File="dateeditorthead.gif" Component_="btn.gif" FileName="dateed~4.gif|dateeditor-thead.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\dateeditor-thead.gif" SelfReg="false" NextFile="griddetailclose.gif_1"/>
+    <ROW File="delete.gif" Component_="add.gif" FileName="delete.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\delete.gif" SelfReg="false" NextFile="discuss.gif"/>
+    <ROW File="dialog.css" Component_="all.css" FileName="dialog.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\css\dialog.css" SelfReg="false" NextFile="form.css"/>
+    <ROW File="dialog.gif" Component_="boxicons.gif" FileName="dialog.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\win\dialog.gif" SelfReg="false" NextFile="taskbartask.gif"/>
+    <ROW File="dialogbc.gif" Component_="boxicons.gif" FileName="dialog~1.gif|dialog-bc.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\win\dialog-bc.gif" SelfReg="false" NextFile="dialogicons.gif"/>
+    <ROW File="dialogbtn.gif" Component_="dialogwinbtns.gif" FileName="dialog~2.gif|dialogbtn.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\win\dialogbtn.gif" SelfReg="false" NextFile="dialogicon.gif"/>
+    <ROW File="dialogicon.gif" Component_="dialogwinbtns.gif" FileName="dialog~3.gif|dialogicon.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\win\dialogicon.gif" SelfReg="false" NextFile="add.gif"/>
+    <ROW File="dialogicons.gif" Component_="boxicons.gif" FileName="dialog~2.gif|dialog-icons.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\win\dialog-icons.gif" SelfReg="false" NextFile="dialogtc.gif"/>
+    <ROW File="dialogtc.gif" Component_="boxicons.gif" FileName="dialog~3.gif|dialog-tc.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\win\dialog-tc.gif" SelfReg="false" NextFile="dialogwinbtns.gif"/>
+    <ROW File="dialogwinbtns.gif" Component_="boxicons.gif" FileName="dialog~4.gif|dialog-winbtns.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\win\dialog-winbtns.gif" SelfReg="false" NextFile="dialog.gif"/>
+    <ROW File="dialogwinbtns.gif_1" Component_="dialogwinbtns.gif" FileName="dialog~1.gif|dialog-winbtns.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\win\dialog-winbtns.gif" SelfReg="false" NextFile="dialogbtn.gif"/>
+    <ROW File="discuss.gif" Component_="add.gif" FileName="discuss.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\discuss.gif" SelfReg="false" NextFile="down.gif"/>
+    <ROW File="down.gif" Component_="add.gif" FileName="down.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\down.gif" SelfReg="false" NextFile="edit.gif"/>
+    <ROW File="dropicons.gif" Component_="bigloading.gif" FileName="drop-i~1.gif|drop-icons.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\common\drop-icons.gif" SelfReg="false" NextFile="exclamation.gif"/>
+    <ROW File="edit.gif" Component_="add.gif" FileName="edit.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\edit.gif" SelfReg="false" NextFile="graywarn.gif"/>
+    <ROW File="exclamation.gif" Component_="bigloading.gif" FileName="exclam~1.gif|exclamation.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\common\exclamation.gif" SelfReg="false" NextFile="invalidline.gif"/>
+    <ROW File="favicon.ico" Component_="favicon.ico" FileName="favicon.ico" Attributes="0" SourcePath="..\..\ManagementPortal\favicon.ico" SelfReg="false" NextFile="Global.asax"/>
+    <ROW File="folder.gif" Component_="folderopen.gif" FileName="folder.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\tree\folder.gif" SelfReg="false" NextFile="loading.gif_3"/>
+    <ROW File="folderopen.gif" Component_="folderopen.gif" FileName="folder~1.gif|folder-open.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\tree\folder-open.gif" SelfReg="false" NextFile="folder.gif"/>
+    <ROW File="form.css" Component_="all.css" FileName="form.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\css\form.css" SelfReg="false" NextFile="grid.css"/>
+    <ROW File="form.css_1" Component_="form.css" FileName="form.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\css\form.css" SelfReg="false" NextFile="grid.css_1"/>
+    <ROW File="graywarn.gif" Component_="add.gif" FileName="graywarn.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\graywarn.gif" SelfReg="false" NextFile="greenwarn.gif"/>
+    <ROW File="greenwarn.gif" Component_="add.gif" FileName="greenw~1.gif|greenwarn.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\greenwarn.gif" SelfReg="false" NextFile="help.gif"/>
+    <ROW File="grid.css" Component_="all.css" FileName="grid.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\css\grid.css" SelfReg="false" NextFile="layout.css"/>
+    <ROW File="grid.css_1" Component_="form.css" FileName="grid.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\css\grid.css" SelfReg="false" NextFile="layout.css_1"/>
+    <ROW File="gridalt.gif" Component_="btn.gif" FileName="gridalt.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\gridalt.gif" SelfReg="false" NextFile="gridbar.jpg"/>
+    <ROW File="gridbar.jpg" Component_="btn.gif" FileName="gridbar.jpg" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\gridbar.jpg" SelfReg="false" NextFile="grideditor.gif"/>
+    <ROW File="gridcheckbox.gif" Component_="gridcheckboxchecked.gif" FileName="grid-c~2.gif|grid-checkbox.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\grid\grid-checkbox.gif" SelfReg="false" NextFile="griddetailclose.gif"/>
+    <ROW File="gridcheckboxchecked.gif" Component_="gridcheckboxchecked.gif" FileName="grid-c~1.gif|grid-checkbox-checked.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\grid\grid-checkbox-checked.gif" SelfReg="false" NextFile="gridcheckbox.gif"/>
+    <ROW File="griddetailclose.gif" Component_="gridcheckboxchecked.gif" FileName="grid-d~1.gif|grid-detail-close.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\grid\grid-detail-close.gif" SelfReg="false" NextFile="griddetailopen.gif"/>
+    <ROW File="griddetailclose.gif_1" Component_="btn.gif" FileName="grid-d~1.gif|grid-detail-close.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\grid-detail-close.gif" SelfReg="false" NextFile="griddetailopen.gif_1"/>
+    <ROW File="griddetailopen.gif" Component_="gridcheckboxchecked.gif" FileName="grid-d~2.gif|grid-detail-open.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\grid\grid-detail-open.gif" SelfReg="false" NextFile="gridtreeclose.gif"/>
+    <ROW File="griddetailopen.gif_1" Component_="btn.gif" FileName="grid-d~2.gif|grid-detail-open.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\grid-detail-open.gif" SelfReg="false" NextFile="gridalt.gif"/>
+    <ROW File="grideditor.gif" Component_="btn.gif" FileName="grided~1.gif|grideditor.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\grideditor.gif" SelfReg="false" NextFile="icondown.gif_1"/>
+    <ROW File="gridheaderbg.jpg" Component_="gridheaderbg.jpg" FileName="gridhe~1.jpg|gridheaderbg.jpg" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\grid\gridheaderbg.jpg" SelfReg="false" NextFile="accordionheaderover.jpg"/>
+    <ROW File="gridtreeclose.gif" Component_="gridcheckboxchecked.gif" FileName="grid-t~1.gif|grid-tree-close.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\grid\grid-tree-close.gif" SelfReg="false" NextFile="gridtreeopen.gif"/>
+    <ROW File="gridtreeopen.gif" Component_="gridcheckboxchecked.gif" FileName="grid-t~2.gif|grid-tree-open.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\grid\grid-tree-open.gif" SelfReg="false" NextFile="headerbgover.gif"/>
+    <ROW File="header2bg.jpg" Component_="gridcheckboxchecked.gif" FileName="header~1.jpg|header2-bg.jpg" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\grid\header2-bg.jpg" SelfReg="false" NextFile="popupline.gif"/>
+    <ROW File="header2bg.jpg_1" Component_="barbg.gif" FileName="header~2.jpg|header2-bg.jpg" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\panel\header2-bg.jpg" SelfReg="false" NextFile="panelbtnl.gif"/>
+    <ROW File="headerbg.gif" Component_="gridcheckboxchecked.gif" FileName="header~2.gif|header-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\grid\header-bg.gif" SelfReg="false" NextFile="header2bg.jpg"/>
+    <ROW File="headerbg.gif_1" Component_="barbg.gif" FileName="header~1.gif|header-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\panel\header-bg.gif" SelfReg="false" NextFile="headerbg.jpg"/>
+    <ROW File="headerbg.jpg" Component_="barbg.gif" FileName="header~1.jpg|header-bg.jpg" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\panel\header-bg.jpg" SelfReg="false" NextFile="header2bg.jpg_1"/>
+    <ROW File="headerbgover.gif" Component_="gridcheckboxchecked.gif" FileName="header~1.gif|header-bg-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\grid\header-bg-over.gif" SelfReg="false" NextFile="headerbg.gif"/>
+    <ROW File="help.gif" Component_="add.gif" FileName="help.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\help.gif" SelfReg="false" NextFile="home.gif"/>
+    <ROW File="heroAccent.png" Component_="accent.png" FileName="heroAc~1.png|heroAccent.png" Attributes="0" SourcePath="..\..\ManagementPortal\Images\heroAccent.png" SelfReg="false" NextFile="loading.gif"/>
+    <ROW File="home.gif" Component_="add.gif" FileName="home.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\home.gif" SelfReg="false" NextFile="lock.gif"/>
+    <ROW File="iconclose.gif" Component_="barbuttonover.gif" FileName="icon-c~2.gif|icon-close.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\icon-close.gif" SelfReg="false" NextFile="icondown.gif"/>
+    <ROW File="iconclose.gif_1" Component_="accordionheader.gif" FileName="icon-c~2.gif|icon-close.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\layout\icon-close.gif" SelfReg="false" NextFile="layoutheader.gif_1"/>
+    <ROW File="iconcloseover.gif" Component_="barbuttonover.gif" FileName="icon-c~1.gif|icon-close-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\icon-close-over.gif" SelfReg="false" NextFile="iconclose.gif"/>
+    <ROW File="iconcloseover.gif_1" Component_="accordionheader.gif" FileName="icon-c~1.gif|icon-close-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\layout\icon-close-over.gif" SelfReg="false" NextFile="iconclose.gif_1"/>
+    <ROW File="icondown.gif" Component_="barbuttonover.gif" FileName="icon-d~1.gif|icon-down.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\icon-down.gif" SelfReg="false" NextFile="icondrop.gif"/>
+    <ROW File="icondown.gif_1" Component_="btn.gif" FileName="icon-d~1.gif|icon-down.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\icon-down.gif" SelfReg="false" NextFile="iconselect.gif_1"/>
+    <ROW File="icondown.gif_2" Component_="checkboxradio.gif" FileName="icon-d~2.gif|icon-down.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\form\icon-down.gif" SelfReg="false" NextFile="iconupover.gif"/>
+    <ROW File="icondownover.gif" Component_="checkboxradio.gif" FileName="icon-d~1.gif|icon-down-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\form\icon-down-over.gif" SelfReg="false" NextFile="icondown.gif_2"/>
+    <ROW File="icondrop.gif" Component_="barbuttonover.gif" FileName="icon-d~2.gif|icon-drop.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\icon-drop.gif" SelfReg="false" NextFile="iconedited.gif"/>
+    <ROW File="iconedited.gif" Component_="barbuttonover.gif" FileName="icon-e~1.gif|icon-edited.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\icon-edited.gif" SelfReg="false" NextFile="iconfirst.gif_1"/>
+    <ROW File="iconfirst.gif" Component_="date.gif" FileName="icon-f~1.gif|icon-first.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\dateeditor\icon-first.gif" SelfReg="false" NextFile="iconlast.gif"/>
+    <ROW File="iconfirst.gif_1" Component_="barbuttonover.gif" FileName="icon-f~1.gif|icon-first.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\icon-first.gif" SelfReg="false" NextFile="iconlast.gif_1"/>
+    <ROW File="iconlast.gif" Component_="date.gif" FileName="icon-l~1.gif|icon-last.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\dateeditor\icon-last.gif" SelfReg="false" NextFile="iconnext.gif"/>
+    <ROW File="iconlast.gif_1" Component_="barbuttonover.gif" FileName="icon-l~1.gif|icon-last.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\icon-last.gif" SelfReg="false" NextFile="iconline.gif"/>
+    <ROW File="iconline.gif" Component_="barbuttonover.gif" FileName="icon-l~2.gif|icon-line.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\icon-line.gif" SelfReg="false" NextFile="iconload.gif"/>
+    <ROW File="iconload.gif" Component_="barbuttonover.gif" FileName="icon-l~3.gif|icon-load.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\icon-load.gif" SelfReg="false" NextFile="iconnext.gif_1"/>
+    <ROW File="iconnext.gif" Component_="date.gif" FileName="icon-n~1.gif|icon-next.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\dateeditor\icon-next.gif" SelfReg="false" NextFile="iconprev.gif"/>
+    <ROW File="iconnext.gif_1" Component_="barbuttonover.gif" FileName="icon-n~1.gif|icon-next.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\icon-next.gif" SelfReg="false" NextFile="iconprev.gif_1"/>
+    <ROW File="iconprev.gif" Component_="date.gif" FileName="icon-p~1.gif|icon-prev.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\dateeditor\icon-prev.gif" SelfReg="false" NextFile="verifycorner.gif"/>
+    <ROW File="iconprev.gif_1" Component_="barbuttonover.gif" FileName="icon-p~1.gif|icon-prev.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\icon-prev.gif" SelfReg="false" NextFile="iconselect.gif"/>
+    <ROW File="iconselect.gif" Component_="barbuttonover.gif" FileName="icon-s~1.gif|icon-select.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\icon-select.gif" SelfReg="false" NextFile="iconsortasc.gif"/>
+    <ROW File="iconselect.gif_1" Component_="btn.gif" FileName="icon-s~1.gif|icon-select.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\icon-select.gif" SelfReg="false" NextFile="iconunselect.gif_1"/>
+    <ROW File="iconsortasc.gif" Component_="barbuttonover.gif" FileName="icon-s~2.gif|icon-sort-asc.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\icon-sort-asc.gif" SelfReg="false" NextFile="iconsortdesc.gif"/>
+    <ROW File="iconsortdesc.gif" Component_="barbuttonover.gif" FileName="icon-s~3.gif|icon-sort-desc.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\icon-sort-desc.gif" SelfReg="false" NextFile="iconunselect.gif"/>
+    <ROW File="iconunselect.gif" Component_="barbuttonover.gif" FileName="icon-u~1.gif|icon-unselect.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\icon-unselect.gif" SelfReg="false" NextFile="iconup.gif"/>
+    <ROW File="iconunselect.gif_1" Component_="btn.gif" FileName="icon-u~1.gif|icon-unselect.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\icon-unselect.gif" SelfReg="false" NextFile="iconup.gif_1"/>
+    <ROW File="iconup.gif" Component_="barbuttonover.gif" FileName="icon-up.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\icon\icon-up.gif" SelfReg="false" NextFile="accordioncontent.gif"/>
+    <ROW File="iconup.gif_1" Component_="btn.gif" FileName="icon-up.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\icon-up.gif" SelfReg="false" NextFile="input.gif"/>
+    <ROW File="iconup.gif_2" Component_="checkboxradio.gif" FileName="icon-up.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\form\icon-up.gif" SelfReg="false" NextFile="invalid_line.gif"/>
+    <ROW File="iconupover.gif" Component_="checkboxradio.gif" FileName="icon-u~1.gif|icon-up-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\form\icon-up-over.gif" SelfReg="false" NextFile="iconup.gif_2"/>
+    <ROW File="indexdata.js" Component_="Application.js" FileName="indexd~1.js|indexdata.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\indexdata.js" SelfReg="false" NextFile="jquery1.7.1.intellisense.js"/>
+    <ROW File="inject.js" Component_="base.js" FileName="inject.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\core\inject.js" SelfReg="false" NextFile="ligerui.all.js"/>
+    <ROW File="input.gif" Component_="btn.gif" FileName="input.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\input.gif" SelfReg="false" NextFile="inputdisabled.gif"/>
+    <ROW File="inputdisabled.gif" Component_="btn.gif" FileName="inputd~1.gif|inputdisabled.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\inputdisabled.gif" SelfReg="false" NextFile="loading.gif_4"/>
+    <ROW File="invalid_line.gif" Component_="checkboxradio.gif" FileName="invali~1.gif|invalid_line.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\form\invalid_line.gif" SelfReg="false" NextFile="textdateicon.gif"/>
+    <ROW File="invalidline.gif" Component_="bigloading.gif" FileName="invali~1.gif|invalid-line.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\common\invalid-line.gif" SelfReg="false" NextFile="loading.gif_2"/>
+    <ROW File="jquery.metadata.js" Component_="Application.js" FileName="jquery~6.js|jquery.metadata.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\jquery.metadata.js" SelfReg="false" NextFile="jquery.unobtrusiveajax.js"/>
+    <ROW File="jquery.unobtrusiveajax.js" Component_="Application.js" FileName="jquery~7.js|jquery.unobtrusive-ajax.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\jquery.unobtrusive-ajax.js" SelfReg="false" NextFile="jquery.unobtrusiveajax.min.js"/>
+    <ROW File="jquery.unobtrusiveajax.min.js" Component_="Application.js" FileName="jquery~8.js|jquery.unobtrusive-ajax.min.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\jquery.unobtrusive-ajax.min.js" SelfReg="false" NextFile="jquery.validatevsdoc.js"/>
+    <ROW File="jquery.validate.js" Component_="Application.js" FileName="jquer~10.js|jquery.validate.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\jquery.validate.js" SelfReg="false" NextFile="jquery.validate.min.js"/>
+    <ROW File="jquery.validate.min.js" Component_="Application.js" FileName="jquer~11.js|jquery.validate.min.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\jquery.validate.min.js" SelfReg="false" NextFile="jquery.validate.unobtrusive.js"/>
+    <ROW File="jquery.validate.unobtrusive.js" Component_="Application.js" FileName="jquer~12.js|jquery.validate.unobtrusive.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\jquery.validate.unobtrusive.js" SelfReg="false" NextFile="jquery.validate.unobtrusive.min.js"/>
+    <ROW File="jquery.validate.unobtrusive.min.js" Component_="Application.js" FileName="jquer~13.js|jquery.validate.unobtrusive.min.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\jquery.validate.unobtrusive.min.js" SelfReg="false" NextFile="json2.js"/>
+    <ROW File="jquery.validatevsdoc.js" Component_="Application.js" FileName="jquery~9.js|jquery.validate-vsdoc.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\jquery.validate-vsdoc.js" SelfReg="false" NextFile="jquery.validate.js"/>
+    <ROW File="jquery1.7.1.intellisense.js" Component_="Application.js" FileName="jquery~1.js|jquery-1.7.1.intellisense.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\jquery-1.7.1.intellisense.js" SelfReg="false" NextFile="jquery1.7.1.js"/>
+    <ROW File="jquery1.7.1.js" Component_="Application.js" FileName="jquery~2.js|jquery-1.7.1.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\jquery-1.7.1.js" SelfReg="false" NextFile="jquery1.7.1.min.js"/>
+    <ROW File="jquery1.7.1.min.js" Component_="Application.js" FileName="jquery~3.js|jquery-1.7.1.min.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\jquery-1.7.1.min.js" SelfReg="false" NextFile="jqueryui1.8.20.js"/>
+    <ROW File="jqueryui1.8.20.js" Component_="Application.js" FileName="jquery~4.js|jquery-ui-1.8.20.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\jquery-ui-1.8.20.js" SelfReg="false" NextFile="jqueryui1.8.20.min.js"/>
+    <ROW File="jqueryui1.8.20.min.js" Component_="Application.js" FileName="jquery~5.js|jquery-ui-1.8.20.min.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\jquery-ui-1.8.20.min.js" SelfReg="false" NextFile="jquery.metadata.js"/>
+    <ROW File="json2.js" Component_="Application.js" FileName="json2.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\json2.js" SelfReg="false" NextFile="knockout2.1.0.debug.js"/>
+    <ROW File="knockout2.1.0.debug.js" Component_="Application.js" FileName="knocko~1.js|knockout-2.1.0.debug.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\knockout-2.1.0.debug.js" SelfReg="false" NextFile="knockout2.1.0.js"/>
+    <ROW File="knockout2.1.0.js" Component_="Application.js" FileName="knocko~2.js|knockout-2.1.0.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\knockout-2.1.0.js" SelfReg="false" NextFile="modernizr2.5.3.js"/>
+    <ROW File="layout.css" Component_="all.css" FileName="layout.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\css\layout.css" SelfReg="false" NextFile="tab.css"/>
+    <ROW File="layout.css_1" Component_="form.css" FileName="layout.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\css\layout.css" SelfReg="false" NextFile="style.css"/>
+    <ROW File="layoutheader.gif" Component_="accordioncontent.gif" FileName="layout~2.gif|layout-header.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\layout-header.gif" SelfReg="false" NextFile="layoutsidebarheader.gif"/>
+    <ROW File="layoutheader.gif_1" Component_="accordionheader.gif" FileName="layout~1.gif|layout-header.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\layout\layout-header.gif" SelfReg="false" NextFile="tabsbg.gif_1"/>
+    <ROW File="layoutheader.jpg" Component_="accordionheaderover.jpg" FileName="layout~2.jpg|layout-header.jpg" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\layout\layout-header.jpg" SelfReg="false" NextFile="tabsbg.jpg"/>
+    <ROW File="layoutheaderover.gif" Component_="accordioncontent.gif" FileName="layout~1.gif|layout-header-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\layout-header-over.gif" SelfReg="false" NextFile="layoutheader.gif"/>
+    <ROW File="layoutheaderover.jpg" Component_="accordionheaderover.jpg" FileName="layout~1.jpg|layout-header-over.jpg" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\layout\layout-header-over.jpg" SelfReg="false" NextFile="layoutheader.jpg"/>
+    <ROW File="layoutsidebarheader.gif" Component_="accordioncontent.gif" FileName="layout~3.gif|layout-sidebar-header.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\layout-sidebar-header.gif" SelfReg="false" NextFile="minibottom.gif"/>
+    <ROW File="ligerAccordion.js" Component_="ligerAccordion.js" FileName="ligerA~1.js|ligerAccordion.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerAccordion.js" SelfReg="false" NextFile="ligerButton.js"/>
+    <ROW File="ligerButton.js" Component_="ligerAccordion.js" FileName="ligerB~1.js|ligerButton.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerButton.js" SelfReg="false" NextFile="ligerCheckBox.js"/>
+    <ROW File="ligerCheckBox.js" Component_="ligerAccordion.js" FileName="ligerC~1.js|ligerCheckBox.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerCheckBox.js" SelfReg="false" NextFile="ligerCheckBoxList.js"/>
+    <ROW File="ligerCheckBoxList.js" Component_="ligerAccordion.js" FileName="ligerC~2.js|ligerCheckBoxList.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerCheckBoxList.js" SelfReg="false" NextFile="ligerComboBox.js"/>
+    <ROW File="ligerComboBox.js" Component_="ligerAccordion.js" FileName="ligerC~3.js|ligerComboBox.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerComboBox.js" SelfReg="false" NextFile="ligerDateEditor.js"/>
+    <ROW File="ligerDateEditor.js" Component_="ligerAccordion.js" FileName="ligerD~1.js|ligerDateEditor.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerDateEditor.js" SelfReg="false" NextFile="ligerDialog.js"/>
+    <ROW File="ligerDialog.js" Component_="ligerAccordion.js" FileName="ligerD~2.js|ligerDialog.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerDialog.js" SelfReg="false" NextFile="ligerDrag.js"/>
+    <ROW File="ligerDrag.js" Component_="ligerAccordion.js" FileName="ligerD~3.js|ligerDrag.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerDrag.js" SelfReg="false" NextFile="ligerEasyTab.js"/>
+    <ROW File="ligerEasyTab.js" Component_="ligerAccordion.js" FileName="ligerE~1.js|ligerEasyTab.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerEasyTab.js" SelfReg="false" NextFile="ligerFilter.js"/>
+    <ROW File="ligerFilter.js" Component_="ligerAccordion.js" FileName="ligerF~1.js|ligerFilter.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerFilter.js" SelfReg="false" NextFile="ligerForm.js"/>
+    <ROW File="ligerForm.js" Component_="ligerAccordion.js" FileName="ligerF~2.js|ligerForm.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerForm.js" SelfReg="false" NextFile="ligerGrid.js"/>
+    <ROW File="ligerGrid.js" Component_="ligerAccordion.js" FileName="ligerG~1.js|ligerGrid.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerGrid.js" SelfReg="false" NextFile="ligerLayout.js"/>
+    <ROW File="ligerLayout.js" Component_="ligerAccordion.js" FileName="ligerL~1.js|ligerLayout.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerLayout.js" SelfReg="false" NextFile="ligerListBox.js"/>
+    <ROW File="ligerListBox.js" Component_="ligerAccordion.js" FileName="ligerL~2.js|ligerListBox.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerListBox.js" SelfReg="false" NextFile="ligerMenu.js"/>
+    <ROW File="ligerMenu.js" Component_="ligerAccordion.js" FileName="ligerM~1.js|ligerMenu.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerMenu.js" SelfReg="false" NextFile="ligerMenuBar.js"/>
+    <ROW File="ligerMenuBar.js" Component_="ligerAccordion.js" FileName="ligerM~2.js|ligerMenuBar.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerMenuBar.js" SelfReg="false" NextFile="ligerMessageBox.js"/>
+    <ROW File="ligerMessageBox.js" Component_="ligerAccordion.js" FileName="ligerM~3.js|ligerMessageBox.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerMessageBox.js" SelfReg="false" NextFile="ligerPopupEdit.js"/>
+    <ROW File="ligerPopupEdit.js" Component_="ligerAccordion.js" FileName="ligerP~1.js|ligerPopupEdit.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerPopupEdit.js" SelfReg="false" NextFile="ligerRadio.js"/>
+    <ROW File="ligerRadio.js" Component_="ligerAccordion.js" FileName="ligerR~1.js|ligerRadio.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerRadio.js" SelfReg="false" NextFile="ligerRadioList.js"/>
+    <ROW File="ligerRadioList.js" Component_="ligerAccordion.js" FileName="ligerR~2.js|ligerRadioList.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerRadioList.js" SelfReg="false" NextFile="ligerResizable.js"/>
+    <ROW File="ligerResizable.js" Component_="ligerAccordion.js" FileName="ligerR~3.js|ligerResizable.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerResizable.js" SelfReg="false" NextFile="ligerSpinner.js"/>
+    <ROW File="ligerSpinner.js" Component_="ligerAccordion.js" FileName="ligerS~1.js|ligerSpinner.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerSpinner.js" SelfReg="false" NextFile="ligerTab.js"/>
+    <ROW File="ligerTab.js" Component_="ligerAccordion.js" FileName="ligerTab.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerTab.js" SelfReg="false" NextFile="ligerTextBox.js"/>
+    <ROW File="ligerTextBox.js" Component_="ligerAccordion.js" FileName="ligerT~1.js|ligerTextBox.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerTextBox.js" SelfReg="false" NextFile="ligerTip.js"/>
+    <ROW File="ligerTip.js" Component_="ligerAccordion.js" FileName="ligerTip.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerTip.js" SelfReg="false" NextFile="ligerToolBar.js"/>
+    <ROW File="ligerToolBar.js" Component_="ligerAccordion.js" FileName="ligerT~2.js|ligerToolBar.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerToolBar.js" SelfReg="false" NextFile="ligerTree.js"/>
+    <ROW File="ligerTree.js" Component_="ligerAccordion.js" FileName="ligerT~3.js|ligerTree.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerTree.js" SelfReg="false" NextFile="ligerWindow.js"/>
+    <ROW File="ligerWindow.js" Component_="ligerAccordion.js" FileName="ligerW~1.js|ligerWindow.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\plugins\ligerWindow.js" SelfReg="false" NextFile="ligeruiall.css"/>
+    <ROW File="ligerui.all.js" Component_="ligerui.all.js" FileName="ligeru~1.js|ligerui.all.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\ligerui.all.js" SelfReg="false" NextFile="ligerui.min.js"/>
+    <ROW File="ligerui.min.js" Component_="ligerui.all.js" FileName="ligeru~2.js|ligerui.min.js" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\js\ligerui.min.js" SelfReg="false" NextFile="ligerAccordion.js"/>
+    <ROW File="ligeruiall.css" Component_="ligeruiall.css" FileName="ligeru~1.css|ligerui-all.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\css\ligerui-all.css" SelfReg="false" NextFile="ligeruicommon.css"/>
+    <ROW File="ligeruicommon.css" Component_="ligeruiall.css" FileName="ligeru~2.css|ligerui-common.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\css\ligerui-common.css" SelfReg="false" NextFile="ligeruidialog.css"/>
+    <ROW File="ligeruidialog.css" Component_="ligeruiall.css" FileName="ligeru~3.css|ligerui-dialog.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\css\ligerui-dialog.css" SelfReg="false" NextFile="ligeruiform.css"/>
+    <ROW File="ligeruiform.css" Component_="ligeruiall.css" FileName="ligeru~4.css|ligerui-form.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\css\ligerui-form.css" SelfReg="false" NextFile="ligeruigrid.css"/>
+    <ROW File="ligeruigrid.css" Component_="ligeruiall.css" FileName="ligeru~5.css|ligerui-grid.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\css\ligerui-grid.css" SelfReg="false" NextFile="ligeruilayout.css"/>
+    <ROW File="ligeruiicons.css" Component_="ligeruiicons.css" FileName="ligeru~1.css|ligerui-icons.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\ligerui-icons.css" SelfReg="false" NextFile="form.css_1"/>
+    <ROW File="ligeruilayout.css" Component_="ligeruiall.css" FileName="ligeru~6.css|ligerui-layout.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\css\ligerui-layout.css" SelfReg="false" NextFile="ligeruimenu.css"/>
+    <ROW File="ligeruimenu.css" Component_="ligeruiall.css" FileName="ligeru~7.css|ligerui-menu.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\css\ligerui-menu.css" SelfReg="false" NextFile="ligeruitab.css"/>
+    <ROW File="ligeruitab.css" Component_="ligeruiall.css" FileName="ligeru~8.css|ligerui-tab.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\css\ligerui-tab.css" SelfReg="false" NextFile="ligeruitree.css"/>
+    <ROW File="ligeruitree.css" Component_="ligeruiall.css" FileName="ligeru~9.css|ligerui-tree.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\css\ligerui-tree.css" SelfReg="false" NextFile="bigloading.gif"/>
+    <ROW File="loading.gif" Component_="accent.png" FileName="loading.gif" Attributes="0" SourcePath="..\..\ManagementPortal\Images\loading.gif" SelfReg="false" NextFile="Logo_128.png"/>
+    <ROW File="loading.gif_1" Component_="loading.gif" FileName="loading.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\images\loading.gif" SelfReg="false" NextFile="top.jpg_1"/>
+    <ROW File="loading.gif_2" Component_="bigloading.gif" FileName="loading.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\common\loading.gif" SelfReg="false" NextFile="table.png"/>
+    <ROW File="loading.gif_3" Component_="folderopen.gif" FileName="loading.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\tree\loading.gif" SelfReg="false" NextFile="treeleaf.gif"/>
+    <ROW File="loading.gif_4" Component_="btn.gif" FileName="loading.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\loading.gif" SelfReg="false" NextFile="loading2.gif"/>
+    <ROW File="loading2.gif" Component_="btn.gif" FileName="loading2.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\loading2.gif" SelfReg="false" NextFile="trigger.gif"/>
+    <ROW File="lock.gif" Component_="add.gif" FileName="lock.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\lock.gif" SelfReg="false" NextFile="logout.gif"/>
+    <ROW File="log4net.dll" Component_="log4net.dll" FileName="log4net.dll" Attributes="0" SourcePath="..\..\DataService\bin\log4net.dll" SelfReg="false" NextFile="YoYoStudio.Common.dll"/>
+    <ROW File="logo_32.png" Component_="accent.png" FileName="logo_32.png" Attributes="0" SourcePath="..\..\ManagementPortal\Images\logo_32.png" SelfReg="false" NextFile="NotFound.png"/>
+    <ROW File="logout.gif" Component_="add.gif" FileName="logout.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\logout.gif" SelfReg="false" NextFile="mailbox.gif"/>
+    <ROW File="mailbox.gif" Component_="add.gif" FileName="mailbox.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\mailbox.gif" SelfReg="false" NextFile="memeber.gif"/>
+    <ROW File="memeber.gif" Component_="add.gif" FileName="memeber.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\memeber.gif" SelfReg="false" NextFile="modify.gif"/>
+    <ROW File="menuitemarrow.gif" Component_="menuitemarrow.gif" FileName="menu-i~1.gif|menu-item-arrow.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\menu\menu-item-arrow.gif" SelfReg="false" NextFile="menuitemdown.gif"/>
+    <ROW File="menuitemdown.gif" Component_="menuitemarrow.gif" FileName="menu-i~2.gif|menu-item-down.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\menu\menu-item-down.gif" SelfReg="false" NextFile="menuitemoverl.gif"/>
+    <ROW File="menuitemoverl.gif" Component_="menuitemarrow.gif" FileName="menu-i~3.gif|menu-item-over-l.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\menu\menu-item-over-l.gif" SelfReg="false" NextFile="menuitemoverm.gif"/>
+    <ROW File="menuitemoverm.gif" Component_="menuitemarrow.gif" FileName="menu-i~4.gif|menu-item-over-m.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\menu\menu-item-over-m.gif" SelfReg="false" NextFile="menuitemoverr.gif"/>
+    <ROW File="menuitemoverr.gif" Component_="menuitemarrow.gif" FileName="menu-i~5.gif|menu-item-over-r.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\menu\menu-item-over-r.gif" SelfReg="false" NextFile="menulinex.gif"/>
+    <ROW File="menulinex.gif" Component_="menuitemarrow.gif" FileName="menu-l~1.gif|menu-line-x.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\menu\menu-line-x.gif" SelfReg="false" NextFile="menuliney.gif"/>
+    <ROW File="menuliney.gif" Component_="menuitemarrow.gif" FileName="menu-l~2.gif|menu-line-y.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\menu\menu-line-y.gif" SelfReg="false" NextFile="barbg.gif"/>
+    <ROW File="minibottom.gif" Component_="accordioncontent.gif" FileName="mini-b~1.gif|mini-bottom.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\mini-bottom.gif" SelfReg="false" NextFile="minileft.gif"/>
+    <ROW File="minileft.gif" Component_="accordioncontent.gif" FileName="mini-l~1.gif|mini-left.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\mini-left.gif" SelfReg="false" NextFile="miniright.gif"/>
+    <ROW File="miniright.gif" Component_="accordioncontent.gif" FileName="mini-r~1.gif|mini-right.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\mini-right.gif" SelfReg="false" NextFile="minitop.gif"/>
+    <ROW File="minitop.gif" Component_="accordioncontent.gif" FileName="mini-top.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\mini-top.gif" SelfReg="false" NextFile="panelcontent.gif"/>
+    <ROW File="modernizr2.5.3.js" Component_="Application.js" FileName="modern~1.js|modernizr-2.5.3.js" Attributes="0" SourcePath="..\..\ManagementPortal\Scripts\modernizr-2.5.3.js" SelfReg="false" NextFile="Personal.js"/>
+    <ROW File="modify.gif" Component_="add.gif" FileName="modify.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\modify.gif" SelfReg="false" NextFile="msn.gif"/>
+    <ROW File="msn.gif" Component_="add.gif" FileName="msn.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\msn.gif" SelfReg="false" NextFile="myaccount.gif"/>
+    <ROW File="myaccount.gif" Component_="add.gif" FileName="myacco~1.gif|myaccount.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\myaccount.gif" SelfReg="false" NextFile="ok.gif"/>
+    <ROW File="ok.gif" Component_="add.gif" FileName="ok.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\ok.gif" SelfReg="false" NextFile="outbox.gif"/>
+    <ROW File="orderedList0.png" Component_="accent.png" FileName="ordere~1.png|orderedList0.png" Attributes="0" SourcePath="..\..\ManagementPortal\Images\orderedList0.png" SelfReg="false" NextFile="orderedList1.png"/>
+    <ROW File="orderedList1.png" Component_="accent.png" FileName="ordere~2.png|orderedList1.png" Attributes="0" SourcePath="..\..\ManagementPortal\Images\orderedList1.png" SelfReg="false" NextFile="orderedList2.png"/>
+    <ROW File="orderedList2.png" Component_="accent.png" FileName="ordere~3.png|orderedList2.png" Attributes="0" SourcePath="..\..\ManagementPortal\Images\orderedList2.png" SelfReg="false" NextFile="orderedList3.png"/>
+    <ROW File="orderedList3.png" Component_="accent.png" FileName="ordere~4.png|orderedList3.png" Attributes="0" SourcePath="..\..\ManagementPortal\Images\orderedList3.png" SelfReg="false" NextFile="orderedList4.png"/>
+    <ROW File="orderedList4.png" Component_="accent.png" FileName="ordere~5.png|orderedList4.png" Attributes="0" SourcePath="..\..\ManagementPortal\Images\orderedList4.png" SelfReg="false" NextFile="orderedList5.png"/>
+    <ROW File="orderedList5.png" Component_="accent.png" FileName="ordere~6.png|orderedList5.png" Attributes="0" SourcePath="..\..\ManagementPortal\Images\orderedList5.png" SelfReg="false" NextFile="orderedList6.png"/>
+    <ROW File="orderedList6.png" Component_="accent.png" FileName="ordere~7.png|orderedList6.png" Attributes="0" SourcePath="..\..\ManagementPortal\Images\orderedList6.png" SelfReg="false" NextFile="orderedList7.png"/>
+    <ROW File="orderedList7.png" Component_="accent.png" FileName="ordere~8.png|orderedList7.png" Attributes="0" SourcePath="..\..\ManagementPortal\Images\orderedList7.png" SelfReg="false" NextFile="orderedList8.png"/>
+    <ROW File="orderedList8.png" Component_="accent.png" FileName="ordere~9.png|orderedList8.png" Attributes="0" SourcePath="..\..\ManagementPortal\Images\orderedList8.png" SelfReg="false" NextFile="orderedList9.png"/>
+    <ROW File="orderedList9.png" Component_="accent.png" FileName="order~10.png|orderedList9.png" Attributes="0" SourcePath="..\..\ManagementPortal\Images\orderedList9.png" SelfReg="false" NextFile="top.jpg"/>
+    <ROW File="outbox.gif" Component_="add.gif" FileName="outbox.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\outbox.gif" SelfReg="false" NextFile="pager.gif"/>
+    <ROW File="packages.config" Component_="favicon.ico" FileName="packag~1.con|packages.config" Attributes="0" SourcePath="..\..\ManagementPortal\packages.config" SelfReg="false" NextFile="AssemblyInfo.cs_1"/>
+    <ROW File="pager.gif" Component_="add.gif" FileName="pager.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\pager.gif" SelfReg="false" NextFile="photograph.gif"/>
+    <ROW File="panelbtn.gif" Component_="barbg.gif" FileName="panel-~3.gif|panel-btn.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\panel\panel-btn.gif" SelfReg="false" NextFile="panelheader.gif_1"/>
+    <ROW File="panelbtnl.gif" Component_="barbg.gif" FileName="panel-~1.gif|panel-btn-l.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\panel\panel-btn-l.gif" SelfReg="false" NextFile="panelbtnr.gif"/>
+    <ROW File="panelbtnr.gif" Component_="barbg.gif" FileName="panel-~2.gif|panel-btn-r.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\panel\panel-btn-r.gif" SelfReg="false" NextFile="panelbtn.gif"/>
+    <ROW File="panelcontent.gif" Component_="accordioncontent.gif" FileName="panel-~1.gif|panel-content.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\panel-content.gif" SelfReg="false" NextFile="panelheaderover.gif"/>
+    <ROW File="panelheader.gif" Component_="accordioncontent.gif" FileName="panel-~3.gif|panel-header.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\panel-header.gif" SelfReg="false" NextFile="tabsbg.gif"/>
+    <ROW File="panelheader.gif_1" Component_="barbg.gif" FileName="panel-~4.gif|panel-header.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\panel\panel-header.gif" SelfReg="false" NextFile="panelmenuitemdown.gif"/>
+    <ROW File="panelheaderover.gif" Component_="accordioncontent.gif" FileName="panel-~2.gif|panel-header-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\panel-header-over.gif" SelfReg="false" NextFile="panelheader.gif"/>
+    <ROW File="panelmenu.gif" Component_="barbg.gif" FileName="panel-~6.gif|panel-menu.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\panel\panel-menu.gif" SelfReg="false" NextFile="paneltoolbar.gif"/>
+    <ROW File="panelmenuitemdown.gif" Component_="barbg.gif" FileName="panel-~5.gif|panel-menu-item-down.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\panel\panel-menu-item-down.gif" SelfReg="false" NextFile="panelmenu.gif"/>
+    <ROW File="paneltoolbar.gif" Component_="barbg.gif" FileName="panel-~7.gif|panel-toolbar.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\panel\panel-toolbar.gif" SelfReg="false" NextFile="paneltools.gif"/>
+    <ROW File="paneltools.gif" Component_="barbg.gif" FileName="panel-~8.gif|panel-tools.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\panel\panel-tools.gif" SelfReg="false" NextFile="folderopen.gif"/>
+    <ROW File="photograph.gif" Component_="add.gif" FileName="photog~1.gif|photograph.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\photograph.gif" SelfReg="false" NextFile="plus.gif"/>
+    <ROW File="plus.gif" Component_="add.gif" FileName="plus.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\plus.gif" SelfReg="false" NextFile="prev.gif"/>
+    <ROW File="popupline.gif" Component_="gridcheckboxchecked.gif" FileName="popup-~1.gif|popup-line.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\grid\popup-line.gif" SelfReg="false" NextFile="popuprowover.gif"/>
+    <ROW File="popuprowover.gif" Component_="gridcheckboxchecked.gif" FileName="popup-~2.gif|popup-row-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\grid\popup-row-over.gif" SelfReg="false" NextFile="barbuttonover.gif"/>
+    <ROW File="prev.gif" Component_="add.gif" FileName="prev.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\prev.gif" SelfReg="false" NextFile="print.gif"/>
+    <ROW File="print.gif" Component_="add.gif" FileName="print.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\print.gif" SelfReg="false" NextFile="process.gif"/>
+    <ROW File="process.gif" Component_="add.gif" FileName="process.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\process.gif" SelfReg="false" NextFile="qq.gif"/>
+    <ROW File="qq.gif" Component_="add.gif" FileName="qq.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\qq.gif" SelfReg="false" NextFile="refresh.gif"/>
+    <ROW File="radio.gif" Component_="bgpaneltitleover.gif" FileName="radio.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\controls\radio.gif" SelfReg="false" NextFile="date.gif"/>
+    <ROW File="refresh.gif" Component_="add.gif" FileName="refresh.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\refresh.gif" SelfReg="false" NextFile="right.gif"/>
+    <ROW File="right.gif" Component_="add.gif" FileName="right.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\right.gif" SelfReg="false" NextFile="role.gif"/>
+    <ROW File="role.gif" Component_="add.gif" FileName="role.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\role.gif" SelfReg="false" NextFile="savedisabled.gif"/>
+    <ROW File="save.gif" Component_="add.gif" FileName="save.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\save.gif" SelfReg="false" NextFile="search.gif"/>
+    <ROW File="savedisabled.gif" Component_="add.gif" FileName="save-d~1.gif|save-disabled.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\save-disabled.gif" SelfReg="false" NextFile="save.gif"/>
+    <ROW File="search.gif" Component_="add.gif" FileName="search.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\search.gif" SelfReg="false" NextFile="search2.gif"/>
+    <ROW File="search2.gif" Component_="add.gif" FileName="search2.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\search2.gif" SelfReg="false" NextFile="settings.gif"/>
+    <ROW File="settings.gif" Component_="add.gif" FileName="settings.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\settings.gif" SelfReg="false" NextFile="true.gif"/>
+    <ROW File="style.css" Component_="form.css" FileName="style.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\css\style.css" SelfReg="false" NextFile="checkboxradio.gif"/>
+    <ROW File="tab.css" Component_="all.css" FileName="tab.css" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\css\tab.css" SelfReg="false" NextFile="accordionheader.gif_1"/>
+    <ROW File="table.png" Component_="bigloading.gif" FileName="table.png" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\common\table.png" SelfReg="false" NextFile="toggle.gif"/>
+    <ROW File="tabsbg.gif" Component_="accordioncontent.gif" FileName="tabs-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\tabs-bg.gif" SelfReg="false" NextFile="tabsitembg.gif"/>
+    <ROW File="tabsbg.gif_1" Component_="accordionheader.gif" FileName="tabs-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\layout\tabs-bg.gif" SelfReg="false" NextFile="tabsitembg.gif_1"/>
+    <ROW File="tabsbg.jpg" Component_="accordionheaderover.jpg" FileName="tabs-bg.jpg" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\layout\tabs-bg.jpg" SelfReg="false" NextFile="tabsitembg.jpg"/>
+    <ROW File="tabsitembg.gif" Component_="accordioncontent.gif" FileName="tabs-i~1.gif|tabs-item-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\tabs-item-bg.gif" SelfReg="false" NextFile="tabsitemleftbg.gif"/>
+    <ROW File="tabsitembg.gif_1" Component_="accordionheader.gif" FileName="tabs-i~1.gif|tabs-item-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\layout\tabs-item-bg.gif" SelfReg="false" NextFile="tabsitemleftbg.gif_1"/>
+    <ROW File="tabsitembg.jpg" Component_="accordionheaderover.jpg" FileName="tabs-i~1.jpg|tabs-item-bg.jpg" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\layout\tabs-item-bg.jpg" SelfReg="false" NextFile="tabsitemleftbg.gif_2"/>
+    <ROW File="tabsitemleftbg.gif" Component_="accordioncontent.gif" FileName="tabs-i~2.gif|tabs-item-left-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\tabs-item-left-bg.gif" SelfReg="false" NextFile="tabsitemoverbg.gif"/>
+    <ROW File="tabsitemleftbg.gif_1" Component_="accordionheader.gif" FileName="tabs-i~2.gif|tabs-item-left-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\layout\tabs-item-left-bg.gif" SelfReg="false" NextFile="tabsitemleftselected.gif"/>
+    <ROW File="tabsitemleftbg.gif_2" Component_="accordionheaderover.jpg" FileName="tabs-i~1.gif|tabs-item-left-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\layout\tabs-item-left-bg.gif" SelfReg="false" NextFile="tabsitemoverbg.gif_1"/>
+    <ROW File="tabsitemleftselected.gif" Component_="accordionheader.gif" FileName="tabs-i~3.gif|tabs-item-left-selected.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\layout\tabs-item-left-selected.gif" SelfReg="false" NextFile="tabsitemrightbg.gif_1"/>
+    <ROW File="tabsitemoverbg.gif" Component_="accordioncontent.gif" FileName="tabs-i~3.gif|tabs-item-over-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\tabs-item-over-bg.gif" SelfReg="false" NextFile="tabsitemrightbg.gif"/>
+    <ROW File="tabsitemoverbg.gif_1" Component_="accordionheaderover.jpg" FileName="tabs-i~2.gif|tabs-item-over-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\layout\tabs-item-over-bg.gif" SelfReg="false" NextFile="tabsitemrightbg.gif_2"/>
+    <ROW File="tabsitemrightbg.gif" Component_="accordioncontent.gif" FileName="tabs-i~4.gif|tabs-item-right-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\tabs-item-right-bg.gif" SelfReg="false" NextFile="tabstools.gif"/>
+    <ROW File="tabsitemrightbg.gif_1" Component_="accordionheader.gif" FileName="tabs-i~4.gif|tabs-item-right-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\layout\tabs-item-right-bg.gif" SelfReg="false" NextFile="tabsitemrightselected.gif"/>
+    <ROW File="tabsitemrightbg.gif_2" Component_="accordionheaderover.jpg" FileName="tabs-i~3.gif|tabs-item-right-bg.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\layout\tabs-item-right-bg.gif" SelfReg="false" NextFile="tabstools.gif_1"/>
+    <ROW File="tabsitemrightselected.gif" Component_="accordionheader.gif" FileName="tabs-i~5.gif|tabs-item-right-selected.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\layout\tabs-item-right-selected.gif" SelfReg="false" NextFile="tabsitemselected.gif"/>
+    <ROW File="tabsitemselected.gif" Component_="accordionheader.gif" FileName="tabs-i~6.gif|tabs-item-selected.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\layout\tabs-item-selected.gif" SelfReg="false" NextFile="togglebar.gif_1"/>
+    <ROW File="tabstools.gif" Component_="accordioncontent.gif" FileName="tabs-t~1.gif|tabs-tools.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\tabs-tools.gif" SelfReg="false" NextFile="togglebar.gif"/>
+    <ROW File="tabstools.gif_1" Component_="accordionheaderover.jpg" FileName="tabs-t~1.gif|tabs-tools.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\layout\tabs-tools.gif" SelfReg="false" NextFile="ManagementPortal.csproj"/>
+    <ROW File="taskbar.gif" Component_="boxicons.gif" FileName="taskbar.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\win\taskbar.gif" SelfReg="false" NextFile="taskbar.png"/>
+    <ROW File="taskbar.png" Component_="boxicons.gif" FileName="taskbar.png" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\win\taskbar.png" SelfReg="false" NextFile="taskicon.gif"/>
+    <ROW File="taskbartask.gif" Component_="boxicons.gif" FileName="taskba~1.gif|taskbar-task.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\win\taskbar-task.gif" SelfReg="false" NextFile="taskbar.gif"/>
+    <ROW File="taskicon.gif" Component_="boxicons.gif" FileName="taskicon.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\win\taskicon.gif" SelfReg="false" NextFile="all.css"/>
+    <ROW File="text.gif" Component_="checkboxradio.gif" FileName="text.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\form\text.gif" SelfReg="false" NextFile="gridheaderbg.jpg"/>
+    <ROW File="textdateicon.gif" Component_="checkboxradio.gif" FileName="text-d~1.gif|text-date-icon.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\form\text-date-icon.gif" SelfReg="false" NextFile="textdownicon.gif"/>
+    <ROW File="textdownicon.gif" Component_="checkboxradio.gif" FileName="text-d~2.gif|text-down-icon.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\form\text-down-icon.gif" SelfReg="false" NextFile="textfocus.gif"/>
+    <ROW File="textfocus.gif" Component_="checkboxradio.gif" FileName="text-f~1.gif|text-focus.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\form\text-focus.gif" SelfReg="false" NextFile="textlfocus.gif"/>
+    <ROW File="textl.gif" Component_="checkboxradio.gif" FileName="text-l.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\form\text-l.gif" SelfReg="false" NextFile="textover.gif"/>
+    <ROW File="textlfocus.gif" Component_="checkboxradio.gif" FileName="text-l~1.gif|text-l-focus.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\form\text-l-focus.gif" SelfReg="false" NextFile="textlover.gif"/>
+    <ROW File="textlover.gif" Component_="checkboxradio.gif" FileName="text-l~2.gif|text-l-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\form\text-l-over.gif" SelfReg="false" NextFile="textl.gif"/>
+    <ROW File="textover.gif" Component_="checkboxradio.gif" FileName="text-o~1.gif|text-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\form\text-over.gif" SelfReg="false" NextFile="textrfocus.gif"/>
+    <ROW File="textr.gif" Component_="checkboxradio.gif" FileName="text-r.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\form\text-r.gif" SelfReg="false" NextFile="text.gif"/>
+    <ROW File="textrfocus.gif" Component_="checkboxradio.gif" FileName="text-r~1.gif|text-r-focus.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\form\text-r-focus.gif" SelfReg="false" NextFile="textrover.gif"/>
+    <ROW File="textrover.gif" Component_="checkboxradio.gif" FileName="text-r~2.gif|text-r-over.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Silvery\images\form\text-r-over.gif" SelfReg="false" NextFile="textr.gif"/>
+    <ROW File="toggle.gif" Component_="bigloading.gif" FileName="toggle.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\common\toggle.gif" SelfReg="false" NextFile="bgpaneltitleover.gif"/>
+    <ROW File="togglebar.gif" Component_="accordioncontent.gif" FileName="toggle~1.gif|togglebar.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\layout\togglebar.gif" SelfReg="false" NextFile="menuitemarrow.gif"/>
+    <ROW File="togglebar.gif_1" Component_="accordionheader.gif" FileName="toggle~1.gif|togglebar.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\layout\togglebar.gif" SelfReg="false" NextFile="btn.gif_1"/>
+    <ROW File="top.jpg" Component_="accent.png" FileName="top.jpg" Attributes="0" SourcePath="..\..\ManagementPortal\Images\top.jpg" SelfReg="false" NextFile="topicon.gif"/>
+    <ROW File="top.jpg_1" Component_="loading.gif" FileName="top.jpg" Attributes="0" SourcePath="..\..\ManagementPortal\lib\images\top.jpg" SelfReg="false" NextFile="topicon.gif_1"/>
+    <ROW File="topicon.gif" Component_="accent.png" FileName="topicon.gif" Attributes="0" SourcePath="..\..\ManagementPortal\Images\topicon.gif" SelfReg="false" NextFile="loading.gif_1"/>
+    <ROW File="topicon.gif_1" Component_="loading.gif" FileName="topicon.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\images\topicon.gif" SelfReg="false" NextFile="base.js"/>
+    <ROW File="tree.gif" Component_="folderopen.gif" FileName="tree.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\tree\tree.gif" SelfReg="false" NextFile="boxicons.gif"/>
+    <ROW File="treeleaf.gif" Component_="folderopen.gif" FileName="tree-l~1.gif|tree-leaf.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\tree\tree-leaf.gif" SelfReg="false" NextFile="treelevel.gif"/>
+    <ROW File="treelevel.gif" Component_="folderopen.gif" FileName="tree-l~2.gif|tree-level.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\tree\tree-level.gif" SelfReg="false" NextFile="treenoline.gif"/>
+    <ROW File="treenoline.gif" Component_="folderopen.gif" FileName="tree-n~1.gif|tree-noline.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\tree\tree-noline.gif" SelfReg="false" NextFile="treestatusclose.gif"/>
+    <ROW File="treestatus.gif" Component_="folderopen.gif" FileName="tree-s~3.gif|tree-status.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\tree\tree-status.gif" SelfReg="false" NextFile="tree.gif"/>
+    <ROW File="treestatusclose.gif" Component_="folderopen.gif" FileName="tree-s~1.gif|tree-status-close.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\tree\tree-status-close.gif" SelfReg="false" NextFile="treestatusopen.gif"/>
+    <ROW File="treestatusopen.gif" Component_="folderopen.gif" FileName="tree-s~2.gif|tree-status-open.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\tree\tree-status-open.gif" SelfReg="false" NextFile="treestatus.gif"/>
+    <ROW File="trigger.gif" Component_="btn.gif" FileName="trigger.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Gray\images\ui\trigger.gif" SelfReg="false" NextFile="dialogwinbtns.gif_1"/>
+    <ROW File="true.gif" Component_="add.gif" FileName="true.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\true.gif" SelfReg="false" NextFile="up.gif"/>
+    <ROW File="up.gif" Component_="add.gif" FileName="up.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\icons\up.gif" SelfReg="false" NextFile="MicrosoftOfficeExcel.xlsx"/>
+    <ROW File="verifycorner.gif" Component_="verifycorner.gif" FileName="verify~1.gif|verify-corner.gif" Attributes="0" SourcePath="..\..\ManagementPortal\lib\ligerUI\skins\Aqua\images\form\verify-corner.gif" SelfReg="false" NextFile="gridcheckboxchecked.gif"/>
+    <ROW File="web.config" Component_="DataService.csproj" FileName="web~1.con|web.config" Attributes="0" SourcePath="..\..\DataService\web.config" SelfReg="false" NextFile="AuthConfig.cs"/>
+    <ROW File="web.config.orig" Component_="DataService.csproj" FileName="webcon~1.ori|web.config.orig" Attributes="0" SourcePath="..\..\DataService\web.config.orig" SelfReg="false" NextFile="Web.Debug.config"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AiPersistentPropComponent">
+    <ROW Property="IISWindowsLogin" Registry="IISWindowsLogin" HklmSearch="IISWindowsLogin" HkcuSearch="IISWindowsLogin_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AppPoolComponent">
+    <ROW AppPoolId="0" Name="DataServiceAppPool" Condition="1" Flags="357" ManagedRuntimeVersion="v4.0" PeriodicRestartTime="60" PeriodicRestartRequests="10000" PeriodicRestartMemory="2560000" LogEventOnRecycle="11"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="Setup Files" Languages="en;zh" InstallationType="2" CabsLocation="1" CompressCabs="false" UseLzma="true" LzmaMethod="2" LzmaCompressionLevel="2" PackageType="1" FilesInsideExe="true" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" UseLargeSchema="true" ExeName="9258DataService_Setup" UACExecutionLevel="2"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_zh.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="LicenseAgreementDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\LicenseAgreementDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_CommitAccounts" Description="Commit the creation of user accounts on the local computer" DescriptionLocId="ActionText.Description.AI_CommitAccounts"/>
+    <ROW Action="AI_CreateAccount" Description="Creating user account on the local computer" Template="Account: [1]" DescriptionLocId="ActionText.Description.AI_CreateAccount" TemplateLocId="ActionText.Template.AI_CreateAccount"/>
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractFiles" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_IIsConfig" Description="Configuring Internet Information Services" Template="Installing &quot;[1]&quot;" DescriptionLocId="ActionText.Description.AI_IIsConfig" TemplateLocId="ActionText.Template.AI_IIsConfig"/>
+    <ROW Action="AI_IIsInstall" Description="Generating actions to configure Internet Information Services" DescriptionLocId="ActionText.Description.AI_IIsInstall"/>
+    <ROW Action="AI_IIsRemove" Description="Configuring Internet Information Services" Template="Removing &quot;[1]&quot;" DescriptionLocId="ActionText.Description.AI_IIsRemove" TemplateLocId="ActionText.Template.AI_IIsRemove"/>
+    <ROW Action="AI_IIsRollback" Description="Rolling back IIS configuration" Template="Restoring metabase configuration." DescriptionLocId="ActionText.Description.AI_IIsRollback" TemplateLocId="ActionText.Template.AI_IIsRollback"/>
+    <ROW Action="AI_IIsUninstall" Description="Generating actions to configure Internet Information Services" DescriptionLocId="ActionText.Description.AI_IIsUninstall"/>
+    <ROW Action="AI_ProcessAccounts" Description="Generating actions to create user accounts on the local computer" Template="Account: [1], Attributes: [2]" DescriptionLocId="ActionText.Description.AI_ProcessAccounts" TemplateLocId="ActionText.Template.AI_ProcessAccounts"/>
+    <ROW Action="AI_RemoveAccount" Description="Removing user account from the local computer" Template="Account: [1]" DescriptionLocId="ActionText.Description.AI_RemoveAccount" TemplateLocId="ActionText.Template.AI_RemoveAccount"/>
+    <ROW Action="AI_RollbackAccount" Description="Rolling back the creation of user accounts on the local computer" Template="Account: [1]" DescriptionLocId="ActionText.Description.AI_RollbackAccount" TemplateLocId="ActionText.Template.AI_RollbackAccount"/>
+    <ROW Action="AI_SqlConfig" Description="Executing install SQL scripts" Template="Connection: [1]  Script: [2]" DescriptionLocId="ActionText.Description.AI_SqlConfig" TemplateLocId="ActionText.Template.AI_SqlConfig"/>
+    <ROW Action="AI_SqlInstall" Description="Generating actions to configure databases for install SQL script execution" DescriptionLocId="ActionText.Description.AI_SqlInstall"/>
+    <ROW Action="AI_SqlMaint" Description="Executing maintenance SQL scripts" Template="Connection: [1]  Script: [2]" DescriptionLocId="ActionText.Description.AI_SqlMaint" TemplateLocId="ActionText.Template.AI_SqlMaint"/>
+    <ROW Action="AI_SqlRemove" Description="Executing uninstall SQL scripts" Template="Connection: [1]  Script: [2]" DescriptionLocId="ActionText.Description.AI_SqlRemove" TemplateLocId="ActionText.Template.AI_SqlRemove"/>
+    <ROW Action="AI_SqlRollback" Description="Executing rollback SQL scripts" Template="Connection: [1]  Script: [2]" DescriptionLocId="ActionText.Description.AI_SqlRollback" TemplateLocId="ActionText.Template.AI_SqlRollback"/>
+    <ROW Action="AI_SqlUninstall" Description="Generating actions to configure databases for uninstall SQL script execution" DescriptionLocId="ActionText.Description.AI_SqlUninstall"/>
+    <ROW Action="AI_UninstallAccounts" Description="Generating actions to create user accounts on the local computer" Template="Account: [1], Attributes: [2]" DescriptionLocId="ActionText.Description.AI_ProcessAccounts" TemplateLocId="ActionText.Template.AI_ProcessAccounts"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_DOTNET40_SEARCH" Signature_="AI_DotNet40SearchSgn" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+    <ROW Property="AI_IISSEARCH" Signature_="AI_IISSearchSgn" Builds="DefaultBuild"/>
+    <ROW Property="AI_IISSEARCH_EX" Signature_="AI_IISSearchSgnEx" Builds="DefaultBuild"/>
+    <ROW Property="AI_IISSEARCH_SERVICE" Signature_="AI_IISSearchSgnService" Builds="DefaultBuild"/>
+    <ROW Property="IISWindowsLogin" Signature_="IISWindowsLogin"/>
+    <ROW Property="IISWindowsLogin" Signature_="IISWindowsLogin_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="DataService.pfx" SourcePath="DataService.pfx"/>
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="iis.dll" SourcePath="&lt;AI_CUSTACTS&gt;iis.dll"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+    <ROW Name="sql.dll" SourcePath="&lt;AI_CUSTACTS&gt;sql.dll"/>
+    <ROW Name="userAccounts.dll" SourcePath="&lt;AI_CUSTACTS&gt;userAccounts.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="LicenseAgreementDlg" Control="AgreementText" Type="ScrollableText" X="20" Y="60" Width="330" Height="120" Attributes="7" Text="License Agreement.rtf" Order="400" TextLocId="-" MsiKey="LicenseAgreementDlg#AgreementText"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="Suite_Dir" Component_="Suite"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_CommitAccounts" Type="11777" Source="userAccounts.dll" Target="CommitAccounts" WithoutSeq="true"/>
+    <ROW Action="AI_CreateAccount" Type="11265" Source="userAccounts.dll" Target="CreateAccount" WithoutSeq="true"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="AI_ExtractFiles" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EstimateExtractFiles" Type="1" Source="Prereq.dll" Target="EstimateExtractFiles"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractFiles" Type="1025" Source="Prereq.dll" Target="ExtractSourceFiles" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_IIsConfig" Type="11265" Source="iis.dll" Target="OnIIsConfig" WithoutSeq="true"/>
+    <ROW Action="AI_IIsInstall" Type="1" Source="iis.dll" Target="OnIIsInstall"/>
+    <ROW Action="AI_IIsRemove" Type="11265" Source="iis.dll" Target="OnIIsRemove" WithoutSeq="true"/>
+    <ROW Action="AI_IIsRollback" Type="11521" Source="iis.dll" Target="OnIIsRollback" WithoutSeq="true"/>
+    <ROW Action="AI_IIsUninstall" Type="1" Source="iis.dll" Target="OnIIsUninstall"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_ProcessAccounts" Type="1" Source="userAccounts.dll" Target="ProcessAccounts"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_RemoveAccount" Type="11265" Source="userAccounts.dll" Target="RemoveAccount" WithoutSeq="true"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_ResolveLocalizedCredentials" Type="1" Source="aicustact.dll" Target="GetLocalizedCredentials"/>
+    <ROW Action="AI_RollbackAccount" Type="11521" Source="userAccounts.dll" Target="RemoveAccount" WithoutSeq="true"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_SqlConfig" Type="9217" Source="sql.dll" Target="OnSqlConfig" WithoutSeq="true"/>
+    <ROW Action="AI_SqlInstall" Type="1" Source="sql.dll" Target="OnSqlInstall"/>
+    <ROW Action="AI_SqlMaint" Type="9217" Source="sql.dll" Target="OnSqlMaint" WithoutSeq="true"/>
+    <ROW Action="AI_SqlRemove" Type="9217" Source="sql.dll" Target="OnSqlRemove" WithoutSeq="true"/>
+    <ROW Action="AI_SqlRollback" Type="9473" Source="sql.dll" Target="OnSqlRollback" WithoutSeq="true"/>
+    <ROW Action="AI_SqlUninstall" Type="1" Source="sql.dll" Target="OnSqlUninstall"/>
+    <ROW Action="AI_UninstallAccounts" Type="1" Source="userAccounts.dll" Target="UninstallAccounts"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDrLocatorComponent">
+    <ROW Signature_="AI_IISSearchSgn" Path="[SystemFolder]inetsrv" Depth="0"/>
+    <ROW Signature_="AI_IISSearchSgnEx" Path="[SystemFolder]inetsrv" Depth="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_ResolveLocalizedCredentials" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="102" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1547" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1546" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractFiles" Sequence="3998" Builds="DefaultBuild"/>
+    <ROW Action="AI_DATA_SETTER" Sequence="3997"/>
+    <ROW Action="AI_EstimateExtractFiles" Sequence="3999" Builds="DefaultBuild"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+    <ROW Action="AI_IIsInstall" Condition="(VersionNT &gt;= 500) AND (NOT Installed)" Sequence="6509"/>
+    <ROW Action="AI_IIsUninstall" Condition="(VersionNT &gt;= 500) AND (REMOVE=&quot;ALL&quot;)" Sequence="1699"/>
+    <ROW Action="AI_SqlInstall" Condition="(VersionNT &gt;= 500) AND (REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5499"/>
+    <ROW Action="AI_SqlUninstall" Condition="(VersionNT &gt;= 500) AND (REMOVE=&quot;ALL&quot;)" Sequence="1647"/>
+    <ROW Action="AI_ProcessAccounts" Condition="(VersionNT &gt;= 500) AND (REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="1551"/>
+    <ROW Action="AI_UninstallAccounts" Condition="(VersionNT &gt;= 500) AND (REMOVE = &quot;ALL&quot;)" Sequence="1649"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_ResolveLocalizedCredentials" Sequence="52"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="102"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+    <ROW Action="AI_DpiContentScale" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(AI_DOTNET40_SEARCH = &quot;#1&quot;) OR (AI_DOTNET45_SEARCH &gt;= &quot;4.5&quot;)" Description="[ProductName] cannot be installed on systems with .NET Framework version lower than [AI_MINDOTNETVERSION]" DescriptionLocId="AI.LaunchCondition.DotNET" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(AI_IISSEARCH OR AI_IISSEARCH_EX) AND AI_IISSEARCH_SERVICE" Description="[ProductName] cannot be installed on systems with Internet Information Services version lower than [AI_MINIISVERSION]" DescriptionLocId="AI.LaunchCondition.IIS" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT40Display]" DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_DotNet40SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" Name="Install" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_IISSearchSgnService" Root="2" Key="SYSTEM\CurrentControlSet\Services\W3SVC" Name="DisplayName" Type="2"/>
+    <ROW Signature_="IISWindowsLogin" Root="2" Key="Software\[Manufacturer]\[UpgradeCode]" Name="IISWindowsLogin" Type="2"/>
+    <ROW Signature_="IISWindowsLogin_1" Root="1" Key="Software\[Manufacturer]\[UpgradeCode]" Name="IISWindowsLogin" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="IISWindowsLogin" Root="-1" Key="Software\[Manufacturer]\[UpgradeCode]" Name="IISWindowsLogin" Value="[IISWindowsLogin]" Component_="IISWindowsLogin"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiSignatureComponent">
+    <ROW Signature="AI_IISSearchSgn" FileName="inetinfo.exe" MinVersion="[|AI_MINIISVERSION]"/>
+    <ROW Signature="AI_IISSearchSgnEx" FileName="w3wp.exe" MinVersion="[|AI_MINIISVERSION]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="D62CCA_449F_4EB4_AA2F_C4376D7FBDAD" DisplayName=".NET Framework 4.0" VersionMin="4.0" SetupFileUrl="..\Client\PrerequisiteSoftware\dotNetFx40_Full_x86_x64.exe" Location="0" ExactSize="0" WinNTVersions="Windows 2000, Windows 2000 Service Pack 1, Windows 2000 Service Pack 2, Windows 2000 Service Pack 3, Windows 2000 Service Pack 4, Windows XP x86, Windows XP x86 Service Pack 1, Windows XP x86 Service Pack 2" Operator="1" TargetName="dotNetFx40_Full_setup.exe\dotNetFx40_Full_x86_x64.exe"/>
+    <ATTRIBUTE name="PrereqsOrder" value="D62CCA_449F_4EB4_AA2F_C4376D7FBDAD"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="D62CCA_449F_4EB4_AA2F_C4376D7FBDAD_NET_40_SEARCH" Prereq="D62CCA_449F_4EB4_AA2F_C4376D7FBDAD" SearchType="2" SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\Version" VerMin="4.0" Order="1" Property="AI_NET_40_ORIGINAL_PREREQSEARCH_PROP"/>
+    <ROW SearchKey="D62CCA_449F_4EB4_AA2F_C4376D7FBDAD_NET_45_SEARCH" Prereq="D62CCA_449F_4EB4_AA2F_C4376D7FBDAD" SearchType="2" SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\Version" VerMin="4.5" Order="2" Property="AI_NET_40_45_PREREQSEARCH_PROP"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SqlConnectionComponent">
+    <ROW ConnectionName="PredefinedConnection" Condition="1" Dbms="0" OdbcResource="SQL Server" Server="(local)" Port="1433" Database="Master" Username="[LogonUser]" Flags="12" Order="0" LoginTimeout="60"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SqlScriptComponent">
+    <ROW ScriptName="AddLogin" ConnectionName="PredefinedConnection" Condition="1" Separator="GO" ScriptInline="-- Inline SQL script&#13;&#10;USE [master]&#13;&#10;GO&#13;&#10;If not exists(select 1 from master.dbo.syslogins where name = &apos;DataServiceLogin&apos;)&#13;&#10;BEGIN&#13;&#10;    CREATE login [DataServiceLogin] with PASSWORD = &apos;Welcome1&apos;,CHECK_EXPIRATION = OFF,CHECK_POLICY = OFF&#13;&#10;&#13;&#10;&#9;&#9;ALTER SERVER ROLE [sysadmin] ADD MEMBER [DataServiceLogin]&#13;&#10;END&#13;&#10;GO&#13;&#10;&#13;&#10;USE [CentralData]&#13;&#10;GO&#13;&#10;If not exists(select 1 from sysusers where name = &apos;DataServiceUser&apos;)&#13;&#10;BEGIN&#13;&#10;    CREATE USER [DataServiceUser] FOR LOGIN [DataServiceLogin]&#13;&#10;END&#13;&#10;ELSE&#13;&#10;BEGIN&#13;&#10;    ALTER USER [DataServiceUser] with LOGIN = [DataServiceLogin] &#13;&#10;END&#13;&#10;GO&#13;&#10;EXEC sp_addrolemember N&apos;db_owner&apos;, N&apos;DataServiceUser&apos;&#13;&#10;GO&#13;&#10;" Flags="34" Order="1"/>
+    <ROW ScriptName="CreateDatabase" ConnectionName="PredefinedConnection" Condition="1" Separator="GO" ScriptText="..\..\Persistent\CreateScript.sql" Flags="34" Order="0"/>
+    <ROW ScriptName="DeleteDatabase" ConnectionName="PredefinedConnection" Condition="1" Separator="GO" ScriptInline="-- Inline SQL script&#13;&#10;USE [master]&#13;&#10;GO&#13;&#10;If exists(select 1 from sys.databases where name = &apos;CentralData&apos;)&#13;&#10;begin&#13;&#10;ALTER DATABASE [CentralData] SET SINGLE_USER WITH ROLLBACK IMMEDIATE&#13;&#10;Drop Database [CentralData]&#13;&#10;end&#13;&#10;GO" Flags="24" Order="3"/>
+    <ROW ScriptName="RemoveLogin" ConnectionName="PredefinedConnection" Condition="1" Separator="GO" ScriptInline="-- Inline SQL script&#13;&#10;USE [master]&#13;&#10;GO&#13;&#10;If exists(select 1 from dbo.syslogins where name = &apos;DataServiceLogin&apos;)&#13;&#10;BEGIN&#13;&#10;&#9;Drop login [DataServiceLogin]&#13;&#10;END&#13;&#10;GO&#13;&#10;&#13;&#10;USE [CentralData]&#13;&#10;GO&#13;&#10;If exists(select 1 from sysusers where name = &apos;DataServiceUser&apos;)&#13;&#10;BEGIN&#13;&#10;    Drop user [DataServiceUser]&#13;&#10;END&#13;&#10;" Flags="24" Order="2"/>
+    <ATTRIBUTE name="ImpersonateUser" value="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.UserAccountsComponent">
+    <ROW UserName="DataServiceLogin" Password="6F99BAA4C893E1030A80A153BA42F611" Attributes="65600" Groups="S-1-5-32-544" ErrorControl="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.VirtualDirectoriesComponent">
+    <ROW VirtualDirectoryId="0" Path="DataService_Dir" Condition="1" AccessFlags="49697" AccessPerm="513" DocumentList="Service.svc" VirtualDirectory="DataService" WebApplication="0"/>
+    <ROW VirtualDirectoryId="1" Path="ManagementPortal_Dir" Condition="1" AccessFlags="49697" AccessPerm="513" VirtualDirectory="ManagementPortal" WebApplication="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.WebApplicationsComponent">
+    <ROW WebSiteId="0" Root="Suite_Dir" Condition="1" AccessFlags="279073" AccessPerm="513" DocumentList="Service.svc, index.html, index.htm, default.htm" AnonymousUser="DataServiceLogin" AnonymousPass="6F99BAA4C893E1030A80A153BA42F611" AppPool="0" AspNetVers="4.0.30319" WebApplication="9258Suite" SecureBindings=":443:" AccessSSLFlags="8" Certificate="0"/>
+    <ROW WebSiteId="1" Root="APPDIR" Condition="1" AccessFlags="49761" AccessPerm="513" DocumentList="index.html, index.htm, default.htm" WebApplication="Default Web Site" ServerBindings=":80:" AccessSSLFlags="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.WebCertificateComponent">
+    <ROW CertId="0" StoreName="MY" Flags="0" PfxFile="DataService.pfx" PfxPass="5F99AAA4D093C2033280A953B342A411D4FB667AA0805D00"/>
+  </COMPONENT>
+</DOCUMENT>

@@ -1,0 +1,216 @@
+﻿body
+{
+    margin:0px;
+    padding:0px;
+    margin-left:0px;
+    margin-right:0px;
+    text-align:center;
+}
+
+
+.zt {
+	font-weight: bold;
+}
+.lzt {
+	color: #0F0FFF;
+	font-size: 14px;
+}
+
+body p {
+    color: #F00;
+	font-weight: bold;
+	font-size: 9px;
+}
+.hszt {
+	color: #333;
+}
+
+.zt14 {
+	font-size: 14px;
+   color: #333;
+   font-weight: normal;
+}
+
+.zt10 {
+	font-size: 10px;
+}
+
+.zt10 {
+	font-size: 10px;
+    color:white;
+}
+
+.zt12 {
+	font-size: 12px;
+    font-weight: normal;
+    color: #333;
+}
+
+.zt120 {
+	color: #333;
+}
+.zt18 {
+	color: #333;
+    	font-size: 18px;
+}
+
+.zt28 {
+	color: white;
+	font-size: 28px;
+}
+.zt24 {
+	font-size: 24px;
+}
+.zt18 {
+	color: #1E9AE0;
+	font-weight: bold;
+}
+
+.zt26 {
+	color: #1E9AE0;
+	font-weight: bold;
+}
+.zt261 {
+	font-weight: bold;
+}
+.zt30 {
+	color: #1E9AE0;
+	font-family: "方正水黑简体";
+}
+.zt36 {
+	font-size: 30px;
+}
+
+
+.zt000 {
+    height:70px;
+    text-align:center;
+    vertical-align:middle;
+    padding:10px;
+	font-family: "时尚中黑简体";
+	font-size: 33px;
+	color: #EAEAEA;
+    min-width:400px;
+}
+
+.zt1411 {
+	color: #CCC;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.zt12gn {
+	color: #333;
+    font-size:11px;
+}
+
+#headerTable {
+    border:0px;
+    background-color:white;
+    table-layout:fixed;
+    border-spacing:0px;
+    padding:0px;
+    line-height:0px;
+    margin:0px;
+}
+
+.pageSpace {
+    width:1000px;
+    height:auto;
+    border-spacing:0px;
+    padding:0px;
+    margin:0px;
+}
+
+.secondHeaderLinck {
+    font-weight:normal;
+    color:#39C;
+    font-size:18px;
+    height:25px;
+    min-width:90px;
+    text-align:center;
+    background-color:#F0F0F0;
+    vertical-align:middle;
+}
+
+.headerLink {
+    height:20px;
+    background-color:#FFFFFF;
+    font-size:12px;
+	font-size: 12px;
+    width:60px;
+    text-align:center;
+}
+
+#logoImg {
+    width:300px;
+    height:80px;
+    text-align:left;
+    vertical-align:top;
+}
+
+#marquee_demo
+{
+    overflow:hidden;
+    margin:0px auto;
+    background-color:white;
+    border:1px solid #CCC;
+    border-spacing:0px;
+    padding:0px;
+}
+
+.mntInnerTable {
+    padding:0px;
+    border-spacing:0px;
+    margin:0px auto;
+    border:0px;
+}
+
+    .mntInnerTable tr {
+    padding:0px;
+    border-spacing:0px;
+    margin:0px auto;
+    border:0px;
+    }
+
+        .mntInnerTable tr td {
+            padding:0px;
+            border-spacing:0px;
+            margin:0px auto;
+            border:0px;
+        }
+
+
+
+.mntable {
+     border-spacing:0px;
+     padding:0px;
+     border:0px;
+     margin:0px auto;
+}
+.mntable tr td{padding:0px; border-spacing:0px;padding:2px;margin:0px auto; border:0px}
+.mntable tr {padding:0px; background-color:white;border-spacing:0px;padding:0px;margin:0px auto; border:0px}
+.mntable img{width:146px; height:160px; padding:2px; margin:2px auto;border-spacing:0px;border:1px solid #CCC}
+.mntable p{color:grey;font-size:12px;font-weight:normal;border-spacing:0px;border:1px solid #CCC;margin:0px auto;padding:0px}
+
+.mntk{
+    width:932px; 
+    border-spacing:0px;
+    height:auto;
+    margin:0px auto;
+    padding:0px;
+    border-spacing:0px;
+    border:0px;
+    padding-left:5px;
+}
+
+.CompanyAdv
+{
+    border:1px solid #CCC
+}
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+

@@ -1,0 +1,221 @@
+﻿<local:WindowBase x:Class="YoYoStudio.Client.Chat.RoomWindow"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:c="clr-namespace:YoYoStudio.Model.Chat;assembly=YoYoStudio.Model"
+                  xmlns:ctls="clr-namespace:YoYoStudio.Controls;assembly=YoYoStudio.Controls"
+                  xmlns:ctls1="clr-namespace:YoYoStudio.Client.Chat.Controls"
+                  xmlns:cw="clr-namespace:YoYoStudio.Controls.CustomWindow;assembly=YoYoStudio.Controls"
+                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                  xmlns:gif="http://wpfanimatedgif.codeplex.com"
+                  xmlns:local="clr-namespace:YoYoStudio.Client.Chat"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:vm="clr-namespace:YoYoStudio.Client.ViewModel;assembly=YoYoStudio.Client.ViewModel"
+                  xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+                  ResizeMode="NoResize"
+                  ShowInTaskbar="True"
+                  WindowStartupLocation="CenterScreen"
+                  x:TypeArguments="vm:RoomWindowAction"
+                  mc:Ignorable="d">
+    <Window.Title>
+        <MultiBinding StringFormat="{}{0} - {1}">
+            <Binding Path="Title" />
+            <Binding Path="Me.Id" />
+        </MultiBinding>
+    </Window.Title>
+    <Window.Resources>
+        <Style x:Key="SplitButtonStyle" TargetType="xctk:SplitButton">
+            <Setter Property="Margin" Value="5,2" />
+            <Setter Property="Background" Value="Gold" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+        
+        <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="10,5"/>
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="Background" Value="Gold" />
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+
+        <Style x:Key="ListBoxItemStyle" TargetType="ListBoxItem">
+            <Setter Property="Width" Value="80" />
+            <Setter Property="Background" Value="LightCyan" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="Margin" Value="1" />
+            <Setter Property="Padding" Value="0" />
+        </Style>
+
+        <Style x:Key="ListBoxButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Aqua" />
+            <Setter Property="Margin" Value="0" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Width" Value="80" />
+        </Style>
+    </Window.Resources>
+    <Grid Background="AliceBlue" x:Name="RoomMainGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="{Binding VideoWidth}"/>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" x:Name="RoomVideoGrid" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="{Binding VideoHeight}"/>
+                <RowDefinition Height="{Binding VideoHeight}"/>
+                <RowDefinition Height="{Binding VideoHeight}"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="96" MinHeight="96" />
+            </Grid.RowDefinitions>
+            <Grid.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="Margin" Value="0,0,0,5" />
+                    <Setter Property="BorderThickness" Value="2" />
+                    <Setter Property="BorderBrush">
+                        <Setter.Value>
+                            <SolidColorBrush Color="#91bbfb" />
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Grid.Resources>
+            <ContentControl x:Name="videoBorder1" Grid.Row="0" />
+            <ContentControl x:Name="videoBorder2" Grid.Row="1" />
+            <ContentControl x:Name="videoBorder3" Grid.Row="2" />
+            <!--<ContentControl x:Name="PART_Music" Visibility="Collapsed">
+                <ctls:WpfFlexControl x:Name="MusicFlex"
+                                                 FlashCallback="MusicFlex_FlashCallback"
+                                                 MoviePath="{Binding MusicFlexPath}"/>
+            </ContentControl>-->
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <xctk:SplitButton Grid.Column="0"
+                                      Content="{Binding ConfigLabel}"
+                                      PopupEnabled="True"
+                                      PopupPlacement="Top"
+                                      Style="{StaticResource SplitButtonStyle}">
+                    <xctk:SplitButton.DropDownContent>
+                        <ListBox ItemContainerStyle="{StaticResource ListBoxItemStyle}">
+                            <ListBoxItem>
+                                <Button Command="{Binding ConfigCommand}"
+                                            Content="{Binding ConfigAudioLabel}"
+                                            Style="{StaticResource ListBoxButtonStyle}">
+                                    <Button.CommandParameter>
+                                        <c:ConfigType>Audio</c:ConfigType>
+                                    </Button.CommandParameter>
+                                </Button>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <Button Command="{Binding ConfigCommand}"
+                                            Content="{Binding ConfigVideoLabel}"
+                                            Style="{StaticResource ListBoxButtonStyle}">
+                                    <Button.CommandParameter>
+                                        <c:ConfigType>Vedio</c:ConfigType>
+                                    </Button.CommandParameter>
+                                </Button>
+                            </ListBoxItem>
+                        </ListBox>
+                    </xctk:SplitButton.DropDownContent>
+                </xctk:SplitButton>
+                
+                <xctk:SplitButton Grid.Column="1"
+                                  Content="{Binding MusicLabel}"
+                                  PopupEnabled="True"
+                                  PopupPlacement="Top"
+                                  Style="{StaticResource SplitButtonStyle}">
+                    <xctk:SplitButton.DropDownContent>
+                        <ListBox ItemContainerStyle="{StaticResource ListBoxItemStyle}">
+                            <ListBoxItem>
+                                <Button Command="{Binding PlayMusicCommand}"
+                                            Style="{StaticResource ListBoxButtonStyle}" Content="{Binding PlayMusicLabel}">
+                                    <Button.IsEnabled>
+                                        <MultiBinding Converter="{StaticResource playMusicStatusConverter}">
+                                            <Binding Path="." />
+                                            <Binding Path="Me.MicStatus"/>
+                                        </MultiBinding>
+                                    </Button.IsEnabled>
+                                </Button>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <Button Command="{Binding ManageMusicCommand}"
+                                            Content="{Binding ManageMusicLabel}"
+                                            Style="{StaticResource ListBoxButtonStyle}">
+                                </Button>
+                            </ListBoxItem>
+                        </ListBox>
+                    </xctk:SplitButton.DropDownContent>
+                </xctk:SplitButton>
+
+                    <xctk:SplitButton Grid.Column="2"
+                                      Command="{Binding OnMicCommandVM.SecureCommand}"
+                                      PopupEnabled="{Binding Me.MicStatus,
+                                                             Converter={StaticResource onMicPopupConverter}}"
+                                      PopupPlacement="Top"
+                                      Style="{StaticResource SplitButtonStyle}">
+                    <xctk:SplitButton.Content>
+                        <MultiBinding Converter="{StaticResource onMicLabelConverter}">
+                            <Binding Path="." />
+                            <Binding Path="Me.MicStatus" />
+                        </MultiBinding>
+                    </xctk:SplitButton.Content>
+                    <xctk:SplitButton.CommandParameter>
+                        <c:MicType>Public</c:MicType>
+                    </xctk:SplitButton.CommandParameter>
+                    <xctk:SplitButton.DropDownContent>
+                        <ListBox ItemContainerStyle="{StaticResource ListBoxItemStyle}">
+                            <ListBoxItem>
+                                <Button Command="{Binding OnMicCommandVM.SecureCommand}"
+                                            Content="{Binding PrivateMicLabel}"
+                                            Style="{StaticResource ListBoxButtonStyle}" IsEnabled="False">
+                                    <Button.CommandParameter>
+                                        <c:MicType>Private</c:MicType>
+                                    </Button.CommandParameter>
+                                </Button>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <Button Command="{Binding OnMicCommandVM.SecureCommand}"
+                                            Content="{Binding SecretMicLabel}"
+                                            Style="{StaticResource ListBoxButtonStyle}" IsEnabled="False">
+                                    <Button.CommandParameter>
+                                        <c:MicType>Secret</c:MicType>
+                                    </Button.CommandParameter>
+                                </Button>
+                            </ListBoxItem>
+                        </ListBox>
+                    </xctk:SplitButton.DropDownContent>
+                </xctk:SplitButton>
+            </Grid>
+            <!--<Grid>-->
+            <!--
+                        <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0"
+                        Command="{Binding BroadcastCommand}"
+                        Content="播放" />
+                        <Button Grid.Column="1"
+                        Command="{Binding RecordCommand}"
+                        Content="录音" />
+                        <Button Grid.Column="2"
+                        Command="{Binding PlayCommand}"
+                        Content="收听" />
+                        <Button Grid.Column="3"
+                        Command="{Binding StopCommand}"
+                        Content="停止" />
+                    -->
+            <!--</Grid>-->
+        </Grid>
+        <ContentControl x:Name="PART_Web" Grid.Column="1" />
+    </Grid>
+</local:WindowBase>
